@@ -1,154 +1,220 @@
+@params('readdraw',)
 def eglGetCurrentSurface(readdraw):
-	return lib.eglGetCurrentSurface(readdraw)
+	pass
 
+
+@params('dpy', 'surface', 'buffer')
 def eglBindTexImage(dpy, surface, buffer):
-	return lib.eglBindTexImage(dpy, surface, buffer)
+	pass
 
+
+@params()
 def eglGetError():
-	return lib.eglGetError()
+	pass
 
+
+@params('dpy', 'config', 'share_context', 'attrib_list')
 def eglCreateContext(dpy, config, share_context, attrib_list):
-	attr_lst = ffi.new('const EGLint []', attrib_list)
-	return lib.eglCreateContext(dpy, config, share_context, attr_lst)
+	pass
 
+
+@params()
 def eglWaitGL():
-	return lib.eglWaitGL()
+	pass
 
+
+@params('api',)
 def eglBindAPI(api):
-	return lib.eglBindAPI(api)
+	pass
 
+
+@params()
 def eglReleaseThread():
-	return lib.eglReleaseThread()
+	pass
 
+
+@params('dpy',)
 def eglTerminate(dpy):
-	return lib.eglTerminate(dpy)
+	pass
 
+
+@params('dpy', 'ctx', 'target', 'buffer', 'attrib_list')
 def eglCreateImage(dpy, ctx, target, buffer, attrib_list):
-	attr_lst = ffi.new('const EGLAttrib []', attrib_list)
-	return lib.eglCreateImage(dpy, ctx, target, buffer, attr_lst)
+	pass
 
+
+@params('dpy', 'surface', 'attribute', 'value')
 def eglSurfaceAttrib(dpy, surface, attribute):
-	value = ffi.new('EGLint *')
-	return lib.eglSurfaceAttrib(dpy, surface, attribute, value)
+	pass
 
+
+@params('dpy', 'interval')
 def eglSwapInterval(dpy, interval):
-	return lib.eglSwapInterval(dpy, interval)
+	pass
 
+
+@params('dpy', 'sync', 'attribute', 'value')
 def eglGetSyncAttrib(dpy, sync, attribute):
-	value = ffi.new('EGLAttrib *')
-	return lib.eglGetSyncAttrib(dpy, sync, attribute, value)
+	pass
 
+
+@params('dpy', 'config', 'native_window', 'attrib_list')
 def eglCreatePlatformWindowSurface(dpy, config, native_window, attrib_list):
-	attr_lst = ffi.new('const EGLAttrib []', attrib_list)
-	return lib.eglCreatePlatformWindowSurface(dpy, config, native_window, attr_lst)
+	pass
 
+
+@params()
 def eglGetCurrentContext():
-	return lib.eglGetCurrentContext()
+	pass
 
+
+@params('dpy', 'name')
 def eglQueryString(dpy, name):
-	return lib.eglQueryString(dpy, name)
+	pass
 
+
+@params('dpy', 'sync', 'flags')
 def eglWaitSync(dpy, sync, flags):
-	return lib.eglWaitSync(dpy, sync, flags)
+	pass
 
+
+@params()
 def eglWaitClient():
-	return lib.eglWaitClient()
+	pass
 
+
+@params('procname',)
 def eglGetProcAddress(procname):
-	return lib.eglGetProcAddress(procname)
+	pass
 
+
+@params('dpy', 'major', 'minor')
 def eglInitialize(dpy):
-	major = ffi.new('EGLint *')
-	minor = ffi.new('EGLint *')
-	return lib.eglInitialize(dpy, major, minor)
+	pass
 
+
+@params('platform', 'native_display', 'attrib_list')
 def eglGetPlatformDisplay(platform, native_display, attrib_list):
-	attr_lst = ffi.new('const EGLAttrib []', attrib_list)
-	return lib.eglGetPlatformDisplay(platform, native_display, attr_lst)
+	pass
 
+
+@params('dpy', 'ctx', 'attribute', 'value')
 def eglQueryContext(dpy, ctx, attribute):
-	value = ffi.new('EGLint *')
-	return lib.eglQueryContext(dpy, ctx, attribute, value)
+	pass
 
+
+@params('dpy', 'buftype', 'buffer', 'config', 'attrib_list')
 def eglCreatePbufferFromClientBuffer(dpy, buftype, buffer, config, attrib_list):
-	attr_lst = ffi.new('const EGLint []', attrib_list)
-	return lib.eglCreatePbufferFromClientBuffer(dpy, buftype, buffer, config, attr_lst)
+	pass
 
+
+@params('dpy', 'attrib_list', 'configs', 'config_size', 'num_config')
 def eglChooseConfig(dpy, attrib_list, config_size):
-	attr_lst = ffi.new('const EGLint []', attrib_list)
-	configs = ffi.new('EGLConfig [config_size]')
-	num_config = ffi.new('EGLint *')
-	return lib.eglChooseConfig(dpy, attr_lst, configs, config_size, num_config)
+	pass
 
+
+@params('engine',)
 def eglWaitNative(engine):
-	return lib.eglWaitNative(engine)
+	pass
 
+
+@params('dpy', 'surface', 'attribute', 'value')
 def eglQuerySurface(dpy, surface, attribute):
-	value = ffi.new('EGLint *')
-	return lib.eglQuerySurface(dpy, surface, attribute, value)
+	pass
 
+
+@params('dpy', 'config', 'native_pixmap', 'attrib_list')
 def eglCreatePlatformPixmapSurface(dpy, config, native_pixmap, attrib_list):
-	attr_lst = ffi.new('const EGLAttrib []', attrib_list)
-	return lib.eglCreatePlatformPixmapSurface(dpy, config, native_pixmap, attr_lst)
+	pass
 
+
+@params('dpy', 'config', 'attribute', 'value')
 def eglGetConfigAttrib(dpy, config, attribute):
-	value = ffi.new('EGLint *')
-	return lib.eglGetConfigAttrib(dpy, config, attribute, value)
+	pass
 
+
+@params('dpy', 'sync', 'flags', 'timeout')
 def eglClientWaitSync(dpy, sync, flags, timeout):
-	return lib.eglClientWaitSync(dpy, sync, flags, timeout)
+	pass
 
+
+@params('dpy', 'ctx')
 def eglDestroyContext(dpy, ctx):
-	return lib.eglDestroyContext(dpy, ctx)
+	pass
 
+
+@params('dpy', 'surface', 'buffer')
 def eglReleaseTexImage(dpy, surface, buffer):
-	return lib.eglReleaseTexImage(dpy, surface, buffer)
+	pass
 
+
+@params('dpy', 'config', 'win', 'attrib_list')
 def eglCreateWindowSurface(dpy, config, win, attrib_list):
-	attr_lst = ffi.new('const EGLint []', attrib_list)
-	return lib.eglCreateWindowSurface(dpy, config, win, attr_lst)
+	pass
 
+
+@params('dpy', 'type', 'attrib_list')
 def eglCreateSync(dpy, type, attrib_list):
-	attr_lst = ffi.new('const EGLAttrib []', attrib_list)
-	return lib.eglCreateSync(dpy, type, attr_lst)
+	pass
 
+
+@params('dpy', 'configs', 'config_size', 'num_config')
 def eglGetConfigs(dpy, config_size):
-	configs = ffi.new('EGLConfig [config_size]')
-	num_config = ffi.new('EGLint *')
-	return lib.eglGetConfigs(dpy, configs, config_size, num_config)
+	pass
 
+
+@params('dpy', 'surface', 'target')
 def eglCopyBuffers(dpy, surface, target):
-	return lib.eglCopyBuffers(dpy, surface, target)
+	pass
 
+
+@params('dpy', 'surface')
 def eglSwapBuffers(dpy, surface):
-	return lib.eglSwapBuffers(dpy, surface)
+	pass
 
+
+@params('dpy', 'config', 'pixmap', 'attrib_list')
 def eglCreatePixmapSurface(dpy, config, pixmap, attrib_list):
-	attr_lst = ffi.new('const EGLint []', attrib_list)
-	return lib.eglCreatePixmapSurface(dpy, config, pixmap, attr_lst)
+	pass
 
+
+@params('dpy', 'draw', 'read', 'ctx')
 def eglMakeCurrent(dpy, draw, read, ctx):
-	return lib.eglMakeCurrent(dpy, draw, read, ctx)
+	pass
 
+
+@params('dpy', 'image')
 def eglDestroyImage(dpy, image):
-	return lib.eglDestroyImage(dpy, image)
+	pass
 
+
+@params('dpy', 'sync')
 def eglDestroySync(dpy, sync):
-	return lib.eglDestroySync(dpy, sync)
+	pass
 
+
+@params('dpy', 'config', 'attrib_list')
 def eglCreatePbufferSurface(dpy, config, attrib_list):
-	attr_lst = ffi.new('const EGLint []', attrib_list)
-	return lib.eglCreatePbufferSurface(dpy, config, attr_lst)
+	pass
 
+
+@params('dpy', 'surface')
 def eglDestroySurface(dpy, surface):
-	return lib.eglDestroySurface(dpy, surface)
+	pass
 
+
+@params()
 def eglQueryAPI():
-	return lib.eglQueryAPI()
+	pass
 
+
+@params()
 def eglGetCurrentDisplay():
-	return lib.eglGetCurrentDisplay()
+	pass
 
+
+@params('display_id',)
 def eglGetDisplay(display_id):
-	return lib.eglGetDisplay(display_id)
+	pass
+
 

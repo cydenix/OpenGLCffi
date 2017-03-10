@@ -1,469 +1,720 @@
+@params('pname', 'params')
 def glFogfv(pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glFogfv(pname, params)
+	pass
 
+
+@params('buffer',)
 def glIsBuffer(buffer):
-	return lib.glIsBuffer(buffer)
+	pass
 
+
+@params('m',)
 def glMultMatrixx(m):
-	return lib.glMultMatrixx(m)
+	pass
 
+
+@params('plane', 'equation')
 def glGetClipPlanef(plane, equation):
-	return lib.glGetClipPlanef(plane, equation)
+	pass
 
+
+@params('pname', 'param')
 def glFogx(pname, param):
-	return lib.glFogx(pname, param)
+	pass
 
+
+@params('size', 'type', 'stride', 'pointer')
 def glVertexPointer(size, type, stride, pointer):
-	return lib.glVertexPointer(size, type, stride, pointer)
+	pass
 
+
+@params('pname', 'param')
 def glFogf(pname, param):
-	return lib.glFogf(pname, param)
+	pass
 
+
+@params('cap',)
 def glIsEnabled(cap):
-	return lib.glIsEnabled(cap)
+	pass
 
+
+@params('fail', 'zfail', 'zpass')
 def glStencilOp(fail, zfail, zpass):
-	return lib.glStencilOp(fail, zfail, zpass)
+	pass
 
+
+@params('n', 'f')
 def glDepthRangex(n, f):
-	return lib.glDepthRangex(n, f)
+	pass
 
+
+@params('pname', 'params')
 def glGetPointerv(pname):
-	params = ffi.new('void *')
-	return lib.glGetPointerv(pname, params)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'x', 'y', 'width', 'height', 'border')
 def glCopyTexImage2D(target, level, internalformat, x, y, width, height, border):
-	return lib.glCopyTexImage2D(target, level, internalformat, x, y, width, height, border)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glLightxv(light, pname):
-	params = ffi.new('const GLfixed *')
-	return lib.glLightxv(light, pname, params)
+	pass
 
+
+@params('pname', 'data')
 def glGetBooleanv(pname):
-	data = ffi.new('GLboolean *')
-	return lib.glGetBooleanv(pname, data)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexParameterf(target, pname, param):
-	return lib.glTexParameterf(target, pname, param)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexParameteri(target, pname, param):
-	return lib.glTexParameteri(target, pname, param)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4ub(red, green, blue, alpha):
-	return lib.glColor4ub(red, green, blue, alpha)
+	pass
 
+
+@params('name',)
 def glGetString():
-	name = ffi.new('GLenum *')
-	return lib.glGetString(name)
+	pass
 
+
+@params('n', 'textures')
 def glDeleteTextures(n, textures):
-	return lib.glDeleteTextures(n, textures)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexEnvfv(target, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTexEnvfv(target, pname, params)
+	pass
 
+
+@params('mode',)
 def glCullFace(mode):
-	return lib.glCullFace(mode)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetBufferParameteriv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetBufferParameteriv(target, pname, params)
+	pass
 
+
+@params('pname', 'params')
 def glLightModelfv(pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glLightModelfv(pname, params)
+	pass
 
+
+@params('angle', 'x', 'y', 'z')
 def glRotatex(angle, x, y, z):
-	return lib.glRotatex(angle, x, y, z)
+	pass
 
+
+@params('angle', 'x', 'y', 'z')
 def glRotatef(angle, x, y, z):
-	return lib.glRotatef(angle, x, y, z)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexEnvxv(target, pname):
-	params = ffi.new('GLfixed *')
-	return lib.glGetTexEnvxv(target, pname, params)
+	pass
 
+
+@params('func', 'ref')
 def glAlphaFunc(func, ref):
-	return lib.glAlphaFunc(func, ref)
+	pass
 
+
+@params('func', 'ref', 'mask')
 def glStencilFunc(func, ref, mask):
-	return lib.glStencilFunc(func, ref, mask)
+	pass
 
+
+@params('n', 'buffers')
 def glDeleteBuffers(n, buffers):
-	return lib.glDeleteBuffers(n, buffers)
+	pass
 
+
+@params('x', 'y', 'width', 'height')
 def glScissor(x, y, width, height):
-	return lib.glScissor(x, y, width, height)
+	pass
 
+
+@params('pname', 'params')
 def glGetFixedv(pname):
-	params = ffi.new('GLfixed *')
-	return lib.glGetFixedv(pname, params)
+	pass
 
+
+@params('face', 'pname', 'params')
 def glMaterialfv(face, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glMaterialfv(face, pname, params)
+	pass
 
+
+@params('pname', 'params')
 def glPointParameterfv(pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glPointParameterfv(pname, params)
+	pass
 
+
+@params()
 def glGetError():
-	return lib.glGetError()
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexEnviv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTexEnviv(target, pname, params)
+	pass
 
+
+@params('pname', 'param')
 def glPixelStorei(pname, param):
-	return lib.glPixelStorei(pname, param)
+	pass
 
+
+@params('flag',)
 def glDepthMask(flag):
-	return lib.glDepthMask(flag)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'x', 'y', 'width', 'height')
 def glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height):
-	return lib.glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height)
+	pass
 
+
+@params('size',)
 def glPointSize(size):
-	return lib.glPointSize(size)
+	pass
 
+
+@params('mode', 'first', 'count')
 def glDrawArrays(mode, first, count):
-	return lib.glDrawArrays(mode, first, count)
+	pass
 
+
+@params('mask',)
 def glClear(mask):
-	return lib.glClear(mask)
+	pass
 
+
+@params('x', 'y', 'z')
 def glTranslatef(x, y, z):
-	return lib.glTranslatef(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glTranslatex(x, y, z):
-	return lib.glTranslatex(x, y, z)
+	pass
 
+
+@params('face', 'pname', 'param')
 def glMaterialf(face, pname, param):
-	return lib.glMaterialf(face, pname, param)
+	pass
 
+
+@params('face', 'pname', 'param')
 def glMaterialx(face, pname, param):
-	return lib.glMaterialx(face, pname, param)
+	pass
 
+
+@params('light', 'pname', 'param')
 def glLightx(light, pname, param):
-	return lib.glLightx(light, pname, param)
+	pass
 
+
+@params('light', 'pname', 'param')
 def glLightf(light, pname, param):
-	return lib.glLightf(light, pname, param)
+	pass
 
+
+@params('value', 'invert')
 def glSampleCoverage(value, invert):
-	return lib.glSampleCoverage(value, invert)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexEnvf(target, pname, param):
-	return lib.glTexEnvf(target, pname, param)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexEnvi(target, pname, param):
-	return lib.glTexEnvi(target, pname, param)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexEnvx(target, pname, param):
-	return lib.glTexEnvx(target, pname, param)
+	pass
 
+
+@params('pname', 'param')
 def glLightModelf(pname, param):
-	return lib.glLightModelf(pname, param)
+	pass
 
+
+@params('pname', 'param')
 def glLightModelx(pname, param):
-	return lib.glLightModelx(pname, param)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4x(red, green, blue, alpha):
-	return lib.glColor4x(red, green, blue, alpha)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4f(red, green, blue, alpha):
-	return lib.glColor4f(red, green, blue, alpha)
+	pass
 
+
+@params('x', 'y', 'width', 'height')
 def glViewport(x, y, width, height):
-	return lib.glViewport(x, y, width, height)
+	pass
 
+
+@params('pname', 'params')
 def glPointParameterxv(pname):
-	params = ffi.new('const GLfixed *')
-	return lib.glPointParameterxv(pname, params)
+	pass
 
+
+@params('target', 'texture')
 def glBindTexture(target, texture):
-	return lib.glBindTexture(target, texture)
+	pass
 
+
+@params('target', 'buffer')
 def glBindBuffer(target, buffer):
-	return lib.glBindBuffer(target, buffer)
+	pass
 
+
+@params('value', 'invert')
 def glSampleCoveragex(value, invert):
-	return lib.glSampleCoveragex(value, invert)
+	pass
 
+
+@params('pname', 'param')
 def glPointParameterf(pname, param):
-	return lib.glPointParameterf(pname, param)
+	pass
 
+
+@params('x', 'y', 'width', 'height', 'format', 'type', 'pixels')
 def glReadPixels(x, y, width, height, format, type):
-	pixels = ffi.new('void *')
-	return lib.glReadPixels(x, y, width, height, format, type, pixels)
+	pass
 
+
+@params('mode',)
 def glShadeModel(mode):
-	return lib.glShadeModel(mode)
+	pass
 
+
+@params('n', 'buffers')
 def glGenBuffers(n, buffers):
-	return lib.glGenBuffers(n, buffers)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glGetLightxv(light, pname):
-	params = ffi.new('GLfixed *')
-	return lib.glGetLightxv(light, pname, params)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glClearColorx(red, green, blue, alpha):
-	return lib.glClearColorx(red, green, blue, alpha)
+	pass
 
+
+@params('pname', 'param')
 def glFogxv(pname, param):
-	return lib.glFogxv(pname, param)
+	pass
 
+
+@params('func',)
 def glDepthFunc(func):
-	return lib.glDepthFunc(func)
+	pass
 
+
+@params('pname', 'param')
 def glPointParameterx(pname, param):
-	return lib.glPointParameterx(pname, param)
+	pass
 
+
+@params('array',)
 def glEnableClientState(array):
-	return lib.glEnableClientState(array)
+	pass
 
+
+@params('func', 'ref')
 def glAlphaFuncx(func, ref):
-	return lib.glAlphaFuncx(func, ref)
+	pass
 
+
+@params('pname', 'data')
 def glGetFloatv(pname):
-	data = ffi.new('GLfloat *')
-	return lib.glGetFloatv(pname, data)
+	pass
 
+
+@params('pname', 'data')
 def glGetIntegerv(pname):
-	data = ffi.new('GLint *')
-	return lib.glGetIntegerv(pname, data)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'height', 'border', 'format', 'type', 'pixels')
 def glTexImage2D(target, level, internalformat, width, height, border, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexImage2D(target, level, internalformat, width, height, border, format, type, pixels)
+	pass
 
+
+@params('m',)
 def glMultMatrixf(m):
-	return lib.glMultMatrixf(m)
+	pass
 
+
+@params('width',)
 def glLineWidth(width):
-	return lib.glLineWidth(width)
+	pass
 
+
+@params('n', 'f')
 def glDepthRangef(n, f):
-	return lib.glDepthRangef(n, f)
+	pass
 
+
+@params('width',)
 def glLineWidthx(width):
-	return lib.glLineWidthx(width)
+	pass
 
+
+@params('type', 'stride', 'pointer')
 def glNormalPointer(type, stride, pointer):
-	return lib.glNormalPointer(type, stride, pointer)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glLightfv(light, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glLightfv(light, pname, params)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexParameteriv(target, pname):
-	params = ffi.new('const GLint *')
-	return lib.glTexParameteriv(target, pname, params)
+	pass
 
+
+@params('l', 'r', 'b', 't', 'n', 'f')
 def glFrustumx(l, r, b, t, n, f):
-	return lib.glFrustumx(l, r, b, t, n, f)
+	pass
 
+
+@params('l', 'r', 'b', 't', 'n', 'f')
 def glFrustumf(l, r, b, t, n, f):
-	return lib.glFrustumf(l, r, b, t, n, f)
+	pass
 
+
+@params()
 def glFlush():
-	return lib.glFlush()
+	pass
 
+
+@params('s',)
 def glClearStencil(s):
-	return lib.glClearStencil(s)
+	pass
 
+
+@params('pname', 'param')
 def glLightModelxv(pname, param):
-	return lib.glLightModelxv(pname, param)
+	pass
 
+
+@params('texture',)
 def glIsTexture(texture):
-	return lib.glIsTexture(texture)
+	pass
 
+
+@params('factor', 'units')
 def glPolygonOffset(factor, units):
-	return lib.glPolygonOffset(factor, units)
+	pass
 
+
+@params('mode',)
 def glMatrixMode(mode):
-	return lib.glMatrixMode(mode)
+	pass
 
+
+@params()
 def glFinish():
-	return lib.glFinish()
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'width', 'height', 'format', 'type', 'pixels')
 def glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels)
+	pass
 
+
+@params('opcode',)
 def glLogicOp(opcode):
-	return lib.glLogicOp(opcode)
+	pass
 
+
+@params('mode', 'count', 'type', 'indices')
 def glDrawElements(mode, count, type, indices):
-	return lib.glDrawElements(mode, count, type, indices)
+	pass
 
+
+@params('texture',)
 def glClientActiveTexture(texture):
-	return lib.glClientActiveTexture(texture)
+	pass
 
+
+@params('array',)
 def glDisableClientState(array):
-	return lib.glDisableClientState(array)
+	pass
 
+
+@params('plane', 'equation')
 def glGetClipPlanex(plane, equation):
-	return lib.glGetClipPlanex(plane, equation)
+	pass
 
+
+@params('depth',)
 def glClearDepthx(depth):
-	return lib.glClearDepthx(depth)
+	pass
 
+
+@params('d',)
 def glClearDepthf(d):
-	return lib.glClearDepthf(d)
+	pass
 
+
+@params('texture', 's', 't', 'r', 'q')
 def glMultiTexCoord4x(texture, s, t, r, q):
-	return lib.glMultiTexCoord4x(texture, s, t, r, q)
+	pass
 
+
+@params('target', 's', 't', 'r', 'q')
 def glMultiTexCoord4f(target, s, t, r, q):
-	return lib.glMultiTexCoord4f(target, s, t, r, q)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColorMask(red, green, blue, alpha):
-	return lib.glColorMask(red, green, blue, alpha)
+	pass
 
+
+@params('face', 'pname', 'param')
 def glMaterialxv(face, pname, param):
-	return lib.glMaterialxv(face, pname, param)
+	pass
 
+
+@params('factor', 'units')
 def glPolygonOffsetx(factor, units):
-	return lib.glPolygonOffsetx(factor, units)
+	pass
 
+
+@params('m',)
 def glLoadMatrixx(m):
-	return lib.glLoadMatrixx(m)
+	pass
 
+
+@params('m',)
 def glLoadMatrixf(m):
-	return lib.glLoadMatrixf(m)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexParameterfv(target, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glTexParameterfv(target, pname, params)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexParameterxv(target, pname):
-	params = ffi.new('const GLfixed *')
-	return lib.glTexParameterxv(target, pname, params)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexParameterx(target, pname, param):
-	return lib.glTexParameterx(target, pname, param)
+	pass
 
+
+@params('size',)
 def glPointSizex(size):
-	return lib.glPointSizex(size)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'height', 'border', 'imageSize', 'data')
 def glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data)
+	pass
 
+
+@params()
 def glLoadIdentity():
-	return lib.glLoadIdentity()
+	pass
 
+
+@params('face', 'pname', 'params')
 def glGetMaterialxv(face, pname):
-	params = ffi.new('GLfixed *')
-	return lib.glGetMaterialxv(face, pname, params)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexEnvxv(target, pname):
-	params = ffi.new('const GLfixed *')
-	return lib.glTexEnvxv(target, pname, params)
+	pass
 
+
+@params('face', 'pname', 'params')
 def glGetMaterialfv(face, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetMaterialfv(face, pname, params)
+	pass
 
+
+@params('l', 'r', 'b', 't', 'n', 'f')
 def glOrthox(l, r, b, t, n, f):
-	return lib.glOrthox(l, r, b, t, n, f)
+	pass
 
+
+@params('l', 'r', 'b', 't', 'n', 'f')
 def glOrthof(l, r, b, t, n, f):
-	return lib.glOrthof(l, r, b, t, n, f)
+	pass
 
+
+@params('cap',)
 def glEnable(cap):
-	return lib.glEnable(cap)
+	pass
 
+
+@params()
 def glPushMatrix():
-	return lib.glPushMatrix()
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexParameterxv(target, pname):
-	params = ffi.new('GLfixed *')
-	return lib.glGetTexParameterxv(target, pname, params)
+	pass
 
+
+@params('n', 'textures')
 def glGenTextures(n, textures):
-	return lib.glGenTextures(n, textures)
+	pass
 
+
+@params('target', 'mode')
 def glHint(target, mode):
-	return lib.glHint(target, mode)
+	pass
 
+
+@params('x', 'y', 'z')
 def glScalef(x, y, z):
-	return lib.glScalef(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glScalex(x, y, z):
-	return lib.glScalex(x, y, z)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexParameteriv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTexParameteriv(target, pname, params)
+	pass
 
+
+@params('cap',)
 def glDisable(cap):
-	return lib.glDisable(cap)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glGetLightfv(light, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetLightfv(light, pname, params)
+	pass
 
+
+@params()
 def glPopMatrix():
-	return lib.glPopMatrix()
+	pass
 
+
+@params('texture',)
 def glActiveTexture(texture):
-	return lib.glActiveTexture(texture)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexEnvfv(target, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glTexEnvfv(target, pname, params)
+	pass
 
+
+@params('target', 'offset', 'size', 'data')
 def glBufferSubData(target, offset, size):
-	data = ffi.new('const void *')
-	return lib.glBufferSubData(target, offset, size, data)
+	pass
 
+
+@params('size', 'type', 'stride', 'pointer')
 def glTexCoordPointer(size, type, stride, pointer):
-	return lib.glTexCoordPointer(size, type, stride, pointer)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexEnviv(target, pname):
-	params = ffi.new('const GLint *')
-	return lib.glTexEnviv(target, pname, params)
+	pass
 
+
+@params('sfactor', 'dfactor')
 def glBlendFunc(sfactor, dfactor):
-	return lib.glBlendFunc(sfactor, dfactor)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glClearColor(red, green, blue, alpha):
-	return lib.glClearColor(red, green, blue, alpha)
+	pass
 
+
+@params('mask',)
 def glStencilMask(mask):
-	return lib.glStencilMask(mask)
+	pass
 
+
+@params('nx', 'ny', 'nz')
 def glNormal3f(nx, ny, nz):
-	return lib.glNormal3f(nx, ny, nz)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'width', 'height', 'format', 'imageSize', 'data')
 def glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexParameterfv(target, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTexParameterfv(target, pname, params)
+	pass
 
+
+@params('target', 'size', 'data', 'usage')
 def glBufferData(target, size, usage):
-	data = ffi.new('const void *')
-	return lib.glBufferData(target, size, data, usage)
+	pass
 
+
+@params('size', 'type', 'stride', 'pointer')
 def glColorPointer(size, type, stride, pointer):
-	return lib.glColorPointer(size, type, stride, pointer)
+	pass
 
+
+@params('nx', 'ny', 'nz')
 def glNormal3x(nx, ny, nz):
-	return lib.glNormal3x(nx, ny, nz)
+	pass
 
+
+@params('plane', 'equation')
 def glClipPlanex(plane, equation):
-	return lib.glClipPlanex(plane, equation)
+	pass
 
+
+@params('p', 'eqn')
 def glClipPlanef(p, eqn):
-	return lib.glClipPlanef(p, eqn)
+	pass
 
+
+@params('mode',)
 def glFrontFace(mode):
-	return lib.glFrontFace(mode)
+	pass
+
 

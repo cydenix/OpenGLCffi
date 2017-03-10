@@ -1,130 +1,195 @@
+@params('dpy', 'vis', 'shareList', 'direct')
 def glXCreateContext(dpy, vis, shareList, direct):
-	return lib.glXCreateContext(dpy, vis, shareList, direct)
+	pass
 
+
+@params('dpy', 'visual', 'pixmap')
 def glXCreateGLXPixmap(dpy, visual, pixmap):
-	return lib.glXCreateGLXPixmap(dpy, visual, pixmap)
+	pass
 
+
+@params('procName',)
 def glXGetProcAddress(procName):
-	return lib.glXGetProcAddress(procName)
+	pass
 
+
+@params('dpy', 'win')
 def glXDestroyWindow(dpy, win):
-	return lib.glXDestroyWindow(dpy, win)
+	pass
 
+
+@params('dpy', 'draw', 'attribute', 'value')
 def glXQueryDrawable(dpy, draw, attribute):
-	value = ffi.new('unsigned int *')
-	return lib.glXQueryDrawable(dpy, draw, attribute, value)
+	pass
 
+
+@params('dpy', 'drawable')
 def glXSwapBuffers(dpy, drawable):
-	return lib.glXSwapBuffers(dpy, drawable)
+	pass
 
+
+@params()
 def glXGetCurrentDisplay():
-	return lib.glXGetCurrentDisplay()
+	pass
 
+
+@params('dpy', 'screen', 'attribList')
 def glXChooseVisual(dpy, screen, attribList):
-	attr_lst = ffi.new('int []', attribList)
-	return lib.glXChooseVisual(dpy, screen, attribList)
+	pass
 
+
+@params('dpy', 'pbuf')
 def glXDestroyPbuffer(dpy, pbuf):
-	return lib.glXDestroyPbuffer(dpy, pbuf)
+	pass
 
+
+@params('dpy', 'config', 'pixmap', 'attrib_list')
 def glXCreatePixmap(dpy, config, pixmap, attrib_list):
-	attr_lst = ffi.new('const int []', attrib_list)
-	return lib.glXCreatePixmap(dpy, config, pixmap, attr_lst)
+	pass
 
+
+@params('dpy', 'draw', 'event_mask')
 def glXSelectEvent(dpy, draw, event_mask):
-	return lib.glXSelectEvent(dpy, draw, event_mask)
+	pass
 
+
+@params('dpy', 'draw', 'event_mask')
 def glXGetSelectedEvent(dpy, draw, event_mask):
-	return lib.glXGetSelectedEvent(dpy, draw, event_mask)
+	pass
 
+
+@params('dpy', 'errorb', 'event')
 def glXQueryExtension(dpy, errorb, event):
-	return lib.glXQueryExtension(dpy, errorb, event)
+	pass
 
+
+@params('dpy', 'drawable', 'ctx')
 def glXMakeCurrent(dpy, drawable, ctx):
-	return lib.glXMakeCurrent(dpy, drawable, ctx)
+	pass
 
+
+@params('dpy', 'config', 'attrib_list')
 def glXCreatePbuffer(dpy, config, attrib_list):
-	attr_lst = ffi.new('const int []', attrib_list)
-	return lib.glXCreatePbuffer(dpy, config, attr_lst)
+	pass
 
+
+@params('dpy', 'pixmap')
 def glXDestroyGLXPixmap(dpy, pixmap):
-	return lib.glXDestroyGLXPixmap(dpy, pixmap)
+	pass
 
+
+@params('dpy', 'screen', 'attrib_list', 'nelements')
 def glXChooseFBConfig(dpy, screen, attrib_list):
-	attr_lst = ffi.new('const int []', attrib_list)
-	nelements = ffi.new('int *')
-	return lib.glXChooseFBConfig(dpy, screen, attr_lst, nelements)
+	pass
 
+
+@params('dpy', 'visual', 'attrib', 'value')
 def glXGetConfig(dpy, visual, attrib):
-	value = ffi.new('int *')
-	return lib.glXGetConfig(dpy, visual, attrib, value)
+	pass
 
+
+@params()
 def glXWaitX():
-	return lib.glXWaitX()
+	pass
 
+
+@params()
 def glXGetCurrentContext():
-	return lib.glXGetCurrentContext()
+	pass
 
+
+@params()
 def glXWaitGL():
-	return lib.glXWaitGL()
+	pass
 
+
+@params('dpy', 'maj', 'min')
 def glXQueryVersion(dpy):
-	maj = ffi.new('int *')
-	min = ffi.new('int *')
-	return lib.glXQueryVersion(dpy, maj, min)
+	pass
 
+
+@params('dpy', 'pixmap')
 def glXDestroyPixmap(dpy, pixmap):
-	return lib.glXDestroyPixmap(dpy, pixmap)
+	pass
 
+
+@params('dpy', 'ctx')
 def glXIsDirect(dpy, ctx):
-	return lib.glXIsDirect(dpy, ctx)
+	pass
 
+
+@params('dpy', 'ctx')
 def glXDestroyContext(dpy, ctx):
-	return lib.glXDestroyContext(dpy, ctx)
+	pass
 
+
+@params('dpy', 'config', 'render_type', 'share_list', 'direct')
 def glXCreateNewContext(dpy, config, render_type, share_list, direct):
-	return lib.glXCreateNewContext(dpy, config, render_type, share_list, direct)
+	pass
 
+
+@params('dpy', 'name')
 def glXGetClientString(dpy, name):
-	return lib.glXGetClientString(dpy, name)
+	pass
 
+
+@params('dpy', 'config')
 def glXGetVisualFromFBConfig(dpy, config):
-	return lib.glXGetVisualFromFBConfig(dpy, config)
+	pass
 
+
+@params('dpy', 'screen', 'nelements')
 def glXGetFBConfigs(dpy, screen):
-	nelements = ffi.new('int *')
-	return lib.glXGetFBConfigs(dpy, screen, nelements)
+	pass
 
+
+@params()
 def glXGetCurrentReadDrawable():
-	return lib.glXGetCurrentReadDrawable()
+	pass
 
+
+@params('dpy', 'ctx', 'attribute', 'value')
 def glXQueryContext(dpy, ctx, attribute):
-	value = ffi.new('int *')
-	return lib.glXQueryContext(dpy, ctx, attribute, value)
+	pass
 
+
+@params('dpy', 'config', 'win', 'attrib_list')
 def glXCreateWindow(dpy, config, win, attrib_list):
-	attr_lst = ffi.new('const int []', attrib_list)
-	return lib.glXCreateWindow(dpy, config, win, attr_lst)
+	pass
 
+
+@params('dpy', 'src', 'dst', 'mask')
 def glXCopyContext(dpy, src, dst, mask):
-	return lib.glXCopyContext(dpy, src, dst, mask)
+	pass
 
+
+@params('dpy', 'screen', 'name')
 def glXQueryServerString(dpy, screen, name):
-	return lib.glXQueryServerString(dpy, screen, name)
+	pass
 
+
+@params('dpy', 'config', 'attribute', 'value')
 def glXGetFBConfigAttrib(dpy, config, attribute):
-	value = ffi.new('int *')
-	return lib.glXGetFBConfigAttrib(dpy, config, attribute, value)
+	pass
 
+
+@params('font', 'first', 'count', 'list')
 def glXUseXFont(font, first, count, list):
-	return lib.glXUseXFont(font, first, count, list)
+	pass
 
+
+@params('dpy', 'draw', 'read', 'ctx')
 def glXMakeContextCurrent(dpy, draw, read, ctx):
-	return lib.glXMakeContextCurrent(dpy, draw, read, ctx)
+	pass
 
+
+@params()
 def glXGetCurrentDrawable():
-	return lib.glXGetCurrentDrawable()
+	pass
 
+
+@params('dpy', 'screen')
 def glXQueryExtensionsString(dpy, screen):
-	return lib.glXQueryExtensionsString(dpy, screen)
+	pass
+
 

@@ -1,3311 +1,5220 @@
+@params('target', 'level', 'internalformat', 'x', 'y', 'width', 'border')
 def glCopyTexImage1D(target, level, internalformat, x, y, width, border):
-	return lib.glCopyTexImage1D(target, level, internalformat, x, y, width, border)
+	pass
 
+
+@params('vaobj', 'buffer')
 def glVertexArrayElementBuffer(vaobj, buffer):
-	return lib.glVertexArrayElementBuffer(vaobj, buffer)
+	pass
 
+
+@params('face', 'mask')
 def glStencilMaskSeparate(face, mask):
-	return lib.glStencilMaskSeparate(face, mask)
+	pass
 
+
+@params('texture', 'samples', 'internalformat', 'width', 'height', 'depth', 'fixedsamplelocations')
 def glTextureStorage3DMultisample(texture, samples, internalformat, width, height, depth, fixedsamplelocations):
-	return lib.glTextureStorage3DMultisample(texture, samples, internalformat, width, height, depth, fixedsamplelocations)
+	pass
 
+
+@params('texture', 'pname', 'param')
 def glTextureParameterfv(texture, pname, param):
-	return lib.glTextureParameterfv(texture, pname, param)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4usv(index, v):
-	return lib.glVertexAttrib4usv(index, v)
+	pass
 
+
+@params('c',)
 def glIndexi(c):
-	return lib.glIndexi(c)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'imageSize', 'data')
 def glCompressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data):
-	return lib.glCompressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data)
+	pass
 
+
+@params('u', 'v')
 def glEvalCoord2d(u, v):
-	return lib.glEvalCoord2d(u, v)
+	pass
 
+
+@params('u', 'v')
 def glEvalCoord2f(u, v):
-	return lib.glEvalCoord2f(u, v)
+	pass
 
+
+@params('c',)
 def glIndexd(c):
-	return lib.glIndexd(c)
+	pass
 
+
+@params('c',)
 def glIndexf(c):
-	return lib.glIndexf(c)
+	pass
 
+
+@params('c',)
 def glIndexs(c):
-	return lib.glIndexs(c)
+	pass
 
+
+@params('v',)
 def glVertex3sv(v):
-	return lib.glVertex3sv(v)
+	pass
 
+
+@params('target', 'query', 'bufSize', 'v')
 def glGetnMapfv(target, query, bufSize, v):
-	return lib.glGetnMapfv(target, query, bufSize, v)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3fv(v):
-	return lib.glSecondaryColor3fv(v)
+	pass
 
+
+@params('pname', 'params')
 def glFogfv(pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glFogfv(pname, params)
+	pass
 
+
+@params('mode', 'count', 'type', 'indices', 'instancecount', 'baseinstance')
 def glDrawElementsInstancedBaseInstance(mode, count, type, indices, instancecount, baseinstance):
-	return lib.glDrawElementsInstancedBaseInstance(mode, count, type, indices, instancecount, baseinstance)
+	pass
 
+
+@params('buffer',)
 def glIsBuffer(buffer):
-	return lib.glIsBuffer(buffer)
+	pass
 
+
+@params('pname', 'index', 'val')
 def glGetMultisamplefv(pname, index, val):
-	return lib.glGetMultisamplefv(pname, index, val)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix4fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix4fv(program, location, count, transpose, value)
+	pass
 
+
+@params('source', 'type', 'severity', 'count', 'ids', 'enabled')
 def glDebugMessageControl(source, type, severity, count, ids, enabled):
-	return lib.glDebugMessageControl(source, type, severity, count, ids, enabled)
+	pass
 
+
+@params()
 def glPopAttrib():
-	return lib.glPopAttrib()
+	pass
 
+
+@params('face', 'mode')
 def glColorMaterial(face, mode):
-	return lib.glColorMaterial(face, mode)
+	pass
 
+
+@params('target', 'internalformat', 'width', 'height')
 def glRenderbufferStorage(target, internalformat, width, height):
-	return lib.glRenderbufferStorage(target, internalformat, width, height)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3b(red, green, blue):
-	return lib.glColor3b(red, green, blue)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3f(red, green, blue):
-	return lib.glColor3f(red, green, blue)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3d(red, green, blue):
-	return lib.glColor3d(red, green, blue)
+	pass
 
+
+@params('target', 'query', 'bufSize', 'v')
 def glGetnMapiv(target, query, bufSize, v):
-	return lib.glGetnMapiv(target, query, bufSize, v)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3i(red, green, blue):
-	return lib.glColor3i(red, green, blue)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4ubv(index, v):
-	return lib.glVertexAttrib4ubv(index, v)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3s(red, green, blue):
-	return lib.glColor3s(red, green, blue)
+	pass
 
+
+@params('vaobj', 'index', 'pname', 'param')
 def glGetVertexArrayIndexediv(vaobj, index, pname, param):
-	return lib.glGetVertexArrayIndexediv(vaobj, index, pname, param)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord1iv(target, v):
-	return lib.glMultiTexCoord1iv(target, v)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP2ui(texture, type, coords):
-	return lib.glMultiTexCoordP2ui(texture, type, coords)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2')
 def glProgramUniform3f(program, location, v0, v1, v2):
-	return lib.glProgramUniform3f(program, location, v0, v1, v2)
+	pass
 
+
+@params('index', 'x', 'y', 'z', 'w')
 def glVertexAttribL4d(index, x, y, z, w):
-	return lib.glVertexAttribL4d(index, x, y, z, w)
+	pass
 
+
+@params('v',)
 def glVertex2iv(v):
-	return lib.glVertex2iv(v)
+	pass
 
+
+@params('vaobj', 'attribindex', 'size', 'type', 'relativeoffset')
 def glVertexArrayAttribLFormat(vaobj, attribindex, size, type, relativeoffset):
-	return lib.glVertexArrayAttribLFormat(vaobj, attribindex, size, type, relativeoffset)
+	pass
 
+
+@params('buffer', 'offset', 'length')
 def glInvalidateBufferSubData(buffer, offset, length):
-	return lib.glInvalidateBufferSubData(buffer, offset, length)
+	pass
 
+
+@params()
 def glResumeTransformFeedback():
-	return lib.glResumeTransformFeedback()
+	pass
 
+
+@params('pname', 'param')
 def glFogi(pname, param):
-	return lib.glFogi(pname, param)
+	pass
 
+
+@params('size', 'type', 'stride', 'pointer')
 def glVertexPointer(size, type, stride, pointer):
-	return lib.glVertexPointer(size, type, stride, pointer)
+	pass
 
+
+@params('pname', 'param')
 def glFogf(pname, param):
-	return lib.glFogf(pname, param)
+	pass
 
+
+@params('target', 's')
 def glMultiTexCoord1d(target, s):
-	return lib.glMultiTexCoord1d(target, s)
+	pass
 
+
+@params('target', 's')
 def glMultiTexCoord1f(target, s):
-	return lib.glMultiTexCoord1f(target, s)
+	pass
 
+
+@params('index', 'x', 'y')
 def glVertexAttribI2i(index, x, y):
-	return lib.glVertexAttribI2i(index, x, y)
+	pass
 
+
+@params('target', 's')
 def glMultiTexCoord1i(target, s):
-	return lib.glMultiTexCoord1i(target, s)
+	pass
 
+
+@params()
 def glGetGraphicsResetStatus():
-	return lib.glGetGraphicsResetStatus()
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib1fv(index, v):
-	return lib.glVertexAttrib1fv(index, v)
+	pass
 
+
+@params('cap',)
 def glIsEnabled(cap):
-	return lib.glIsEnabled(cap)
+	pass
 
+
+@params('fail', 'zfail', 'zpass')
 def glStencilOp(fail, zfail, zpass):
-	return lib.glStencilOp(fail, zfail, zpass)
+	pass
 
+
+@params('buffer', 'offset', 'length', 'access')
 def glMapNamedBufferRange(buffer, offset, length, access):
-	return lib.glMapNamedBufferRange(buffer, offset, length, access)
+	pass
 
+
+@params('vaobj', 'attribindex', 'size', 'type', 'relativeoffset')
 def glVertexArrayAttribIFormat(vaobj, attribindex, size, type, relativeoffset):
-	return lib.glVertexArrayAttribIFormat(vaobj, attribindex, size, type, relativeoffset)
+	pass
 
+
+@params('n', 'framebuffers')
 def glGenFramebuffers(n, framebuffers):
-	return lib.glGenFramebuffers(n, framebuffers)
+	pass
 
+
+@params('program', 'maxCount', 'count', 'shaders')
 def glGetAttachedShaders(program, maxCount, count, shaders):
-	return lib.glGetAttachedShaders(program, maxCount, count, shaders)
+	pass
 
+
+@params('n', 'arrays')
 def glDeleteVertexArrays(n, arrays):
-	return lib.glDeleteVertexArrays(n, arrays)
+	pass
 
+
+@params('first', 'count', 'v')
 def glViewportArrayv(first, count, v):
-	return lib.glViewportArrayv(first, count, v)
+	pass
 
+
+@params('target', 's', 't')
 def glMultiTexCoord2s(target, s, t):
-	return lib.glMultiTexCoord2s(target, s, t)
+	pass
 
+
+@params('v',)
 def glVertex3dv(v):
-	return lib.glVertex3dv(v)
+	pass
 
+
+@params('v',)
 def glColor4fv(v):
-	return lib.glColor4fv(v)
+	pass
 
+
+@params('vaobj', 'bindingindex', 'divisor')
 def glVertexArrayBindingDivisor(vaobj, bindingindex, divisor):
-	return lib.glVertexArrayBindingDivisor(vaobj, bindingindex, divisor)
+	pass
 
+
+@params('v',)
 def glTexCoord2sv(v):
-	return lib.glTexCoord2sv(v)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform2dv(location, count, value):
-	return lib.glUniform2dv(location, count, value)
+	pass
 
+
+@params('map', 'values')
 def glGetPixelMapuiv(map):
-	values = ffi.new('GLuint *')
-	return lib.glGetPixelMapuiv(map, values)
+	pass
 
+
+@params('pname', 'params')
 def glGetPointerv(pname):
-	params = ffi.new('void *')
-	return lib.glGetPointerv(pname, params)
+	pass
 
+
+@params('program', 'location', 'params')
 def glGetUniformfv(program, location):
-	params = ffi.new('GLfloat *')
-	return lib.glGetUniformfv(program, location, params)
+	pass
 
+
+@params('program', 'location', 'params')
 def glGetUniformuiv(program, location):
-	params = ffi.new('GLuint *')
-	return lib.glGetUniformuiv(program, location, params)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix3fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix3fv(program, location, count, transpose, value)
+	pass
 
+
+@params('mode', 'count', 'type', 'indices', 'instancecount')
 def glDrawElementsInstanced(mode, count, type, indices, instancecount):
-	return lib.glDrawElementsInstanced(mode, count, type, indices, instancecount)
+	pass
 
+
+@params('index', 'x', 'y', 'z', 'w')
 def glVertexAttrib4d(index, x, y, z, w):
-	return lib.glVertexAttrib4d(index, x, y, z, w)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetRenderbufferParameteriv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetRenderbufferParameteriv(target, pname, params)
+	pass
 
+
+@params('renderbuffer', 'internalformat', 'width', 'height')
 def glNamedRenderbufferStorage(renderbuffer, internalformat, width, height):
-	return lib.glNamedRenderbufferStorage(renderbuffer, internalformat, width, height)
+	pass
 
+
+@params('condition', 'flags')
 def glFenceSync(condition, flags):
-	return lib.glFenceSync(condition, flags)
+	pass
 
+
+@params('pipeline',)
 def glValidateProgramPipeline(pipeline):
-	return lib.glValidateProgramPipeline(pipeline)
+	pass
 
+
+@params('type', 'value')
 def glVertexP4ui(type, value):
-	return lib.glVertexP4ui(type, value)
+	pass
 
+
+@params('count', 'samplers')
 def glGenSamplers(count, samplers):
-	return lib.glGenSamplers(count, samplers)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib2sv(index, v):
-	return lib.glVertexAttrib2sv(index, v)
+	pass
 
+
+@params('mode', 'id', 'instancecount')
 def glDrawTransformFeedbackInstanced(mode, id, instancecount):
-	return lib.glDrawTransformFeedbackInstanced(mode, id, instancecount)
+	pass
 
+
+@params('v',)
 def glTexCoord4iv(v):
-	return lib.glTexCoord4iv(v)
+	pass
 
+
+@params('mode', 'id')
 def glDrawTransformFeedback(mode, id):
-	return lib.glDrawTransformFeedback(mode, id)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexParameterIuiv(target, pname):
-	params = ffi.new('GLuint *')
-	return lib.glGetTexParameterIuiv(target, pname, params)
+	pass
 
+
+@params('type', 'stride', 'pointer')
 def glIndexPointer(type, stride, pointer):
-	return lib.glIndexPointer(type, stride, pointer)
+	pass
 
+
+@params('sync',)
 def glIsSync(sync):
-	return lib.glIsSync(sync)
+	pass
 
+
+@params('v',)
 def glVertex4iv(v):
-	return lib.glVertex4iv(v)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord3iv(target, v):
-	return lib.glMultiTexCoord3iv(target, v)
+	pass
 
+
+@params('ptr', 'bufSize', 'length', 'label')
 def glGetObjectPtrLabel(ptr, bufSize, length, label):
-	return lib.glGetObjectPtrLabel(ptr, bufSize, length, label)
+	pass
 
+
+@params('texture', 'pname', 'param')
 def glTextureParameteri(texture, pname, param):
-	return lib.glTextureParameteri(texture, pname, param)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix2x3dv(location, count, transpose, value):
-	return lib.glUniformMatrix2x3dv(location, count, transpose, value)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3sv(v):
-	return lib.glSecondaryColor3sv(v)
+	pass
 
+
+@params('left', 'right', 'bottom', 'top', 'zNear', 'zFar')
 def glOrtho(left, right, bottom, top, zNear, zFar):
-	return lib.glOrtho(left, right, bottom, top, zNear, zFar)
+	pass
 
+
+@params('coord',)
 def glFogCoordd(coord):
-	return lib.glFogCoordd(coord)
+	pass
 
+
+@params('coord',)
 def glFogCoordf(coord):
-	return lib.glFogCoordf(coord)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'x', 'y', 'width', 'height', 'border')
 def glCopyTexImage2D(target, level, internalformat, x, y, width, height, border):
-	return lib.glCopyTexImage2D(target, level, internalformat, x, y, width, height, border)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP4ui(index, type, normalized, value):
-	return lib.glVertexAttribP4ui(index, type, normalized, value)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform4uiv(location, count, value):
-	return lib.glUniform4uiv(location, count, value)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribL1dv(index, v):
-	return lib.glVertexAttribL1dv(index, v)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix2dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix2dv(program, location, count, transpose, value)
+	pass
 
+
+@params('first', 'count', 'v')
 def glScissorArrayv(first, count, v):
-	return lib.glScissorArrayv(first, count, v)
+	pass
 
+
+@params('list',)
 def glCallList(list):
-	return lib.glCallList(list)
+	pass
 
+
+@params('pname', 'param')
 def glLightModeli(pname, param):
-	return lib.glLightModeli(pname, param)
+	pass
 
+
+@params('target', 'format', 'type', 'bufSize', 'table')
 def glGetnColorTable(target, format, type, bufSize, table):
-	return lib.glGetnColorTable(target, format, type, bufSize, table)
+	pass
 
+
+@params('v',)
 def glWindowPos3iv(v):
-	return lib.glWindowPos3iv(v)
+	pass
 
+
+@params('target', 'numAttachments', 'attachments', 'x', 'y', 'width', 'height')
 def glInvalidateSubFramebuffer(target, numAttachments, attachments, x, y, width, height):
-	return lib.glInvalidateSubFramebuffer(target, numAttachments, attachments, x, y, width, height)
+	pass
 
+
+@params('target', 'access')
 def glMapBuffer(target, access):
-	return lib.glMapBuffer(target, access)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3d(red, green, blue):
-	return lib.glSecondaryColor3d(red, green, blue)
+	pass
 
+
+@params('attribindex', 'size', 'type', 'relativeoffset')
 def glVertexAttribLFormat(attribindex, size, type, relativeoffset):
-	return lib.glVertexAttribLFormat(attribindex, size, type, relativeoffset)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3i(red, green, blue):
-	return lib.glSecondaryColor3i(red, green, blue)
+	pass
 
+
+@params('sync',)
 def glDeleteSync(sync):
-	return lib.glDeleteSync(sync)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix4x2dv(location, count, transpose, value):
-	return lib.glUniformMatrix4x2dv(location, count, transpose, value)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3s(red, green, blue):
-	return lib.glSecondaryColor3s(red, green, blue)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform3iv(location, count, value):
-	return lib.glUniform3iv(location, count, value)
+	pass
 
+
+@params('s',)
 def glTexCoord1s(s):
-	return lib.glTexCoord1s(s)
+	pass
 
+
+@params('face', 'mode')
 def glPolygonMode(face, mode):
-	return lib.glPolygonMode(face, mode)
+	pass
 
+
+@params('program',)
 def glUseProgram(program):
-	return lib.glUseProgram(program)
+	pass
 
+
+@params('factor', 'pattern')
 def glLineStipple(factor, pattern):
-	return lib.glLineStipple(factor, pattern)
+	pass
 
+
+@params('program', 'bufSize', 'length', 'infoLog')
 def glGetProgramInfoLog(program, bufSize, length, infoLog):
-	return lib.glGetProgramInfoLog(program, bufSize, length, infoLog)
+	pass
 
+
+@params('pname', 'param')
 def glPixelStoref(pname, param):
-	return lib.glPixelStoref(pname, param)
+	pass
 
+
+@params('pname', 'data')
 def glGetBooleanv(pname):
-	data = ffi.new('GLboolean *')
-	return lib.glGetBooleanv(pname, data)
+	pass
 
+
+@params('shader',)
 def glDeleteShader(shader):
-	return lib.glDeleteShader(shader)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'x', 'y', 'width')
 def glCopyTextureSubImage1D(texture, level, xoffset, x, y, width):
-	return lib.glCopyTextureSubImage1D(texture, level, xoffset, x, y, width)
+	pass
 
+
+@params('target', 'query', 'v')
 def glGetMapdv(target, query, v):
-	return lib.glGetMapdv(target, query, v)
+	pass
 
+
+@params('texture', 'pname', 'params')
 def glTextureParameterIuiv(texture, pname):
-	params = ffi.new('const GLuint *')
-	return lib.glTextureParameterIuiv(texture, pname, params)
+	pass
 
+
+@params('s', 't', 'r')
 def glTexCoord3d(s, t, r):
-	return lib.glTexCoord3d(s, t, r)
+	pass
 
+
+@params('index', 'x', 'y', 'z')
 def glVertexAttribI3i(index, x, y, z):
-	return lib.glVertexAttribI3i(index, x, y, z)
+	pass
 
+
+@params('attribindex', 'size', 'type', 'normalized', 'relativeoffset')
 def glVertexAttribFormat(attribindex, size, type, normalized, relativeoffset):
-	return lib.glVertexAttribFormat(attribindex, size, type, normalized, relativeoffset)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI4usv(index, v):
-	return lib.glVertexAttribI4usv(index, v)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexParameterf(target, pname, param):
-	return lib.glTexParameterf(target, pname, param)
+	pass
 
+
+@params('attribindex', 'bindingindex')
 def glVertexAttribBinding(attribindex, bindingindex):
-	return lib.glVertexAttribBinding(attribindex, bindingindex)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexParameteri(target, pname, param):
-	return lib.glTexParameteri(target, pname, param)
+	pass
 
+
+@params('shader', 'bufSize', 'length', 'source')
 def glGetShaderSource(shader, bufSize, length, source):
-	return lib.glGetShaderSource(shader, bufSize, length, source)
+	pass
 
+
+@params('index', 'x', 'y', 'z', 'w')
 def glVertexAttrib4s(index, x, y, z, w):
-	return lib.glVertexAttrib4s(index, x, y, z, w)
+	pass
 
+
+@params()
 def glPopName():
-	return lib.glPopName()
+	pass
 
+
+@params('n', 'pipelines')
 def glGenProgramPipelines(n, pipelines):
-	return lib.glGenProgramPipelines(n, pipelines)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4ub(red, green, blue, alpha):
-	return lib.glColor4ub(red, green, blue, alpha)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib3fv(index, v):
-	return lib.glVertexAttrib3fv(index, v)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4ui(red, green, blue, alpha):
-	return lib.glColor4ui(red, green, blue, alpha)
+	pass
 
+
+@params('buffer', 'pname', 'params')
 def glGetNamedBufferParameteriv(buffer, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetNamedBufferParameteriv(buffer, pname, params)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4us(red, green, blue, alpha):
-	return lib.glColor4us(red, green, blue, alpha)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP1uiv(index, type, normalized, value):
-	return lib.glVertexAttribP1uiv(index, type, normalized, value)
+	pass
 
+
+@params('program',)
 def glLinkProgram(program):
-	return lib.glLinkProgram(program)
+	pass
 
+
+@params('v',)
 def glTexCoord2dv(v):
-	return lib.glTexCoord2dv(v)
+	pass
 
+
+@params('identifier', 'name', 'bufSize', 'length', 'label')
 def glGetObjectLabel(identifier, bufSize, length, label):
-	name = ffi.new('GLuint *')
-	return lib.glGetObjectLabel(identifier, name, bufSize, length, label)
+	pass
 
+
+@params('name',)
 def glGetString():
-	name = ffi.new('GLenum *')
-	return lib.glGetString(name)
+	pass
 
+
+@params('target',)
 def glEndQuery(target):
-	return lib.glEndQuery(target)
+	pass
 
+
+@params('stride', 'pointer')
 def glEdgeFlagPointer(stride, pointer):
-	return lib.glEdgeFlagPointer(stride, pointer)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glFramebufferParameteri(target, pname, param):
-	return lib.glFramebufferParameteri(target, pname, param)
+	pass
 
+
+@params('x', 'y', 'width', 'height', 'type')
 def glCopyPixels(x, y, width, height, type):
-	return lib.glCopyPixels(x, y, width, height, type)
+	pass
 
+
+@params('index', 'x', 'y')
 def glVertexAttribI2ui(index, x, y):
-	return lib.glVertexAttribI2ui(index, x, y)
+	pass
 
+
+@params('x', 'y', 'z')
 def glRasterPos3s(x, y, z):
-	return lib.glRasterPos3s(x, y, z)
+	pass
 
+
+@params('n', 'textures')
 def glDeleteTextures(n, textures):
-	return lib.glDeleteTextures(n, textures)
+	pass
 
+
+@params('origin', 'depth')
 def glClipControl(origin, depth):
-	return lib.glClipControl(origin, depth)
+	pass
 
+
+@params('index', 'x', 'y', 'z', 'w')
 def glVertexAttrib4f(index, x, y, z, w):
-	return lib.glVertexAttrib4f(index, x, y, z, w)
+	pass
 
+
+@params('framebuffer', 'pname', 'param')
 def glNamedFramebufferParameteri(framebuffer, pname, param):
-	return lib.glNamedFramebufferParameteri(framebuffer, pname, param)
+	pass
 
+
+@params('framebuffer', 'pname', 'param')
 def glGetNamedFramebufferParameteriv(framebuffer, pname, param):
-	return lib.glGetNamedFramebufferParameteriv(framebuffer, pname, param)
+	pass
 
+
+@params('n', 'arrays')
 def glCreateVertexArrays(n, arrays):
-	return lib.glCreateVertexArrays(n, arrays)
+	pass
 
+
+@params('id', 'mode')
 def glBeginConditionalRender(id, mode):
-	return lib.glBeginConditionalRender(id, mode)
+	pass
 
+
+@params('sampler', 'pname', 'param')
 def glSamplerParameteri(sampler, pname, param):
-	return lib.glSamplerParameteri(sampler, pname, param)
+	pass
 
+
+@params('location', 'x')
 def glUniform1d(location, x):
-	return lib.glUniform1d(location, x)
+	pass
 
+
+@params('mode',)
 def glRenderMode(mode):
-	return lib.glRenderMode(mode)
+	pass
 
+
+@params('target', 'level', 'img')
 def glGetCompressedTexImage(target, level, img):
-	return lib.glGetCompressedTexImage(target, level, img)
+	pass
 
+
+@params('program', 'uniformBlockIndex', 'pname', 'params')
 def glGetActiveUniformBlockiv(program, uniformBlockIndex, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetActiveUniformBlockiv(program, uniformBlockIndex, pname, params)
+	pass
 
+
+@params('location', 'v0')
 def glUniform1i(location, v0):
-	return lib.glUniform1i(location, v0)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexEnvfv(target, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTexEnvfv(target, pname, params)
+	pass
 
+
+@params('mode',)
 def glCullFace(mode):
-	return lib.glCullFace(mode)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2', 'v3')
 def glProgramUniform4i(program, location, v0, v1, v2, v3):
-	return lib.glProgramUniform4i(program, location, v0, v1, v2, v3)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2', 'v3')
 def glProgramUniform4f(program, location, v0, v1, v2, v3):
-	return lib.glProgramUniform4f(program, location, v0, v1, v2, v3)
+	pass
 
+
+@params('index', 'x', 'y', 'w', 'h')
 def glViewportIndexedf(index, x, y, w, h):
-	return lib.glViewportIndexedf(index, x, y, w, h)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2', 'v3')
 def glProgramUniform4d(program, location, v0, v1, v2, v3):
-	return lib.glProgramUniform4d(program, location, v0, v1, v2, v3)
+	pass
 
+
+@params('x', 'y', 'z')
 def glVertex3i(x, y, z):
-	return lib.glVertex3i(x, y, z)
+	pass
 
+
+@params('program', 'shader')
 def glAttachShader(program, shader):
-	return lib.glAttachShader(program, shader)
+	pass
 
+
+@params('list',)
 def glIsList(list):
-	return lib.glIsList(list)
+	pass
 
+
+@params('type', 'stride', 'pointer')
 def glFogCoordPointer(type, stride, pointer):
-	return lib.glFogCoordPointer(type, stride, pointer)
+	pass
 
+
+@params('buffer',)
 def glUnmapNamedBuffer(buffer):
-	return lib.glUnmapNamedBuffer(buffer)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3dv(v):
-	return lib.glSecondaryColor3dv(v)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI4sv(index, v):
-	return lib.glVertexAttribI4sv(index, v)
+	pass
 
+
+@params('mode', 'id', 'stream', 'instancecount')
 def glDrawTransformFeedbackStreamInstanced(mode, id, stream, instancecount):
-	return lib.glDrawTransformFeedbackStreamInstanced(mode, id, stream, instancecount)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetBufferParameteriv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetBufferParameteriv(target, pname, params)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexParameterIuiv(target, pname):
-	params = ffi.new('const GLuint *')
-	return lib.glTexParameterIuiv(target, pname, params)
+	pass
 
+
+@params('v',)
 def glWindowPos3fv(v):
-	return lib.glWindowPos3fv(v)
+	pass
 
+
+@params('pname', 'params')
 def glLightModelfv(pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glLightModelfv(pname, params)
+	pass
 
+
+@params('texture', 'levels', 'internalformat', 'width', 'height', 'depth')
 def glTextureStorage3D(texture, levels, internalformat, width, height, depth):
-	return lib.glTextureStorage3D(texture, levels, internalformat, width, height, depth)
+	pass
 
+
+@params('id',)
 def glIsTransformFeedback(id):
-	return lib.glIsTransformFeedback(id)
+	pass
 
+
+@params('angle', 'x', 'y', 'z')
 def glRotated(angle, x, y, z):
-	return lib.glRotated(angle, x, y, z)
+	pass
 
+
+@params('pipeline',)
 def glIsProgramPipeline(pipeline):
-	return lib.glIsProgramPipeline(pipeline)
+	pass
 
+
+@params('angle', 'x', 'y', 'z')
 def glRotatef(angle, x, y, z):
-	return lib.glRotatef(angle, x, y, z)
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glVertex4i(x, y, z, w):
-	return lib.glVertex4i(x, y, z, w)
+	pass
 
+
+@params('program', 'shadertype', 'index', 'bufsize', 'length', 'name')
 def glGetActiveSubroutineUniformName(program, shadertype, index, bufsize, length):
-	name = ffi.new('GLchar *')
-	return lib.glGetActiveSubroutineUniformName(program, shadertype, index, bufsize, length, name)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix3fv(location, count, transpose, value):
-	return lib.glUniformMatrix3fv(location, count, transpose, value)
+	pass
 
+
+@params('program', 'location', 'bufSize', 'params')
 def glGetnUniformfv(program, location, bufSize):
-	params = ffi.new('GLfloat *')
-	return lib.glGetnUniformfv(program, location, bufSize, params)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribL2dv(index, v):
-	return lib.glVertexAttribL2dv(index, v)
+	pass
 
+
+@params('size', 'type', 'stride', 'pointer')
 def glSecondaryColorPointer(size, type, stride, pointer):
-	return lib.glSecondaryColorPointer(size, type, stride, pointer)
+	pass
 
+
+@params('func', 'ref')
 def glAlphaFunc(func, ref):
-	return lib.glAlphaFunc(func, ref)
+	pass
 
+
+@params('s', 't', 'r', 'q')
 def glTexCoord4d(s, t, r, q):
-	return lib.glTexCoord4d(s, t, r, q)
+	pass
 
+
+@params('index', 'x', 'y')
 def glVertexAttribL2d(index, x, y):
-	return lib.glVertexAttribL2d(index, x, y)
+	pass
 
+
+@params('func', 'ref', 'mask')
 def glStencilFunc(func, ref, mask):
-	return lib.glStencilFunc(func, ref, mask)
+	pass
 
+
+@params('v',)
 def glTexCoord3dv(v):
-	return lib.glTexCoord3dv(v)
+	pass
 
+
+@params('id', 'buffer', 'pname', 'offset')
 def glGetQueryBufferObjectiv(id, buffer, pname, offset):
-	return lib.glGetQueryBufferObjectiv(id, buffer, pname, offset)
+	pass
 
+
+@params('pipeline', 'pname', 'params')
 def glGetProgramPipelineiv(pipeline, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetProgramPipelineiv(pipeline, pname, params)
+	pass
 
+
+@params('indirect',)
 def glDispatchComputeIndirect(indirect):
-	return lib.glDispatchComputeIndirect(indirect)
+	pass
 
+
+@params('shader', 'bufSize', 'length', 'infoLog')
 def glGetShaderInfoLog(shader, bufSize, length, infoLog):
-	return lib.glGetShaderInfoLog(shader, bufSize, length, infoLog)
+	pass
 
+
+@params('index', 'x', 'y', 'z', 'w')
 def glVertexAttribI4i(index, x, y, z, w):
-	return lib.glVertexAttribI4i(index, x, y, z, w)
+	pass
 
+
+@params('v',)
 def glRasterPos2iv(v):
-	return lib.glRasterPos2iv(v)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3uiv(v):
-	return lib.glSecondaryColor3uiv(v)
+	pass
 
+
+@params('x', 'y')
 def glRasterPos2i(x, y):
-	return lib.glRasterPos2i(x, y)
+	pass
 
+
+@params('modeRGB', 'modeAlpha')
 def glBlendEquationSeparate(modeRGB, modeAlpha):
-	return lib.glBlendEquationSeparate(modeRGB, modeAlpha)
+	pass
 
+
+@params('program', 'shadertype', 'name')
 def glGetSubroutineIndex(program, shadertype):
-	name = ffi.new('const GLchar *')
-	return lib.glGetSubroutineIndex(program, shadertype, name)
+	pass
 
+
+@params('mask',)
 def glPushAttrib(mask):
-	return lib.glPushAttrib(mask)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribL3dv(index, v):
-	return lib.glVertexAttribL3dv(index, v)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glLightiv(light, pname):
-	params = ffi.new('const GLint *')
-	return lib.glLightiv(light, pname, params)
+	pass
 
+
+@params('n', 'buffers')
 def glDeleteBuffers(n, buffers):
-	return lib.glDeleteBuffers(n, buffers)
+	pass
 
+
+@params('pipeline',)
 def glBindProgramPipeline(pipeline):
-	return lib.glBindProgramPipeline(pipeline)
+	pass
 
+
+@params('x', 'y', 'width', 'height')
 def glScissor(x, y, width, height):
-	return lib.glScissor(x, y, width, height)
+	pass
 
+
+@params('face', 'pname', 'params')
 def glMaterialfv(face, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glMaterialfv(face, pname, params)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix3dv(location, count, transpose, value):
-	return lib.glUniformMatrix3dv(location, count, transpose, value)
+	pass
 
+
+@params('texture', 'level', 'pname', 'params')
 def glGetTextureLevelParameteriv(texture, level, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTextureLevelParameteriv(texture, level, pname, params)
+	pass
 
+
+@params('name', 'index')
 def glGetStringi(index):
-	name = ffi.new('GLenum *')
-	return lib.glGetStringi(name, index)
+	pass
 
+
+@params('v',)
 def glColor4dv(v):
-	return lib.glColor4dv(v)
+	pass
 
+
+@params('pname', 'params')
 def glPointParameterfv(pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glPointParameterfv(pname, params)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform2fv(location, count, value):
-	return lib.glUniform2fv(location, count, value)
+	pass
 
+
+@params('framebuffer', 'numAttachments', 'attachments', 'x', 'y', 'width', 'height')
 def glInvalidateNamedFramebufferSubData(framebuffer, numAttachments, attachments, x, y, width, height):
-	return lib.glInvalidateNamedFramebufferSubData(framebuffer, numAttachments, attachments, x, y, width, height)
+	pass
 
+
+@params('target', 'index', 'buffer', 'offset', 'size')
 def glBindBufferRange(target, index, buffer, offset, size):
-	return lib.glBindBufferRange(target, index, buffer, offset, size)
+	pass
 
+
+@params('v',)
 def glNormal3iv(v):
-	return lib.glNormal3iv(v)
+	pass
 
+
+@params('program', 'location', 'params')
 def glGetUniformdv(program, location):
-	params = ffi.new('GLdouble *')
-	return lib.glGetUniformdv(program, location, params)
+	pass
 
+
+@params('target', 's', 't', 'r', 'q')
 def glMultiTexCoord4s(target, s, t, r, q):
-	return lib.glMultiTexCoord4s(target, s, t, r, q)
+	pass
 
+
+@params('v',)
 def glTexCoord1iv(v):
-	return lib.glTexCoord1iv(v)
+	pass
 
+
+@params('v',)
 def glColor3uiv(v):
-	return lib.glColor3uiv(v)
+	pass
 
+
+@params('base',)
 def glListBase(base):
-	return lib.glListBase(base)
+	pass
 
+
+@params('sync', 'flags', 'timeout')
 def glClientWaitSync(sync, flags, timeout):
-	return lib.glClientWaitSync(sync, flags, timeout)
+	pass
 
+
+@params('texture', 'internalformat', 'buffer')
 def glTextureBuffer(texture, internalformat, buffer):
-	return lib.glTextureBuffer(texture, internalformat, buffer)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4Nsv(index, v):
-	return lib.glVertexAttrib4Nsv(index, v)
+	pass
 
+
+@params('x', 'y', 'width', 'height', 'format', 'type', 'bufSize', 'data')
 def glReadnPixels(x, y, width, height, format, type, bufSize):
-	data = ffi.new('void *')
-	return lib.glReadnPixels(x, y, width, height, format, type, bufSize, data)
+	pass
 
+
+@params('srcName', 'srcTarget', 'srcLevel', 'srcX', 'srcY', 'srcZ', 'dstName', 'dstTarget', 'dstLevel', 'dstX', 'dstY', 'dstZ', 'srcWidth', 'srcHeight', 'srcDepth')
 def glCopyImageSubData(srcName, srcTarget, srcLevel, srcX, srcY, srcZ, dstName, dstTarget, dstLevel, dstX, dstY, dstZ, srcWidth, srcHeight, srcDepth):
-	return lib.glCopyImageSubData(srcName, srcTarget, srcLevel, srcX, srcY, srcZ, dstName, dstTarget, dstLevel, dstX, dstY, dstZ, srcWidth, srcHeight, srcDepth)
+	pass
 
+
+@params('shadertype', 'location', 'params')
 def glGetUniformSubroutineuiv(shadertype, location):
-	params = ffi.new('GLuint *')
-	return lib.glGetUniformSubroutineuiv(shadertype, location, params)
+	pass
 
+
+@params('bindingindex', 'buffer', 'offset', 'stride')
 def glBindVertexBuffer(bindingindex, buffer, offset, stride):
-	return lib.glBindVertexBuffer(bindingindex, buffer, offset, stride)
+	pass
 
+
+@params('source', 'type', 'id', 'severity', 'length', 'buf')
 def glDebugMessageInsert(source, type, id, severity, length, buf):
-	return lib.glDebugMessageInsert(source, type, id, severity, length, buf)
+	pass
 
+
+@params('sampler',)
 def glIsSampler(sampler):
-	return lib.glIsSampler(sampler)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'x', 'y', 'width')
 def glCopyTexSubImage1D(target, level, xoffset, x, y, width):
-	return lib.glCopyTexSubImage1D(target, level, xoffset, x, y, width)
+	pass
 
+
+@params('s',)
 def glTexCoord1i(s):
-	return lib.glTexCoord1i(s)
+	pass
 
+
+@params('target',)
 def glCheckFramebufferStatus(target):
-	return lib.glCheckFramebufferStatus(target)
+	pass
 
+
+@params('s',)
 def glTexCoord1d(s):
-	return lib.glTexCoord1d(s)
+	pass
 
+
+@params('s',)
 def glTexCoord1f(s):
-	return lib.glTexCoord1f(s)
+	pass
 
+
+@params('unit', 'texture', 'level', 'layered', 'layer', 'access', 'format')
 def glBindImageTexture(unit, texture, level, layered, layer, access, format):
-	return lib.glBindImageTexture(unit, texture, level, layered, layer, access, format)
+	pass
 
+
+@params('program', 'count', 'constvaryings', 'bufferMode')
 def glTransformFeedbackVaryings(program, count, constvaryings, bufferMode):
-	return lib.glTransformFeedbackVaryings(program, count, constvaryings, bufferMode)
+	pass
 
+
+@params('mode', 'start', 'end', 'count', 'type', 'indices')
 def glDrawRangeElements(mode, start, end, count, type, indices):
-	return lib.glDrawRangeElements(mode, start, end, count, type, indices)
+	pass
 
+
+@params('target', 'index', 'buffer')
 def glBindBufferBase(target, index, buffer):
-	return lib.glBindBufferBase(target, index, buffer)
+	pass
 
+
+@params('v',)
 def glColor3bv(v):
-	return lib.glColor3bv(v)
+	pass
 
+
+@params('n', 'samplers')
 def glCreateSamplers(n, samplers):
-	return lib.glCreateSamplers(n, samplers)
+	pass
 
+
+@params('mode', 'first', 'count', 'drawcount')
 def glMultiDrawArrays(mode, first, count, drawcount):
-	return lib.glMultiDrawArrays(mode, first, count, drawcount)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP4ui(type, coords):
-	return lib.glTexCoordP4ui(type, coords)
+	pass
 
+
+@params('index', 'x', 'y', 'z')
 def glVertexAttribI3ui(index, x, y, z):
-	return lib.glVertexAttribI3ui(index, x, y, z)
+	pass
 
+
+@params('attribindex', 'size', 'type', 'relativeoffset')
 def glVertexAttribIFormat(attribindex, size, type, relativeoffset):
-	return lib.glVertexAttribIFormat(attribindex, size, type, relativeoffset)
+	pass
 
+
+@params('n', 'framebuffers')
 def glCreateFramebuffers(n, framebuffers):
-	return lib.glCreateFramebuffers(n, framebuffers)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glClearAccum(red, green, blue, alpha):
-	return lib.glClearAccum(red, green, blue, alpha)
+	pass
 
+
+@params('target', 'id')
 def glBeginQuery(target, id):
-	return lib.glBeginQuery(target, id)
+	pass
 
+
+@params('target', 'u1', 'u2', 'ustride', 'uorder', 'v1', 'v2', 'vstride', 'vorder', 'points')
 def glMap2d(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points):
-	return lib.glMap2d(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points)
+	pass
 
+
+@params('target', 'u1', 'u2', 'ustride', 'uorder', 'v1', 'v2', 'vstride', 'vorder', 'points')
 def glMap2f(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points):
-	return lib.glMap2f(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix2x4fv(location, count, transpose, value):
-	return lib.glUniformMatrix2x4fv(location, count, transpose, value)
+	pass
 
+
+@params('index', 'n', 'f')
 def glDepthRangeIndexed(index, n, f):
-	return lib.glDepthRangeIndexed(index, n, f)
+	pass
 
+
+@params()
 def glGetError():
-	return lib.glGetError()
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexEnviv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTexEnviv(target, pname, params)
+	pass
 
+
+@params('u',)
 def glEvalCoord1d(u):
-	return lib.glEvalCoord1d(u)
+	pass
 
+
+@params('target', 'level', 'pname', 'params')
 def glGetTexLevelParameterfv(target, level, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTexLevelParameterfv(target, level, pname, params)
+	pass
 
+
+@params('u',)
 def glEvalCoord1f(u):
-	return lib.glEvalCoord1f(u)
+	pass
 
+
+@params('map', 'mapsize', 'values')
 def glPixelMapfv(map, mapsize):
-	values = ffi.new('const GLfloat *')
-	return lib.glPixelMapfv(map, mapsize, values)
+	pass
 
+
+@params('map', 'values')
 def glGetPixelMapusv(map):
-	values = ffi.new('GLushort *')
-	return lib.glGetPixelMapusv(map, values)
+	pass
 
+
+@params('op', 'value')
 def glAccum(op, value):
-	return lib.glAccum(op, value)
+	pass
 
+
+@params('v',)
 def glRasterPos3sv(v):
-	return lib.glRasterPos3sv(v)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1')
 def glProgramUniform2ui(program, location, v0, v1):
-	return lib.glProgramUniform2ui(program, location, v0, v1)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2', 'v3')
 def glProgramUniform4ui(program, location, v0, v1, v2, v3):
-	return lib.glProgramUniform4ui(program, location, v0, v1, v2, v3)
+	pass
 
+
+@params('buffer', 'size', 'data', 'usage')
 def glNamedBufferData(buffer, size, usage):
-	data = ffi.new('const void *')
-	return lib.glNamedBufferData(buffer, size, data, usage)
+	pass
 
+
+@params('buffer', 'internalformat', 'offset', 'size', 'format', 'type', 'data')
 def glClearNamedBufferSubData(buffer, internalformat, offset, size, format, type):
-	data = ffi.new('const void *')
-	return lib.glClearNamedBufferSubData(buffer, internalformat, offset, size, format, type, data)
+	pass
 
+
+@params('v1', 'v2')
 def glRectsv(v1, v2):
-	return lib.glRectsv(v1, v2)
+	pass
 
+
+@params('coord', 'pname', 'params')
 def glGetTexGeniv(coord, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTexGeniv(coord, pname, params)
+	pass
 
+
+@params('pname', 'param')
 def glPixelStorei(pname, param):
-	return lib.glPixelStorei(pname, param)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'bufSize', 'pixels')
 def glGetCompressedTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, bufSize):
-	pixels = ffi.new('void *')
-	return lib.glGetCompressedTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, bufSize, pixels)
+	pass
 
+
+@params('flag',)
 def glDepthMask(flag):
-	return lib.glDepthMask(flag)
+	pass
 
+
+@params('pname', 'values')
 def glPatchParameterfv(pname):
-	values = ffi.new('const GLfloat *')
-	return lib.glPatchParameterfv(pname, values)
+	pass
 
+
+@params('texture', 'levels', 'internalformat', 'width', 'height')
 def glTextureStorage2D(texture, levels, internalformat, width, height):
-	return lib.glTextureStorage2D(texture, levels, internalformat, width, height)
+	pass
 
+
+@params('target', 'internalformat', 'buffer', 'offset', 'size')
 def glTexBufferRange(target, internalformat, buffer, offset, size):
-	return lib.glTexBufferRange(target, internalformat, buffer, offset, size)
+	pass
 
+
+@params('v',)
 def glRasterPos4fv(v):
-	return lib.glRasterPos4fv(v)
+	pass
 
+
+@params('u',)
 def glEvalCoord1dv(u):
-	return lib.glEvalCoord1dv(u)
+	pass
 
+
+@params()
 def glPopClientAttrib():
-	return lib.glPopClientAttrib()
+	pass
 
+
+@params('vaobj', 'first', 'count', 'buffers', 'offsets', 'strides')
 def glVertexArrayVertexBuffers(vaobj, first, count, buffers, offsets, strides):
-	return lib.glVertexArrayVertexBuffers(vaobj, first, count, buffers, offsets, strides)
+	pass
 
+
+@params('program', 'pname', 'value')
 def glProgramParameteri(program, pname, value):
-	return lib.glProgramParameteri(program, pname, value)
+	pass
 
+
+@params('target', 'query', 'v')
 def glGetMapfv(target, query, v):
-	return lib.glGetMapfv(target, query, v)
+	pass
 
+
+@params('v',)
 def glRasterPos2fv(v):
-	return lib.glRasterPos2fv(v)
+	pass
 
+
+@params('barriers',)
 def glMemoryBarrierByRegion(barriers):
-	return lib.glMemoryBarrierByRegion(barriers)
+	pass
 
+
+@params('v',)
 def glVertex2sv(v):
-	return lib.glVertex2sv(v)
+	pass
 
+
+@params('v',)
 def glWindowPos2sv(v):
-	return lib.glWindowPos2sv(v)
+	pass
 
+
+@params('type',)
 def glCreateShader(type):
-	return lib.glCreateShader(type)
+	pass
 
+
+@params('n', 'renderbuffers')
 def glGenRenderbuffers(n, renderbuffers):
-	return lib.glGenRenderbuffers(n, renderbuffers)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'x', 'y', 'width', 'height')
 def glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height):
-	return lib.glCopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height)
+	pass
 
+
+@params('sfactorRGB', 'dfactorRGB', 'sfactorAlpha', 'dfactorAlpha')
 def glBlendFuncSeparate(sfactorRGB, dfactorRGB, sfactorAlpha, dfactorAlpha):
-	return lib.glBlendFuncSeparate(sfactorRGB, dfactorRGB, sfactorAlpha, dfactorAlpha)
+	pass
 
+
+@params('v',)
 def glTexCoord2fv(v):
-	return lib.glTexCoord2fv(v)
+	pass
 
+
+@params('v',)
 def glTexCoord4fv(v):
-	return lib.glTexCoord4fv(v)
+	pass
 
+
+@params('size',)
 def glPointSize(size):
-	return lib.glPointSize(size)
+	pass
 
+
+@params('unit', 'texture')
 def glBindTextureUnit(unit, texture):
-	return lib.glBindTextureUnit(unit, texture)
+	pass
 
+
+@params('pipeline', 'bufSize', 'length', 'infoLog')
 def glGetProgramPipelineInfoLog(pipeline, bufSize, length, infoLog):
-	return lib.glGetProgramPipelineInfoLog(pipeline, bufSize, length, infoLog)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4Nuiv(index, v):
-	return lib.glVertexAttrib4Nuiv(index, v)
+	pass
 
+
+@params('sync', 'flags', 'timeout')
 def glWaitSync(sync, flags, timeout):
-	return lib.glWaitSync(sync, flags, timeout)
+	pass
 
+
+@params('buf', 'modeRGB', 'modeAlpha')
 def glBlendEquationSeparatei(buf, modeRGB, modeAlpha):
-	return lib.glBlendEquationSeparatei(buf, modeRGB, modeAlpha)
+	pass
 
+
+@params('location', 'x', 'y', 'z')
 def glUniform3d(location, x, y, z):
-	return lib.glUniform3d(location, x, y, z)
+	pass
 
+
+@params('location', 'v0', 'v1', 'v2')
 def glUniform3f(location, v0, v1, v2):
-	return lib.glUniform3f(location, v0, v1, v2)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform3uiv(program, location, count, value):
-	return lib.glProgramUniform3uiv(program, location, count, value)
+	pass
 
+
+@params('program', 'name')
 def glGetFragDataIndex(program):
-	name = ffi.new('const GLchar *')
-	return lib.glGetFragDataIndex(program, name)
+	pass
 
+
+@params('v',)
 def glColor3sv(v):
-	return lib.glColor3sv(v)
+	pass
 
+
+@params('v',)
 def glVertex4sv(v):
-	return lib.glVertex4sv(v)
+	pass
 
+
+@params('id', 'target')
 def glQueryCounter(id, target):
-	return lib.glQueryCounter(id, target)
+	pass
 
+
+@params('n', 'framebuffers')
 def glDeleteFramebuffers(n, framebuffers):
-	return lib.glDeleteFramebuffers(n, framebuffers)
+	pass
 
+
+@params('mode', 'first', 'count')
 def glDrawArrays(mode, first, count):
-	return lib.glDrawArrays(mode, first, count)
+	pass
 
+
+@params('s', 't', 'r', 'q')
 def glTexCoord4f(s, t, r, q):
-	return lib.glTexCoord4f(s, t, r, q)
+	pass
 
+
+@params('mask',)
 def glClear(mask):
-	return lib.glClear(mask)
+	pass
 
+
+@params('target', 'n', 'ids')
 def glCreateQueries(target, n, ids):
-	return lib.glCreateQueries(target, n, ids)
+	pass
 
+
+@params('sampler', 'pname', 'params')
 def glGetSamplerParameterfv(sampler, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetSamplerParameterfv(sampler, pname, params)
+	pass
 
+
+@params('x', 'y', 'z')
 def glTranslatef(x, y, z):
-	return lib.glTranslatef(x, y, z)
+	pass
 
+
+@params('index', 'x', 'y', 'z', 'w')
 def glVertexAttrib4Nub(index, x, y, z, w):
-	return lib.glVertexAttrib4Nub(index, x, y, z, w)
+	pass
 
+
+@params('x', 'y', 'z')
 def glTranslated(x, y, z):
-	return lib.glTranslated(x, y, z)
+	pass
 
+
+@params('sampler', 'pname', 'param')
 def glSamplerParameterIiv(sampler, pname, param):
-	return lib.glSamplerParameterIiv(sampler, pname, param)
+	pass
 
+
+@params('mode', 'type', 'indirect')
 def glDrawElementsIndirect(mode, type, indirect):
-	return lib.glDrawElementsIndirect(mode, type, indirect)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3bv(v):
-	return lib.glSecondaryColor3bv(v)
+	pass
 
+
+@params('s', 't', 'r', 'q')
 def glTexCoord4s(s, t, r, q):
-	return lib.glTexCoord4s(s, t, r, q)
+	pass
 
+
+@params('id', 'pname', 'params')
 def glGetQueryObjecti64v(id, pname):
-	params = ffi.new('GLint64 *')
-	return lib.glGetQueryObjecti64v(id, pname, params)
+	pass
 
+
+@params('program', 'uniformCount', 'constuniformNames', 'uniformIndices')
 def glGetUniformIndices(program, uniformCount, constuniformNames, uniformIndices):
-	return lib.glGetUniformIndices(program, uniformCount, constuniformNames, uniformIndices)
+	pass
 
+
+@params('v',)
 def glVertex3iv(v):
-	return lib.glVertex3iv(v)
+	pass
 
+
+@params('coord', 'pname', 'params')
 def glTexGenfv(coord, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glTexGenfv(coord, pname, params)
+	pass
 
+
+@params('first', 'count', 'buffers', 'offsets', 'strides')
 def glBindVertexBuffers(first, count, buffers, offsets, strides):
-	return lib.glBindVertexBuffers(first, count, buffers, offsets, strides)
+	pass
 
+
+@params('face', 'pname', 'param')
 def glMateriali(face, pname, param):
-	return lib.glMateriali(face, pname, param)
+	pass
 
+
+@params('array',)
 def glIsVertexArray(array):
-	return lib.glIsVertexArray(array)
+	pass
 
+
+@params('index',)
 def glDisableVertexAttribArray(index):
-	return lib.glDisableVertexAttribArray(index)
+	pass
 
+
+@params('program', 'storageBlockIndex', 'storageBlockBinding')
 def glShaderStorageBlockBinding(program, storageBlockIndex, storageBlockBinding):
-	return lib.glShaderStorageBlockBinding(program, storageBlockIndex, storageBlockBinding)
+	pass
 
+
+@params('face', 'pname', 'param')
 def glMaterialf(face, pname, param):
-	return lib.glMaterialf(face, pname, param)
+	pass
 
+
+@params('texture', 'levels', 'internalformat', 'width')
 def glTextureStorage1D(texture, levels, internalformat, width):
-	return lib.glTextureStorage1D(texture, levels, internalformat, width)
+	pass
 
+
+@params('program', 'programInterface', 'pname', 'params')
 def glGetProgramInterfaceiv(program, programInterface, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetProgramInterfaceiv(program, programInterface, pname, params)
+	pass
 
+
+@params('buffer', 'access')
 def glMapNamedBuffer(buffer, access):
-	return lib.glMapNamedBuffer(buffer, access)
+	pass
 
+
+@params('program', 'location', 'bufSize', 'params')
 def glGetnUniformdv(program, location, bufSize):
-	params = ffi.new('GLdouble *')
-	return lib.glGetnUniformdv(program, location, bufSize, params)
+	pass
 
+
+@params('target', 'first', 'count', 'buffers')
 def glBindBuffersBase(target, first, count, buffers):
-	return lib.glBindBuffersBase(target, first, count, buffers)
+	pass
 
+
+@params('index', 'pname', 'params')
 def glGetVertexAttribIiv(index, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetVertexAttribIiv(index, pname, params)
+	pass
 
+
+@params('type', 'value')
 def glVertexP4uiv(type, value):
-	return lib.glVertexP4uiv(type, value)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribL4dv(index, v):
-	return lib.glVertexAttribL4dv(index, v)
+	pass
 
+
+@params('pname', 'value')
 def glPatchParameteri(pname, value):
-	return lib.glPatchParameteri(pname, value)
+	pass
 
+
+@params('target', 'u1', 'u2', 'stride', 'order', 'points')
 def glMap1d(target, u1, u2, stride, order, points):
-	return lib.glMap1d(target, u1, u2, stride, order, points)
+	pass
 
+
+@params('target', 'u1', 'u2', 'stride', 'order', 'points')
 def glMap1f(target, u1, u2, stride, order, points):
-	return lib.glMap1f(target, u1, u2, stride, order, points)
+	pass
 
+
+@params('framebuffer', 'attachment', 'pname', 'params')
 def glGetNamedFramebufferAttachmentParameteriv(framebuffer, attachment, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetNamedFramebufferAttachmentParameteriv(framebuffer, attachment, pname, params)
+	pass
 
+
+@params('target', 'format', 'type', 'rowBufSize', 'row', 'columnBufSize', 'column', 'span')
 def glGetnSeparableFilter(target, format, type, rowBufSize, row, columnBufSize, column, span):
-	return lib.glGetnSeparableFilter(target, format, type, rowBufSize, row, columnBufSize, column, span)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4sv(index, v):
-	return lib.glVertexAttrib4sv(index, v)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform1dv(program, location, count, value):
-	return lib.glProgramUniform1dv(program, location, count, value)
+	pass
 
+
+@params('light', 'pname', 'param')
 def glLighti(light, pname, param):
-	return lib.glLighti(light, pname, param)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'border', 'format', 'type', 'pixels')
 def glTexImage1D(target, level, internalformat, width, border, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexImage1D(target, level, internalformat, width, border, format, type, pixels)
+	pass
 
+
+@params('light', 'pname', 'param')
 def glLightf(light, pname, param):
-	return lib.glLightf(light, pname, param)
+	pass
 
+
+@params('value', 'invert')
 def glSampleCoverage(value, invert):
-	return lib.glSampleCoverage(value, invert)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3usv(v):
-	return lib.glSecondaryColor3usv(v)
+	pass
 
+
+@params('xfb', 'pname', 'index', 'param')
 def glGetTransformFeedbacki_v(xfb, pname, index, param):
-	return lib.glGetTransformFeedbacki_v(xfb, pname, index, param)
+	pass
 
+
+@params('location', 'v0', 'v1')
 def glUniform2i(location, v0, v1):
-	return lib.glUniform2i(location, v0, v1)
+	pass
 
+
+@params('un', 'u1', 'u2', 'vn', 'v1', 'v2')
 def glMapGrid2f(un, u1, u2, vn, v1, v2):
-	return lib.glMapGrid2f(un, u1, u2, vn, v1, v2)
+	pass
 
+
+@params('index', 'x')
 def glVertexAttribL1d(index, x):
-	return lib.glVertexAttribL1d(index, x)
+	pass
 
+
+@params('target', 'attachment', 'texture', 'level', 'layer')
 def glFramebufferTextureLayer(target, attachment, texture, level, layer):
-	return lib.glFramebufferTextureLayer(target, attachment, texture, level, layer)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform2fv(program, location, count, value):
-	return lib.glProgramUniform2fv(program, location, count, value)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix2x4dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix2x4dv(program, location, count, transpose, value)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexEnvf(target, pname, param):
-	return lib.glTexEnvf(target, pname, param)
+	pass
 
+
+@params('target', 'index', 'data')
 def glGetInteger64i_v(target, index):
-	data = ffi.new('GLint64 *')
-	return lib.glGetInteger64i_v(target, index, data)
+	pass
 
+
+@params('target', 'pname', 'param')
 def glTexEnvi(target, pname, param):
-	return lib.glTexEnvi(target, pname, param)
+	pass
 
+
+@params('srcX0', 'srcY0', 'srcX1', 'srcY1', 'dstX0', 'dstY0', 'dstX1', 'dstY1', 'mask', 'filter')
 def glBlitFramebuffer(srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter):
-	return lib.glBlitFramebuffer(srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter)
+	pass
 
+
+@params('target', 'index')
 def glIsEnabledi(target, index):
-	return lib.glIsEnabledi(target, index)
+	pass
 
+
+@params('s', 't')
 def glTexCoord2i(s, t):
-	return lib.glTexCoord2i(s, t)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP2ui(index, type, normalized, value):
-	return lib.glVertexAttribP2ui(index, type, normalized, value)
+	pass
 
+
+@params('target', 'query', 'v')
 def glGetMapiv(target, query, v):
-	return lib.glGetMapiv(target, query, v)
+	pass
 
+
+@params('ptr', 'length', 'label')
 def glObjectPtrLabel(ptr, length, label):
-	return lib.glObjectPtrLabel(ptr, length, label)
+	pass
 
+
+@params('count', 'bufSize', 'sources', 'types', 'ids', 'severities', 'lengths', 'messageLog')
 def glGetDebugMessageLog(count, bufSize, sources, types, ids, severities, lengths, messageLog):
-	return lib.glGetDebugMessageLog(count, bufSize, sources, types, ids, severities, lengths, messageLog)
+	pass
 
+
+@params('program', 'color', 'name')
 def glBindFragDataLocation(program, color):
-	name = ffi.new('const GLchar *')
-	return lib.glBindFragDataLocation(program, color, name)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3ubv(v):
-	return lib.glSecondaryColor3ubv(v)
+	pass
 
+
+@params('pname', 'param')
 def glLightModelf(pname, param):
-	return lib.glLightModelf(pname, param)
+	pass
 
+
+@params('mode', 'type', 'indirect', 'drawcount', 'stride')
 def glMultiDrawElementsIndirect(mode, type, indirect, drawcount, stride):
-	return lib.glMultiDrawElementsIndirect(mode, type, indirect, drawcount, stride)
+	pass
 
+
+@params('n', 'type', 'lists')
 def glCallLists(n, type, lists):
-	return lib.glCallLists(n, type, lists)
+	pass
 
+
+@params('left', 'right', 'bottom', 'top', 'zNear', 'zFar')
 def glFrustum(left, right, bottom, top, zNear, zFar):
-	return lib.glFrustum(left, right, bottom, top, zNear, zFar)
+	pass
 
+
+@params('s', 't', 'r')
 def glTexCoord3i(s, t, r):
-	return lib.glTexCoord3i(s, t, r)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI3uiv(index, v):
-	return lib.glVertexAttribI3uiv(index, v)
+	pass
 
+
+@params('source', 'id', 'length', 'message')
 def glPushDebugGroup(source, id, length, message):
-	return lib.glPushDebugGroup(source, id, length, message)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP1uiv(texture, type, coords):
-	return lib.glMultiTexCoordP1uiv(texture, type, coords)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'zoffset', 'x', 'y', 'width', 'height')
 def glCopyTexSubImage3D(target, level, xoffset, yoffset, zoffset, x, y, width, height):
-	return lib.glCopyTexSubImage3D(target, level, xoffset, yoffset, zoffset, x, y, width, height)
+	pass
 
+
+@params('program', 'uniformBlockIndex', 'bufSize', 'length', 'uniformBlockName')
 def glGetActiveUniformBlockName(program, uniformBlockIndex, bufSize, length, uniformBlockName):
-	return lib.glGetActiveUniformBlockName(program, uniformBlockIndex, bufSize, length, uniformBlockName)
+	pass
 
+
+@params('s', 't', 'r')
 def glTexCoord3s(s, t, r):
-	return lib.glTexCoord3s(s, t, r)
+	pass
 
+
+@params('n', 'textures', 'residences')
 def glAreTexturesResident(n, textures, residences):
-	return lib.glAreTexturesResident(n, textures, residences)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1')
 def glProgramUniform2d(program, location, v0, v1):
-	return lib.glProgramUniform2d(program, location, v0, v1)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1')
 def glProgramUniform2f(program, location, v0, v1):
-	return lib.glProgramUniform2f(program, location, v0, v1)
+	pass
 
+
+@params('v',)
 def glRasterPos4sv(v):
-	return lib.glRasterPos4sv(v)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4s(red, green, blue, alpha):
-	return lib.glColor4s(red, green, blue, alpha)
+	pass
 
+
+@params('array',)
 def glBindVertexArray(array):
-	return lib.glBindVertexArray(array)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4b(red, green, blue, alpha):
-	return lib.glColor4b(red, green, blue, alpha)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4f(red, green, blue, alpha):
-	return lib.glColor4f(red, green, blue, alpha)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4d(red, green, blue, alpha):
-	return lib.glColor4d(red, green, blue, alpha)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColor4i(red, green, blue, alpha):
-	return lib.glColor4i(red, green, blue, alpha)
+	pass
 
+
+@params('buffer', 'offset', 'size', 'data')
 def glNamedBufferSubData(buffer, offset, size):
-	data = ffi.new('const void *')
-	return lib.glNamedBufferSubData(buffer, offset, size, data)
+	pass
 
+
+@params('v',)
 def glVertex2dv(v):
-	return lib.glVertex2dv(v)
+	pass
 
+
+@params('target', 'framebuffer')
 def glBindFramebuffer(target, framebuffer):
-	return lib.glBindFramebuffer(target, framebuffer)
+	pass
 
+
+@params('v1', 'v2')
 def glRectfv(v1, v2):
-	return lib.glRectfv(v1, v2)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix2x4dv(location, count, transpose, value):
-	return lib.glUniformMatrix2x4dv(location, count, transpose, value)
+	pass
 
+
+@params('program', 'programInterface', 'name')
 def glGetProgramResourceLocationIndex(program, programInterface):
-	name = ffi.new('const GLchar *')
-	return lib.glGetProgramResourceLocationIndex(program, programInterface, name)
+	pass
 
+
+@params('x', 'y', 'width', 'height')
 def glViewport(x, y, width, height):
-	return lib.glViewport(x, y, width, height)
+	pass
 
+
+@params('renderbuffer',)
 def glIsRenderbuffer(renderbuffer):
-	return lib.glIsRenderbuffer(renderbuffer)
+	pass
 
+
+@params('target', 'samples', 'internalformat', 'width', 'height', 'fixedsamplelocations')
 def glTexStorage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations):
-	return lib.glTexStorage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations)
+	pass
 
+
+@params('program', 'shadertype', 'index', 'pname', 'values')
 def glGetActiveSubroutineUniformiv(program, shadertype, index, pname):
-	values = ffi.new('GLint *')
-	return lib.glGetActiveSubroutineUniformiv(program, shadertype, index, pname, values)
+	pass
 
+
+@params('target', 'internalformat', 'buffer')
 def glTexBuffer(target, internalformat, buffer):
-	return lib.glTexBuffer(target, internalformat, buffer)
+	pass
 
+
+@params('i',)
 def glArrayElement(i):
-	return lib.glArrayElement(i)
+	pass
 
+
+@params('program',)
 def glValidateProgram(program):
-	return lib.glValidateProgram(program)
+	pass
 
+
+@params('pipeline', 'program')
 def glActiveShaderProgram(pipeline, program):
-	return lib.glActiveShaderProgram(pipeline, program)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP2uiv(texture, type, coords):
-	return lib.glMultiTexCoordP2uiv(texture, type, coords)
+	pass
 
+
+@params('x1', 'y1', 'x2', 'y2')
 def glRecti(x1, y1, x2, y2):
-	return lib.glRecti(x1, y1, x2, y2)
+	pass
 
+
+@params('x1', 'y1', 'x2', 'y2')
 def glRectf(x1, y1, x2, y2):
-	return lib.glRectf(x1, y1, x2, y2)
+	pass
 
+
+@params('x1', 'y1', 'x2', 'y2')
 def glRectd(x1, y1, x2, y2):
-	return lib.glRectd(x1, y1, x2, y2)
+	pass
 
+
+@params('target', 'texture')
 def glBindTexture(target, texture):
-	return lib.glBindTexture(target, texture)
+	pass
 
+
+@params('x1', 'y1', 'x2', 'y2')
 def glRects(x1, y1, x2, y2):
-	return lib.glRects(x1, y1, x2, y2)
+	pass
 
+
+@params('program', 'shader')
 def glDetachShader(program, shader):
-	return lib.glDetachShader(program, shader)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'width', 'height', 'format', 'type', 'pixels')
 def glTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, type, pixels)
+	pass
 
+
+@params('program', 'programInterface', 'name')
 def glGetProgramResourceLocation(program, programInterface):
-	name = ffi.new('const GLchar *')
-	return lib.glGetProgramResourceLocation(program, programInterface, name)
+	pass
 
+
+@params('index', 'v')
 def glViewportIndexedfv(index, v):
-	return lib.glViewportIndexedfv(index, v)
+	pass
 
+
+@params('mode', 'count', 'type', 'indices', 'basevertex')
 def glDrawElementsBaseVertex(mode, count, type, indices, basevertex):
-	return lib.glDrawElementsBaseVertex(mode, count, type, indices, basevertex)
+	pass
 
+
+@params('target', 'internalformat', 'offset', 'size', 'format', 'type', 'data')
 def glClearBufferSubData(target, internalformat, offset, size, format, type):
-	data = ffi.new('const void *')
-	return lib.glClearBufferSubData(target, internalformat, offset, size, format, type, data)
+	pass
 
+
+@params('target', 'levels', 'internalformat', 'width')
 def glTexStorage1D(target, levels, internalformat, width):
-	return lib.glTexStorage1D(target, levels, internalformat, width)
+	pass
 
+
+@params('program', 'location', 'params')
 def glGetUniformiv(program, location):
-	params = ffi.new('GLint *')
-	return lib.glGetUniformiv(program, location, params)
+	pass
 
+
+@params('target', 'buffer')
 def glBindBuffer(target, buffer):
-	return lib.glBindBuffer(target, buffer)
+	pass
 
+
+@params('location', 'v0', 'v1', 'v2', 'v3')
 def glUniform4ui(location, v0, v1, v2, v3):
-	return lib.glUniform4ui(location, v0, v1, v2, v3)
+	pass
 
+
+@params('coord', 'pname', 'param')
 def glTexGenf(coord, pname, param):
-	return lib.glTexGenf(coord, pname, param)
+	pass
 
+
+@params('coord', 'pname', 'param')
 def glTexGend(coord, pname, param):
-	return lib.glTexGend(coord, pname, param)
+	pass
 
+
+@params('coord', 'pname', 'param')
 def glTexGeni(coord, pname, param):
-	return lib.glTexGeni(coord, pname, param)
+	pass
 
+
+@params('index', 'left', 'bottom', 'width', 'height')
 def glScissorIndexed(index, left, bottom, width, height):
-	return lib.glScissorIndexed(index, left, bottom, width, height)
+	pass
 
+
+@params('v',)
 def glRasterPos4dv(v):
-	return lib.glRasterPos4dv(v)
+	pass
 
+
+@params('v',)
 def glRasterPos2dv(v):
-	return lib.glRasterPos2dv(v)
+	pass
 
+
+@params('v',)
 def glTexCoord2iv(v):
-	return lib.glTexCoord2iv(v)
+	pass
 
+
+@params('type', 'count', 'conststrings')
 def glCreateShaderProgramv(type, count, conststrings):
-	return lib.glCreateShaderProgramv(type, count, conststrings)
+	pass
 
+
+@params('id', 'pname', 'params')
 def glGetQueryObjectiv(id, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetQueryObjectiv(id, pname, params)
+	pass
 
+
+@params('x', 'y')
 def glVertex2s(x, y):
-	return lib.glVertex2s(x, y)
+	pass
 
+
+@params('target',)
 def glGenerateMipmap(target):
-	return lib.glGenerateMipmap(target)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'width', 'height', 'format', 'imageSize', 'data')
 def glCompressedTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, imageSize, data)
+	pass
 
+
+@params('list', 'range')
 def glDeleteLists(list, range):
-	return lib.glDeleteLists(list, range)
+	pass
 
+
+@params('pname', 'param')
 def glPointParameteri(pname, param):
-	return lib.glPointParameteri(pname, param)
+	pass
 
+
+@params('v',)
 def glColor4iv(v):
-	return lib.glColor4iv(v)
+	pass
 
+
+@params('target',)
 def glUnmapBuffer(target):
-	return lib.glUnmapBuffer(target)
+	pass
 
+
+@params('pname', 'param')
 def glPointParameterf(pname, param):
-	return lib.glPointParameterf(pname, param)
+	pass
 
+
+@params('s', 't')
 def glTexCoord2s(s, t):
-	return lib.glTexCoord2s(s, t)
+	pass
 
+
+@params('v',)
 def glTexCoord4dv(v):
-	return lib.glTexCoord4dv(v)
+	pass
 
+
+@params('v',)
 def glNormal3dv(v):
-	return lib.glNormal3dv(v)
+	pass
 
+
+@params()
 def glReleaseShaderCompiler():
-	return lib.glReleaseShaderCompiler()
+	pass
 
+
+@params('v',)
 def glTexCoord1dv(v):
-	return lib.glTexCoord1dv(v)
+	pass
 
+
+@params('x', 'y', 'width', 'height', 'format', 'type', 'pixels')
 def glReadPixels(x, y, width, height, format, type):
-	pixels = ffi.new('void *')
-	return lib.glReadPixels(x, y, width, height, format, type, pixels)
+	pass
 
+
+@params('renderbuffer', 'samples', 'internalformat', 'width', 'height')
 def glNamedRenderbufferStorageMultisample(renderbuffer, samples, internalformat, width, height):
-	return lib.glNamedRenderbufferStorageMultisample(renderbuffer, samples, internalformat, width, height)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI3iv(index, v):
-	return lib.glVertexAttribI3iv(index, v)
+	pass
 
+
+@params('mode',)
 def glShadeModel(mode):
-	return lib.glShadeModel(mode)
+	pass
 
+
+@params('un', 'u1', 'u2')
 def glMapGrid1d(un, u1, u2):
-	return lib.glMapGrid1d(un, u1, u2)
+	pass
 
+
+@params('framebuffer', 'numAttachments', 'attachments')
 def glInvalidateNamedFramebufferData(framebuffer, numAttachments, attachments):
-	return lib.glInvalidateNamedFramebufferData(framebuffer, numAttachments, attachments)
+	pass
 
+
+@params('v1', 'v2')
 def glRectiv(v1, v2):
-	return lib.glRectiv(v1, v2)
+	pass
 
+
+@params('type', 'color')
 def glColorP4ui(type, color):
-	return lib.glColorP4ui(type, color)
+	pass
 
+
+@params('pipeline', 'stages', 'program')
 def glUseProgramStages(pipeline, stages, program):
-	return lib.glUseProgramStages(pipeline, stages, program)
+	pass
 
+
+@params('v',)
 def glRasterPos3dv(v):
-	return lib.glRasterPos3dv(v)
+	pass
 
+
+@params('src',)
 def glReadBuffer(src):
-	return lib.glReadBuffer(src)
+	pass
 
+
+@params('v',)
 def glColor4ubv(v):
-	return lib.glColor4ubv(v)
+	pass
 
+
+@params('target', 'offset', 'size', 'data')
 def glGetBufferSubData(target, offset, size):
-	data = ffi.new('void *')
-	return lib.glGetBufferSubData(target, offset, size, data)
+	pass
 
+
+@params('index', 'pname', 'params')
 def glGetVertexAttribLdv(index, pname):
-	params = ffi.new('GLdouble *')
-	return lib.glGetVertexAttribLdv(index, pname, params)
+	pass
 
+
+@params('program', 'location', 'bufSize', 'params')
 def glGetnUniformuiv(program, location, bufSize):
-	params = ffi.new('GLuint *')
-	return lib.glGetnUniformuiv(program, location, bufSize, params)
+	pass
 
+
+@params('n', 'buffers')
 def glGenBuffers(n, buffers):
-	return lib.glGenBuffers(n, buffers)
+	pass
 
+
+@params('framebuffer', 'buffer', 'drawbuffer', 'value')
 def glClearNamedFramebufferiv(framebuffer, buffer, drawbuffer, value):
-	return lib.glClearNamedFramebufferiv(framebuffer, buffer, drawbuffer, value)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI2iv(index, v):
-	return lib.glVertexAttribI2iv(index, v)
+	pass
 
+
+@params('framebuffer',)
 def glIsFramebuffer(framebuffer):
-	return lib.glIsFramebuffer(framebuffer)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP4uiv(type, coords):
-	return lib.glTexCoordP4uiv(type, coords)
+	pass
 
+
+@params('coord', 'pname', 'params')
 def glTexGendv(coord, pname):
-	params = ffi.new('const GLdouble *')
-	return lib.glTexGendv(coord, pname, params)
+	pass
 
+
+@params('type', 'value')
 def glVertexP2uiv(type, value):
-	return lib.glVertexP2uiv(type, value)
+	pass
 
+
+@params('s', 't')
 def glTexCoord2d(s, t):
-	return lib.glTexCoord2d(s, t)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetBufferParameteri64v(target, pname):
-	params = ffi.new('GLint64 *')
-	return lib.glGetBufferParameteri64v(target, pname, params)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform4dv(program, location, count, value):
-	return lib.glProgramUniform4dv(program, location, count, value)
+	pass
 
+
+@params('s', 't')
 def glTexCoord2f(s, t):
-	return lib.glTexCoord2f(s, t)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord3fv(target, v):
-	return lib.glMultiTexCoord3fv(target, v)
+	pass
 
+
+@params('n', 'renderbuffers')
 def glCreateRenderbuffers(n, renderbuffers):
-	return lib.glCreateRenderbuffers(n, renderbuffers)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4Nusv(index, v):
-	return lib.glVertexAttrib4Nusv(index, v)
+	pass
 
+
+@params('func',)
 def glDepthFunc(func):
-	return lib.glDepthFunc(func)
+	pass
 
+
+@params('sampler', 'pname', 'param')
 def glSamplerParameterf(sampler, pname, param):
-	return lib.glSamplerParameterf(sampler, pname, param)
+	pass
 
+
+@params('buf', 'src', 'dst')
 def glBlendFunci(buf, src, dst):
-	return lib.glBlendFunci(buf, src, dst)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib3dv(index, v):
-	return lib.glVertexAttrib3dv(index, v)
+	pass
 
+
+@params('target', 'size', 'data', 'flags')
 def glBufferStorage(target, size, flags):
-	data = ffi.new('const void *')
-	return lib.glBufferStorage(target, size, data, flags)
+	pass
 
+
+@params('target', 'index', 'data')
 def glGetFloati_v(target, index):
-	data = ffi.new('GLfloat *')
-	return lib.glGetFloati_v(target, index, data)
+	pass
 
+
+@params('program', 'name')
 def glGetUniformLocation(program):
-	name = ffi.new('const GLchar *')
-	return lib.glGetUniformLocation(program, name)
+	pass
 
+
+@params('framebuffer', 'n', 'bufs')
 def glNamedFramebufferDrawBuffers(framebuffer, n, bufs):
-	return lib.glNamedFramebufferDrawBuffers(framebuffer, n, bufs)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform4fv(location, count, value):
-	return lib.glUniform4fv(location, count, value)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP4uiv(index, type, normalized, value):
-	return lib.glVertexAttribP4uiv(index, type, normalized, value)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'imageSize', 'data')
 def glCompressedTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4Nbv(index, v):
-	return lib.glVertexAttrib4Nbv(index, v)
+	pass
 
+
+@params()
 def glEndConditionalRender():
-	return lib.glEndConditionalRender()
+	pass
 
+
+@params('array',)
 def glEnableClientState(array):
-	return lib.glEnableClientState(array)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord2sv(target, v):
-	return lib.glMultiTexCoord2sv(target, v)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform2uiv(program, location, count, value):
-	return lib.glProgramUniform2uiv(program, location, count, value)
+	pass
 
+
+@params('id', 'pname', 'params')
 def glGetQueryObjectuiv(id, pname):
-	params = ffi.new('GLuint *')
-	return lib.glGetQueryObjectuiv(id, pname, params)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4iv(index, v):
-	return lib.glVertexAttrib4iv(index, v)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform1uiv(program, location, count, value):
-	return lib.glProgramUniform1uiv(program, location, count, value)
+	pass
 
+
+@params('target', 'attachment', 'texture', 'level')
 def glFramebufferTexture(target, attachment, texture, level):
-	return lib.glFramebufferTexture(target, attachment, texture, level)
+	pass
 
+
+@params('coord', 'pname', 'params')
 def glGetTexGendv(coord, pname):
-	params = ffi.new('GLdouble *')
-	return lib.glGetTexGendv(coord, pname, params)
+	pass
 
+
+@params('v',)
 def glColor3usv(v):
-	return lib.glColor3usv(v)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix2x4fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix2x4fv(program, location, count, transpose, value)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform2dv(program, location, count, value):
-	return lib.glProgramUniform2dv(program, location, count, value)
+	pass
 
+
+@params('v',)
 def glRasterPos2sv(v):
-	return lib.glRasterPos2sv(v)
+	pass
 
+
+@params('v',)
 def glTexCoord1sv(v):
-	return lib.glTexCoord1sv(v)
+	pass
 
+
+@params('x', 'y')
 def glVertex2i(x, y):
-	return lib.glVertex2i(x, y)
+	pass
 
+
+@params('pname', 'data')
 def glGetFloatv(pname):
-	data = ffi.new('GLfloat *')
-	return lib.glGetFloatv(pname, data)
+	pass
 
+
+@params('x', 'y', 'z')
 def glWindowPos3f(x, y, z):
-	return lib.glWindowPos3f(x, y, z)
+	pass
 
+
+@params('type', 'color')
 def glSecondaryColorP3uiv(type, color):
-	return lib.glSecondaryColorP3uiv(type, color)
+	pass
 
+
+@params('pname', 'data')
 def glGetIntegerv(pname):
-	data = ffi.new('GLint *')
-	return lib.glGetIntegerv(pname, data)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix3dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix3dv(program, location, count, transpose, value)
+	pass
 
+
+@params('id',)
 def glIsQuery(id):
-	return lib.glIsQuery(id)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'height', 'border', 'format', 'type', 'pixels')
 def glTexImage2D(target, level, internalformat, width, height, border, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexImage2D(target, level, internalformat, width, height, border, format, type, pixels)
+	pass
 
+
+@params('width', 'height', 'format', 'type', 'pixels')
 def glDrawPixels(width, height, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glDrawPixels(width, height, format, type, pixels)
+	pass
 
+
+@params('m',)
 def glMultMatrixd(m):
-	return lib.glMultMatrixd(m)
+	pass
 
+
+@params('m',)
 def glMultMatrixf(m):
-	return lib.glMultMatrixf(m)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4Nubv(index, v):
-	return lib.glVertexAttrib4Nubv(index, v)
+	pass
 
+
+@params('v',)
 def glColor4usv(v):
-	return lib.glColor4usv(v)
+	pass
 
+
+@params('un', 'u1', 'u2')
 def glMapGrid1f(un, u1, u2):
-	return lib.glMapGrid1f(un, u1, u2)
+	pass
 
+
+@params('mask',)
 def glPolygonStipple(mask):
-	return lib.glPolygonStipple(mask)
+	pass
 
+
+@params('format', 'stride', 'pointer')
 def glInterleavedArrays(format, stride, pointer):
-	return lib.glInterleavedArrays(format, stride, pointer)
+	pass
 
+
+@params('program', 'shadertype', 'name')
 def glGetSubroutineUniformLocation(program, shadertype):
-	name = ffi.new('const GLchar *')
-	return lib.glGetSubroutineUniformLocation(program, shadertype, name)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetFramebufferParameteriv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetFramebufferParameteriv(target, pname, params)
+	pass
 
+
+@params('map', 'mapsize', 'values')
 def glPixelMapusv(map, mapsize):
-	values = ffi.new('const GLushort *')
-	return lib.glPixelMapusv(map, mapsize, values)
+	pass
 
+
+@params('sampler', 'pname', 'params')
 def glGetSamplerParameteriv(sampler, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetSamplerParameteriv(sampler, pname, params)
+	pass
 
+
+@params('readTarget', 'writeTarget', 'readOffset', 'writeOffset', 'size')
 def glCopyBufferSubData(readTarget, writeTarget, readOffset, writeOffset, size):
-	return lib.glCopyBufferSubData(readTarget, writeTarget, readOffset, writeOffset, size)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI1uiv(index, v):
-	return lib.glVertexAttribI1uiv(index, v)
+	pass
 
+
+@params('v',)
 def glColor3fv(v):
-	return lib.glColor3fv(v)
+	pass
 
+
+@params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name')
 def glGetActiveUniform(program, index, bufSize, length, size, type):
-	name = ffi.new('GLchar *')
-	return lib.glGetActiveUniform(program, index, bufSize, length, size, type, name)
+	pass
 
+
+@params('framebuffer', 'attachment', 'texture', 'level', 'layer')
 def glNamedFramebufferTextureLayer(framebuffer, attachment, texture, level, layer):
-	return lib.glNamedFramebufferTextureLayer(framebuffer, attachment, texture, level, layer)
+	pass
 
+
+@params('index', 'x', 'y', 'z')
 def glVertexAttribL3d(index, x, y, z):
-	return lib.glVertexAttribL3d(index, x, y, z)
+	pass
 
+
+@params('v',)
 def glTexCoord3sv(v):
-	return lib.glTexCoord3sv(v)
+	pass
 
+
+@params('value',)
 def glMinSampleShading(value):
-	return lib.glMinSampleShading(value)
+	pass
 
+
+@params('v',)
 def glVertex2fv(v):
-	return lib.glVertex2fv(v)
+	pass
 
+
+@params('target', 'attachment', 'renderbuffertarget', 'renderbuffer')
 def glFramebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer):
-	return lib.glFramebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer)
+	pass
 
+
+@params('target', 'index', 'data')
 def glGetDoublei_v(target, index):
-	data = ffi.new('GLdouble *')
-	return lib.glGetDoublei_v(target, index, data)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib1sv(index, v):
-	return lib.glVertexAttrib1sv(index, v)
+	pass
 
+
+@params('unit', 'sampler')
 def glBindSampler(unit, sampler):
-	return lib.glBindSampler(unit, sampler)
+	pass
 
+
+@params('width',)
 def glLineWidth(width):
-	return lib.glLineWidth(width)
+	pass
 
+
+@params('target', 'index', 'data')
 def glGetIntegeri_v(target, index):
-	data = ffi.new('GLint *')
-	return lib.glGetIntegeri_v(target, index, data)
+	pass
 
+
+@params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name')
 def glGetTransformFeedbackVarying(program, index, bufSize, length, size, type):
-	name = ffi.new('GLchar *')
-	return lib.glGetTransformFeedbackVarying(program, index, bufSize, length, size, type, name)
+	pass
 
+
+@params('v',)
 def glWindowPos2iv(v):
-	return lib.glWindowPos2iv(v)
+	pass
 
+
+@params('pname', 'params')
 def glFogiv(pname):
-	params = ffi.new('const GLint *')
-	return lib.glFogiv(pname, params)
+	pass
 
+
+@params('pname', 'params')
 def glLightModeliv(pname):
-	params = ffi.new('const GLint *')
-	return lib.glLightModeliv(pname, params)
+	pass
 
+
+@params('n', 'f')
 def glDepthRangef(n, f):
-	return lib.glDepthRangef(n, f)
+	pass
 
+
+@params('target', 'index')
 def glEnablei(target, index):
-	return lib.glEnablei(target, index)
+	pass
 
+
+@params('u',)
 def glEvalCoord1fv(u):
-	return lib.glEvalCoord1fv(u)
+	pass
 
+
+@params('maskNumber', 'mask')
 def glSampleMaski(maskNumber, mask):
-	return lib.glSampleMaski(maskNumber, mask)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix3x2fv(location, count, transpose, value):
-	return lib.glUniformMatrix3x2fv(location, count, transpose, value)
+	pass
 
+
+@params('target', 'internalformat', 'pname', 'bufSize', 'params')
 def glGetInternalformativ(target, internalformat, pname, bufSize):
-	params = ffi.new('GLint *')
-	return lib.glGetInternalformativ(target, internalformat, pname, bufSize, params)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib2dv(index, v):
-	return lib.glVertexAttrib2dv(index, v)
+	pass
 
+
+@params('flag',)
 def glEdgeFlag(flag):
-	return lib.glEdgeFlag(flag)
+	pass
 
+
+@params('program', 'location', 'v0')
 def glProgramUniform1ui(program, location, v0):
-	return lib.glProgramUniform1ui(program, location, v0)
+	pass
 
+
+@params('x', 'y', 'z')
 def glVertex3d(x, y, z):
-	return lib.glVertex3d(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glVertex3f(x, y, z):
-	return lib.glVertex3f(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glVertex3s(x, y, z):
-	return lib.glVertex3s(x, y, z)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP2ui(type, coords):
-	return lib.glTexCoordP2ui(type, coords)
+	pass
 
+
+@params('index', 'r', 'g', 'b', 'a')
 def glColorMaski(index, r, g, b, a):
-	return lib.glColorMaski(index, r, g, b, a)
+	pass
 
+
+@params('readBuffer', 'writeBuffer', 'readOffset', 'writeOffset', 'size')
 def glCopyNamedBufferSubData(readBuffer, writeBuffer, readOffset, writeOffset, size):
-	return lib.glCopyNamedBufferSubData(readBuffer, writeBuffer, readOffset, writeOffset, size)
+	pass
 
+
+@params('target', 'levels', 'internalformat', 'width', 'height', 'depth')
 def glTexStorage3D(target, levels, internalformat, width, height, depth):
-	return lib.glTexStorage3D(target, levels, internalformat, width, height, depth)
+	pass
 
+
+@params('texture', 'pname', 'param')
 def glTextureParameteriv(texture, pname, param):
-	return lib.glTextureParameteriv(texture, pname, param)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix3x4fv(location, count, transpose, value):
-	return lib.glUniformMatrix3x4fv(location, count, transpose, value)
+	pass
 
+
+@params('type', 'stride', 'pointer')
 def glNormalPointer(type, stride, pointer):
-	return lib.glNormalPointer(type, stride, pointer)
+	pass
 
+
+@params('framebuffer', 'attachment', 'texture', 'level')
 def glNamedFramebufferTexture(framebuffer, attachment, texture, level):
-	return lib.glNamedFramebufferTexture(framebuffer, attachment, texture, level)
+	pass
 
+
+@params('token',)
 def glPassThrough(token):
-	return lib.glPassThrough(token)
+	pass
 
+
+@params('type', 'color')
 def glSecondaryColorP3ui(type, color):
-	return lib.glSecondaryColorP3ui(type, color)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix4x3fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix4x3fv(program, location, count, transpose, value)
+	pass
 
+
+@params('mode',)
 def glBegin(mode):
-	return lib.glBegin(mode)
+	pass
 
+
+@params('u',)
 def glEvalCoord2dv(u):
-	return lib.glEvalCoord2dv(u)
+	pass
 
+
+@params('v',)
 def glColor3ubv(v):
-	return lib.glColor3ubv(v)
+	pass
 
+
+@params('type', 'value')
 def glVertexP3ui(type, value):
-	return lib.glVertexP3ui(type, value)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glLightfv(light, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glLightfv(light, pname, params)
+	pass
 
+
+@params('program', 'uniformIndex', 'bufSize', 'length', 'uniformName')
 def glGetActiveUniformName(program, uniformIndex, bufSize, length, uniformName):
-	return lib.glGetActiveUniformName(program, uniformIndex, bufSize, length, uniformName)
+	pass
 
+
+@params('target', 'attachment', 'pname', 'params')
 def glGetFramebufferAttachmentParameteriv(target, attachment, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetFramebufferAttachmentParameteriv(target, attachment, pname, params)
+	pass
 
+
+@params('target', 's', 't')
 def glMultiTexCoord2f(target, s, t):
-	return lib.glMultiTexCoord2f(target, s, t)
+	pass
 
+
+@params('framebuffer', 'buf')
 def glNamedFramebufferDrawBuffer(framebuffer, buf):
-	return lib.glNamedFramebufferDrawBuffer(framebuffer, buf)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexParameteriv(target, pname):
-	params = ffi.new('const GLint *')
-	return lib.glTexParameteriv(target, pname, params)
+	pass
 
+
+@params('vaobj', 'bindingindex', 'buffer', 'offset', 'stride')
 def glVertexArrayVertexBuffer(vaobj, bindingindex, buffer, offset, stride):
-	return lib.glVertexArrayVertexBuffer(vaobj, bindingindex, buffer, offset, stride)
+	pass
 
+
+@params('target', 'level', 'format', 'type', 'pixels')
 def glGetTexImage(target, level, format, type):
-	pixels = ffi.new('void *')
-	return lib.glGetTexImage(target, level, format, type, pixels)
+	pass
 
+
+@params('xfb', 'index', 'buffer')
 def glTransformFeedbackBufferBase(xfb, index, buffer):
-	return lib.glTransformFeedbackBufferBase(xfb, index, buffer)
+	pass
 
+
+@params('c',)
 def glIndexsv(c):
-	return lib.glIndexsv(c)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP3uiv(type, coords):
-	return lib.glTexCoordP3uiv(type, coords)
+	pass
 
+
+@params('width', 'height', 'xorig', 'yorig', 'xmove', 'ymove', 'bitmap')
 def glBitmap(width, height, xorig, yorig, xmove, ymove, bitmap):
-	return lib.glBitmap(width, height, xorig, yorig, xmove, ymove, bitmap)
+	pass
 
+
+@params('buffer', 'offset', 'size', 'data')
 def glGetNamedBufferSubData(buffer, offset, size):
-	data = ffi.new('void *')
-	return lib.glGetNamedBufferSubData(buffer, offset, size, data)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform2iv(program, location, count, value):
-	return lib.glProgramUniform2iv(program, location, count, value)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetQueryiv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetQueryiv(target, pname, params)
+	pass
 
+
+@params('xfb', 'pname', 'param')
 def glGetTransformFeedbackiv(xfb, pname, param):
-	return lib.glGetTransformFeedbackiv(xfb, pname, param)
+	pass
 
+
+@params('s', 't', 'r', 'q')
 def glTexCoord4i(s, t, r, q):
-	return lib.glTexCoord4i(s, t, r, q)
+	pass
 
+
+@params('identifier', 'name', 'length', 'label')
 def glObjectLabel(identifier, length, label):
-	name = ffi.new('GLuint *')
-	return lib.glObjectLabel(identifier, name, length, label)
+	pass
 
+
+@params('pname', 'params')
 def glPointParameteriv(pname):
-	params = ffi.new('const GLint *')
-	return lib.glPointParameteriv(pname, params)
+	pass
 
+
+@params('v',)
 def glNormal3fv(v):
-	return lib.glNormal3fv(v)
+	pass
 
+
+@params('v',)
 def glTexCoord1fv(v):
-	return lib.glTexCoord1fv(v)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord1dv(target, v):
-	return lib.glMultiTexCoord1dv(target, v)
+	pass
 
+
+@params('v',)
 def glTexCoord3fv(v):
-	return lib.glTexCoord3fv(v)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP3uiv(texture, type, coords):
-	return lib.glMultiTexCoordP3uiv(texture, type, coords)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP3ui(index, type, normalized, value):
-	return lib.glVertexAttribP3ui(index, type, normalized, value)
+	pass
 
+
+@params('near', 'far')
 def glDepthRange(near, far):
-	return lib.glDepthRange(near, far)
+	pass
 
+
+@params('buf',)
 def glDrawBuffer(buf):
-	return lib.glDrawBuffer(buf)
+	pass
 
+
+@params('map', 'bufSize', 'values')
 def glGetnPixelMapusv(map, bufSize):
-	values = ffi.new('GLushort *')
-	return lib.glGetnPixelMapusv(map, bufSize, values)
+	pass
 
+
+@params('v',)
 def glRasterPos3fv(v):
-	return lib.glRasterPos3fv(v)
+	pass
 
+
+@params('buffer', 'drawbuffer', 'value')
 def glClearBufferuiv(buffer, drawbuffer, value):
-	return lib.glClearBufferuiv(buffer, drawbuffer, value)
+	pass
 
+
+@params('target', 'internalformat', 'pname', 'bufSize', 'params')
 def glGetInternalformati64v(target, internalformat, pname, bufSize):
-	params = ffi.new('GLint64 *')
-	return lib.glGetInternalformati64v(target, internalformat, pname, bufSize, params)
+	pass
 
+
+@params('c',)
 def glClearIndex(c):
-	return lib.glClearIndex(c)
+	pass
 
+
+@params('index', 'size', 'type', 'stride', 'pointer')
 def glVertexAttribIPointer(index, size, type, stride, pointer):
-	return lib.glVertexAttribIPointer(index, size, type, stride, pointer)
+	pass
 
+
+@params()
 def glFlush():
-	return lib.glFlush()
+	pass
 
+
+@params('mode', 'count', 'type', 'indices', 'instancecount', 'basevertex', 'baseinstance')
 def glDrawElementsInstancedBaseVertexBaseInstance(mode, count, type, indices, instancecount, basevertex, baseinstance):
-	return lib.glDrawElementsInstancedBaseVertexBaseInstance(mode, count, type, indices, instancecount, basevertex, baseinstance)
+	pass
 
+
+@params('target', 'level', 'pname', 'params')
 def glGetTexLevelParameteriv(target, level, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTexLevelParameteriv(target, level, pname, params)
+	pass
 
+
+@params('n', 'textures', 'priorities')
 def glPrioritizeTextures(n, textures, priorities):
-	return lib.glPrioritizeTextures(n, textures, priorities)
+	pass
 
+
+@params('size', 'buffer')
 def glSelectBuffer(size, buffer):
-	return lib.glSelectBuffer(size, buffer)
+	pass
 
+
+@params('target', 'samples', 'internalformat', 'width', 'height', 'depth', 'fixedsamplelocations')
 def glTexStorage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations):
-	return lib.glTexStorage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations)
+	pass
 
+
+@params('target', 'clamp')
 def glClampColor(target, clamp):
-	return lib.glClampColor(target, clamp)
+	pass
 
+
+@params('s',)
 def glClearStencil(s):
-	return lib.glClearStencil(s)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP1uiv(type, coords):
-	return lib.glTexCoordP1uiv(type, coords)
+	pass
 
+
+@params('texture',)
 def glIsTexture(texture):
-	return lib.glIsTexture(texture)
+	pass
 
+
+@params('x', 'y')
 def glVertex2f(x, y):
-	return lib.glVertex2f(x, y)
+	pass
 
+
+@params('x', 'y')
 def glVertex2d(x, y):
-	return lib.glVertex2d(x, y)
+	pass
 
+
+@params('target', 'index', 'id')
 def glBeginQueryIndexed(target, index, id):
-	return lib.glBeginQueryIndexed(target, index, id)
+	pass
 
+
+@params('factor', 'units')
 def glPolygonOffset(factor, units):
-	return lib.glPolygonOffset(factor, units)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'height', 'depth', 'border', 'format', 'type', 'pixels')
 def glTexImage3D(target, level, internalformat, width, height, depth, border, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexImage3D(target, level, internalformat, width, height, depth, border, format, type, pixels)
+	pass
 
+
+@params('program', 'pname', 'params')
 def glGetProgramiv(program, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetProgramiv(program, pname, params)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform4fv(program, location, count, value):
-	return lib.glProgramUniform4fv(program, location, count, value)
+	pass
 
+
+@params('target', 'offset', 'length')
 def glFlushMappedBufferRange(target, offset, length):
-	return lib.glFlushMappedBufferRange(target, offset, length)
+	pass
 
+
+@params('target', 'levels', 'internalformat', 'width', 'height')
 def glTexStorage2D(target, levels, internalformat, width, height):
-	return lib.glTexStorage2D(target, levels, internalformat, width, height)
+	pass
 
+
+@params('n', 'ids')
 def glGenQueries(n, ids):
-	return lib.glGenQueries(n, ids)
+	pass
 
+
+@params('map', 'values')
 def glGetPixelMapfv(map):
-	values = ffi.new('GLfloat *')
-	return lib.glGetPixelMapfv(map, values)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'type', 'pixels')
 def glTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels)
+	pass
 
+
+@params('count', 'samplers')
 def glDeleteSamplers(count, samplers):
-	return lib.glDeleteSamplers(count, samplers)
+	pass
 
+
+@params('texture', 'pname', 'params')
 def glGetTextureParameterfv(texture, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTextureParameterfv(texture, pname, params)
+	pass
 
+
+@params('mode',)
 def glMatrixMode(mode):
-	return lib.glMatrixMode(mode)
+	pass
 
+
+@params('first', 'count', 'textures')
 def glBindTextures(first, count, textures):
-	return lib.glBindTextures(first, count, textures)
+	pass
 
+
+@params('pname', 'data')
 def glGetDoublev(pname):
-	data = ffi.new('GLdouble *')
-	return lib.glGetDoublev(pname, data)
+	pass
 
+
+@params('index', 'x')
 def glVertexAttrib1d(index, x):
-	return lib.glVertexAttrib1d(index, x)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform4dv(location, count, value):
-	return lib.glUniform4dv(location, count, value)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform3dv(program, location, count, value):
-	return lib.glProgramUniform3dv(program, location, count, value)
+	pass
 
+
+@params('buffer',)
 def glInvalidateBufferData(buffer):
-	return lib.glInvalidateBufferData(buffer)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'width', 'format', 'imageSize', 'data')
 def glCompressedTextureSubImage1D(texture, level, xoffset, width, format, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTextureSubImage1D(texture, level, xoffset, width, format, imageSize, data)
+	pass
 
+
+@params('texture', 'level', 'format', 'type', 'data')
 def glClearTexImage(texture, level, format, type):
-	data = ffi.new('const void *')
-	return lib.glClearTexImage(texture, level, format, type, data)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform3fv(location, count, value):
-	return lib.glUniform3fv(location, count, value)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP1ui(texture, type, coords):
-	return lib.glMultiTexCoordP1ui(texture, type, coords)
+	pass
 
+
+@params('xfb', 'pname', 'index', 'param')
 def glGetTransformFeedbacki64_v(xfb, pname, index, param):
-	return lib.glGetTransformFeedbacki64_v(xfb, pname, index, param)
+	pass
 
+
+@params('mode', 'count', 'type', 'constindices', 'drawcount')
 def glMultiDrawElements(mode, count, type, constindices, drawcount):
-	return lib.glMultiDrawElements(mode, count, type, constindices, drawcount)
+	pass
 
+
+@params('n', 'bufs')
 def glDrawBuffers(n, bufs):
-	return lib.glDrawBuffers(n, bufs)
+	pass
 
+
+@params('framebuffer', 'src')
 def glNamedFramebufferReadBuffer(framebuffer, src):
-	return lib.glNamedFramebufferReadBuffer(framebuffer, src)
+	pass
 
+
+@params('coord', 'pname', 'params')
 def glGetTexGenfv(coord, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTexGenfv(coord, pname, params)
+	pass
 
+
+@params('target', 'id')
 def glBindTransformFeedback(target, id):
-	return lib.glBindTransformFeedback(target, id)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord2iv(target, v):
-	return lib.glMultiTexCoord2iv(target, v)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3f(red, green, blue):
-	return lib.glSecondaryColor3f(red, green, blue)
+	pass
 
+
+@params('v',)
 def glRasterPos3iv(v):
-	return lib.glRasterPos3iv(v)
+	pass
 
+
+@params('type', 'value')
 def glVertexP2ui(type, value):
-	return lib.glVertexP2ui(type, value)
+	pass
 
+
+@params('target', 'format', 'type', 'bufSize', 'image')
 def glGetnConvolutionFilter(target, format, type, bufSize, image):
-	return lib.glGetnConvolutionFilter(target, format, type, bufSize, image)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3b(red, green, blue):
-	return lib.glSecondaryColor3b(red, green, blue)
+	pass
 
+
+@params('v',)
 def glTexCoord4sv(v):
-	return lib.glTexCoord4sv(v)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform2uiv(location, count, value):
-	return lib.glUniform2uiv(location, count, value)
+	pass
 
+
+@params()
 def glFinish():
-	return lib.glFinish()
+	pass
 
+
+@params('x', 'y')
 def glRasterPos2s(x, y):
-	return lib.glRasterPos2s(x, y)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform1uiv(location, count, value):
-	return lib.glUniform1uiv(location, count, value)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix2dv(location, count, transpose, value):
-	return lib.glUniformMatrix2dv(location, count, transpose, value)
+	pass
 
+
+@params('c',)
 def glIndexdv(c):
-	return lib.glIndexdv(c)
+	pass
 
+
+@params('v',)
 def glTexCoord3iv(v):
-	return lib.glTexCoord3iv(v)
+	pass
 
+
+@params('depth',)
 def glClearDepth(depth):
-	return lib.glClearDepth(depth)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix4dv(location, count, transpose, value):
-	return lib.glUniformMatrix4dv(location, count, transpose, value)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix4x3dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix4x3dv(program, location, count, transpose, value)
+	pass
 
+
+@params('v',)
 def glVertex4dv(v):
-	return lib.glVertex4dv(v)
+	pass
 
+
+@params('target', 'n', 'textures')
 def glCreateTextures(target, n, textures):
-	return lib.glCreateTextures(target, n, textures)
+	pass
 
+
+@params('n', 'buffers')
 def glCreateBuffers(n, buffers):
-	return lib.glCreateBuffers(n, buffers)
+	pass
 
+
+@params('m',)
 def glMultTransposeMatrixf(m):
-	return lib.glMultTransposeMatrixf(m)
+	pass
 
+
+@params('flag',)
 def glEdgeFlagv(flag):
-	return lib.glEdgeFlagv(flag)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix4x3dv(location, count, transpose, value):
-	return lib.glUniformMatrix4x3dv(location, count, transpose, value)
+	pass
 
+
+@params('n', 'ids')
 def glDeleteQueries(n, ids):
-	return lib.glDeleteQueries(n, ids)
+	pass
 
+
+@params('type', 'coords')
 def glNormalP3uiv(type, coords):
-	return lib.glNormalP3uiv(type, coords)
+	pass
 
+
+@params('x', 'y')
 def glRasterPos2d(x, y):
-	return lib.glRasterPos2d(x, y)
+	pass
 
+
+@params()
 def glInitNames():
-	return lib.glInitNames()
+	pass
 
+
+@params('v',)
 def glColor3dv(v):
-	return lib.glColor3dv(v)
+	pass
 
+
+@params('target', 'reset', 'format', 'type', 'bufSize', 'values')
 def glGetnMinmax(target, reset, format, type, bufSize):
-	values = ffi.new('void *')
-	return lib.glGetnMinmax(target, reset, format, type, bufSize, values)
+	pass
 
+
+@params('framebuffer', 'buffer', 'drawbuffer', 'value')
 def glClearNamedFramebufferuiv(framebuffer, buffer, drawbuffer, value):
-	return lib.glClearNamedFramebufferuiv(framebuffer, buffer, drawbuffer, value)
+	pass
 
+
+@params('index', 'pname', 'params')
 def glGetVertexAttribfv(index, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetVertexAttribfv(index, pname, params)
+	pass
 
+
+@params('num_groups_x', 'num_groups_y', 'num_groups_z')
 def glDispatchCompute(num_groups_x, num_groups_y, num_groups_z):
-	return lib.glDispatchCompute(num_groups_x, num_groups_y, num_groups_z)
+	pass
 
+
+@params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name')
 def glGetActiveAttrib(program, index, bufSize, length, size, type):
-	name = ffi.new('GLchar *')
-	return lib.glGetActiveAttrib(program, index, bufSize, length, size, type, name)
+	pass
 
+
+@params('location', 'v0', 'v1', 'v2')
 def glUniform3i(location, v0, v1, v2):
-	return lib.glUniform3i(location, v0, v1, v2)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'width', 'height', 'format', 'type', 'pixels')
 def glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels)
+	pass
 
+
+@params('opcode',)
 def glLogicOp(opcode):
-	return lib.glLogicOp(opcode)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix3x4fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix3x4fv(program, location, count, transpose, value)
+	pass
 
+
+@params('pname', 'param')
 def glPixelTransferf(pname, param):
-	return lib.glPixelTransferf(pname, param)
+	pass
 
+
+@params('texture', 'pname', 'params')
 def glGetTextureParameterIuiv(texture, pname):
-	params = ffi.new('GLuint *')
-	return lib.glGetTextureParameterIuiv(texture, pname, params)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix4dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix4dv(program, location, count, transpose, value)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix3x4dv(location, count, transpose, value):
-	return lib.glUniformMatrix3x4dv(location, count, transpose, value)
+	pass
 
+
+@params('mode', 'id', 'stream')
 def glDrawTransformFeedbackStream(mode, id, stream):
-	return lib.glDrawTransformFeedbackStream(mode, id, stream)
+	pass
 
+
+@params('location', 'v0', 'v1', 'v2')
 def glUniform3ui(location, v0, v1, v2):
-	return lib.glUniform3ui(location, v0, v1, v2)
+	pass
 
+
+@params('mode',)
 def glProvokingVertex(mode):
-	return lib.glProvokingVertex(mode)
+	pass
 
+
+@params('count', 'shaders', 'binaryformat', 'binary', 'length')
 def glShaderBinary(count, shaders, binaryformat, binary, length):
-	return lib.glShaderBinary(count, shaders, binaryformat, binary, length)
+	pass
 
+
+@params('coord', 'pname', 'params')
 def glTexGeniv(coord, pname):
-	params = ffi.new('const GLint *')
-	return lib.glTexGeniv(coord, pname, params)
+	pass
 
+
+@params('mode', 'count', 'type', 'indices')
 def glDrawElements(mode, count, type, indices):
-	return lib.glDrawElements(mode, count, type, indices)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform4iv(program, location, count, value):
-	return lib.glProgramUniform4iv(program, location, count, value)
+	pass
 
+
+@params('texture',)
 def glClientActiveTexture(texture):
-	return lib.glClientActiveTexture(texture)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform1iv(location, count, value):
-	return lib.glUniform1iv(location, count, value)
+	pass
 
+
+@params('mode', 'first', 'count', 'instancecount')
 def glDrawArraysInstanced(mode, first, count, instancecount):
-	return lib.glDrawArraysInstanced(mode, first, count, instancecount)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4uiv(index, v):
-	return lib.glVertexAttrib4uiv(index, v)
+	pass
 
+
+@params('target', 'index')
 def glEndQueryIndexed(target, index):
-	return lib.glEndQueryIndexed(target, index)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform1iv(program, location, count, value):
-	return lib.glProgramUniform1iv(program, location, count, value)
+	pass
 
+
+@params('target', 'renderbuffer')
 def glBindRenderbuffer(target, renderbuffer):
-	return lib.glBindRenderbuffer(target, renderbuffer)
+	pass
 
+
+@params('face', 'pname', 'params')
 def glMaterialiv(face, pname):
-	params = ffi.new('const GLint *')
-	return lib.glMaterialiv(face, pname, params)
+	pass
 
+
+@params('program',)
 def glIsProgram(program):
-	return lib.glIsProgram(program)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4fv(index, v):
-	return lib.glVertexAttrib4fv(index, v)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix2x3dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix2x3dv(program, location, count, transpose, value)
+	pass
 
+
+@params('map', 'bufSize', 'values')
 def glGetnPixelMapfv(map, bufSize):
-	values = ffi.new('GLfloat *')
-	return lib.glGetnPixelMapfv(map, bufSize, values)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib2fv(index, v):
-	return lib.glVertexAttrib2fv(index, v)
+	pass
 
+
+@params('array',)
 def glDisableClientState(array):
-	return lib.glDisableClientState(array)
+	pass
 
+
+@params('v',)
 def glColor4uiv(v):
-	return lib.glColor4uiv(v)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2')
 def glProgramUniform3i(program, location, v0, v1, v2):
-	return lib.glProgramUniform3i(program, location, v0, v1, v2)
+	pass
 
+
+@params('mode', 'i1', 'i2', 'j1', 'j2')
 def glEvalMesh2(mode, i1, i2, j1, j2):
-	return lib.glEvalMesh2(mode, i1, i2, j1, j2)
+	pass
 
+
+@params('mode', 'i1', 'i2')
 def glEvalMesh1(mode, i1, i2):
-	return lib.glEvalMesh1(mode, i1, i2)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2')
 def glProgramUniform3d(program, location, v0, v1, v2):
-	return lib.glProgramUniform3d(program, location, v0, v1, v2)
+	pass
 
+
+@params('u',)
 def glEvalCoord2fv(u):
-	return lib.glEvalCoord2fv(u)
+	pass
 
+
+@params('m',)
 def glLoadTransposeMatrixd(m):
-	return lib.glLoadTransposeMatrixd(m)
+	pass
 
+
+@params('m',)
 def glLoadTransposeMatrixf(m):
-	return lib.glLoadTransposeMatrixf(m)
+	pass
 
+
+@params('index', 'x')
 def glVertexAttribI1ui(index, x):
-	return lib.glVertexAttribI1ui(index, x)
+	pass
 
+
+@params('bufSize', 'pattern')
 def glGetnPolygonStipple(bufSize, pattern):
-	return lib.glGetnPolygonStipple(bufSize, pattern)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth')
 def glInvalidateTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth):
-	return lib.glInvalidateTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth)
+	pass
 
+
+@params('pname', 'data')
 def glGetInteger64v(pname):
-	data = ffi.new('GLint64 *')
-	return lib.glGetInteger64v(pname, data)
+	pass
 
+
+@params('plane', 'equation')
 def glClipPlane(plane, equation):
-	return lib.glClipPlane(plane, equation)
+	pass
 
+
+@params('c',)
 def glIndexub(c):
-	return lib.glIndexub(c)
+	pass
 
+
+@params('framebuffer', 'attachment', 'renderbuffertarget', 'renderbuffer')
 def glNamedFramebufferRenderbuffer(framebuffer, attachment, renderbuffertarget, renderbuffer):
-	return lib.glNamedFramebufferRenderbuffer(framebuffer, attachment, renderbuffertarget, renderbuffer)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4Niv(index, v):
-	return lib.glVertexAttrib4Niv(index, v)
+	pass
 
+
+@params('buffer', 'drawbuffer', 'value')
 def glClearBufferiv(buffer, drawbuffer, value):
-	return lib.glClearBufferiv(buffer, drawbuffer, value)
+	pass
 
+
+@params('type', 'color')
 def glColorP4uiv(type, color):
-	return lib.glColorP4uiv(type, color)
+	pass
 
+
+@params('texture', 'level', 'pname', 'params')
 def glGetTextureLevelParameterfv(texture, level, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTextureLevelParameterfv(texture, level, pname, params)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord1fv(target, v):
-	return lib.glMultiTexCoord1fv(target, v)
+	pass
 
+
+@params('sampler', 'pname', 'params')
 def glGetSamplerParameterIuiv(sampler, pname):
-	params = ffi.new('GLuint *')
-	return lib.glGetSamplerParameterIuiv(sampler, pname, params)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP3ui(type, coords):
-	return lib.glTexCoordP3ui(type, coords)
+	pass
 
+
+@params('location', 'v0', 'v1')
 def glUniform2f(location, v0, v1):
-	return lib.glUniform2f(location, v0, v1)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'width', 'format', 'type', 'pixels')
 def glTextureSubImage1D(texture, level, xoffset, width, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTextureSubImage1D(texture, level, xoffset, width, format, type, pixels)
+	pass
 
+
+@params('x', 'y', 'z')
 def glWindowPos3s(x, y, z):
-	return lib.glWindowPos3s(x, y, z)
+	pass
 
+
+@params('d',)
 def glClearDepthf(d):
-	return lib.glClearDepthf(d)
+	pass
 
+
+@params('texture', 'internalformat', 'buffer', 'offset', 'size')
 def glTextureBufferRange(texture, internalformat, buffer, offset, size):
-	return lib.glTextureBufferRange(texture, internalformat, buffer, offset, size)
+	pass
 
+
+@params('x', 'y', 'z')
 def glWindowPos3i(x, y, z):
-	return lib.glWindowPos3i(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glWindowPos3d(x, y, z):
-	return lib.glWindowPos3d(x, y, z)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP4ui(texture, type, coords):
-	return lib.glMultiTexCoordP4ui(texture, type, coords)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3us(red, green, blue):
-	return lib.glColor3us(red, green, blue)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glGetLightiv(light, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetLightiv(light, pname, params)
+	pass
 
+
+@params('target', 's', 't', 'r', 'q')
 def glMultiTexCoord4f(target, s, t, r, q):
-	return lib.glMultiTexCoord4f(target, s, t, r, q)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3ub(red, green, blue):
-	return lib.glColor3ub(red, green, blue)
+	pass
 
+
+@params('target', 's', 't', 'r', 'q')
 def glMultiTexCoord4d(target, s, t, r, q):
-	return lib.glMultiTexCoord4d(target, s, t, r, q)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glColor3ui(red, green, blue):
-	return lib.glColor3ui(red, green, blue)
+	pass
 
+
+@params('target', 's', 't', 'r', 'q')
 def glMultiTexCoord4i(target, s, t, r, q):
-	return lib.glMultiTexCoord4i(target, s, t, r, q)
+	pass
 
+
+@params('mask',)
 def glGetPolygonStipple(mask):
-	return lib.glGetPolygonStipple(mask)
+	pass
 
+
+@params('location', 'x', 'y')
 def glUniform2d(location, x, y):
-	return lib.glUniform2d(location, x, y)
+	pass
 
+
+@params('index', 'x', 'y', 'z', 'w')
 def glVertexAttribI4ui(index, x, y, z, w):
-	return lib.glVertexAttribI4ui(index, x, y, z, w)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glColorMask(red, green, blue, alpha):
-	return lib.glColorMask(red, green, blue, alpha)
+	pass
 
+
+@params('target', 'level', 'format', 'type', 'bufSize', 'pixels')
 def glGetnTexImage(target, level, format, type, bufSize):
-	pixels = ffi.new('void *')
-	return lib.glGetnTexImage(target, level, format, type, bufSize, pixels)
+	pass
 
+
+@params('mode',)
 def glBlendEquation(mode):
-	return lib.glBlendEquation(mode)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord3dv(target, v):
-	return lib.glMultiTexCoord3dv(target, v)
+	pass
 
+
+@params('v',)
 def glColor4sv(v):
-	return lib.glColor4sv(v)
+	pass
 
+
+@params('program', 'programInterface', 'index', 'propCount', 'props', 'bufSize', 'length', 'params')
 def glGetProgramResourceiv(program, programInterface, index, propCount, props, bufSize, length):
-	params = ffi.new('GLint *')
-	return lib.glGetProgramResourceiv(program, programInterface, index, propCount, props, bufSize, length, params)
+	pass
 
+
+@params('target', 'internalformat', 'format', 'type', 'data')
 def glClearBufferData(target, internalformat, format, type):
-	data = ffi.new('const void *')
-	return lib.glClearBufferData(target, internalformat, format, type, data)
+	pass
 
+
+@params('primitiveMode',)
 def glBeginTransformFeedback(primitiveMode):
-	return lib.glBeginTransformFeedback(primitiveMode)
+	pass
 
+
+@params('v',)
 def glColor3iv(v):
-	return lib.glColor3iv(v)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib3sv(index, v):
-	return lib.glVertexAttrib3sv(index, v)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'border', 'imageSize', 'data')
 def glCompressedTexImage1D(target, level, internalformat, width, border, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTexImage1D(target, level, internalformat, width, border, imageSize, data)
+	pass
 
+
+@params('n', 'ids')
 def glDeleteTransformFeedbacks(n, ids):
-	return lib.glDeleteTransformFeedbacks(n, ids)
+	pass
 
+
+@params('mode', 'start', 'end', 'count', 'type', 'indices', 'basevertex')
 def glDrawRangeElementsBaseVertex(mode, start, end, count, type, indices, basevertex):
-	return lib.glDrawRangeElementsBaseVertex(mode, start, end, count, type, indices, basevertex)
+	pass
 
+
+@params('program', 'index', 'name')
 def glBindAttribLocation(program, index):
-	name = ffi.new('const GLchar *')
-	return lib.glBindAttribLocation(program, index, name)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib1dv(index, v):
-	return lib.glVertexAttrib1dv(index, v)
+	pass
 
+
+@params('buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha')
 def glBlendFuncSeparatei(buf, srcRGB, dstRGB, srcAlpha, dstAlpha):
-	return lib.glBlendFuncSeparatei(buf, srcRGB, dstRGB, srcAlpha, dstAlpha)
+	pass
 
+
+@params('location', 'v0', 'v1')
 def glUniform2ui(location, v0, v1):
-	return lib.glUniform2ui(location, v0, v1)
+	pass
 
+
+@params('pname', 'param')
 def glPixelTransferi(pname, param):
-	return lib.glPixelTransferi(pname, param)
+	pass
 
+
+@params('v',)
 def glWindowPos2fv(v):
-	return lib.glWindowPos2fv(v)
+	pass
 
+
+@params('target', 'index')
 def glDisablei(target, index):
-	return lib.glDisablei(target, index)
+	pass
 
+
+@params('sync', 'pname', 'bufSize', 'length', 'values')
 def glGetSynciv(sync, pname, bufSize, length):
-	values = ffi.new('GLint *')
-	return lib.glGetSynciv(sync, pname, bufSize, length, values)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1')
 def glProgramUniform2i(program, location, v0, v1):
-	return lib.glProgramUniform2i(program, location, v0, v1)
+	pass
 
+
+@params('program', 'bufSize', 'length', 'binaryFormat', 'binary')
 def glGetProgramBinary(program, bufSize, length, binaryFormat, binary):
-	return lib.glGetProgramBinary(program, bufSize, length, binaryFormat, binary)
+	pass
 
+
+@params('i',)
 def glEvalPoint1(i):
-	return lib.glEvalPoint1(i)
+	pass
 
+
+@params('i', 'j')
 def glEvalPoint2(i, j):
-	return lib.glEvalPoint2(i, j)
+	pass
 
+
+@params()
 def glPauseTransformFeedback():
-	return lib.glPauseTransformFeedback()
+	pass
 
+
+@params('n', 'ids')
 def glCreateTransformFeedbacks(n, ids):
-	return lib.glCreateTransformFeedbacks(n, ids)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'width', 'format', 'type', 'pixels')
 def glTexSubImage1D(target, level, xoffset, width, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTexSubImage1D(target, level, xoffset, width, format, type, pixels)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP3uiv(index, type, normalized, value):
-	return lib.glVertexAttribP3uiv(index, type, normalized, value)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI4iv(index, v):
-	return lib.glVertexAttribI4iv(index, v)
+	pass
 
+
+@params('vaobj', 'pname', 'param')
 def glGetVertexArrayiv(vaobj, pname, param):
-	return lib.glGetVertexArrayiv(vaobj, pname, param)
+	pass
 
+
+@params('name',)
 def glLoadName():
-	name = ffi.new('GLuint *')
-	return lib.glLoadName(name)
+	pass
 
+
+@params('m',)
 def glLoadMatrixf(m):
-	return lib.glLoadMatrixf(m)
+	pass
 
+
+@params('m',)
 def glLoadMatrixd(m):
-	return lib.glLoadMatrixd(m)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexParameterfv(target, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glTexParameterfv(target, pname, params)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform3dv(location, count, value):
-	return lib.glUniform3dv(location, count, value)
+	pass
 
+
+@params('face', 'func', 'ref', 'mask')
 def glStencilFuncSeparate(face, func, ref, mask):
-	return lib.glStencilFuncSeparate(face, func, ref, mask)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform3fv(program, location, count, value):
-	return lib.glProgramUniform3fv(program, location, count, value)
+	pass
 
+
+@params('first', 'count', 'samplers')
 def glBindSamplers(first, count, samplers):
-	return lib.glBindSamplers(first, count, samplers)
+	pass
 
+
+@params('id', 'pname', 'params')
 def glGetQueryObjectui64v(id, pname):
-	params = ffi.new('GLuint64 *')
-	return lib.glGetQueryObjectui64v(id, pname, params)
+	pass
 
+
+@params('texture', 'level', 'format', 'type', 'bufSize', 'pixels')
 def glGetTextureImage(texture, level, format, type, bufSize):
-	pixels = ffi.new('void *')
-	return lib.glGetTextureImage(texture, level, format, type, bufSize, pixels)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform1fv(program, location, count, value):
-	return lib.glProgramUniform1fv(program, location, count, value)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix4fv(location, count, transpose, value):
-	return lib.glUniformMatrix4fv(location, count, transpose, value)
+	pass
 
+
+@params('n', 'pipelines')
 def glDeleteProgramPipelines(n, pipelines):
-	return lib.glDeleteProgramPipelines(n, pipelines)
+	pass
 
+
+@params('v',)
 def glVertex3fv(v):
-	return lib.glVertex3fv(v)
+	pass
 
+
+@params('x', 'y')
 def glWindowPos2s(x, y):
-	return lib.glWindowPos2s(x, y)
+	pass
 
+
+@params('x', 'y')
 def glWindowPos2i(x, y):
-	return lib.glWindowPos2i(x, y)
+	pass
 
+
+@params('x', 'y')
 def glWindowPos2f(x, y):
-	return lib.glWindowPos2f(x, y)
+	pass
 
+
+@params('x', 'y')
 def glWindowPos2d(x, y):
-	return lib.glWindowPos2d(x, y)
+	pass
 
+
+@params('shadertype', 'count', 'indices')
 def glUniformSubroutinesuiv(shadertype, count, indices):
-	return lib.glUniformSubroutinesuiv(shadertype, count, indices)
+	pass
 
+
+@params('v1', 'v2')
 def glRectdv(v1, v2):
-	return lib.glRectdv(v1, v2)
+	pass
 
+
+@params('type', 'color')
 def glColorP3uiv(type, color):
-	return lib.glColorP3uiv(type, color)
+	pass
 
+
+@params('coord',)
 def glFogCoordfv(coord):
-	return lib.glFogCoordfv(coord)
+	pass
 
+
+@params('shader',)
 def glCompileShader(shader):
-	return lib.glCompileShader(shader)
+	pass
 
+
+@params('c',)
 def glIndexfv(c):
-	return lib.glIndexfv(c)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP3ui(texture, type, coords):
-	return lib.glMultiTexCoordP3ui(texture, type, coords)
+	pass
 
+
+@params('v',)
 def glNormal3sv(v):
-	return lib.glNormal3sv(v)
+	pass
 
+
+@params('target', 'numAttachments', 'attachments')
 def glInvalidateFramebuffer(target, numAttachments, attachments):
-	return lib.glInvalidateFramebuffer(target, numAttachments, attachments)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'height', 'border', 'imageSize', 'data')
 def glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data)
+	pass
 
+
+@params('index', 'x')
 def glVertexAttrib1f(index, x):
-	return lib.glVertexAttrib1f(index, x)
+	pass
 
+
+@params('v',)
 def glVertex4fv(v):
-	return lib.glVertex4fv(v)
+	pass
 
+
+@params('framebuffer', 'buffer', 'drawbuffer', 'depth', 'stencil')
 def glClearNamedFramebufferfi(framebuffer, buffer, drawbuffer, depth, stencil):
-	return lib.glClearNamedFramebufferfi(framebuffer, buffer, drawbuffer, depth, stencil)
+	pass
 
+
+@params('id', 'buffer', 'pname', 'offset')
 def glGetQueryBufferObjectuiv(id, buffer, pname, offset):
-	return lib.glGetQueryBufferObjectuiv(id, buffer, pname, offset)
+	pass
 
+
+@params('framebuffer', 'buffer', 'drawbuffer', 'value')
 def glClearNamedFramebufferfv(framebuffer, buffer, drawbuffer, value):
-	return lib.glClearNamedFramebufferfv(framebuffer, buffer, drawbuffer, value)
+	pass
 
+
+@params('index', 'x')
 def glVertexAttrib1s(index, x):
-	return lib.glVertexAttrib1s(index, x)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord1sv(target, v):
-	return lib.glMultiTexCoord1sv(target, v)
+	pass
 
+
+@params('program',)
 def glDeleteProgram(program):
-	return lib.glDeleteProgram(program)
+	pass
 
+
+@params('v',)
 def glColor4bv(v):
-	return lib.glColor4bv(v)
+	pass
 
+
+@params('x', 'y')
 def glRasterPos2f(x, y):
-	return lib.glRasterPos2f(x, y)
+	pass
 
+
+@params()
 def glLoadIdentity():
-	return lib.glLoadIdentity()
+	pass
 
+
+@params('v',)
 def glRasterPos4iv(v):
-	return lib.glRasterPos4iv(v)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix4x3fv(location, count, transpose, value):
-	return lib.glUniformMatrix4x3fv(location, count, transpose, value)
+	pass
 
+
+@params('buffer', 'drawbuffer', 'value')
 def glClearBufferfv(buffer, drawbuffer, value):
-	return lib.glClearBufferfv(buffer, drawbuffer, value)
+	pass
 
+
+@params()
 def glTextureBarrier():
-	return lib.glTextureBarrier()
+	pass
 
+
+@params('buffer', 'drawbuffer', 'depth', 'stencil')
 def glClearBufferfi(buffer, drawbuffer, depth, stencil):
-	return lib.glClearBufferfi(buffer, drawbuffer, depth, stencil)
+	pass
 
+
+@params('mode', 'indirect')
 def glDrawArraysIndirect(mode, indirect):
-	return lib.glDrawArraysIndirect(mode, indirect)
+	pass
 
+
+@params('n', 'arrays')
 def glGenVertexArrays(n, arrays):
-	return lib.glGenVertexArrays(n, arrays)
+	pass
 
+
+@params('vaobj', 'index')
 def glEnableVertexArrayAttrib(vaobj, index):
-	return lib.glEnableVertexArrayAttrib(vaobj, index)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix3x2dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix3x2dv(program, location, count, transpose, value)
+	pass
 
+
+@params('bindingindex', 'divisor')
 def glVertexBindingDivisor(bindingindex, divisor):
-	return lib.glVertexBindingDivisor(bindingindex, divisor)
+	pass
 
+
+@params('sampler', 'pname', 'params')
 def glGetSamplerParameterIiv(sampler, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetSamplerParameterIiv(sampler, pname, params)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix4x2fv(location, count, transpose, value):
-	return lib.glUniformMatrix4x2fv(location, count, transpose, value)
+	pass
 
+
+@params('index', 'x', 'y', 'z')
 def glVertexAttrib3f(index, x, y, z):
-	return lib.glVertexAttrib3f(index, x, y, z)
+	pass
 
+
+@params('id', 'buffer', 'pname', 'offset')
 def glGetQueryBufferObjecti64v(id, buffer, pname, offset):
-	return lib.glGetQueryBufferObjecti64v(id, buffer, pname, offset)
+	pass
 
+
+@params('index', 'pname', 'params')
 def glGetVertexAttribdv(index, pname):
-	params = ffi.new('GLdouble *')
-	return lib.glGetVertexAttribdv(index, pname, params)
+	pass
 
+
+@params('location', 'v0')
 def glUniform1ui(location, v0):
-	return lib.glUniform1ui(location, v0)
+	pass
 
+
+@params('readFramebuffer', 'drawFramebuffer', 'srcX0', 'srcY0', 'srcX1', 'srcY1', 'dstX0', 'dstY0', 'dstX1', 'dstY1', 'mask', 'filter')
 def glBlitNamedFramebuffer(readFramebuffer, drawFramebuffer, srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter):
-	return lib.glBlitNamedFramebuffer(readFramebuffer, drawFramebuffer, srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter)
+	pass
 
+
+@params('index', 'x', 'y', 'z')
 def glVertexAttrib3d(index, x, y, z):
-	return lib.glVertexAttrib3d(index, x, y, z)
+	pass
 
+
+@params('barriers',)
 def glMemoryBarrier(barriers):
-	return lib.glMemoryBarrier(barriers)
+	pass
 
+
+@params('program', 'name')
 def glGetFragDataLocation(program):
-	name = ffi.new('const GLchar *')
-	return lib.glGetFragDataLocation(program, name)
+	pass
 
+
+@params('face', 'pname', 'params')
 def glGetMaterialfv(face, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetMaterialfv(face, pname, params)
+	pass
 
+
+@params('map', 'mapsize', 'values')
 def glPixelMapuiv(map, mapsize):
-	values = ffi.new('const GLuint *')
-	return lib.glPixelMapuiv(map, mapsize, values)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'type', 'data')
 def glClearTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type):
-	data = ffi.new('const void *')
-	return lib.glClearTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, data)
+	pass
 
+
+@params('texture', 'pname', 'params')
 def glGetTextureParameterIiv(texture, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTextureParameterIiv(texture, pname, params)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI4ubv(index, v):
-	return lib.glVertexAttribI4ubv(index, v)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix4x2dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix4x2dv(program, location, count, transpose, value)
+	pass
 
+
+@params('shader',)
 def glIsShader(shader):
-	return lib.glIsShader(shader)
+	pass
 
+
+@params('cap',)
 def glEnable(cap):
-	return lib.glEnable(cap)
+	pass
 
+
+@params('program', 'uniformCount', 'uniformIndices', 'pname', 'params')
 def glGetActiveUniformsiv(program, uniformCount, uniformIndices, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetActiveUniformsiv(program, uniformCount, uniformIndices, pname, params)
+	pass
 
+
+@params('buf', 'mode')
 def glBlendEquationi(buf, mode):
-	return lib.glBlendEquationi(buf, mode)
+	pass
 
+
+@params('program', 'name')
 def glGetAttribLocation(program):
-	name = ffi.new('const GLchar *')
-	return lib.glGetAttribLocation(program, name)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4dv(index, v):
-	return lib.glVertexAttrib4dv(index, v)
+	pass
 
+
+@params('texture', 'pname', 'params')
 def glGetTextureParameteriv(texture, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTextureParameteriv(texture, pname, params)
+	pass
 
+
+@params('program', 'location', 'v0', 'v1', 'v2')
 def glProgramUniform3ui(program, location, v0, v1, v2):
-	return lib.glProgramUniform3ui(program, location, v0, v1, v2)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix2x3fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix2x3fv(program, location, count, transpose, value)
+	pass
 
+
+@params()
 def glPushMatrix():
-	return lib.glPushMatrix()
+	pass
 
+
+@params('program', 'location', 'v0')
 def glProgramUniform1i(program, location, v0):
-	return lib.glProgramUniform1i(program, location, v0)
+	pass
 
+
+@params('program', 'location', 'v0')
 def glProgramUniform1d(program, location, v0):
-	return lib.glProgramUniform1d(program, location, v0)
+	pass
 
+
+@params('program', 'location', 'v0')
 def glProgramUniform1f(program, location, v0):
-	return lib.glProgramUniform1f(program, location, v0)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform3iv(program, location, count, value):
-	return lib.glProgramUniform3iv(program, location, count, value)
+	pass
 
+
+@params('c',)
 def glIndexiv(c):
-	return lib.glIndexiv(c)
+	pass
 
+
+@params('xfb', 'index', 'buffer', 'offset', 'size')
 def glTransformFeedbackBufferRange(xfb, index, buffer, offset, size):
-	return lib.glTransformFeedbackBufferRange(xfb, index, buffer, offset, size)
+	pass
 
+
+@params('xfactor', 'yfactor')
 def glPixelZoom(xfactor, yfactor):
-	return lib.glPixelZoom(xfactor, yfactor)
+	pass
 
+
+@params('type', 'color')
 def glColorP3ui(type, color):
-	return lib.glColorP3ui(type, color)
+	pass
 
+
+@params('texture', 'type', 'coords')
 def glMultiTexCoordP4uiv(texture, type, coords):
-	return lib.glMultiTexCoordP4uiv(texture, type, coords)
+	pass
 
+
+@params('texture', 'target', 'origtexture', 'internalformat', 'minlevel', 'numlevels', 'minlayer', 'numlayers')
 def glTextureView(texture, target, origtexture, internalformat, minlevel, numlevels, minlayer, numlayers):
-	return lib.glTextureView(texture, target, origtexture, internalformat, minlevel, numlevels, minlayer, numlayers)
+	pass
 
+
+@params('vaobj', 'index')
 def glDisableVertexArrayAttrib(vaobj, index):
-	return lib.glDisableVertexArrayAttrib(vaobj, index)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform4iv(location, count, value):
-	return lib.glUniform4iv(location, count, value)
+	pass
 
+
+@params('n', 'textures')
 def glGenTextures(n, textures):
-	return lib.glGenTextures(n, textures)
+	pass
 
+
+@params('texture', 'samples', 'internalformat', 'width', 'height', 'fixedsamplelocations')
 def glTextureStorage2DMultisample(texture, samples, internalformat, width, height, fixedsamplelocations):
-	return lib.glTextureStorage2DMultisample(texture, samples, internalformat, width, height, fixedsamplelocations)
+	pass
 
+
+@params('target', 's')
 def glMultiTexCoord1s(target, s):
-	return lib.glMultiTexCoord1s(target, s)
+	pass
 
+
+@params('index', 'size', 'type', 'normalized', 'stride', 'pointer')
 def glVertexAttribPointer(index, size, type, normalized, stride, pointer):
-	return lib.glVertexAttribPointer(index, size, type, normalized, stride, pointer)
+	pass
 
+
+@params('location', 'v0')
 def glUniform1f(location, v0):
-	return lib.glUniform1f(location, v0)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP1ui(index, type, normalized, value):
-	return lib.glVertexAttribP1ui(index, type, normalized, value)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord4sv(target, v):
-	return lib.glMultiTexCoord4sv(target, v)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix3x4dv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix3x4dv(program, location, count, transpose, value)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'type', 'bufSize', 'pixels')
 def glGetTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, bufSize):
-	pixels = ffi.new('void *')
-	return lib.glGetTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, bufSize, pixels)
+	pass
 
+
+@params('renderbuffer', 'pname', 'params')
 def glGetNamedRenderbufferParameteriv(renderbuffer, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetNamedRenderbufferParameteriv(renderbuffer, pname, params)
+	pass
 
+
+@params('target', 'first', 'count', 'buffers', 'offsets', 'sizes')
 def glBindBuffersRange(target, first, count, buffers, offsets, sizes):
-	return lib.glBindBuffersRange(target, first, count, buffers, offsets, sizes)
+	pass
 
+
+@params('program', 'colorNumber', 'index', 'name')
 def glBindFragDataLocationIndexed(program, colorNumber, index):
-	name = ffi.new('const GLchar *')
-	return lib.glBindFragDataLocationIndexed(program, colorNumber, index, name)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord2dv(target, v):
-	return lib.glMultiTexCoord2dv(target, v)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform2iv(location, count, value):
-	return lib.glUniform2iv(location, count, value)
+	pass
 
+
+@params('texture', 'pname', 'param')
 def glTextureParameterf(texture, pname, param):
-	return lib.glTextureParameterf(texture, pname, param)
+	pass
 
+
+@params('size', 'type', 'buffer')
 def glFeedbackBuffer(size, type, buffer):
-	return lib.glFeedbackBuffer(size, type, buffer)
+	pass
 
+
+@params('target', 's', 't')
 def glMultiTexCoord2i(target, s, t):
-	return lib.glMultiTexCoord2i(target, s, t)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'type', 'pixels')
 def glTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type):
-	pixels = ffi.new('const void *')
-	return lib.glTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels)
+	pass
 
+
+@params('target', 'attachment', 'textarget', 'texture', 'level')
 def glFramebufferTexture1D(target, attachment, textarget, texture, level):
-	return lib.glFramebufferTexture1D(target, attachment, textarget, texture, level)
+	pass
 
+
+@params('shader', 'pname', 'params')
 def glGetShaderiv(shader, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetShaderiv(shader, pname, params)
+	pass
 
+
+@params('target', 's', 't')
 def glMultiTexCoord2d(target, s, t):
-	return lib.glMultiTexCoord2d(target, s, t)
+	pass
 
+
+@params('buffer', 'size', 'data', 'flags')
 def glNamedBufferStorage(buffer, size, flags):
-	data = ffi.new('const void *')
-	return lib.glNamedBufferStorage(buffer, size, data, flags)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform1dv(location, count, value):
-	return lib.glUniform1dv(location, count, value)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord4fv(target, v):
-	return lib.glMultiTexCoord4fv(target, v)
+	pass
 
+
+@params('x', 'y', 'z')
 def glRasterPos3i(x, y, z):
-	return lib.glRasterPos3i(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glRasterPos3d(x, y, z):
-	return lib.glRasterPos3d(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glRasterPos3f(x, y, z):
-	return lib.glRasterPos3f(x, y, z)
+	pass
 
+
+@params('target', 'level', 'internalformat', 'width', 'height', 'depth', 'border', 'imageSize', 'data')
 def glCompressedTexImage3D(target, level, internalformat, width, height, depth, border, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTexImage3D(target, level, internalformat, width, height, depth, border, imageSize, data)
+	pass
 
+
+@params('index', 'pname', 'params')
 def glGetVertexAttribiv(index, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetVertexAttribiv(index, pname, params)
+	pass
 
+
+@params('target', 'reset', 'format', 'type', 'bufSize', 'values')
 def glGetnHistogram(target, reset, format, type, bufSize):
-	values = ffi.new('void *')
-	return lib.glGetnHistogram(target, reset, format, type, bufSize, values)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix2fv(location, count, transpose, value):
-	return lib.glUniformMatrix2fv(location, count, transpose, value)
+	pass
 
+
+@params('texture',)
 def glGenerateTextureMipmap(texture):
-	return lib.glGenerateTextureMipmap(texture)
+	pass
 
+
+@params('mode', 'count', 'type', 'constindices', 'drawcount', 'basevertex')
 def glMultiDrawElementsBaseVertex(mode, count, type, constindices, drawcount, basevertex):
-	return lib.glMultiDrawElementsBaseVertex(mode, count, type, constindices, drawcount, basevertex)
+	pass
 
+
+@params('v',)
 def glWindowPos3sv(v):
-	return lib.glWindowPos3sv(v)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'width', 'format', 'imageSize', 'data')
 def glCompressedTexSubImage1D(target, level, xoffset, width, format, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTexSubImage1D(target, level, xoffset, width, format, imageSize, data)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexParameterIiv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTexParameterIiv(target, pname, params)
+	pass
 
+
+@params('texture', 'level')
 def glInvalidateTexImage(texture, level):
-	return lib.glInvalidateTexImage(texture, level)
+	pass
 
+
+@params('type', 'value')
 def glVertexP3uiv(type, value):
-	return lib.glVertexP3uiv(type, value)
+	pass
 
+
+@params('target', 'query', 'bufSize', 'v')
 def glGetnMapdv(target, query, bufSize, v):
-	return lib.glGetnMapdv(target, query, bufSize, v)
+	pass
 
+
+@params('callback', 'userParam')
 def glDebugMessageCallback(callback, userParam):
-	return lib.glDebugMessageCallback(callback, userParam)
+	pass
 
+
+@params('target', 'index', 'data')
 def glGetBooleani_v(target, index):
-	data = ffi.new('GLboolean *')
-	return lib.glGetBooleani_v(target, index, data)
+	pass
 
+
+@params('texture', 'pname', 'params')
 def glTextureParameterIiv(texture, pname):
-	params = ffi.new('const GLint *')
-	return lib.glTextureParameterIiv(texture, pname, params)
+	pass
 
+
+@params('list', 'mode')
 def glNewList(list, mode):
-	return lib.glNewList(list, mode)
+	pass
 
+
+@params('target', 'mode')
 def glHint(target, mode):
-	return lib.glHint(target, mode)
+	pass
 
+
+@params('mode', 'indirect', 'drawcount', 'stride')
 def glMultiDrawArraysIndirect(mode, indirect, drawcount, stride):
-	return lib.glMultiDrawArraysIndirect(mode, indirect, drawcount, stride)
+	pass
 
+
+@params('index', 'type', 'normalized', 'value')
 def glVertexAttribP2uiv(index, type, normalized, value):
-	return lib.glVertexAttribP2uiv(index, type, normalized, value)
+	pass
 
+
+@params('x', 'y', 'z')
 def glScalef(x, y, z):
-	return lib.glScalef(x, y, z)
+	pass
 
+
+@params('x', 'y', 'z')
 def glScaled(x, y, z):
-	return lib.glScaled(x, y, z)
+	pass
 
+
+@params('program', 'programInterface', 'index', 'bufSize', 'length', 'name')
 def glGetProgramResourceName(program, programInterface, index, bufSize, length):
-	name = ffi.new('GLchar *')
-	return lib.glGetProgramResourceName(program, programInterface, index, bufSize, length, name)
+	pass
 
+
+@params('first', 'count', 'v')
 def glDepthRangeArrayv(first, count, v):
-	return lib.glDepthRangeArrayv(first, count, v)
+	pass
 
+
+@params('program', 'bufferIndex', 'pname', 'params')
 def glGetActiveAtomicCounterBufferiv(program, bufferIndex, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetActiveAtomicCounterBufferiv(program, bufferIndex, pname, params)
+	pass
 
+
+@params('face', 'sfail', 'dpfail', 'dppass')
 def glStencilOpSeparate(face, sfail, dpfail, dppass):
-	return lib.glStencilOpSeparate(face, sfail, dpfail, dppass)
+	pass
 
+
+@params('vaobj', 'attribindex', 'bindingindex')
 def glVertexArrayAttribBinding(vaobj, attribindex, bindingindex):
-	return lib.glVertexArrayAttribBinding(vaobj, attribindex, bindingindex)
+	pass
 
+
+@params('s', 't', 'r')
 def glTexCoord3f(s, t, r):
-	return lib.glTexCoord3f(s, t, r)
+	pass
 
+
+@params('index', 'x')
 def glVertexAttribI1i(index, x):
-	return lib.glVertexAttribI1i(index, x)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexParameteriv(target, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetTexParameteriv(target, pname, params)
+	pass
 
+
+@params('index', 'pname', 'pointer')
 def glGetVertexAttribPointerv(index, pname, pointer):
-	return lib.glGetVertexAttribPointerv(index, pname, pointer)
+	pass
 
+
+@params('target', 'lod', 'bufSize', 'pixels')
 def glGetnCompressedTexImage(target, lod, bufSize):
-	pixels = ffi.new('void *')
-	return lib.glGetnCompressedTexImage(target, lod, bufSize, pixels)
+	pass
 
+
+@params('v',)
 def glWindowPos2dv(v):
-	return lib.glWindowPos2dv(v)
+	pass
 
+
+@params('cap',)
 def glDisable(cap):
-	return lib.glDisable(cap)
+	pass
 
+
+@params('program', 'location', 'count', 'value')
 def glProgramUniform4uiv(program, location, count, value):
-	return lib.glProgramUniform4uiv(program, location, count, value)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'x', 'y', 'width', 'height')
 def glCopyTextureSubImage2D(texture, level, xoffset, yoffset, x, y, width, height):
-	return lib.glCopyTextureSubImage2D(texture, level, xoffset, yoffset, x, y, width, height)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI2uiv(index, v):
-	return lib.glVertexAttribI2uiv(index, v)
+	pass
 
+
+@params('light', 'pname', 'params')
 def glGetLightfv(light, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetLightfv(light, pname, params)
+	pass
 
+
+@params('target', 's', 't', 'r')
 def glMultiTexCoord3s(target, s, t, r):
-	return lib.glMultiTexCoord3s(target, s, t, r)
+	pass
 
+
+@params('target', 's', 't', 'r')
 def glMultiTexCoord3i(target, s, t, r):
-	return lib.glMultiTexCoord3i(target, s, t, r)
+	pass
 
+
+@params('target', 's', 't', 'r')
 def glMultiTexCoord3f(target, s, t, r):
-	return lib.glMultiTexCoord3f(target, s, t, r)
+	pass
 
+
+@params('target', 's', 't', 'r')
 def glMultiTexCoord3d(target, s, t, r):
-	return lib.glMultiTexCoord3d(target, s, t, r)
+	pass
 
+
+@params('coord',)
 def glFogCoorddv(coord):
-	return lib.glFogCoorddv(coord)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform3uiv(location, count, value):
-	return lib.glUniform3uiv(location, count, value)
+	pass
 
+
+@params('buffer', 'internalformat', 'format', 'type', 'data')
 def glClearNamedBufferData(buffer, internalformat, format, type):
-	data = ffi.new('const void *')
-	return lib.glClearNamedBufferData(buffer, internalformat, format, type, data)
+	pass
 
+
+@params('buffer', 'offset', 'length')
 def glFlushMappedNamedBufferRange(buffer, offset, length):
-	return lib.glFlushMappedNamedBufferRange(buffer, offset, length)
+	pass
 
+
+@params('name',)
 def glPushName():
-	name = ffi.new('GLuint *')
-	return lib.glPushName(name)
+	pass
 
+
+@params('plane', 'equation')
 def glGetClipPlane(plane, equation):
-	return lib.glGetClipPlane(plane, equation)
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glRasterPos4i(x, y, z, w):
-	return lib.glRasterPos4i(x, y, z, w)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glBlendColor(red, green, blue, alpha):
-	return lib.glBlendColor(red, green, blue, alpha)
+	pass
 
+
+@params('sampler', 'pname', 'param')
 def glSamplerParameterIuiv(sampler, pname, param):
-	return lib.glSamplerParameterIuiv(sampler, pname, param)
+	pass
 
+
+@params('c',)
 def glIndexubv(c):
-	return lib.glIndexubv(c)
+	pass
 
+
+@params('framebuffer', 'target')
 def glCheckNamedFramebufferStatus(framebuffer, target):
-	return lib.glCheckNamedFramebufferStatus(framebuffer, target)
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glRasterPos4d(x, y, z, w):
-	return lib.glRasterPos4d(x, y, z, w)
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glRasterPos4f(x, y, z, w):
-	return lib.glRasterPos4f(x, y, z, w)
+	pass
 
+
+@params('index', 'x', 'y', 'z')
 def glVertexAttrib3s(index, x, y, z):
-	return lib.glVertexAttrib3s(index, x, y, z)
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glRasterPos4s(x, y, z, w):
-	return lib.glRasterPos4s(x, y, z, w)
+	pass
 
+
+@params('program', 'shadertype', 'pname', 'values')
 def glGetProgramStageiv(program, shadertype, pname):
-	values = ffi.new('GLint *')
-	return lib.glGetProgramStageiv(program, shadertype, pname, values)
+	pass
 
+
+@params()
 def glPopMatrix():
-	return lib.glPopMatrix()
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glVertex4s(x, y, z, w):
-	return lib.glVertex4s(x, y, z, w)
+	pass
 
+
+@params('location', 'v0', 'v1', 'v2', 'v3')
 def glUniform4i(location, v0, v1, v2, v3):
-	return lib.glUniform4i(location, v0, v1, v2, v3)
+	pass
 
+
+@params('texture',)
 def glActiveTexture(texture):
-	return lib.glActiveTexture(texture)
+	pass
 
+
+@params('index',)
 def glEnableVertexAttribArray(index):
-	return lib.glEnableVertexAttribArray(index)
+	pass
 
+
+@params('location', 'x', 'y', 'z', 'w')
 def glUniform4d(location, x, y, z, w):
-	return lib.glUniform4d(location, x, y, z, w)
+	pass
 
+
+@params('location', 'v0', 'v1', 'v2', 'v3')
 def glUniform4f(location, v0, v1, v2, v3):
-	return lib.glUniform4f(location, v0, v1, v2, v3)
+	pass
 
+
+@params('target', 'samples', 'internalformat', 'width', 'height')
 def glRenderbufferStorageMultisample(target, samples, internalformat, width, height):
-	return lib.glRenderbufferStorageMultisample(target, samples, internalformat, width, height)
+	pass
 
+
+@params('n', 'pipelines')
 def glCreateProgramPipelines(n, pipelines):
-	return lib.glCreateProgramPipelines(n, pipelines)
+	pass
 
+
+@params('index', 'size', 'type', 'stride', 'pointer')
 def glVertexAttribLPointer(index, size, type, stride, pointer):
-	return lib.glVertexAttribLPointer(index, size, type, stride, pointer)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord3sv(target, v):
-	return lib.glMultiTexCoord3sv(target, v)
+	pass
 
+
+@params('mode', 'count', 'type', 'indices', 'instancecount', 'basevertex')
 def glDrawElementsInstancedBaseVertex(mode, count, type, indices, instancecount, basevertex):
-	return lib.glDrawElementsInstancedBaseVertex(mode, count, type, indices, instancecount, basevertex)
+	pass
 
+
+@params('program', 'shadertype', 'index', 'bufsize', 'length', 'name')
 def glGetActiveSubroutineName(program, shadertype, index, bufsize, length):
-	name = ffi.new('GLchar *')
-	return lib.glGetActiveSubroutineName(program, shadertype, index, bufsize, length, name)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord4iv(target, v):
-	return lib.glMultiTexCoord4iv(target, v)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexEnvfv(target, pname):
-	params = ffi.new('const GLfloat *')
-	return lib.glTexEnvfv(target, pname, params)
+	pass
 
+
+@params()
 def glPopDebugGroup():
-	return lib.glPopDebugGroup()
+	pass
 
+
+@params('program', 'uniformBlockIndex', 'uniformBlockBinding')
 def glUniformBlockBinding(program, uniformBlockIndex, uniformBlockBinding):
-	return lib.glUniformBlockBinding(program, uniformBlockIndex, uniformBlockBinding)
+	pass
 
+
+@params('target', 'offset', 'size', 'data')
 def glBufferSubData(target, offset, size):
-	data = ffi.new('const void *')
-	return lib.glBufferSubData(target, offset, size, data)
+	pass
 
+
+@params('size', 'type', 'stride', 'pointer')
 def glTexCoordPointer(size, type, stride, pointer):
-	return lib.glTexCoordPointer(size, type, stride, pointer)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix3x2fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix3x2fv(program, location, count, transpose, value)
+	pass
 
+
+@params('target', 'index', 'pname', 'params')
 def glGetQueryIndexediv(target, index, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetQueryIndexediv(target, index, pname, params)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexEnviv(target, pname):
-	params = ffi.new('const GLint *')
-	return lib.glTexEnviv(target, pname, params)
+	pass
 
+
+@params('sfactor', 'dfactor')
 def glBlendFunc(sfactor, dfactor):
-	return lib.glBlendFunc(sfactor, dfactor)
+	pass
 
+
+@params()
 def glCreateProgram():
-	return lib.glCreateProgram()
+	pass
 
+
+@params('index',)
 def glPrimitiveRestartIndex(index):
-	return lib.glPrimitiveRestartIndex(index)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix2fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix2fv(program, location, count, transpose, value)
+	pass
 
+
+@params('first', 'count', 'textures')
 def glBindImageTextures(first, count, textures):
-	return lib.glBindImageTextures(first, count, textures)
+	pass
 
+
+@params()
 def glEnd():
-	return lib.glEnd()
+	pass
 
+
+@params('sampler', 'pname', 'param')
 def glSamplerParameteriv(sampler, pname, param):
-	return lib.glSamplerParameteriv(sampler, pname, param)
+	pass
 
+
+@params('v',)
 def glSecondaryColor3iv(v):
-	return lib.glSecondaryColor3iv(v)
+	pass
 
+
+@params('m',)
 def glMultTransposeMatrixd(m):
-	return lib.glMultTransposeMatrixd(m)
+	pass
 
+
+@params('red', 'green', 'blue', 'alpha')
 def glClearColor(red, green, blue, alpha):
-	return lib.glClearColor(red, green, blue, alpha)
+	pass
 
+
+@params('mask',)
 def glPushClientAttrib(mask):
-	return lib.glPushClientAttrib(mask)
+	pass
 
+
+@params('program', 'location', 'bufSize', 'params')
 def glGetnUniformiv(program, location, bufSize):
-	params = ffi.new('GLint *')
-	return lib.glGetnUniformiv(program, location, bufSize, params)
+	pass
 
+
+@params('mask',)
 def glStencilMask(mask):
-	return lib.glStencilMask(mask)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3us(red, green, blue):
-	return lib.glSecondaryColor3us(red, green, blue)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI4uiv(index, v):
-	return lib.glVertexAttribI4uiv(index, v)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttrib4bv(index, v):
-	return lib.glVertexAttrib4bv(index, v)
+	pass
 
+
+@params('program', 'programInterface', 'name')
 def glGetProgramResourceIndex(program, programInterface):
-	name = ffi.new('const GLchar *')
-	return lib.glGetProgramResourceIndex(program, programInterface, name)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3ub(red, green, blue):
-	return lib.glSecondaryColor3ub(red, green, blue)
+	pass
 
+
+@params('red', 'green', 'blue')
 def glSecondaryColor3ui(red, green, blue):
-	return lib.glSecondaryColor3ui(red, green, blue)
+	pass
 
+
+@params('buffer', 'pname', 'params')
 def glGetNamedBufferPointerv(buffer, pname):
-	params = ffi.new('void *')
-	return lib.glGetNamedBufferPointerv(buffer, pname, params)
+	pass
 
+
+@params('id', 'buffer', 'pname', 'offset')
 def glGetQueryBufferObjectui64v(id, buffer, pname, offset):
-	return lib.glGetQueryBufferObjectui64v(id, buffer, pname, offset)
+	pass
 
+
+@params('nx', 'ny', 'nz')
 def glNormal3f(nx, ny, nz):
-	return lib.glNormal3f(nx, ny, nz)
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix2x3fv(location, count, transpose, value):
-	return lib.glUniformMatrix2x3fv(location, count, transpose, value)
+	pass
 
+
+@params('n', 'ids')
 def glGenTransformFeedbacks(n, ids):
-	return lib.glGenTransformFeedbacks(n, ids)
+	pass
 
+
+@params('index', 'pname', 'params')
 def glGetVertexAttribIuiv(index, pname):
-	params = ffi.new('GLuint *')
-	return lib.glGetVertexAttribIuiv(index, pname, params)
+	pass
 
+
+@params('target', 'level', 'xoffset', 'yoffset', 'width', 'height', 'format', 'imageSize', 'data')
 def glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize):
-	data = ffi.new('const void *')
-	return lib.glCompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data)
+	pass
 
+
+@params('program', 'binaryFormat', 'binary', 'length')
 def glProgramBinary(program, binaryFormat, binary, length):
-	return lib.glProgramBinary(program, binaryFormat, binary, length)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI4bv(index, v):
-	return lib.glVertexAttribI4bv(index, v)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetTexParameterfv(target, pname):
-	params = ffi.new('GLfloat *')
-	return lib.glGetTexParameterfv(target, pname, params)
+	pass
 
+
+@params('vaobj', 'index', 'pname', 'param')
 def glGetVertexArrayIndexed64iv(vaobj, index, pname, param):
-	return lib.glGetVertexArrayIndexed64iv(vaobj, index, pname, param)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glTexParameterIiv(target, pname):
-	params = ffi.new('const GLint *')
-	return lib.glTexParameterIiv(target, pname, params)
+	pass
 
+
+@params('vaobj', 'attribindex', 'size', 'type', 'normalized', 'relativeoffset')
 def glVertexArrayAttribFormat(vaobj, attribindex, size, type, normalized, relativeoffset):
-	return lib.glVertexArrayAttribFormat(vaobj, attribindex, size, type, normalized, relativeoffset)
+	pass
 
+
+@params()
 def glEndTransformFeedback():
-	return lib.glEndTransformFeedback()
+	pass
 
+
+@params('target', 'samples', 'internalformat', 'width', 'height', 'fixedsamplelocations')
 def glTexImage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations):
-	return lib.glTexImage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations)
+	pass
 
+
+@params('index', 'v')
 def glVertexAttribI1iv(index, v):
-	return lib.glVertexAttribI1iv(index, v)
+	pass
 
+
+@params('index', 'divisor')
 def glVertexAttribDivisor(index, divisor):
-	return lib.glVertexAttribDivisor(index, divisor)
+	pass
 
+
+@params('texture', 'level', 'bufSize', 'pixels')
 def glGetCompressedTextureImage(texture, level, bufSize):
-	pixels = ffi.new('void *')
-	return lib.glGetCompressedTextureImage(texture, level, bufSize, pixels)
+	pass
 
+
+@params('range',)
 def glGenLists(range):
-	return lib.glGenLists(range)
+	pass
 
+
+@params('target', 'offset', 'length', 'access')
 def glMapBufferRange(target, offset, length, access):
-	return lib.glMapBufferRange(target, offset, length, access)
+	pass
 
+
+@params('program', 'location', 'count', 'transpose', 'value')
 def glProgramUniformMatrix4x2fv(program, location, count, transpose, value):
-	return lib.glProgramUniformMatrix4x2fv(program, location, count, transpose, value)
+	pass
 
+
+@params()
 def glEndList():
-	return lib.glEndList()
+	pass
 
+
+@params('location', 'count', 'transpose', 'value')
 def glUniformMatrix3x2dv(location, count, transpose, value):
-	return lib.glUniformMatrix3x2dv(location, count, transpose, value)
+	pass
 
+
+@params('shadertype', 'precisiontype', 'range', 'precision')
 def glGetShaderPrecisionFormat(shadertype, precisiontype, range, precision):
-	return lib.glGetShaderPrecisionFormat(shadertype, precisiontype, range, precision)
+	pass
 
+
+@params('mask',)
 def glIndexMask(mask):
-	return lib.glIndexMask(mask)
+	pass
 
+
+@params('shader', 'count', 'conststring', 'length')
 def glShaderSource(shader, count, conststring, length):
-	return lib.glShaderSource(shader, count, conststring, length)
+	pass
 
+
+@params('n', 'renderbuffers')
 def glDeleteRenderbuffers(n, renderbuffers):
-	return lib.glDeleteRenderbuffers(n, renderbuffers)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP2uiv(type, coords):
-	return lib.glTexCoordP2uiv(type, coords)
+	pass
 
+
+@params('un', 'u1', 'u2', 'vn', 'v1', 'v2')
 def glMapGrid2d(un, u1, u2, vn, v1, v2):
-	return lib.glMapGrid2d(un, u1, u2, vn, v1, v2)
+	pass
 
+
+@params('buffer', 'pname', 'params')
 def glGetNamedBufferParameteri64v(buffer, pname):
-	params = ffi.new('GLint64 *')
-	return lib.glGetNamedBufferParameteri64v(buffer, pname, params)
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glVertex4d(x, y, z, w):
-	return lib.glVertex4d(x, y, z, w)
+	pass
 
+
+@params('target', 'size', 'data', 'usage')
 def glBufferData(target, size, usage):
-	data = ffi.new('const void *')
-	return lib.glBufferData(target, size, data, usage)
+	pass
 
+
+@params('x', 'y', 'z', 'w')
 def glVertex4f(x, y, z, w):
-	return lib.glVertex4f(x, y, z, w)
+	pass
 
+
+@params('type', 'coords')
 def glTexCoordP1ui(type, coords):
-	return lib.glTexCoordP1ui(type, coords)
+	pass
 
+
+@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'x', 'y', 'width', 'height')
 def glCopyTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, x, y, width, height):
-	return lib.glCopyTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, x, y, width, height)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord2fv(target, v):
-	return lib.glMultiTexCoord2fv(target, v)
+	pass
 
+
+@params('type', 'coords')
 def glNormalP3ui(type, coords):
-	return lib.glNormalP3ui(type, coords)
+	pass
 
+
+@params('size', 'type', 'stride', 'pointer')
 def glColorPointer(size, type, stride, pointer):
-	return lib.glColorPointer(size, type, stride, pointer)
+	pass
 
+
+@params('target', 'attachment', 'textarget', 'texture', 'level')
 def glFramebufferTexture2D(target, attachment, textarget, texture, level):
-	return lib.glFramebufferTexture2D(target, attachment, textarget, texture, level)
+	pass
 
+
+@params('target', 'pname', 'params')
 def glGetBufferPointerv(target, pname):
-	params = ffi.new('void *')
-	return lib.glGetBufferPointerv(target, pname, params)
+	pass
 
+
+@params('target', 'attachment', 'textarget', 'texture', 'level', 'zoffset')
 def glFramebufferTexture3D(target, attachment, textarget, texture, level, zoffset):
-	return lib.glFramebufferTexture3D(target, attachment, textarget, texture, level, zoffset)
+	pass
 
+
+@params('v',)
 def glWindowPos3dv(v):
-	return lib.glWindowPos3dv(v)
+	pass
 
+
+@params('sampler', 'pname', 'param')
 def glSamplerParameterfv(sampler, pname, param):
-	return lib.glSamplerParameterfv(sampler, pname, param)
+	pass
 
+
+@params('v',)
 def glNormal3bv(v):
-	return lib.glNormal3bv(v)
+	pass
 
+
+@params('face', 'pname', 'params')
 def glGetMaterialiv(face, pname):
-	params = ffi.new('GLint *')
-	return lib.glGetMaterialiv(face, pname, params)
+	pass
 
+
+@params('location', 'count', 'value')
 def glUniform1fv(location, count, value):
-	return lib.glUniform1fv(location, count, value)
+	pass
 
+
+@params('index', 'v')
 def glScissorIndexedv(index, v):
-	return lib.glScissorIndexedv(index, v)
+	pass
 
+
+@params('nx', 'ny', 'nz')
 def glNormal3s(nx, ny, nz):
-	return lib.glNormal3s(nx, ny, nz)
+	pass
 
+
+@params('map', 'bufSize', 'values')
 def glGetnPixelMapuiv(map, bufSize):
-	values = ffi.new('GLuint *')
-	return lib.glGetnPixelMapuiv(map, bufSize, values)
+	pass
 
+
+@params('nx', 'ny', 'nz')
 def glNormal3i(nx, ny, nz):
-	return lib.glNormal3i(nx, ny, nz)
+	pass
 
+
+@params('nx', 'ny', 'nz')
 def glNormal3d(nx, ny, nz):
-	return lib.glNormal3d(nx, ny, nz)
+	pass
 
+
+@params('nx', 'ny', 'nz')
 def glNormal3b(nx, ny, nz):
-	return lib.glNormal3b(nx, ny, nz)
+	pass
 
+
+@params('target', 'v')
 def glMultiTexCoord4dv(target, v):
-	return lib.glMultiTexCoord4dv(target, v)
+	pass
 
+
+@params('index', 'x', 'y')
 def glVertexAttrib2d(index, x, y):
-	return lib.glVertexAttrib2d(index, x, y)
+	pass
 
+
+@params('index', 'x', 'y')
 def glVertexAttrib2f(index, x, y):
-	return lib.glVertexAttrib2f(index, x, y)
+	pass
 
+
+@params('index', 'x', 'y')
 def glVertexAttrib2s(index, x, y):
-	return lib.glVertexAttrib2s(index, x, y)
+	pass
 
+
+@params('target', 'samples', 'internalformat', 'width', 'height', 'depth', 'fixedsamplelocations')
 def glTexImage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations):
-	return lib.glTexImage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations)
+	pass
 
+
+@params('program', 'uniformBlockName')
 def glGetUniformBlockIndex(program, uniformBlockName):
-	return lib.glGetUniformBlockIndex(program, uniformBlockName)
+	pass
 
+
+@params('mode',)
 def glFrontFace(mode):
-	return lib.glFrontFace(mode)
+	pass
 
+
+@params('mode', 'first', 'count', 'instancecount', 'baseinstance')
 def glDrawArraysInstancedBaseInstance(mode, first, count, instancecount, baseinstance):
-	return lib.glDrawArraysInstancedBaseInstance(mode, first, count, instancecount, baseinstance)
+	pass
+
 
