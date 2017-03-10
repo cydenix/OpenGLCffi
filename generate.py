@@ -142,20 +142,10 @@ def gen_api_funcs(api, enumLst, cmdDict, ftrDict):
                         map(BLK_PRMS.append, ['params', 'data', 'name', 'pixels'])
                     marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), p.cdict[ck].params)
                     farg = filter(lambda y: y not in BLK_PRMS, marg)
+                    f.write("@params{}\n".format(repr(tuple(map(str, marg)))))
                     f.write("def {}({}):\n".format(ck, ', '.join(farg)))
-                    for pr in p.cdict[ck].params:
-                        a = pr.split()[-1:][0].translate(None, "*")
-                        t = ' '.join(pr.split()[:-1])
-                        if a in ["attrib_list", "attribList"]:
-                            f.write("\tattr_lst = ffi.new('{} []', {})\n".format(t, a))
-                        elif a in BLK_PRMS:
-                            if a == "configs":
-                                f.write("\t{} = ffi.new('{} [config_size]')\n".format(a, t))
-                                continue
-                            f.write("\t{} = ffi.new('{} *')\n".format(a, t))
-                            continue
-                    larg = map(lambda x: x.replace("attrib_list", "attr_lst"), marg)
-                    f.write("\treturn lib.{}({})\n\n".format(ck, ', '.join(larg)))
+                    f.write("\tpass\n")
+                    f.write("\n\n")
 
 
 def gen_api_extfunc(api, enumLst, cmdDict, extDict):
@@ -177,7 +167,6 @@ def gen_api_extfunc(api, enumLst, cmdDict, extDict):
 
 
 if __name__ == '__main__':
-
     create_dirs(GL_DIRS)
     reg_dir = [f for f in os.listdir("Registry") if not f.startswith('__')]
     reg_dir.sort()
@@ -198,7 +187,7 @@ if __name__ == '__main__':
         gen_api_funcs(k, p.endict, p.cdict, p.fdict)
     del p
 
-    libs = ['GL', 'GLESv1', 'GLESv2', 'GLESv3', 'X11', 'X11-xcb', 'xcb']
+    libs = ['GL', 'GLESv1_CM', 'GLESv2', 'GLESv3', 'X11', 'X11-xcb', 'xcb']
     from cffi import FFI
     from xcffib.ffi_build import ffi as xcbffi
     from OpenGLCffi.Defs import *
@@ -213,5 +202,9 @@ if __name__ == '__main__':
             ffi.cdef(globals()[k + 'defs'].DEF)
         ffi.set_source("FFI/_{}ffi".format(k), None, libs)
         ffi.compile()
-
-
+    with open("FFI/__init__.py", 'w+') as init_ffi:
+        init_ffi.write('from os.path import dirname, basename\n')
+        init_ffi.write('import glob\n')
+        init_ffi.write('\n')
+        init_ffi.write('modules = glob.glob(dirname(__file__) + "/*.py")\n')
+        init_ffi.write('__all__ = [basename(f)[:-3] for f in modules if not basename(f).startswith("__")]\n')
