@@ -28,7 +28,6 @@ RET_DICT = {'gl': [],
             'gles1': ['equation',
                       'params',
                       'data',
-                      'name',
                       'buffers',
                       'textures'],
             'gles2': ['framebuffers',
@@ -39,7 +38,6 @@ RET_DICT = {'gl': [],
                       'infoLog',
                       'data',
                       'source',
-                      'name',
                       'renderbuffers',
                       'buffers',
                       'size',
@@ -56,7 +54,6 @@ RET_DICT = {'gl': [],
                       'infoLog',
                       'data',
                       'source',
-                      'name',
                       'renderbuffers',
                       'buffers',
                       'size',
@@ -186,10 +183,7 @@ def gen_api_funcs(api, enumLst, cmdDict, ftrDict):
             for ck in p.cdict.keys():
                 if ck in fcmd:
                     marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), p.cdict[ck].params)
-                    if ck.startswith('glString'):
-                        RET_DICT[api].remove('name')
-
-
+                    
                     if ck[:3] in ['glX', 'egl', 'glG']:
                         farg = filter(lambda y: y not in RET_DICT[api], marg)
                     else:
@@ -280,5 +274,5 @@ if __name__ == '__main__':
             api_init.write("\n")
             api_init.write("ffi, lib = load_lib('{}')\n".format(ld_libs[k]))
             api_init.write("retList = {}\n".format("".join(repr(map(str, RET_DICT[k])))))
-            api_init.write("OpenGLCffi.libs[{}] = [lib, ffi, retList]\n".format(k))
+            api_init.write("OpenGLCffi.libs['{}'] = [lib, ffi, retList]\n".format(k))
 
