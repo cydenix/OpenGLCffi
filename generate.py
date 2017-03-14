@@ -18,19 +18,69 @@ GL_DIRS = ["GL",
            "Registry",
            "Defs"]
 
-BLK_PRMS = ['major',
-            'minor',
-            'value',
-            'configs',
-            'num_config',
-            'nelements',
-            'min', 'maj']
+RET_DICT = {'gl': [],
+            'glx': ['value',
+                    'errorb',
+                    'event',
+                    'nelements',
+                    'maj', 'min',
+                    'name'],
+            'gles1': ['equation',
+                      'params',
+                      'data',
+                      'name',
+                      'buffers',
+                      'textures'],
+            'gles2': ['framebuffers',
+                      'shaders',
+                      'count',
+                      'params',
+                      'lenght',
+                      'infoLog',
+                      'data',
+                      'source',
+                      'name',
+                      'renderbuffers',
+                      'buffers',
+                      'size',
+                      'type',
+                      'textures',
+                      'pointer',
+                      'range',
+                      'precision'],
+            'gles3': ['framebuffers',
+                      'shaders',
+                      'count',
+                      'params',
+                      'lenght',
+                      'infoLog',
+                      'data',
+                      'source',
+                      'name',
+                      'renderbuffers',
+                      'buffers',
+                      'size',
+                      'type',
+                      'textures',
+                      'pointer',
+                      'range',
+                      'precision',
+                      'val',
+                      'label',
+                      'pipelines'
+                      'ids',
+                      'propCount',
+                      'binary',
+                      'arrays'],
+            'egl': ['configs',
+                    'num_config',
+                    'value',
+                    'major', 'minor']}
 
 def create_dirs(dirs):
     if not os.path.isdir("OpenGLCffi"):
         os.mkdir("OpenGLCffi")
         os.chdir("OpenGLCffi")
-        os.mknod("__init__.py")
         for d in dirs:
             if not os.path.isdir(d):
                 os.mkdir(d)
@@ -126,23 +176,29 @@ def gen_def(prsr=None, api=None, ver=None):
 
 
 def gen_api_funcs(api, enumLst, cmdDict, ftrDict):
-    global BLK_PRMS
-    if api in ['gl', 'gles1', 'gles2', 'gles3']:
-        if 'value' in BLK_PRMS:
-            BLK_PRMS.remove('value')
-        map(BLK_PRMS.append, ['values'])
+    global RET_DICT
     if os.path.isdir(api.upper()):
         with open(os.path.join(api.upper(), 'const.py'), 'w+') as cons:
             gen_cons(enumLst, ftrDict, cons)
         with open(os.path.join(api.upper(), api + '.py'), 'w+') as f:
+            f.write("from OpenGLCffi.{} import params\n".format(api.upper()))
             fcmd = [frqv for fv in p.fdict.values() for frqv in fv[0].req]
             for ck in p.cdict.keys():
                 if ck in fcmd:
-                    if ck.startswith("glGet"):
-                        map(BLK_PRMS.append, ['params', 'data', 'name', 'pixels'])
                     marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), p.cdict[ck].params)
-                    farg = filter(lambda y: y not in BLK_PRMS, marg)
-                    f.write("@params{}\n".format(repr(tuple(map(str, marg)))))
+                    if ck.startswith('glString'):
+                        RET_DICT[api].remove('name')
+
+
+                    if ck[:3] in ['glX', 'egl', 'glG']:
+                        farg = filter(lambda y: y not in RET_DICT[api], marg)
+                    else:
+                        farg = marg
+
+                    if len(marg) == 0:
+                        f.write("@params(api = '{}')\n".format(api))
+                    else:
+                        f.write("@params({})\n".format(repr(map(str, marg)).strip("[]") + ", api='{}'".format(api)))
                     f.write("def {}({}):\n".format(ck, ', '.join(farg)))
                     f.write("\tpass\n")
                     f.write("\n\n")
@@ -181,6 +237,13 @@ if __name__ == '__main__':
             'gl': ['gl.xml', '4.5']
             }
 
+    ld_libs = {'egl': 'EGL',
+               'glx': 'GLX',
+               'gles1': 'GLESv1_CM',
+               'gles2': 'GLESv2',
+               'gles3': 'GLESv2',
+               'gl': 'GL'}
+
     for k, v in apis.items():
         p = parser.Parser(v[0], k, v[1])
         gen_def(p, k, v[1])
@@ -202,9 +265,20 @@ if __name__ == '__main__':
             ffi.cdef(globals()[k + 'defs'].DEF)
         ffi.set_source("FFI/_{}ffi".format(k), None, libs)
         ffi.compile()
+
     with open("FFI/__init__.py", 'w+') as init_ffi:
         init_ffi.write('from os.path import dirname, basename\n')
         init_ffi.write('import glob\n')
         init_ffi.write('\n')
         init_ffi.write('modules = glob.glob(dirname(__file__) + "/*.py")\n')
         init_ffi.write('__all__ = [basename(f)[:-3] for f in modules if not basename(f).startswith("__")]\n')
+
+    for k in apis.keys():
+        with open(os.path.join(k.upper(), '__init__.py'), "w+") as api_init:
+            api_init.write("import OpenGLCffi\n")
+            api_init.write("from OpenGLCffi import load_lib, params\n")
+            api_init.write("\n")
+            api_init.write("ffi, lib = load_lib('{}')\n".format(ld_libs[k]))
+            api_init.write("retList = {}\n".format("".join(repr(map(str, RET_DICT[k])))))
+            api_init.write("OpenGLCffi.libs[{}] = [lib, ffi, retList]\n".format(k))
+
