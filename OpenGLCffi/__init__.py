@@ -1,33 +1,37 @@
+import os, sys
 from functools import wraps
 from FFI import *
 from glob import glob
+from ctypes.util import find_library
 
 LIB_PATH = '/usr/lib/'
+libs = {}
 
 
 def load_lib(api=None):
-    global ffi
-    if api == "GLX":
-        api = api[:-1]
-    for f in glob(LIB_PATH + '/lib{}*.so.*.*'.format(api)):
-        dl_lib = f
+    '''
+    api's are EGL, GL, GLESv2, GLESv1_CM, GLX
+    '''
     ffi = globals()["_" + api.lower().replace('v', '') + "ffi"].ffi
-    return ffi, ffi.dlopen(dl_lib)
+    return ffi, ffi.dlopen(find_library(api))
 
-def params(*largs):
-    def deco(func):
+
+def params(*largs, **lkwargs):
+    def decorator(func):
         @wraps(func)
-        def wrap(*args):
+        def wrapper(*args):
             varn = func.__code__.co_varnames
             prms = list(largs)
             retdict = {}
-            f = getattr(lib, func.__name__)
+            api = lkwargs['api']
+            ffi = libs[api][1]
+            f = getattr(libs[api][0], func.__name__)
             for inx, p in enumerate(largs):
                 for i, a in enumerate(varn):
                     if a == p:
                         prms[inx] = args[i]
                 if p not in varn:
-                    if p in ffinew_retlist:
+                    if p in libs[api][2]:
                         retdict[p] = inx
                     p = ffi.new(ffi.typeof(f).args[inx].cname)
                     prms[inx] = p
@@ -38,5 +42,5 @@ def params(*largs):
                 return retdict
             else:
                 return r
-        return wrap
-    return deco
+        return wrapper
+    return decorator
