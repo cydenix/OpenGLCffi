@@ -3,11 +3,18 @@ sys.path.append(os.path.abspath(".."))
 from OpenGLCffi.FFI import *
 from OpenGLCffi import load_lib
 from OpenGLCffi.EGL.const import *
-from functools import wraps
+from OpenGLCffi.EGL import *
 
 
-def p(func):
-    @wraps(func):
-    def wrap(*args):
-        print dir(func)
+ffi, lib = load_lib('GL')
+
+print dir(ffi.typeof(lib.glBegin))
+print ffi.typeof(lib.glBegin).abi
+
+
+
+
+
+
+
 
