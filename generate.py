@@ -32,34 +32,24 @@ RET_DICT = {'gl': [],
                       'textures'],
             'gles2': ['framebuffers',
                       'shaders',
-                      'count',
                       'params',
-                      'length',
                       'infoLog',
                       'data',
                       'source',
                       'renderbuffers',
                       'buffers',
-                      'size',
-                      'type',
                       'textures',
-                      'pointer',
                       'range',
                       'precision'],
             'gles3': ['framebuffers',
                       'shaders',
-                      'count',
                       'params',
-                      'length',
                       'infoLog',
                       'data',
                       'source',
                       'renderbuffers',
                       'buffers',
-                      'size',
-                      'type',
                       'textures',
-                      'pointer',
                       'range',
                       'precision',
                       'val',
@@ -83,6 +73,7 @@ SIZE_SET = {'egl': {'config_size': ['configs']},
             'gles3': {'n': ['framebuffers'],
                       'maxCount': ['shaders']},
             'gl': {}}
+
 
 def create_dirs(dirs):
     if not os.path.isdir("OpenGLCffi"):
@@ -281,9 +272,13 @@ if __name__ == '__main__':
         with open(os.path.join(k.upper(), '__init__.py'), "w+") as api_init:
             api_init.write("import OpenGLCffi\n")
             api_init.write("from OpenGLCffi import load_lib, params\n")
+            api_init.write("from ctypes.util import find_library\n")
             api_init.write("\n")
             api_init.write("ffi, lib = load_lib('{}')\n".format(ld_libs[k]))
             api_init.write("retList = {}\n".format("".join(repr(map(str, RET_DICT[k])))))
             api_init.write("sizeSetters = {}\n".format(SIZE_SET[k]))
             api_init.write("OpenGLCffi.libs['{}'] = [lib, ffi, retList, sizeSetters]\n".format(k))
+            api_init.write("xlib = ffi.dlopen(find_library('X11'))\n")
+            api_init.write("xlibxcb = ffi.dlopen(find_library('X11-xcb'))\n")
+
 

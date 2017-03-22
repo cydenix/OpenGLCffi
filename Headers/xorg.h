@@ -32,4 +32,6 @@ typedef struct {
   int bits_per_rgb;
 } XVisualInfo;
 
+
 extern Display *XOpenDisplay(const char*);
+
