@@ -61,6 +61,7 @@ def params(*largs, **lkwargs):
             if len(retdict) > 0:
                 for k, v in retdict.items():
                     retdict[k] = prms[v]
+                    retdict['fn_ret'] = r
                 return retdict
             else:
                 return r

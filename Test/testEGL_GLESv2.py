@@ -11,6 +11,8 @@ from xcffib import xproto
 
 d, conn = util.get_xdsp_xcb_connection()
 edsp = egl.eglGetDisplay(d)
+
+
 print egl.eglInitialize(edsp)
 print egl.eglBindAPI(EGL_OPENGL_ES_API)
 
