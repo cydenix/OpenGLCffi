@@ -278,7 +278,8 @@ if __name__ == '__main__':
             api_init.write("retList = {}\n".format("".join(repr(map(str, RET_DICT[k])))))
             api_init.write("sizeSetters = {}\n".format(SIZE_SET[k]))
             api_init.write("OpenGLCffi.libs['{}'] = [lib, ffi, retList, sizeSetters]\n".format(k))
-            api_init.write("xlib = ffi.dlopen(find_library('X11'))\n")
-            api_init.write("xlibxcb = ffi.dlopen(find_library('X11-xcb'))\n")
+            if k.upper() in ['EGL', 'GLX']:
+                api_init.write("xlib = ffi.dlopen(find_library('X11'))\n")
+                api_init.write("xlibxcb = ffi.dlopen(find_library('X11-xcb'))\n")
 
 

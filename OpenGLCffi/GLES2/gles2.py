@@ -35,7 +35,7 @@ def glGenFramebuffers(n):
 
 
 @params('program', 'maxCount', 'count', 'shaders', api='gles2')
-def glGetAttachedShaders(program, maxCount):
+def glGetAttachedShaders(program, maxCount, count):
 	pass
 
 
@@ -65,7 +65,7 @@ def glUseProgram(program):
 
 
 @params('program', 'bufSize', 'length', 'infoLog', api='gles2')
-def glGetProgramInfoLog(program, bufSize):
+def glGetProgramInfoLog(program, bufSize, length):
 	pass
 
 
@@ -90,7 +90,7 @@ def glTexParameteri(target, pname, param):
 
 
 @params('shader', 'bufSize', 'length', 'source', api='gles2')
-def glGetShaderSource(shader, bufSize):
+def glGetShaderSource(shader, bufSize, length):
 	pass
 
 
@@ -150,7 +150,7 @@ def glStencilFunc(func, ref, mask):
 
 
 @params('shader', 'bufSize', 'length', 'infoLog', api='gles2')
-def glGetShaderInfoLog(shader, bufSize):
+def glGetShaderInfoLog(shader, bufSize, length):
 	pass
 
 
@@ -345,7 +345,7 @@ def glTexImage2D(target, level, internalformat, width, height, border, format, t
 
 
 @params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name', api='gles2')
-def glGetActiveUniform(program, index, bufSize, name):
+def glGetActiveUniform(program, index, bufSize, length, size, type, name):
 	pass
 
 
@@ -415,7 +415,7 @@ def glGetVertexAttribfv(index, pname):
 
 
 @params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name', api='gles2')
-def glGetActiveAttrib(program, index, bufSize, name):
+def glGetActiveAttrib(program, index, bufSize, length, size, type, name):
 	pass
 
 
@@ -600,7 +600,7 @@ def glGetTexParameteriv(target, pname):
 
 
 @params('index', 'pname', 'pointer', api='gles2')
-def glGetVertexAttribPointerv(index, pname):
+def glGetVertexAttribPointerv(index, pname, pointer):
 	pass
 
 

@@ -49,7 +49,10 @@ typedef struct {
   int bits_per_rgb;
 } XVisualInfo;
 
+
 extern Display *XOpenDisplay(const char*);
+
+
 xcb_connection_t *XGetXCBConnection(Display *dpy);
 enum XEventQueueOwner { XlibOwnsEventQueue = 0, XCBOwnsEventQueue };
 void XSetEventQueueOwner(Display *dpy, enum XEventQueueOwner owner);

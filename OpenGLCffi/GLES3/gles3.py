@@ -70,7 +70,7 @@ def glGenFramebuffers(n):
 
 
 @params('program', 'maxCount', 'count', 'shaders', api='gles3')
-def glGetAttachedShaders(program, maxCount):
+def glGetAttachedShaders(program, maxCount, count):
 	pass
 
 
@@ -120,7 +120,7 @@ def glValidateProgramPipeline(pipeline):
 
 
 @params('count', 'samplers', api='gles3')
-def glGenSamplers(samplers):
+def glGenSamplers(count, samplers):
 	pass
 
 
@@ -135,7 +135,7 @@ def glIsSync(sync):
 
 
 @params('ptr', 'bufSize', 'length', 'label', api='gles3')
-def glGetObjectPtrLabel(ptr, bufSize):
+def glGetObjectPtrLabel(ptr, bufSize, length):
 	pass
 
 
@@ -170,7 +170,7 @@ def glUseProgram(program):
 
 
 @params('program', 'bufSize', 'length', 'infoLog', api='gles3')
-def glGetProgramInfoLog(program, bufSize):
+def glGetProgramInfoLog(program, bufSize, length):
 	pass
 
 
@@ -205,7 +205,7 @@ def glTexParameteri(target, pname, param):
 
 
 @params('shader', 'bufSize', 'length', 'source', api='gles3')
-def glGetShaderSource(shader, bufSize):
+def glGetShaderSource(shader, bufSize, length):
 	pass
 
 
@@ -225,7 +225,7 @@ def glLinkProgram(program):
 
 
 @params('identifier', 'name', 'bufSize', 'length', 'label', api='gles3')
-def glGetObjectLabel(identifier, name, bufSize):
+def glGetObjectLabel(identifier, name, bufSize, length):
 	pass
 
 
@@ -335,7 +335,7 @@ def glDispatchComputeIndirect(indirect):
 
 
 @params('shader', 'bufSize', 'length', 'infoLog', api='gles3')
-def glGetShaderInfoLog(shader, bufSize):
+def glGetShaderInfoLog(shader, bufSize, length):
 	pass
 
 
@@ -515,7 +515,7 @@ def glBlendFuncSeparate(sfactorRGB, dfactorRGB, sfactorAlpha, dfactorAlpha):
 
 
 @params('pipeline', 'bufSize', 'length', 'infoLog', api='gles3')
-def glGetProgramPipelineInfoLog(pipeline, bufSize):
+def glGetProgramPipelineInfoLog(pipeline, bufSize, length):
 	pass
 
 
@@ -645,7 +645,7 @@ def glObjectPtrLabel(ptr, length, label):
 
 
 @params('count', 'bufSize', 'sources', 'types', 'ids', 'severities', 'lengths', 'messageLog', api='gles3')
-def glGetDebugMessageLog(bufSize, sources, types, ids, severities, lengths, messageLog):
+def glGetDebugMessageLog(count, bufSize, sources, types, ids, severities, lengths, messageLog):
 	pass
 
 
@@ -660,7 +660,7 @@ def glCopyTexSubImage3D(target, level, xoffset, yoffset, zoffset, x, y, width, h
 
 
 @params('program', 'uniformBlockIndex', 'bufSize', 'length', 'uniformBlockName', api='gles3')
-def glGetActiveUniformBlockName(program, uniformBlockIndex, bufSize, uniformBlockName):
+def glGetActiveUniformBlockName(program, uniformBlockIndex, bufSize, length, uniformBlockName):
 	pass
 
 
@@ -885,7 +885,7 @@ def glCopyBufferSubData(readTarget, writeTarget, readOffset, writeOffset, size):
 
 
 @params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name', api='gles3')
-def glGetActiveUniform(program, index, bufSize, name):
+def glGetActiveUniform(program, index, bufSize, length, size, type, name):
 	pass
 
 
@@ -915,7 +915,7 @@ def glGetIntegeri_v(target, index):
 
 
 @params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name', api='gles3')
-def glGetTransformFeedbackVarying(program, index, bufSize, name):
+def glGetTransformFeedbackVarying(program, index, bufSize, length, size, type, name):
 	pass
 
 
@@ -1125,7 +1125,7 @@ def glDispatchCompute(num_groups_x, num_groups_y, num_groups_z):
 
 
 @params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name', api='gles3')
-def glGetActiveAttrib(program, index, bufSize, name):
+def glGetActiveAttrib(program, index, bufSize, length, size, type, name):
 	pass
 
 
@@ -1245,7 +1245,7 @@ def glBlendEquation(mode):
 
 
 @params('program', 'programInterface', 'index', 'propCount', 'props', 'bufSize', 'length', 'params', api='gles3')
-def glGetProgramResourceiv(program, programInterface, index, props, bufSize):
+def glGetProgramResourceiv(program, programInterface, index, props, bufSize, length):
 	pass
 
 
@@ -1285,7 +1285,7 @@ def glDisablei(target, index):
 
 
 @params('sync', 'pname', 'bufSize', 'length', 'values', api='gles3')
-def glGetSynciv(sync, pname, bufSize, values):
+def glGetSynciv(sync, pname, bufSize, length, values):
 	pass
 
 
@@ -1295,7 +1295,7 @@ def glProgramUniform2i(program, location, v0, v1):
 
 
 @params('program', 'bufSize', 'length', 'binaryFormat', 'binary', api='gles3')
-def glGetProgramBinary(program, bufSize, binaryFormat):
+def glGetProgramBinary(program, bufSize, length, binaryFormat):
 	pass
 
 
@@ -1540,7 +1540,7 @@ def glHint(target, mode):
 
 
 @params('program', 'programInterface', 'index', 'bufSize', 'length', 'name', api='gles3')
-def glGetProgramResourceName(program, programInterface, index, bufSize, name):
+def glGetProgramResourceName(program, programInterface, index, bufSize, length, name):
 	pass
 
 
@@ -1555,7 +1555,7 @@ def glGetTexParameteriv(target, pname):
 
 
 @params('index', 'pname', 'pointer', api='gles3')
-def glGetVertexAttribPointerv(index, pname):
+def glGetVertexAttribPointerv(index, pname, pointer):
 	pass
 
 
