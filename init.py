@@ -1,7 +1,5 @@
-import os, sys
 from functools import wraps
 from FFI import *
-from glob import glob
 from ctypes.util import find_library
 
 LIB_PATH = '/usr/lib/'
@@ -29,6 +27,7 @@ def params(*largs, **lkwargs):
             f = getattr(libs[api][0], func.__name__)
             sizeSetters = libs[api][3]
             retList = libs[api][2]
+            f = getattr(libs[api][0], func.__name__)
             for inx, p in enumerate(largs):
                 for i, a in enumerate(varn):
                     if a == p:
@@ -51,10 +50,16 @@ def params(*largs, **lkwargs):
                     typ = ffi.typeof(f).args[largs.index(p)].cname
                     prms[largs.index(p)] = ffi.new(typ)
                     retdict[p] = largs.index(p)
+                if p not in varn:
+                    if p in libs[api][2]:
+                        retdict[p] = inx
+                    p = ffi.new(ffi.typeof(f).args[inx].cname)
+                    prms[inx] = p
             r = f(*prms)
             if len(retdict) > 0:
                 for k, v in retdict.items():
                     retdict[k] = prms[v]
+                    retdict['fn_ret'] = r
                 return retdict
             else:
                 return r

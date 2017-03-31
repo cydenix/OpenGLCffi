@@ -74,11 +74,16 @@ SIZE_SET = {'egl': {'config_size': ['configs']},
                       'maxCount': ['shaders']},
             'gl': {}}
 
-
+BASE_DIR = os.getcwd()
 def create_dirs(dirs):
     if not os.path.isdir("OpenGLCffi"):
+        with open('init.py', 'r') as init_file:
+            init_lines = init_file.readlines()
         os.mkdir("OpenGLCffi")
         os.chdir("OpenGLCffi")
+        if not os.path.isfile('__init__.py'):
+            with open('__init__.py', 'w+') as main_init:
+                main_init.writelines(init_lines)
         for d in dirs:
             if not os.path.isdir(d):
                 os.mkdir(d)
@@ -88,6 +93,15 @@ def create_dirs(dirs):
                 break
     else:
         os.chdir("OpenGLCffi")
+
+def create_extdirs(dirs):
+    for d in dirs:
+        if not os.path.isdir(d):
+            os.mkdir(d)
+            if os.path.isdir(d):
+                os.mknod(os.path.join(d, "__init__.py"))
+            else:
+                break
 
 
 def delete_dirs(dirs):
@@ -186,6 +200,7 @@ def gen_api_funcs(api, enumLst, cmdDict, ftrDict):
                     marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), p.cdict[ck].params)
 
                     if ck[:3] in ['glX', 'egl', 'glG']:
+
                         farg = filter(lambda y: y not in RET_DICT[api], marg)
                     else:
                         farg = marg
@@ -200,21 +215,39 @@ def gen_api_funcs(api, enumLst, cmdDict, ftrDict):
 
 
 def gen_api_extfunc(api, enumLst, cmdDict, extDict):
+    global RET_DICT
+    print os.getcwd()
     ext_path = os.path.join(api.upper(), "EXT")
+
     if not os.path.isdir(ext_path):
         os.mkdir(ext_path)
-        os.mknod(os.path.join(ext_path, "__init__.py"))
     os.chdir(ext_path)
+
+    if not os.path.isfile("__init__.py"):
+        os.mknod("__init__.py")
+
     with open('const.py', 'w+') as cons:
             gen_cons(enumLst, extDict, cons)
-    create_dirs(extDict.keys())
+
+    create_extdirs(extDict.keys())
     efls = [(e.vendor, e.name, e.req) for v in extDict.itervalues() for e in v if len(e.req) > 0]
     for i in efls:
         if os.path.isdir(i[0]):
             with open(os.path.join(i[0], i[1] + ".py"), "w+") as f:
-                for c in i[2]:
-                    prms = [x.split()[-1:][0].translate(None, "*") for x in cmdDict[c].params]
-                    f.write("def {}({}):\n\tpass\n\n".format(cmdDict[c].name, ", ".join(prms)))
+                for ck in i[2]:
+                    marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), cmdDict[ck].params)
+                    if ck[:3] in ['glX', 'egl', 'glG']:
+                        farg = filter(lambda y: y not in RET_DICT[api], marg)
+                    else:
+                        farg = marg
+                    if len(marg) == 0:
+                        f.write("@params(api = '{}')\n".format(api))
+                    else:
+                        f.write("@params({})\n".format(repr(map(str, marg)).strip("[]") + ", api='{}'".format(api)))
+                    f.write("def {}({}):\n".format(ck, ", ".join(farg)))
+                    f.write("\tpass\n")
+                    f.write("\n\n")
+    os.chdir(os.path.join(BASE_DIR, 'OpenGLCffi'))
 
 
 if __name__ == '__main__':
@@ -238,11 +271,13 @@ if __name__ == '__main__':
                'gles2': 'GLESv2',
                'gles3': 'GLESv2',
                'gl': 'GL'}
+    print BASE_DIR
 
     for k, v in apis.items():
         p = parser.Parser(v[0], k, v[1])
         gen_def(p, k, v[1])
         gen_api_funcs(k, p.endict, p.cdict, p.fdict)
+        gen_api_extfunc(k, p.endict, p.cdict, p.edict)
     del p
 
     libs = ['GL', 'GLESv1_CM', 'GLESv2', 'GLESv3', 'X11', 'X11-xcb', 'xcb']
@@ -258,7 +293,7 @@ if __name__ == '__main__':
         else:
             ffi.include(xcbffi)
             ffi.cdef(globals()[k + 'defs'].DEF)
-        ffi.set_source("FFI/_{}ffi".format(k), None, libs)
+        ffi.set_source("FFI._{}ffi".format(k), None, libs)
         ffi.compile()
 
     with open("FFI/__init__.py", 'w+') as init_ffi:
@@ -281,5 +316,4 @@ if __name__ == '__main__':
             if k.upper() in ['EGL', 'GLX']:
                 api_init.write("xlib = ffi.dlopen(find_library('X11'))\n")
                 api_init.write("xlibxcb = ffi.dlopen(find_library('X11-xcb'))\n")
-
 

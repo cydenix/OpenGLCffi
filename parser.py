@@ -3,7 +3,7 @@ from lxml import etree
 
 
 hpath = os.path.join(os.path.abspath('.'), "Headers")
-
+regpath = os.path.join(os.path.abspath('.'), "OpenGLCffi/Registry")
 
 class Types(object):
     __slots__ = ['api', 'requires', 'typedef', 'name', 'tail']
@@ -72,7 +72,7 @@ class Parser(object):
     def __init__(self, fname=None, api=None, ver=None):
         self.fname = fname
         self.parser = etree.XMLParser(remove_comments=True)
-        self.et = etree.parse(os.path.join("Registry", self.fname),
+        self.et = etree.parse(os.path.join(regpath, self.fname),
                               parser=self.parser)
         self.root = self.et.getroot()
         self.tdict = self.get_types(api)

@@ -1,8 +1,5 @@
-import os, sys
 import xcffib
 from xcffib import xproto
-#from OpenGLCffi.EGL import xlib, xlibxcb, ffi
-sys.path.append(os.path.abspath('..'))
 
 def get_xdsp_xcb_connection(api=None):
     if api is 'EGL':
@@ -13,4 +10,6 @@ def get_xdsp_xcb_connection(api=None):
     xlibxcb.XSetEventQueueOwner(d, 1)
     c = xlibxcb.XGetXCBConnection(d)
     return d, xcffib.wrap(c)
+
+
 
