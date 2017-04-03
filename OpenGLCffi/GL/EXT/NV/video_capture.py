@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('video_capture_slot', api='gl')
 def glBeginVideoCaptureNV(video_capture_slot):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('size', 'weights', api='gl')
 def glWeightbvARB(size, weights):
 	pass

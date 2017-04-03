@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('source', 'type', 'severity', 'count', 'ids', 'enabled', api='gles3')
 def glDebugMessageControl(source, type, severity, count, ids, enabled):
 	pass

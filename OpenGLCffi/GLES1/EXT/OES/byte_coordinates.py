@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('texture', 's', api='gles1')
 def glMultiTexCoord1bOES(texture, s):
 	pass

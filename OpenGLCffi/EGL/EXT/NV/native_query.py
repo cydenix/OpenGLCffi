@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'display_id', api='egl')
 def eglQueryNativeDisplayNV(dpy, display_id):
 	pass

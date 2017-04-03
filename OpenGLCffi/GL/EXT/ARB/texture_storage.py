@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'levels', 'internalformat', 'width', api='gl')
 def glTexStorage1D(target, levels, internalformat, width):
 	pass

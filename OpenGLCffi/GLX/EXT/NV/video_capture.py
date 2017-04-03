@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'video_capture_slot', 'device', api='glx')
 def glXBindVideoCaptureDeviceNV(dpy, video_capture_slot, device):
 	pass

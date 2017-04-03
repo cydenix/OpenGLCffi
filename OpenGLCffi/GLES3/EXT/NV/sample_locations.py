@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('target', 'start', 'count', 'v', api='gles3')
 def glFramebufferSampleLocationsfvNV(target, start, count, v):
 	pass

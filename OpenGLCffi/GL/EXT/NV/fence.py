@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('n', 'fences', api='gl')
 def glDeleteFencesNV(n, fences):
 	pass

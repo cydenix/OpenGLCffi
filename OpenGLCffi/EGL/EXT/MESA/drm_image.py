@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'attrib_list', api='egl')
 def eglCreateDRMImageMESA(dpy, attrib_list):
 	pass

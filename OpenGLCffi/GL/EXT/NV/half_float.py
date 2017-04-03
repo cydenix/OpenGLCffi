@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('x', 'y', api='gl')
 def glVertex2hNV(x, y):
 	pass

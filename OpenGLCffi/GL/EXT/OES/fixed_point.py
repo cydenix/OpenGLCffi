@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('func', 'ref', api='gl')
 def glAlphaFuncxOES(func, ref):
 	pass

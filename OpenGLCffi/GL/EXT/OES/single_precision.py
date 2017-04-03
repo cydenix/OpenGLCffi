@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('depth', api='gl')
 def glClearDepthfOES(depth):
 	pass

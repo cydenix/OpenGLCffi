@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('target', 'access', api='gles1')
 def glMapBufferOES(target, access):
 	pass

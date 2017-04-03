@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('type', 'pointer', api='gl')
 def glElementPointerAPPLE(type, pointer):
 	pass

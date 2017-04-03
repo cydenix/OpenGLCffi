@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'pname', 'param', api='gl')
 def glFramebufferParameteri(target, pname, param):
 	pass

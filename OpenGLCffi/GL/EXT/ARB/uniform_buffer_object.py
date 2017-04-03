@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('program', 'uniformCount', 'constuniformNames', 'uniformIndices', api='gl')
 def glGetUniformIndices(program, uniformCount, constuniformNames, uniformIndices):
 	pass

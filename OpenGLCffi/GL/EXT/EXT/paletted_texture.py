@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'internalFormat', 'width', 'format', 'type', 'table', api='gl')
 def glColorTableEXT(target, internalFormat, width, format, type, table):
 	pass

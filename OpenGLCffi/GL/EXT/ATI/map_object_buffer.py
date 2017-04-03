@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('buffer', api='gl')
 def glMapObjectBufferATI(buffer):
 	pass

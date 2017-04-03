@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('target', 'attachment', 'textarget', 'texture', 'level', 'xscale', 'yscale', api='gles2')
 def glFramebufferTexture2DDownsampleIMG(target, attachment, textarget, texture, level, xscale, yscale):
 	pass

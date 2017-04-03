@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'first', 'count', 'primcount', 'modestride', api='gl')
 def glMultiModeDrawArraysIBM(mode, first, count, primcount, modestride):
 	pass

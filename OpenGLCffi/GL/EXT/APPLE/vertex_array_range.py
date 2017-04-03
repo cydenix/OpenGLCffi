@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('length', 'pointer', api='gl')
 def glVertexArrayRangeAPPLE(length, pointer):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'indirect', 'drawcount', 'stride', api='gl')
 def glMultiDrawArraysIndirect(mode, indirect, drawcount, stride):
 	pass

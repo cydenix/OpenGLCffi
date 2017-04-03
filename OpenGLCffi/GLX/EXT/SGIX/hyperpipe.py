@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'npipes', api='glx')
 def glXQueryHyperpipeNetworkSGIX(dpy, npipes):
 	pass

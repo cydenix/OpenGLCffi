@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('location', 'x', api='gles2')
 def glUniform1i64NV(location, x):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('buf', 'src', 'dst', api='gl')
 def glBlendFuncIndexedAMD(buf, src, dst):
 	pass

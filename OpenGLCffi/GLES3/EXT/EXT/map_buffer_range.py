@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('target', 'offset', 'length', 'access', api='gles3')
 def glMapBufferRangeEXT(target, offset, length, access):
 	pass

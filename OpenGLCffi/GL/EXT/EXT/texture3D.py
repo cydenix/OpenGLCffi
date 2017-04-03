@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'level', 'internalformat', 'width', 'height', 'depth', 'border', 'format', 'type', 'pixels', api='gl')
 def glTexImage3DEXT(target, level, internalformat, width, height, depth, border, format, type, pixels):
 	pass

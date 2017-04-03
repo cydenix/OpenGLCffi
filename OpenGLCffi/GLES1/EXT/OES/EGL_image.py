@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('target', 'image', api='gles1')
 def glEGLImageTargetTexture2DOES(target, image):
 	pass

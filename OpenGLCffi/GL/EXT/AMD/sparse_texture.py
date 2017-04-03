@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'internalFormat', 'width', 'height', 'depth', 'layers', 'flags', api='gl')
 def glTexStorageSparseAMD(target, internalFormat, width, height, depth, layers, flags):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('mode', 'count', 'type', 'indices', 'basevertex', api='gles2')
 def glDrawElementsBaseVertexOES(mode, count, type, indices, basevertex):
 	pass

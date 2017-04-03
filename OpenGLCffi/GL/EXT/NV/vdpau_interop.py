@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('vdpDevice', 'getProcAddress', api='gl')
 def glVDPAUInitNV(vdpDevice, getProcAddress):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'readCtx', 'writeCtx', 'readTarget', 'writeTarget', 'readOffset', 'writeOffset', 'size', api='glx')
 def glXCopyBufferSubDataNV(dpy, readCtx, writeCtx, readTarget, writeTarget, readOffset, writeOffset, size):
 	pass

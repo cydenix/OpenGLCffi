@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'first', 'count', 'instancecount', 'baseinstance', api='gl')
 def glDrawArraysInstancedBaseInstance(mode, first, count, instancecount, baseinstance):
 	pass

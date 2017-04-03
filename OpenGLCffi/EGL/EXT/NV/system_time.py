@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params(api = 'egl')
 def eglGetSystemTimeFrequencyNV():
 	pass

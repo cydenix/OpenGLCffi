@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'config', 'width', 'height', 'attrib_list', api='glx')
 def glXCreateGLXPbufferSGIX(dpy, config, width, height, attrib_list):
 	pass

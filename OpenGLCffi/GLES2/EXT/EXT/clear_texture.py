@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('texture', 'level', 'format', 'type', 'data', api='gles2')
 def glClearTexImageEXT(texture, level, format, type, data):
 	pass

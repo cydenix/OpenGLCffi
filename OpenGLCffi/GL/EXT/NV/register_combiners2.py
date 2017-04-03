@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('stage', 'pname', 'params', api='gl')
 def glCombinerStageParameterfvNV(stage, pname, params):
 	pass

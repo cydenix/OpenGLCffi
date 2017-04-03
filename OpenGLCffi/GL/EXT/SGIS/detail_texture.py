@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'n', 'points', api='gl')
 def glDetailTexFuncSGIS(target, n, points):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', api='gl')
 def glInvalidateTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth):
 	pass

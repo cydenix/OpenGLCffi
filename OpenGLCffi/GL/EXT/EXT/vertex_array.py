@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('i', api='gl')
 def glArrayElementEXT(i):
 	pass

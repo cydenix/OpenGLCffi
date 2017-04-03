@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('id', 'len', 'name', 'x', 'y', 'z', 'w', api='gl')
 def glProgramNamedParameter4fNV(id, len, name, x, y, z, w):
 	pass

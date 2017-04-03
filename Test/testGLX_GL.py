@@ -1,5 +1,5 @@
-import os, sys
-sys.path.append(os.path.abspath(".."))
+#import os, sys
+#sys.path.append(os.path.abspath(".."))
 from OpenGLCffi.GLX import glx, ffi
 from OpenGLCffi.GL import gl, const
 from OpenGLCffi.GL import ffi as glffi
@@ -24,6 +24,7 @@ rot_Y = 30.0
 rotation_matrix = glffi.new("GLfloat [16]")
 
 d, conn = util.get_xdsp_xcb_connection(api='GLX')
+
 
 def drawCube(size):
 
@@ -65,6 +66,7 @@ def drawCube(size):
     gl.glVertex3f(size, size, -size)
 
     gl.glEnd()
+
 
 def rotateCube():
     global rot_Z, rot_Y, rotation_matrix

@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('device', 'attribute', 'value', api='egl')
 def eglQueryDeviceAttribEXT(device, attribute):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('numGroups', 'groupsSize', 'groups', api='gl')
 def glGetPerfMonitorGroupsAMD(numGroups, groupsSize, groups):
 	pass

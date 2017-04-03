@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('target', 'level', 'internalformat', 'width', 'height', 'depth', 'border', 'format', 'type', 'pixels', api='gles2')
 def glTexImage3DOES(target, level, internalformat, width, height, depth, border, format, type, pixels):
 	pass

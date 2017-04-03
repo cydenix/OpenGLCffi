@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('target', 'size', api='gles3')
 def glFramebufferPixelLocalStorageSizeEXT(target, size):
 	pass

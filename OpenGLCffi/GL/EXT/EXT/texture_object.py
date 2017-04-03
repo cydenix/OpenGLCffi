@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('n', 'textures', 'residences', api='gl')
 def glAreTexturesResidentEXT(n, textures, residences):
 	pass

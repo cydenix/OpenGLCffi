@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'drawable', 'group', api='glx')
 def glXJoinSwapGroupNV(dpy, drawable, group):
 	pass

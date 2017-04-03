@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('code', api='gl')
 def glReplacementCodeuiSUN(code):
 	pass

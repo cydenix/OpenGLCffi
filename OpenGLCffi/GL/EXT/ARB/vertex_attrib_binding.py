@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('bindingindex', 'buffer', 'offset', 'stride', api='gl')
 def glBindVertexBuffer(bindingindex, buffer, offset, stride):
 	pass

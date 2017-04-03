@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'max_formats', 'formats', 'num_formats', api='egl')
 def eglQueryDmaBufFormatsEXT(dpy, max_formats, formats, num_formats):
 	pass

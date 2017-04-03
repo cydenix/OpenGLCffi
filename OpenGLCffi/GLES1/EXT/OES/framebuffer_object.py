@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('renderbuffer', api='gles1')
 def glIsRenderbufferOES(renderbuffer):
 	pass

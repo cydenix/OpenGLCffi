@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('id', 'mode', api='gl')
 def glBeginConditionalRenderNV(id, mode):
 	pass

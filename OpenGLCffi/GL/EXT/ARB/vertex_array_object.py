@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('array', api='gl')
 def glBindVertexArray(array):
 	pass

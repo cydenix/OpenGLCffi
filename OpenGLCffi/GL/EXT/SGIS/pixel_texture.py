@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('pname', 'param', api='gl')
 def glPixelTexGenParameteriSGIS(pname, param):
 	pass

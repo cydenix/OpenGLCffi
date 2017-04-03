@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('type', 'namelen', 'name', 'stringlen', 'string', api='gl')
 def glNamedStringARB(type, namelen, name, stringlen, string):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'screen', 'numVideoDevices', 'pVideoDevice', api='glx')
 def glXGetVideoDeviceNV(dpy, screen, numVideoDevices, pVideoDevice):
 	pass

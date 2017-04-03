@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'attrib_list', 'layers', 'max_layers', 'num_layers', api='egl')
 def eglGetOutputLayersEXT(dpy, attrib_list, layers, max_layers, num_layers):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('program', 'pname', 'value', api='gl')
 def glProgramParameteriARB(program, pname, value):
 	pass

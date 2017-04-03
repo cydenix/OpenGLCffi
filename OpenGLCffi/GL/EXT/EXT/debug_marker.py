@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('length', 'marker', api='gl')
 def glInsertEventMarkerEXT(length, marker):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'condition', 'attrib_list', api='egl')
 def eglCreateFenceSyncNV(dpy, condition, attrib_list):
 	pass

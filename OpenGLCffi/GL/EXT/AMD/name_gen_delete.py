@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('identifier', 'num', 'names', api='gl')
 def glGenNamesAMD(identifier, num, names):
 	pass

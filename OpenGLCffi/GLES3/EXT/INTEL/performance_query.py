@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('queryHandle', api='gles3')
 def glBeginPerfQueryINTEL(queryHandle):
 	pass

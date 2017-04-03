@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('maxCount', 'ids', api='glx')
 def glXGetGPUIDsAMD(maxCount, ids):
 	pass

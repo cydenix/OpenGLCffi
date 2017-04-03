@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('first', 'count', 'v', api='gles2')
 def glViewportArrayvOES(first, count, v):
 	pass

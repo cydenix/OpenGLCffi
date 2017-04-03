@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('display', 'screen', 'channel', 'window', api='glx')
 def glXBindChannelToWindowSGIX(display, screen, channel, window):
 	pass

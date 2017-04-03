@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('size', 'pointer', 'usage', api='gl')
 def glNewObjectBufferATI(size, pointer, usage):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('m', api='gl')
 def glLoadTransposeMatrixfARB(m):
 	pass

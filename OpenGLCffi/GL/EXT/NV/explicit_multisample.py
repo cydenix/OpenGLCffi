@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('pname', 'index', 'val', api='gl')
 def glGetMultisamplefvNV(pname, index, val):
 	pass

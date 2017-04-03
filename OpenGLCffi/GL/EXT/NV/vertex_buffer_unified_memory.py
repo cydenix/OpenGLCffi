@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('pname', 'index', 'address', 'length', api='gl')
 def glBufferAddressRangeNV(pname, index, address, length):
 	pass

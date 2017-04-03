@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('obj', api='gl')
 def glDeleteObjectARB(obj):
 	pass

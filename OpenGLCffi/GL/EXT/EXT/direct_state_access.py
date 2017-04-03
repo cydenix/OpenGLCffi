@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'm', api='gl')
 def glMatrixLoadfEXT(mode, m):
 	pass

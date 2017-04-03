@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('factor', api='gl')
 def glTessellationFactorAMD(factor):
 	pass

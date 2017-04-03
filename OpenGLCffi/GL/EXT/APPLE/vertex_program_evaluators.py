@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('index', 'pname', api='gl')
 def glEnableVertexAttribAPPLE(index, pname):
 	pass

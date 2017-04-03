@@ -216,7 +216,7 @@ def gen_api_funcs(api, enumLst, cmdDict, ftrDict):
 
 def gen_api_extfunc(api, enumLst, cmdDict, extDict):
     global RET_DICT
-    print os.getcwd()
+
     ext_path = os.path.join(api.upper(), "EXT")
 
     if not os.path.isdir(ext_path):
@@ -234,6 +234,7 @@ def gen_api_extfunc(api, enumLst, cmdDict, extDict):
     for i in efls:
         if os.path.isdir(i[0]):
             with open(os.path.join(i[0], i[1] + ".py"), "w+") as f:
+                f.write("from OpenGLCffi.{} import params\n".format(api.upper()))
                 for ck in i[2]:
                     marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), cmdDict[ck].params)
                     if ck[:3] in ['glX', 'egl', 'glG']:
@@ -271,7 +272,6 @@ if __name__ == '__main__':
                'gles2': 'GLESv2',
                'gles3': 'GLESv2',
                'gl': 'GL'}
-    print BASE_DIR
 
     for k, v in apis.items():
         p = parser.Parser(v[0], k, v[1])

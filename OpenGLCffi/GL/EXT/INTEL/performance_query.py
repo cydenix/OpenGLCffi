@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('queryHandle', api='gl')
 def glBeginPerfQueryINTEL(queryHandle):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('stream', 'x', api='gl')
 def glVertexStream1sATI(stream, x):
 	pass

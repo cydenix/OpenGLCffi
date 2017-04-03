@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'attrib_list', api='egl')
 def eglCreateStreamKHR(dpy, attrib_list):
 	pass

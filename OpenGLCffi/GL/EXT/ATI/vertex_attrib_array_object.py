@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('index', 'size', 'type', 'normalized', 'stride', 'buffer', 'offset', api='gl')
 def glVertexAttribArrayObjectATI(index, size, type, normalized, stride, buffer, offset):
 	pass

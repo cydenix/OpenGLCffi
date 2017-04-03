@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('texture', 'level', 'format', 'type', 'data', api='gl')
 def glClearTexImage(texture, level, format, type, data):
 	pass

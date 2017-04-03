@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('coord', 'pname', 'param', api='gles1')
 def glTexGenfOES(coord, pname, param):
 	pass

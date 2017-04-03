@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('location', 'x', api='gl')
 def glUniform1i64ARB(location, x):
 	pass

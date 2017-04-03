@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('index', api='gl')
 def glCurrentPaletteMatrixARB(index):
 	pass

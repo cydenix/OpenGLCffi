@@ -1,4 +1,5 @@
 from OpenGLCffi.EGL import params
+
 @params('readdraw', api='egl')
 def eglGetCurrentSurface(readdraw):
 	pass

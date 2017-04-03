@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'config', 'attribute', 'value', api='glx')
 def glXGetFBConfigAttribSGIX(dpy, config, attribute):
 	pass

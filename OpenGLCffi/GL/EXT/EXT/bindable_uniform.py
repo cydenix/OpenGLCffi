@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('program', 'location', 'buffer', api='gl')
 def glUniformBufferEXT(program, location, buffer):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('shaders', 'maxShaders', 'numShaders', api='gles2')
 def glExtGetShadersQCOM(shaders, maxShaders, numShaders):
 	pass

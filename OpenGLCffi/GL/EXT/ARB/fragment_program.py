@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'format', 'len', 'string', api='gl')
 def glProgramStringARB(target, format, len, string):
 	pass

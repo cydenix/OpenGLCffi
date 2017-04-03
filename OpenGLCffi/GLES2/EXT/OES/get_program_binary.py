@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('program', 'bufSize', 'length', 'binaryFormat', 'binary', api='gles2')
 def glGetProgramBinaryOES(program, bufSize, length, binaryFormat, binary):
 	pass

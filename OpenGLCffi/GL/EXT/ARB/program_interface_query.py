@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('program', 'programInterface', 'pname', 'params', api='gl')
 def glGetProgramInterfaceiv(program, programInterface, pname, params):
 	pass

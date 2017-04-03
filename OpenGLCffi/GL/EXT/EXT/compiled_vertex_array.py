@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('first', 'count', api='gl')
 def glLockArraysEXT(first, count):
 	pass

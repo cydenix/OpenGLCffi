@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('mode', 'first', 'count', 'primcount', api='gles3')
 def glMultiDrawArraysEXT(mode, first, count, primcount):
 	pass

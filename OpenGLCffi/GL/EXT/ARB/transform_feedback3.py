@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'id', 'stream', api='gl')
 def glDrawTransformFeedbackStream(mode, id, stream):
 	pass

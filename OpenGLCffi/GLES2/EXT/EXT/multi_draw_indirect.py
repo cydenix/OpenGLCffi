@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('mode', 'indirect', 'drawcount', 'stride', api='gles2')
 def glMultiDrawArraysIndirectEXT(mode, indirect, drawcount, stride):
 	pass

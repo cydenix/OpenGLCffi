@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('textures', 'maxTextures', 'numTextures', api='gles2')
 def glExtGetTexturesQCOM(textures, maxTextures, numTextures):
 	pass

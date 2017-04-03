@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'ctx', 'target', 'buffer', 'attrib_list', api='egl')
 def eglCreateImageKHR(dpy, ctx, target, buffer, attrib_list):
 	pass

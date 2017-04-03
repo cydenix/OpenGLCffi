@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('program', 'location', 'params', api='gl')
 def glGetUniformuivEXT(program, location, params):
 	pass

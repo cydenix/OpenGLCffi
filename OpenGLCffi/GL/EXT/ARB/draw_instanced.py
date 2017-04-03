@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'first', 'count', 'primcount', api='gl')
 def glDrawArraysInstancedARB(mode, first, count, primcount):
 	pass

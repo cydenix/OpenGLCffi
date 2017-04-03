@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params(api = 'gles1')
 def glGetGraphicsResetStatusEXT():
 	pass

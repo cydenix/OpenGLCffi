@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'bindingIndex', 'wordIndex', 'count', 'params', api='gl')
 def glProgramBufferParametersfvNV(target, bindingIndex, wordIndex, count, params):
 	pass

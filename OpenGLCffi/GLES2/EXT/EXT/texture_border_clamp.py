@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('target', 'pname', 'params', api='gles2')
 def glTexParameterIivEXT(target, pname, params):
 	pass

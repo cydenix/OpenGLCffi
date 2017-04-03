@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('range', api='gles3')
 def glGenPathsNV():
 	pass
@@ -259,7 +260,7 @@ def glStencilThenCoverStrokePathInstancedNV(numPaths, pathNameType, paths, pathB
 
 
 @params('fontTarget', 'fontName', 'fontStyle', 'pathParameterTemplate', 'emScale', 'baseAndCount[2]', api='gles3')
-def glPathGlyphIndexRangeNV(fontTarget, fontName, fontStyle, pathParameterTemplate, emScale, baseAndCount[2]):
+def glPathGlyphIndexRangeNV(fontTarget, fontName, fontStyle, pathParameterTemplate, emScale, baseAndCount):
 	pass
 
 

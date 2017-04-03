@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('face', 'sfail', 'dpfail', 'dppass', api='gl')
 def glStencilOpSeparateATI(face, sfail, dpfail, dppass):
 	pass

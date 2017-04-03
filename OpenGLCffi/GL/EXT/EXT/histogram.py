@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'reset', 'format', 'type', 'values', api='gl')
 def glGetHistogramEXT(target, reset, format, type, values):
 	pass

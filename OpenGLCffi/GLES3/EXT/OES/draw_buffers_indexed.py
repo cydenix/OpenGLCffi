@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('target', 'index', api='gles3')
 def glEnableiOES(target, index):
 	pass

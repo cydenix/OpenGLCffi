@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('x', 'y', api='gl')
 def glWindowPos2dARB(x, y):
 	pass

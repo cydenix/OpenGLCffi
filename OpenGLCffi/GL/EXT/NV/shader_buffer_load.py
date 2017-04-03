@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'access', api='gl')
 def glMakeBufferResidentNV(target, access):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('location', 'x', api='gl')
 def glUniform1d(location, x):
 	pass

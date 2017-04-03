@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'count', 'params', api='gl')
 def glProgramSubroutineParametersuivNV(target, count, params):
 	pass

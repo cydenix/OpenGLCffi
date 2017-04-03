@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('index', 'texture', 'level', 'layered', 'layer', 'access', 'format', api='gl')
 def glBindImageTextureEXT(index, texture, level, layered, layer, access, format):
 	pass

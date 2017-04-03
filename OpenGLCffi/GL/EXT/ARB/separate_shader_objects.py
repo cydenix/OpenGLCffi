@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('pipeline', 'stages', 'program', api='gl')
 def glUseProgramStages(pipeline, stages, program):
 	pass

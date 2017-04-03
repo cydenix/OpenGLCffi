@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('range', api='gl')
 def glGenFragmentShadersATI(range):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('attribute', 'value', api='glx')
 def glXQueryCurrentRendererIntegerMESA(attribute):
 	pass

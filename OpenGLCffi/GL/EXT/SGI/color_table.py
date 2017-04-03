@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'internalformat', 'width', 'format', 'type', 'table', api='gl')
 def glColorTableSGI(target, internalformat, width, format, type, table):
 	pass

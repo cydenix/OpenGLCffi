@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('num', 'size', 'driverControls', api='gles2')
 def glGetDriverControlsQCOM(num, size, driverControls):
 	pass

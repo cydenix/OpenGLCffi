@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('range', api='gles2')
 def glGenPathsNV():
 	pass

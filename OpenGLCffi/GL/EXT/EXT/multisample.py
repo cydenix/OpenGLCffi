@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('value', 'invert', api='gl')
 def glSampleMaskEXT(value, invert):
 	pass

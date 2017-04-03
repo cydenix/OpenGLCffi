@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('platform', 'native_display', 'attrib_list', api='egl')
 def eglGetPlatformDisplayEXT(platform, native_display, attrib_list):
 	pass

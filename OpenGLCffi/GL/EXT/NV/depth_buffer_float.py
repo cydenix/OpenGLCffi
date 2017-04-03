@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('zNear', 'zFar', api='gl')
 def glDepthRangedNV(zNear, zFar):
 	pass

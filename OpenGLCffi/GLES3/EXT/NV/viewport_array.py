@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('first', 'count', 'v', api='gles3')
 def glViewportArrayvNV(first, count, v):
 	pass

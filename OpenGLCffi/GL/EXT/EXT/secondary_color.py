@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('red', 'green', 'blue', api='gl')
 def glSecondaryColor3bEXT(red, green, blue):
 	pass

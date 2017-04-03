@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('location', 'x', api='gles3')
 def glUniform1i64NV(location, x):
 	pass

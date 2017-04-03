@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'drawable', 'ust', 'msc', 'sbc', api='glx')
 def glXGetSyncValuesOML(dpy, drawable, ust, msc, sbc):
 	pass

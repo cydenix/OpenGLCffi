@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'type', 'bufSize', 'pixels', api='gl')
 def glGetTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, bufSize, pixels):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('src', 'index', api='gles3')
 def glReadBufferIndexedEXT(src, index):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('source', 'type', 'severity', 'count', 'ids', 'enabled', api='gl')
 def glDebugMessageControlARB(source, type, severity, count, ids, enabled):
 	pass

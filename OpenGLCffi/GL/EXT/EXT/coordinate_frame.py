@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('tx', 'ty', 'tz', api='gl')
 def glTangent3bEXT(tx, ty, tz):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('mode', 'first', 'count', 'instancecount', 'baseinstance', api='gles3')
 def glDrawArraysInstancedBaseInstanceEXT(mode, first, count, instancecount, baseinstance):
 	pass

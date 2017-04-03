@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'attribute', 'value', api='egl')
 def eglQueryDisplayAttribNV(dpy, attribute):
 	pass

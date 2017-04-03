@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'filter', 'weights', api='gl')
 def glGetTexFilterFuncSGIS(target, filter, weights):
 	pass

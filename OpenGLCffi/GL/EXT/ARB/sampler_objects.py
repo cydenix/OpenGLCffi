@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('count', 'samplers', api='gl')
 def glGenSamplers(count, samplers):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('index', 'type', 'normalized', 'value', api='gl')
 def glVertexAttribP1ui(index, type, normalized, value):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('type', 'program', api='gl')
 def glUseShaderProgramEXT(type, program):
 	pass

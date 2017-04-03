@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'start', 'count', 'v', api='gl')
 def glFramebufferSampleLocationsfvARB(target, start, count, v):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'image', 'fourcc', 'num_planes', 'modifiers', api='egl')
 def eglExportDMABUFImageQueryMESA(dpy, image, fourcc, num_planes, modifiers):
 	pass

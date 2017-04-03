@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'first', 'count', 'buffers', api='gl')
 def glBindBuffersBase(target, first, count, buffers):
 	pass

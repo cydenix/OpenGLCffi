@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('index', 'x', api='gl')
 def glVertexAttribL1i64NV(index, x):
 	pass

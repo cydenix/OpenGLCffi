@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('video_slot', 'minPresentTime', 'beginPresentTimeId', 'presentDurationId', 'type', 'target0', 'fill0', 'key0', 'target1', 'fill1', 'key1', api='gl')
 def glPresentFrameKeyedNV(video_slot, minPresentTime, beginPresentTimeId, presentDurationId, type, target0, fill0, key0, target1, fill1, key1):
 	pass

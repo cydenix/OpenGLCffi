@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('condition', 'flags', api='gles1')
 def glFenceSyncAPPLE(condition, flags):
 	pass

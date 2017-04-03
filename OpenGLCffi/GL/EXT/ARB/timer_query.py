@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('id', 'target', api='gl')
 def glQueryCounter(id, target):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'count', 'type', 'indices', 'basevertex', api='gl')
 def glDrawElementsBaseVertex(mode, count, type, indices, basevertex):
 	pass

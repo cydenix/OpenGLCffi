@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('pname', 'params', api='gl')
 def glCullParameterdvEXT(pname, params):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('category', 'severity', 'count', 'ids', 'enabled', api='gl')
 def glDebugMessageEnableAMD(category, severity, count, ids, enabled):
 	pass

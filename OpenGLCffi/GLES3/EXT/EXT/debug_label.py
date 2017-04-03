@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('type', 'object', 'length', 'label', api='gles3')
 def glLabelObjectEXT(type, object, length, label):
 	pass

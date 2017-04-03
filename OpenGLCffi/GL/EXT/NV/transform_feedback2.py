@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'id', api='gl')
 def glBindTransformFeedbackNV(target, id):
 	pass

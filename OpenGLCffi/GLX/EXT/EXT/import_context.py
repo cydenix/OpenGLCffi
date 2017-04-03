@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params(api = 'glx')
 def glXGetCurrentDisplayEXT():
 	pass

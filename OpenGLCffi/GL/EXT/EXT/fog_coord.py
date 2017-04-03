@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('coord', api='gl')
 def glFogCoordfEXT(coord):
 	pass

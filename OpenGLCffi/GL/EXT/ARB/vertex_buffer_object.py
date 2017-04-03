@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'buffer', api='gl')
 def glBindBufferARB(target, buffer):
 	pass

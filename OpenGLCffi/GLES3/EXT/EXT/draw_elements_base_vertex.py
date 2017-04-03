@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('mode', 'count', 'type', 'indices', 'basevertex', api='gles3')
 def glDrawElementsBaseVertexEXT(mode, count, type, indices, basevertex):
 	pass

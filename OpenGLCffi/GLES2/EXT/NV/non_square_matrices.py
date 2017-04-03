@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('location', 'count', 'transpose', 'value', api='gles2')
 def glUniformMatrix2x3fvNV(location, count, transpose, value):
 	pass

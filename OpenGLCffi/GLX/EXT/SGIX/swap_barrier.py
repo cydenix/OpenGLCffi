@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'drawable', 'barrier', api='glx')
 def glXBindSwapBarrierSGIX(dpy, drawable, barrier):
 	pass

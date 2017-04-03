@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'index', 'x', 'y', 'z', 'w', api='gl')
 def glProgramLocalParameterI4iNV(target, index, x, y, z, w):
 	pass

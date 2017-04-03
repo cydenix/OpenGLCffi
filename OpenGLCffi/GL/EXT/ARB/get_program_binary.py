@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('program', 'bufSize', 'length', 'binaryFormat', 'binary', api='gl')
 def glGetProgramBinary(program, bufSize, length, binaryFormat, binary):
 	pass

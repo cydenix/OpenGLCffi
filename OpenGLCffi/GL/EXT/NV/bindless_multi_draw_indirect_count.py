@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('mode', 'indirect', 'drawCount', 'maxDrawCount', 'stride', 'vertexBufferCount', api='gl')
 def glMultiDrawArraysIndirectBindlessCountNV(mode, indirect, drawCount, maxDrawCount, stride, vertexBufferCount):
 	pass

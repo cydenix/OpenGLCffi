@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'internalformat', 'width', 'format', 'type', 'image', api='gl')
 def glConvolutionFilter1DEXT(target, internalformat, width, format, type, image):
 	pass

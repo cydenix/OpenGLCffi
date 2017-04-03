@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('texture', api='gles3')
 def glGetTextureHandleNV(texture):
 	pass

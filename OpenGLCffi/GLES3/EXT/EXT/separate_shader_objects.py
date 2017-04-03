@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('type', 'program', api='gles3')
 def glUseShaderProgramEXT(type, program):
 	pass

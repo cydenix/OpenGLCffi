@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('array', api='gles2')
 def glBindVertexArrayOES(array):
 	pass

@@ -1,6 +1,6 @@
 #Working Example
-import os, sys
-sys.path.append(os.path.abspath(".."))
+#import os, sys
+#sys.path.append(os.path.abspath(".."))
 from OpenGLCffi.EGL import egl, ffi, util
 from OpenGLCffi.GLES2 import gles2, const
 from OpenGLCffi.GLES2 import ffi as es2

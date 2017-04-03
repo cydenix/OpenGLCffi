@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('buf', 'mode', api='gl')
 def glBlendEquationiARB(buf, mode):
 	pass

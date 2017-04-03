@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('objectType', 'name', 'option', api='gl')
 def glObjectPurgeableAPPLE(objectType, name, option):
 	pass

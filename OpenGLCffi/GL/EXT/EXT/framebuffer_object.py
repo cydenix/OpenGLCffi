@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('renderbuffer', api='gl')
 def glIsRenderbufferEXT(renderbuffer):
 	pass

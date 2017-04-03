@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('dpy', 'stream', api='egl')
 def eglStreamConsumerGLTextureExternalKHR(dpy, stream):
 	pass

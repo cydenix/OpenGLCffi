@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'level', 'internalformat', 'x', 'y', 'width', 'border', api='gl')
 def glCopyTexImage1DEXT(target, level, internalformat, x, y, width, border):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('n', 'ids', api='gles3')
 def glGenQueriesEXT(n, ids):
 	pass

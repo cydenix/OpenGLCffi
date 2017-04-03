@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'index', 'type', 'ustride', 'vstride', 'uorder', 'vorder', 'packed', 'points', api='gl')
 def glMapControlPointsNV(target, index, type, ustride, vstride, uorder, vorder, packed, points):
 	pass

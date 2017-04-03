@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('target', 'levels', 'internalformat', 'width', api='gles1')
 def glTexStorage1DEXT(target, levels, internalformat, width):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('type', 'object', 'length', 'label', api='gl')
 def glLabelObjectEXT(type, object, length, label):
 	pass

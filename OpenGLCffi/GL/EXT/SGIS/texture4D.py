@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'level', 'internalformat', 'width', 'height', 'depth', 'size4d', 'border', 'format', 'type', 'pixels', api='gl')
 def glTexImage4DSGIS(target, level, internalformat, width, height, depth, size4d, border, format, type, pixels):
 	pass

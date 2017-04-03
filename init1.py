@@ -1,6 +1,6 @@
 import os, sys
 from functools import wraps
-from FFI import *
+from OpenGLCffi.FFI import *
 from glob import glob
 from ctypes.util import find_library
 

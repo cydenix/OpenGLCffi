@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('texture', api='gl')
 def glSyncTextureINTEL(texture):
 	pass

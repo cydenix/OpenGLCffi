@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('program', 'colorNumber', 'index', 'name', api='gles2')
 def glBindFragDataLocationIndexedEXT(program, colorNumber, index, name):
 	pass

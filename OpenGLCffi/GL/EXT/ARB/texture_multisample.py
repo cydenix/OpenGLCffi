@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'samples', 'internalformat', 'width', 'height', 'fixedsamplelocations', api='gl')
 def glTexImage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations):
 	pass

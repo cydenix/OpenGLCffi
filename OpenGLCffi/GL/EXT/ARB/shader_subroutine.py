@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('program', 'shadertype', 'name', api='gl')
 def glGetSubroutineUniformLocation(program, shadertype, name):
 	pass

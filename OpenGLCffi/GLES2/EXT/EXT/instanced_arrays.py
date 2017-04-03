@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('mode', 'start', 'count', 'primcount', api='gles2')
 def glDrawArraysInstancedEXT(mode, start, count, primcount):
 	pass

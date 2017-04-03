@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('n', 'programs', 'residences', api='gl')
 def glAreProgramsResidentNV(n, programs, residences):
 	pass

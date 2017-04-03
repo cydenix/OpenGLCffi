@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('x', 'y', api='gl')
 def glWindowPos2dMESA(x, y):
 	pass

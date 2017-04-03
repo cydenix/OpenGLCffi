@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES2 import params
 @params('target', 'index', api='gles2')
 def glEnableiEXT(target, index):
 	pass

@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('size', 'type', 'stride', 'pointer', 'ptrstride', api='gl')
 def glColorPointerListIBM(size, type, stride, pointer, ptrstride):
 	pass

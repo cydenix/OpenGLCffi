@@ -1,3 +1,4 @@
+from OpenGLCffi.GLX import params
 @params('dpy', 'drawable', 'buffer', 'attrib_list', api='glx')
 def glXBindTexImageEXT(dpy, drawable, buffer, attrib_list):
 	pass

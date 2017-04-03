@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('n', 'ids', api='gl')
 def glGenQueriesARB(n, ids):
 	pass

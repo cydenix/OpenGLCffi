@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('r', 'g', 'b', 'a', 'x', 'y', api='gl')
 def glColor4ubVertex2fSUN(r, g, b, a, x, y):
 	pass

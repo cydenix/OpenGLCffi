@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'level', 'internalformat', 'width', 'height', 'depth', 'border', 'imageSize', 'data', api='gl')
 def glCompressedTexImage3DARB(target, level, internalformat, width, height, depth, border, imageSize, data):
 	pass

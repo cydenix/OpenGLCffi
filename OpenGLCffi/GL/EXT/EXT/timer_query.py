@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('id', 'pname', 'params', api='gl')
 def glGetQueryObjecti64vEXT(id, pname, params):
 	pass

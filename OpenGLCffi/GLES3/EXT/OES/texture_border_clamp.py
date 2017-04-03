@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('target', 'pname', 'params', api='gles3')
 def glTexParameterIivOES(target, pname, params):
 	pass

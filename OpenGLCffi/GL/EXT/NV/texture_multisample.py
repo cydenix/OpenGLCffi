@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'coverageSamples', 'colorSamples', 'internalFormat', 'width', 'height', 'fixedSampleLocations', api='gl')
 def glTexImage2DMultisampleCoverageNV(target, coverageSamples, colorSamples, internalFormat, width, height, fixedSampleLocations):
 	pass

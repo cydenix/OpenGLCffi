@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('weight', api='gl')
 def glVertexWeightfEXT(weight):
 	pass

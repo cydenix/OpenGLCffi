@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('first', 'count', 'v', api='gl')
 def glViewportArrayv(first, count, v):
 	pass

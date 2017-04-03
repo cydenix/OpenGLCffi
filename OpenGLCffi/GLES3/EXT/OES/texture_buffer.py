@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES3 import params
 @params('target', 'internalformat', 'buffer', api='gles3')
 def glTexBufferOES(target, internalformat, buffer):
 	pass

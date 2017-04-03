@@ -1,3 +1,4 @@
+from OpenGLCffi.EGL import params
 @params('callback', 'attrib_list', api='egl')
 def eglDebugMessageControlKHR(callback, attrib_list):
 	pass

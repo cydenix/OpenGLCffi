@@ -1,3 +1,4 @@
+from OpenGLCffi.GLES1 import params
 @params('matrixpaletteindex', api='gles1')
 def glCurrentPaletteMatrixOES(matrixpaletteindex):
 	pass

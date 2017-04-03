@@ -1,3 +1,4 @@
+from OpenGLCffi.GL import params
 @params('target', 'limit', api='gl')
 def glProgramVertexLimitNV(target, limit):
 	pass
