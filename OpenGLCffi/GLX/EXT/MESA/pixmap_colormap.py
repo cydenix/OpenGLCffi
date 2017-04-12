@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'visual', 'pixmap', 'cmap', api='glx')
+@params(api='glx', prms=['dpy', 'visual', 'pixmap', 'cmap'])
 def glXCreateGLXPixmapMESA(dpy, visual, pixmap, cmap):
 	pass
 

@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('pname', 'value', api='gl')
+@params(api='gl', prms=['pname', 'value'])
 def glBlendParameteriNV(pname, value):
 	pass
 
 
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glBlendBarrierNV():
 	pass
 

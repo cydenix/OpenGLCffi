@@ -1,30 +1,30 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'config', 'attribute', 'value', api='glx')
+@params(api='glx', prms=['dpy', 'config', 'attribute', 'value'])
 def glXGetFBConfigAttribSGIX(dpy, config, attribute):
 	pass
 
 
-@params('dpy', 'screen', 'attrib_list', 'nelements', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'attrib_list', 'nelements'])
 def glXChooseFBConfigSGIX(dpy, screen, attrib_list):
 	pass
 
 
-@params('dpy', 'config', 'pixmap', api='glx')
+@params(api='glx', prms=['dpy', 'config', 'pixmap'])
 def glXCreateGLXPixmapWithConfigSGIX(dpy, config, pixmap):
 	pass
 
 
-@params('dpy', 'config', 'render_type', 'share_list', 'direct', api='glx')
+@params(api='glx', prms=['dpy', 'config', 'render_type', 'share_list', 'direct'])
 def glXCreateContextWithConfigSGIX(dpy, config, render_type, share_list, direct):
 	pass
 
 
-@params('dpy', 'config', api='glx')
+@params(api='glx', prms=['dpy', 'config'])
 def glXGetVisualFromFBConfigSGIX(dpy, config):
 	pass
 
 
-@params('dpy', 'vis', api='glx')
+@params(api='glx', prms=['dpy', 'vis'])
 def glXGetFBConfigFromVisualSGIX(dpy, vis):
 	pass
 

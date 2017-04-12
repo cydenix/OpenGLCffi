@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES3 import params
-@params('mode', 'indirect', 'drawcount', 'stride', api='gles3')
+@params(api='gles3', prms=['mode', 'indirect', 'drawcount', 'stride'])
 def glMultiDrawArraysIndirectEXT(mode, indirect, drawcount, stride):
 	pass
 
 
-@params('mode', 'type', 'indirect', 'drawcount', 'stride', api='gles3')
+@params(api='gles3', prms=['mode', 'type', 'indirect', 'drawcount', 'stride'])
 def glMultiDrawElementsIndirectEXT(mode, type, indirect, drawcount, stride):
 	pass
 

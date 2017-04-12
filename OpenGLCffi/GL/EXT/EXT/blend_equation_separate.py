@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('modeRGB', 'modeAlpha', api='gl')
+@params(api='gl', prms=['modeRGB', 'modeAlpha'])
 def glBlendEquationSeparateEXT(modeRGB, modeAlpha):
 	pass
 

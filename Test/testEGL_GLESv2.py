@@ -1,6 +1,6 @@
 #Working Example
-#import os, sys
-#sys.path.append(os.path.abspath(".."))
+import os, sys
+sys.path.append(os.path.abspath(".."))
 from OpenGLCffi.EGL import egl, ffi, util
 from OpenGLCffi.GLES2 import gles2, const
 from OpenGLCffi.GLES2 import ffi as es2
@@ -13,9 +13,9 @@ from xcffib import xproto
 d, conn = util.get_xdsp_xcb_connection()
 edsp = egl.eglGetDisplay(d)
 
-
 print egl.eglInitialize(edsp)
 print egl.eglBindAPI(EGL_OPENGL_ES_API)
+
 
 setup = conn.get_setup()
 scr = setup.roots[0]
@@ -94,6 +94,6 @@ while True:
         gles2.glEnableVertexAttribArray(0)
         gles2.glDrawArrays(const.GL_TRIANGLES, 0, 3)
         egl.eglSwapBuffers(edsp, sfs)
-        
+
     if isinstance(ev, xproto.KeyPressEvent):
         break

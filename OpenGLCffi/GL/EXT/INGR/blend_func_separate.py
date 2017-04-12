@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('sfactorRGB', 'dfactorRGB', 'sfactorAlpha', 'dfactorAlpha', api='gl')
+@params(api='gl', prms=['sfactorRGB', 'dfactorRGB', 'sfactorAlpha', 'dfactorAlpha'])
 def glBlendFuncSeparateINGR(sfactorRGB, dfactorRGB, sfactorAlpha, dfactorAlpha):
 	pass
 

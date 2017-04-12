@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glGetInstrumentsSGIX():
 	pass
 
 
-@params('size', 'buffer', api='gl')
+@params(api='gl', prms=['size', 'buffer'])
 def glInstrumentsBufferSGIX(size, buffer):
 	pass
 
 
-@params('marker_p', api='gl')
+@params(api='gl', prms=['marker_p'])
 def glPollInstrumentsSGIX(marker_p):
 	pass
 
 
-@params('marker', api='gl')
+@params(api='gl', prms=['marker'])
 def glReadInstrumentsSGIX(marker):
 	pass
 
 
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glStartInstrumentsSGIX():
 	pass
 
 
-@params('marker', api='gl')
+@params(api='gl', prms=['marker'])
 def glStopInstrumentsSGIX(marker):
 	pass
 

@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('program', 'location', 'buffer', api='gl')
+@params(api='gl', prms=['program', 'location', 'buffer'])
 def glUniformBufferEXT(program, location, buffer):
 	pass
 
 
-@params('program', 'location', api='gl')
+@params(api='gl', prms=['program', 'location'])
 def glGetUniformBufferSizeEXT(program, location):
 	pass
 
 
-@params('program', 'location', api='gl')
+@params(api='gl', prms=['program', 'location'])
 def glGetUniformOffsetEXT(program, location):
 	pass
 

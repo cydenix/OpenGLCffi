@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES3 import params
-@params('target', 'offset', 'length', 'access', api='gles3')
+@params(api='gles3', prms=['target', 'offset', 'length', 'access'])
 def glMapBufferRangeEXT(target, offset, length, access):
 	pass
 
 
-@params('target', 'offset', 'length', api='gles3')
+@params(api='gles3', prms=['target', 'offset', 'length'])
 def glFlushMappedBufferRangeEXT(target, offset, length):
 	pass
 

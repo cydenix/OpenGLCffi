@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('program', 'pname', 'value', api='gl')
+@params(api='gl', prms=['program', 'pname', 'value'])
 def glProgramParameteriEXT(program, pname, value):
 	pass
 

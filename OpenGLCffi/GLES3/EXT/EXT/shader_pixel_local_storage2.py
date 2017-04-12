@@ -1,15 +1,15 @@
 from OpenGLCffi.GLES3 import params
-@params('target', 'size', api='gles3')
+@params(api='gles3', prms=['target', 'size'])
 def glFramebufferPixelLocalStorageSizeEXT(target, size):
 	pass
 
 
-@params('target', api='gles3')
+@params(api='gles3', prms=['target'])
 def glGetFramebufferPixelLocalStorageSizeEXT(target):
 	pass
 
 
-@params('offset', 'n', 'values', api='gles3')
+@params(api='gles3', prms=['offset', 'n', 'values'])
 def glClearPixelLocalStorageuiEXT(offset, n, values):
 	pass
 

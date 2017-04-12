@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glBlendColorEXT(red, green, blue, alpha):
 	pass
 

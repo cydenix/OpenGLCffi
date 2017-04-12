@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('pname', 'value', api='gles2')
+@params(api='gles2', prms=['pname', 'value'])
 def glPatchParameteriEXT(pname, value):
 	pass
 

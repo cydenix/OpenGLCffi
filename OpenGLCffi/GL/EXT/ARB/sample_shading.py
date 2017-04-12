@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('value', api='gl')
+@params(api='gl', prms=['value'])
 def glMinSampleShadingARB(value):
 	pass
 

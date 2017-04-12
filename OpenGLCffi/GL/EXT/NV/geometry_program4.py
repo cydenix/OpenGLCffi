@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('target', 'limit', api='gl')
+@params(api='gl', prms=['target', 'limit'])
 def glProgramVertexLimitNV(target, limit):
 	pass
 
 
-@params('target', 'attachment', 'texture', 'level', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'texture', 'level'])
 def glFramebufferTextureEXT(target, attachment, texture, level):
 	pass
 
 
-@params('target', 'attachment', 'texture', 'level', 'layer', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'texture', 'level', 'layer'])
 def glFramebufferTextureLayerEXT(target, attachment, texture, level, layer):
 	pass
 
 
-@params('target', 'attachment', 'texture', 'level', 'face', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'texture', 'level', 'face'])
 def glFramebufferTextureFaceEXT(target, attachment, texture, level, face):
 	pass
 

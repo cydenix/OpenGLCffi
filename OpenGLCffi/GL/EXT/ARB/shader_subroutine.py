@@ -1,40 +1,40 @@
 from OpenGLCffi.GL import params
-@params('program', 'shadertype', 'name', api='gl')
+@params(api='gl', prms=['program', 'shadertype', 'name'])
 def glGetSubroutineUniformLocation(program, shadertype, name):
 	pass
 
 
-@params('program', 'shadertype', 'name', api='gl')
+@params(api='gl', prms=['program', 'shadertype', 'name'])
 def glGetSubroutineIndex(program, shadertype, name):
 	pass
 
 
-@params('program', 'shadertype', 'index', 'pname', 'values', api='gl')
+@params(api='gl', prms=['program', 'shadertype', 'index', 'pname', 'values'])
 def glGetActiveSubroutineUniformiv(program, shadertype, index, pname, values):
 	pass
 
 
-@params('program', 'shadertype', 'index', 'bufsize', 'length', 'name', api='gl')
+@params(api='gl', prms=['program', 'shadertype', 'index', 'bufsize', 'length', 'name'])
 def glGetActiveSubroutineUniformName(program, shadertype, index, bufsize, length, name):
 	pass
 
 
-@params('program', 'shadertype', 'index', 'bufsize', 'length', 'name', api='gl')
+@params(api='gl', prms=['program', 'shadertype', 'index', 'bufsize', 'length', 'name'])
 def glGetActiveSubroutineName(program, shadertype, index, bufsize, length, name):
 	pass
 
 
-@params('shadertype', 'count', 'indices', api='gl')
+@params(api='gl', prms=['shadertype', 'count', 'indices'])
 def glUniformSubroutinesuiv(shadertype, count, indices):
 	pass
 
 
-@params('shadertype', 'location', 'params', api='gl')
+@params(api='gl', prms=['shadertype', 'location', 'params'])
 def glGetUniformSubroutineuiv(shadertype, location, params):
 	pass
 
 
-@params('program', 'shadertype', 'pname', 'values', api='gl')
+@params(api='gl', prms=['program', 'shadertype', 'pname', 'values'])
 def glGetProgramStageiv(program, shadertype, pname, values):
 	pass
 

@@ -1,40 +1,40 @@
 from OpenGLCffi.GL import params
-@params('n', 'ids', api='gl')
+@params(api='gl', prms=['n', 'ids'])
 def glGenQueriesARB(n, ids):
 	pass
 
 
-@params('n', 'ids', api='gl')
+@params(api='gl', prms=['n', 'ids'])
 def glDeleteQueriesARB(n, ids):
 	pass
 
 
-@params('id', api='gl')
+@params(api='gl', prms=['id'])
 def glIsQueryARB(id):
 	pass
 
 
-@params('target', 'id', api='gl')
+@params(api='gl', prms=['target', 'id'])
 def glBeginQueryARB(target, id):
 	pass
 
 
-@params('target', api='gl')
+@params(api='gl', prms=['target'])
 def glEndQueryARB(target):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetQueryivARB(target, pname, params):
 	pass
 
 
-@params('id', 'pname', 'params', api='gl')
+@params(api='gl', prms=['id', 'pname', 'params'])
 def glGetQueryObjectivARB(id, pname, params):
 	pass
 
 
-@params('id', 'pname', 'params', api='gl')
+@params(api='gl', prms=['id', 'pname', 'params'])
 def glGetQueryObjectuivARB(id, pname, params):
 	pass
 

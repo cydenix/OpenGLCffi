@@ -1,10 +1,10 @@
 from OpenGLCffi.GLX import params
-@params('display', 'screen', 'server', 'path', 'nodeClass', 'drainNode', api='glx')
+@params(api='glx', prms=['display', 'screen', 'server', 'path', 'nodeClass', 'drainNode'])
 def glXCreateGLXVideoSourceSGIX(display, screen, server, path, nodeClass, drainNode):
 	pass
 
 
-@params('dpy', 'glxvideosource', api='glx')
+@params(api='glx', prms=['dpy', 'glxvideosource'])
 def glXDestroyGLXVideoSourceSGIX(dpy, glxvideosource):
 	pass
 

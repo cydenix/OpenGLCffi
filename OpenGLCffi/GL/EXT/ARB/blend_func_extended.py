@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('program', 'colorNumber', 'index', 'name', api='gl')
+@params(api='gl', prms=['program', 'colorNumber', 'index', 'name'])
 def glBindFragDataLocationIndexed(program, colorNumber, index, name):
 	pass
 
 
-@params('program', 'name', api='gl')
+@params(api='gl', prms=['program', 'name'])
 def glGetFragDataIndex(program, name):
 	pass
 

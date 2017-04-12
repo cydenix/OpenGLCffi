@@ -1,35 +1,35 @@
 from OpenGLCffi.GLES1 import params
-@params('condition', 'flags', api='gles1')
+@params(api='gles1', prms=['condition', 'flags'])
 def glFenceSyncAPPLE(condition, flags):
 	pass
 
 
-@params('sync', api='gles1')
+@params(api='gles1', prms=['sync'])
 def glIsSyncAPPLE(sync):
 	pass
 
 
-@params('sync', api='gles1')
+@params(api='gles1', prms=['sync'])
 def glDeleteSyncAPPLE(sync):
 	pass
 
 
-@params('sync', 'flags', 'timeout', api='gles1')
+@params(api='gles1', prms=['sync', 'flags', 'timeout'])
 def glClientWaitSyncAPPLE(sync, flags, timeout):
 	pass
 
 
-@params('sync', 'flags', 'timeout', api='gles1')
+@params(api='gles1', prms=['sync', 'flags', 'timeout'])
 def glWaitSyncAPPLE(sync, flags, timeout):
 	pass
 
 
-@params('pname', 'params', api='gles1')
+@params(api='gles1', prms=['pname', 'params'])
 def glGetInteger64vAPPLE(pname):
 	pass
 
 
-@params('sync', 'pname', 'bufSize', 'length', 'values', api='gles1')
+@params(api='gles1', prms=['sync', 'pname', 'bufSize', 'length', 'values'])
 def glGetSyncivAPPLE(sync, pname, bufSize, length, values):
 	pass
 

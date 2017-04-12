@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('mode', 'indirect', api='gl')
+@params(api='gl', prms=['mode', 'indirect'])
 def glDrawArraysIndirect(mode, indirect):
 	pass
 
 
-@params('mode', 'type', 'indirect', api='gl')
+@params(api='gl', prms=['mode', 'type', 'indirect'])
 def glDrawElementsIndirect(mode, type, indirect):
 	pass
 

@@ -1,30 +1,30 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'screen', 'numVideoDevices', 'pVideoDevice', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'numVideoDevices', 'pVideoDevice'])
 def glXGetVideoDeviceNV(dpy, screen, numVideoDevices, pVideoDevice):
 	pass
 
 
-@params('dpy', 'screen', 'VideoDevice', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'VideoDevice'])
 def glXReleaseVideoDeviceNV(dpy, screen, VideoDevice):
 	pass
 
 
-@params('dpy', 'VideoDevice', 'pbuf', 'iVideoBuffer', api='glx')
+@params(api='glx', prms=['dpy', 'VideoDevice', 'pbuf', 'iVideoBuffer'])
 def glXBindVideoImageNV(dpy, VideoDevice, pbuf, iVideoBuffer):
 	pass
 
 
-@params('dpy', 'pbuf', api='glx')
+@params(api='glx', prms=['dpy', 'pbuf'])
 def glXReleaseVideoImageNV(dpy, pbuf):
 	pass
 
 
-@params('dpy', 'pbuf', 'iBufferType', 'pulCounterPbuffer', 'bBlock', api='glx')
+@params(api='glx', prms=['dpy', 'pbuf', 'iBufferType', 'pulCounterPbuffer', 'bBlock'])
 def glXSendPbufferToVideoNV(dpy, pbuf, iBufferType, pulCounterPbuffer, bBlock):
 	pass
 
 
-@params('dpy', 'screen', 'VideoDevice', 'pulCounterOutputPbuffer', 'pulCounterOutputVideo', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'VideoDevice', 'pulCounterOutputPbuffer', 'pulCounterOutputVideo'])
 def glXGetVideoInfoNV(dpy, screen, VideoDevice, pulCounterOutputPbuffer, pulCounterOutputVideo):
 	pass
 

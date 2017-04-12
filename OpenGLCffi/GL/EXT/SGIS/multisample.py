@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('value', 'invert', api='gl')
+@params(api='gl', prms=['value', 'invert'])
 def glSampleMaskSGIS(value, invert):
 	pass
 
 
-@params('pattern', api='gl')
+@params(api='gl', prms=['pattern'])
 def glSamplePatternSGIS(pattern):
 	pass
 

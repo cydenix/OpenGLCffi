@@ -1,10 +1,10 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'screen', 'nelements', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'nelements'])
 def glXEnumerateVideoDevicesNV(dpy, screen):
 	pass
 
 
-@params('dpy', 'video_slot', 'video_device', 'attrib_list', api='glx')
+@params(api='glx', prms=['dpy', 'video_slot', 'video_device', 'attrib_list'])
 def glXBindVideoDeviceNV(dpy, video_slot, video_device, attrib_list):
 	pass
 

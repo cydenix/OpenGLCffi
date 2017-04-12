@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'surface', 'time', api='egl')
+@params(api='egl', prms=['dpy', 'surface', 'time'])
 def eglPresentationTimeANDROID(dpy, surface, time):
 	pass
 

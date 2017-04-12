@@ -1,20 +1,20 @@
 from OpenGLCffi.GLES1 import params
-@params('array', api='gles1')
+@params(api='gles1', prms=['array'])
 def glBindVertexArrayOES(array):
 	pass
 
 
-@params('n', 'arrays', api='gles1')
+@params(api='gles1', prms=['n', 'arrays'])
 def glDeleteVertexArraysOES(n, arrays):
 	pass
 
 
-@params('n', 'arrays', api='gles1')
+@params(api='gles1', prms=['n', 'arrays'])
 def glGenVertexArraysOES(n, arrays):
 	pass
 
 
-@params('array', api='gles1')
+@params(api='gles1', prms=['array'])
 def glIsVertexArrayOES(array):
 	pass
 

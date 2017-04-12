@@ -1,65 +1,65 @@
 from OpenGLCffi.GLES2 import params
-@params('texture', api='gles2')
+@params(api='gles2', prms=['texture'])
 def glGetTextureHandleNV(texture):
 	pass
 
 
-@params('texture', 'sampler', api='gles2')
+@params(api='gles2', prms=['texture', 'sampler'])
 def glGetTextureSamplerHandleNV(texture, sampler):
 	pass
 
 
-@params('handle', api='gles2')
+@params(api='gles2', prms=['handle'])
 def glMakeTextureHandleResidentNV(handle):
 	pass
 
 
-@params('handle', api='gles2')
+@params(api='gles2', prms=['handle'])
 def glMakeTextureHandleNonResidentNV(handle):
 	pass
 
 
-@params('texture', 'level', 'layered', 'layer', 'format', api='gles2')
+@params(api='gles2', prms=['texture', 'level', 'layered', 'layer', 'format'])
 def glGetImageHandleNV(texture, level, layered, layer, format):
 	pass
 
 
-@params('handle', 'access', api='gles2')
+@params(api='gles2', prms=['handle', 'access'])
 def glMakeImageHandleResidentNV(handle, access):
 	pass
 
 
-@params('handle', api='gles2')
+@params(api='gles2', prms=['handle'])
 def glMakeImageHandleNonResidentNV(handle):
 	pass
 
 
-@params('location', 'value', api='gles2')
+@params(api='gles2', prms=['location', 'value'])
 def glUniformHandleui64NV(location, value):
 	pass
 
 
-@params('location', 'count', 'value', api='gles2')
+@params(api='gles2', prms=['location', 'count', 'value'])
 def glUniformHandleui64vNV(location, count, value):
 	pass
 
 
-@params('program', 'location', 'value', api='gles2')
+@params(api='gles2', prms=['program', 'location', 'value'])
 def glProgramUniformHandleui64NV(program, location, value):
 	pass
 
 
-@params('program', 'location', 'count', 'values', api='gles2')
+@params(api='gles2', prms=['program', 'location', 'count', 'values'])
 def glProgramUniformHandleui64vNV(program, location, count, values):
 	pass
 
 
-@params('handle', api='gles2')
+@params(api='gles2', prms=['handle'])
 def glIsTextureHandleResidentNV(handle):
 	pass
 
 
-@params('handle', api='gles2')
+@params(api='gles2', prms=['handle'])
 def glIsImageHandleResidentNV(handle):
 	pass
 

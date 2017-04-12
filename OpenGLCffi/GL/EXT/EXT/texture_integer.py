@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glTexParameterIivEXT(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glTexParameterIuivEXT(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetTexParameterIivEXT(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetTexParameterIuivEXT(target, pname, params):
 	pass
 
 
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glClearColorIiEXT(red, green, blue, alpha):
 	pass
 
 
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glClearColorIuiEXT(red, green, blue, alpha):
 	pass
 

@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('mode', 'start', 'count', 'primcount', api='gl')
+@params(api='gl', prms=['mode', 'start', 'count', 'primcount'])
 def glDrawArraysInstancedEXT(mode, start, count, primcount):
 	pass
 
 
-@params('mode', 'count', 'type', 'indices', 'primcount', api='gl')
+@params(api='gl', prms=['mode', 'count', 'type', 'indices', 'primcount'])
 def glDrawElementsInstancedEXT(mode, count, type, indices, primcount):
 	pass
 

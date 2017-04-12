@@ -1,15 +1,15 @@
 from OpenGLCffi.GLES3 import params
-@params('src', 'index', api='gles3')
+@params(api='gles3', prms=['src', 'index'])
 def glReadBufferIndexedEXT(src, index):
 	pass
 
 
-@params('n', 'location', 'indices', api='gles3')
+@params(api='gles3', prms=['n', 'location', 'indices'])
 def glDrawBuffersIndexedEXT(n, location, indices):
 	pass
 
 
-@params('target', 'index', 'data', api='gles3')
+@params(api='gles3', prms=['target', 'index', 'data'])
 def glGetIntegeri_vEXT(target, index):
 	pass
 

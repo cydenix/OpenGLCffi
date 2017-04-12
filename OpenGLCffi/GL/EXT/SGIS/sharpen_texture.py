@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('target', 'n', 'points', api='gl')
+@params(api='gl', prms=['target', 'n', 'points'])
 def glSharpenTexFuncSGIS(target, n, points):
 	pass
 
 
-@params('target', 'points', api='gl')
+@params(api='gl', prms=['target', 'points'])
 def glGetSharpenTexFuncSGIS(target, points):
 	pass
 

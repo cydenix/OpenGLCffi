@@ -1,25 +1,25 @@
 from OpenGLCffi.GL import params
-@params('coord', api='gl')
+@params(api='gl', prms=['coord'])
 def glFogCoordfEXT(coord):
 	pass
 
 
-@params('coord', api='gl')
+@params(api='gl', prms=['coord'])
 def glFogCoordfvEXT(coord):
 	pass
 
 
-@params('coord', api='gl')
+@params(api='gl', prms=['coord'])
 def glFogCoorddEXT(coord):
 	pass
 
 
-@params('coord', api='gl')
+@params(api='gl', prms=['coord'])
 def glFogCoorddvEXT(coord):
 	pass
 
 
-@params('type', 'stride', 'pointer', api='gl')
+@params(api='gl', prms=['type', 'stride', 'pointer'])
 def glFogCoordPointerEXT(type, stride, pointer):
 	pass
 

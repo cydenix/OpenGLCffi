@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES2 import params
-@params('id', 'mode', api='gles2')
+@params(api='gles2', prms=['id', 'mode'])
 def glBeginConditionalRenderNV(id, mode):
 	pass
 
 
-@params(api = 'gles2')
+@params(api='gles2', prms=[])
 def glEndConditionalRenderNV():
 	pass
 

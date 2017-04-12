@@ -1,25 +1,25 @@
 from OpenGLCffi.GLX import params
-@params('display', 'screen', 'channel', 'window', api='glx')
+@params(api='glx', prms=['display', 'screen', 'channel', 'window'])
 def glXBindChannelToWindowSGIX(display, screen, channel, window):
 	pass
 
 
-@params('display', 'screen', 'channel', 'x', 'y', 'w', 'h', api='glx')
+@params(api='glx', prms=['display', 'screen', 'channel', 'x', 'y', 'w', 'h'])
 def glXChannelRectSGIX(display, screen, channel, x, y, w, h):
 	pass
 
 
-@params('display', 'screen', 'channel', 'dx', 'dy', 'dw', 'dh', api='glx')
+@params(api='glx', prms=['display', 'screen', 'channel', 'dx', 'dy', 'dw', 'dh'])
 def glXQueryChannelRectSGIX(display, screen, channel, dx, dy, dw, dh):
 	pass
 
 
-@params('display', 'screen', 'channel', 'x', 'y', 'w', 'h', api='glx')
+@params(api='glx', prms=['display', 'screen', 'channel', 'x', 'y', 'w', 'h'])
 def glXQueryChannelDeltasSGIX(display, screen, channel, x, y, w, h):
 	pass
 
 
-@params('display', 'screen', 'channel', 'synctype', api='glx')
+@params(api='glx', prms=['display', 'screen', 'channel', 'synctype'])
 def glXChannelRectSyncSGIX(display, screen, channel, synctype):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('zmin', 'zmax', api='gl')
+@params(api='gl', prms=['zmin', 'zmax'])
 def glDepthBoundsEXT(zmin, zmax):
 	pass
 

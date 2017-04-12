@@ -1,20 +1,20 @@
 from OpenGLCffi.GLX import params
-@params('attribute', 'value', api='glx')
+@params(api='glx', prms=['attribute', 'value'])
 def glXQueryCurrentRendererIntegerMESA(attribute):
 	pass
 
 
-@params('attribute', api='glx')
+@params(api='glx', prms=['attribute'])
 def glXQueryCurrentRendererStringMESA(attribute):
 	pass
 
 
-@params('dpy', 'screen', 'renderer', 'attribute', 'value', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'renderer', 'attribute', 'value'])
 def glXQueryRendererIntegerMESA(dpy, screen, renderer, attribute):
 	pass
 
 
-@params('dpy', 'screen', 'renderer', 'attribute', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'renderer', 'attribute'])
 def glXQueryRendererStringMESA(dpy, screen, renderer, attribute):
 	pass
 

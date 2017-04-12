@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('xbits', 'ybits', api='gl')
+@params(api='gl', prms=['xbits', 'ybits'])
 def glSubpixelPrecisionBiasNV(xbits, ybits):
 	pass
 

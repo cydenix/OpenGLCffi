@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('marker', api='gl')
+@params(api='gl', prms=['marker'])
 def glAsyncMarkerSGIX(marker):
 	pass
 
 
-@params('markerp', api='gl')
+@params(api='gl', prms=['markerp'])
 def glFinishAsyncSGIX(markerp):
 	pass
 
 
-@params('markerp', api='gl')
+@params(api='gl', prms=['markerp'])
 def glPollAsyncSGIX(markerp):
 	pass
 
 
-@params('range', api='gl')
+@params(api='gl', prms=['range'])
 def glGenAsyncMarkersSGIX(range):
 	pass
 
 
-@params('marker', 'range', api='gl')
+@params(api='gl', prms=['marker', 'range'])
 def glDeleteAsyncMarkersSGIX(marker, range):
 	pass
 
 
-@params('marker', api='gl')
+@params(api='gl', prms=['marker'])
 def glIsAsyncMarkerSGIX(marker):
 	pass
 

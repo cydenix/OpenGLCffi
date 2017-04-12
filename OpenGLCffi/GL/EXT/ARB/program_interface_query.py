@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('program', 'programInterface', 'pname', 'params', api='gl')
+@params(api='gl', prms=['program', 'programInterface', 'pname', 'params'])
 def glGetProgramInterfaceiv(program, programInterface, pname, params):
 	pass
 
 
-@params('program', 'programInterface', 'name', api='gl')
+@params(api='gl', prms=['program', 'programInterface', 'name'])
 def glGetProgramResourceIndex(program, programInterface, name):
 	pass
 
 
-@params('program', 'programInterface', 'index', 'bufSize', 'length', 'name', api='gl')
+@params(api='gl', prms=['program', 'programInterface', 'index', 'bufSize', 'length', 'name'])
 def glGetProgramResourceName(program, programInterface, index, bufSize, length, name):
 	pass
 
 
-@params('program', 'programInterface', 'index', 'propCount', 'props', 'bufSize', 'length', 'params', api='gl')
+@params(api='gl', prms=['program', 'programInterface', 'index', 'propCount', 'props', 'bufSize', 'length', 'params'])
 def glGetProgramResourceiv(program, programInterface, index, propCount, props, bufSize, length, params):
 	pass
 
 
-@params('program', 'programInterface', 'name', api='gl')
+@params(api='gl', prms=['program', 'programInterface', 'name'])
 def glGetProgramResourceLocation(program, programInterface, name):
 	pass
 
 
-@params('program', 'programInterface', 'name', api='gl')
+@params(api='gl', prms=['program', 'programInterface', 'name'])
 def glGetProgramResourceLocationIndex(program, programInterface, name):
 	pass
 

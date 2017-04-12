@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('array', api='gl')
+@params(api='gl', prms=['array'])
 def glBindVertexArray(array):
 	pass
 
 
-@params('n', 'arrays', api='gl')
+@params(api='gl', prms=['n', 'arrays'])
 def glDeleteVertexArrays(n, arrays):
 	pass
 
 
-@params('n', 'arrays', api='gl')
+@params(api='gl', prms=['n', 'arrays'])
 def glGenVertexArrays(n, arrays):
 	pass
 
 
-@params('array', api='gl')
+@params(api='gl', prms=['array'])
 def glIsVertexArray(array):
 	pass
 

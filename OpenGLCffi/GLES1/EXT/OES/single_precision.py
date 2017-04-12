@@ -1,30 +1,30 @@
 from OpenGLCffi.GLES1 import params
-@params('depth', api='gles1')
+@params(api='gles1', prms=['depth'])
 def glClearDepthfOES(depth):
 	pass
 
 
-@params('plane', 'equation', api='gles1')
+@params(api='gles1', prms=['plane', 'equation'])
 def glClipPlanefOES(plane, equation):
 	pass
 
 
-@params('n', 'f', api='gles1')
+@params(api='gles1', prms=['n', 'f'])
 def glDepthRangefOES(n, f):
 	pass
 
 
-@params('l', 'r', 'b', 't', 'n', 'f', api='gles1')
+@params(api='gles1', prms=['l', 'r', 'b', 't', 'n', 'f'])
 def glFrustumfOES(l, r, b, t, n, f):
 	pass
 
 
-@params('plane', 'equation', api='gles1')
+@params(api='gles1', prms=['plane', 'equation'])
 def glGetClipPlanefOES(plane):
 	pass
 
 
-@params('l', 'r', 'b', 't', 'n', 'f', api='gles1')
+@params(api='gles1', prms=['l', 'r', 'b', 't', 'n', 'f'])
 def glOrthofOES(l, r, b, t, n, f):
 	pass
 

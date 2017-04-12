@@ -23,7 +23,8 @@ rot_Z = 50.0
 rot_Y = 30.0
 rotation_matrix = glffi.new("GLfloat [16]")
 
-d, conn = util.get_xdsp_xcb_connection(api='GLX')
+d, c = util.get_xdsp_xcb_connection(api='GLX')
+conn = xcffib.wrap(c)
 
 
 def drawCube(size):
@@ -133,7 +134,7 @@ def setupGL(cn, dsp, w, v):
     conf = glx.glXChooseFBConfig(dsp, 0, vi_attrib)
     
     for i in xrange(conf['nelements'][0]):
-        v_id = glx.glXGetFBConfigAttrib(dsp, conf['fn_ret'][i], GLX_VISUAL_ID)
+        v_id = glx.glXGetFBConfigAttrib(dsp, conf[i], GLX_VISUAL_ID)
         if v_id['value'][0] == v:
             dconf = conf['fn_ret'][i]
 

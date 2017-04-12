@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'config', 'pixmap', api='egl')
+@params(api='egl', prms=['dpy', 'config', 'pixmap'])
 def eglCreatePixmapSurfaceHI(dpy, config, pixmap):
 	pass
 

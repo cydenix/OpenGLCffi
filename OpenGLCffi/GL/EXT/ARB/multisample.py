@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('value', 'invert', api='gl')
+@params(api='gl', prms=['value', 'invert'])
 def glSampleCoverageARB(value, invert):
 	pass
 

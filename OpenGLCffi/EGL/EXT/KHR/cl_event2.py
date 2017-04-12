@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'type', 'attrib_list', api='egl')
+@params(api='egl', prms=['dpy', 'type', 'attrib_list'])
 def eglCreateSync64KHR(dpy, type, attrib_list):
 	pass
 

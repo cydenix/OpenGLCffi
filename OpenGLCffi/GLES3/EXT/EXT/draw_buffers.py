@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('n', 'bufs', api='gles3')
+@params(api='gles3', prms=['n', 'bufs'])
 def glDrawBuffersEXT(n, bufs):
 	pass
 

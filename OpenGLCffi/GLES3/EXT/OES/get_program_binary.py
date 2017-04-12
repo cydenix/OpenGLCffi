@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES3 import params
-@params('program', 'bufSize', 'length', 'binaryFormat', 'binary', api='gles3')
+@params(api='gles3', prms=['program', 'bufSize', 'length', 'binaryFormat', 'binary'])
 def glGetProgramBinaryOES(program, bufSize, length, binaryFormat):
 	pass
 
 
-@params('program', 'binaryFormat', 'binary', 'length', api='gles3')
+@params(api='gles3', prms=['program', 'binaryFormat', 'binary', 'length'])
 def glProgramBinaryOES(program, binaryFormat, binary, length):
 	pass
 

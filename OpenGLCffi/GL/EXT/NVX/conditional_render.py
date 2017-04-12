@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('id', api='gl')
+@params(api='gl', prms=['id'])
 def glBeginConditionalRenderNVX(id):
 	pass
 
 
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glEndConditionalRenderNVX():
 	pass
 

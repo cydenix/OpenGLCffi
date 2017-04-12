@@ -1,55 +1,55 @@
 from OpenGLCffi.GLES2 import params
-@params('n', 'ids', api='gles2')
+@params(api='gles2', prms=['n', 'ids'])
 def glGenQueriesEXT(n, ids):
 	pass
 
 
-@params('n', 'ids', api='gles2')
+@params(api='gles2', prms=['n', 'ids'])
 def glDeleteQueriesEXT(n, ids):
 	pass
 
 
-@params('id', api='gles2')
+@params(api='gles2', prms=['id'])
 def glIsQueryEXT(id):
 	pass
 
 
-@params('target', 'id', api='gles2')
+@params(api='gles2', prms=['target', 'id'])
 def glBeginQueryEXT(target, id):
 	pass
 
 
-@params('target', api='gles2')
+@params(api='gles2', prms=['target'])
 def glEndQueryEXT(target):
 	pass
 
 
-@params('id', 'target', api='gles2')
+@params(api='gles2', prms=['id', 'target'])
 def glQueryCounterEXT(id, target):
 	pass
 
 
-@params('target', 'pname', 'params', api='gles2')
+@params(api='gles2', prms=['target', 'pname', 'params'])
 def glGetQueryivEXT(target, pname):
 	pass
 
 
-@params('id', 'pname', 'params', api='gles2')
+@params(api='gles2', prms=['id', 'pname', 'params'])
 def glGetQueryObjectivEXT(id, pname):
 	pass
 
 
-@params('id', 'pname', 'params', api='gles2')
+@params(api='gles2', prms=['id', 'pname', 'params'])
 def glGetQueryObjectuivEXT(id, pname):
 	pass
 
 
-@params('id', 'pname', 'params', api='gles2')
+@params(api='gles2', prms=['id', 'pname', 'params'])
 def glGetQueryObjecti64vEXT(id, pname):
 	pass
 
 
-@params('id', 'pname', 'params', api='gles2')
+@params(api='gles2', prms=['id', 'pname', 'params'])
 def glGetQueryObjectui64vEXT(id, pname):
 	pass
 

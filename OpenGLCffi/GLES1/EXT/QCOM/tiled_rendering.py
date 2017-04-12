@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES1 import params
-@params('x', 'y', 'width', 'height', 'preserveMask', api='gles1')
+@params(api='gles1', prms=['x', 'y', 'width', 'height', 'preserveMask'])
 def glStartTilingQCOM(x, y, width, height, preserveMask):
 	pass
 
 
-@params('preserveMask', api='gles1')
+@params(api='gles1', prms=['preserveMask'])
 def glEndTilingQCOM(preserveMask):
 	pass
 

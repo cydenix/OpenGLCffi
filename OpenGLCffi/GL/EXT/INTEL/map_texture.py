@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('texture', api='gl')
+@params(api='gl', prms=['texture'])
 def glSyncTextureINTEL(texture):
 	pass
 
 
-@params('texture', 'level', api='gl')
+@params(api='gl', prms=['texture', 'level'])
 def glUnmapTexture2DINTEL(texture, level):
 	pass
 
 
-@params('texture', 'level', 'access', 'stride', 'layout', api='gl')
+@params(api='gl', prms=['texture', 'level', 'access', 'stride', 'layout'])
 def glMapTexture2DINTEL(texture, level, access, stride, layout):
 	pass
 

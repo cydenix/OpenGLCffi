@@ -1,35 +1,35 @@
 from OpenGLCffi.GL import params
-@params('target', 'id', api='gl')
+@params(api='gl', prms=['target', 'id'])
 def glBindTransformFeedbackNV(target, id):
 	pass
 
 
-@params('n', 'ids', api='gl')
+@params(api='gl', prms=['n', 'ids'])
 def glDeleteTransformFeedbacksNV(n, ids):
 	pass
 
 
-@params('n', 'ids', api='gl')
+@params(api='gl', prms=['n', 'ids'])
 def glGenTransformFeedbacksNV(n, ids):
 	pass
 
 
-@params('id', api='gl')
+@params(api='gl', prms=['id'])
 def glIsTransformFeedbackNV(id):
 	pass
 
 
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glPauseTransformFeedbackNV():
 	pass
 
 
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glResumeTransformFeedbackNV():
 	pass
 
 
-@params('mode', 'id', api='gl')
+@params(api='gl', prms=['mode', 'id'])
 def glDrawTransformFeedbackNV(mode, id):
 	pass
 

@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES2 import params
-@params('texture', 'level', 'format', 'type', 'data', api='gles2')
+@params(api='gles2', prms=['texture', 'level', 'format', 'type', 'data'])
 def glClearTexImageEXT(texture, level, format, type, data):
 	pass
 
 
-@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'type', 'data', api='gles2')
+@params(api='gles2', prms=['texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', 'format', 'type', 'data'])
 def glClearTexSubImageEXT(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, data):
 	pass
 

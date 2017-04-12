@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('target', 'attachment', 'texture', 'level', api='gles2')
+@params(api='gles2', prms=['target', 'attachment', 'texture', 'level'])
 def glFramebufferTextureEXT(target, attachment, texture, level):
 	pass
 

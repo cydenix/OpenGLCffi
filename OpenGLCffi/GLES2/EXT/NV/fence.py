@@ -1,35 +1,35 @@
 from OpenGLCffi.GLES2 import params
-@params('n', 'fences', api='gles2')
+@params(api='gles2', prms=['n', 'fences'])
 def glDeleteFencesNV(n, fences):
 	pass
 
 
-@params('n', 'fences', api='gles2')
+@params(api='gles2', prms=['n', 'fences'])
 def glGenFencesNV(n, fences):
 	pass
 
 
-@params('fence', api='gles2')
+@params(api='gles2', prms=['fence'])
 def glIsFenceNV(fence):
 	pass
 
 
-@params('fence', api='gles2')
+@params(api='gles2', prms=['fence'])
 def glTestFenceNV(fence):
 	pass
 
 
-@params('fence', 'pname', 'params', api='gles2')
+@params(api='gles2', prms=['fence', 'pname', 'params'])
 def glGetFenceivNV(fence, pname):
 	pass
 
 
-@params('fence', api='gles2')
+@params(api='gles2', prms=['fence'])
 def glFinishFenceNV(fence):
 	pass
 
 
-@params('fence', 'condition', api='gles2')
+@params(api='gles2', prms=['fence', 'condition'])
 def glSetFenceNV(fence, condition):
 	pass
 

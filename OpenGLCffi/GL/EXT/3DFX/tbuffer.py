@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('mask', api='gl')
+@params(api='gl', prms=['mask'])
 def glTbufferMask3DFX(mask):
 	pass
 

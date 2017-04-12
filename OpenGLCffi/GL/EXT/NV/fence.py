@@ -1,35 +1,35 @@
 from OpenGLCffi.GL import params
-@params('n', 'fences', api='gl')
+@params(api='gl', prms=['n', 'fences'])
 def glDeleteFencesNV(n, fences):
 	pass
 
 
-@params('n', 'fences', api='gl')
+@params(api='gl', prms=['n', 'fences'])
 def glGenFencesNV(n, fences):
 	pass
 
 
-@params('fence', api='gl')
+@params(api='gl', prms=['fence'])
 def glIsFenceNV(fence):
 	pass
 
 
-@params('fence', api='gl')
+@params(api='gl', prms=['fence'])
 def glTestFenceNV(fence):
 	pass
 
 
-@params('fence', 'pname', 'params', api='gl')
+@params(api='gl', prms=['fence', 'pname', 'params'])
 def glGetFenceivNV(fence, pname, params):
 	pass
 
 
-@params('fence', api='gl')
+@params(api='gl', prms=['fence'])
 def glFinishFenceNV(fence):
 	pass
 
 
-@params('fence', 'condition', api='gl')
+@params(api='gl', prms=['fence', 'condition'])
 def glSetFenceNV(fence, condition):
 	pass
 

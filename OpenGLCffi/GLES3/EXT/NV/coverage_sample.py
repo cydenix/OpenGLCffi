@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES3 import params
-@params('mask', api='gles3')
+@params(api='gles3', prms=['mask'])
 def glCoverageMaskNV(mask):
 	pass
 
 
-@params('operation', api='gles3')
+@params(api='gles3', prms=['operation'])
 def glCoverageOperationNV(operation):
 	pass
 

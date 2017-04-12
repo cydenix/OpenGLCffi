@@ -1,50 +1,50 @@
 from OpenGLCffi.GLES3 import params
-@params('queryHandle', api='gles3')
+@params(api='gles3', prms=['queryHandle'])
 def glBeginPerfQueryINTEL(queryHandle):
 	pass
 
 
-@params('queryId', 'queryHandle', api='gles3')
+@params(api='gles3', prms=['queryId', 'queryHandle'])
 def glCreatePerfQueryINTEL(queryId, queryHandle):
 	pass
 
 
-@params('queryHandle', api='gles3')
+@params(api='gles3', prms=['queryHandle'])
 def glDeletePerfQueryINTEL(queryHandle):
 	pass
 
 
-@params('queryHandle', api='gles3')
+@params(api='gles3', prms=['queryHandle'])
 def glEndPerfQueryINTEL(queryHandle):
 	pass
 
 
-@params('queryId', api='gles3')
+@params(api='gles3', prms=['queryId'])
 def glGetFirstPerfQueryIdINTEL(queryId):
 	pass
 
 
-@params('queryId', 'nextQueryId', api='gles3')
+@params(api='gles3', prms=['queryId', 'nextQueryId'])
 def glGetNextPerfQueryIdINTEL(queryId, nextQueryId):
 	pass
 
 
-@params('queryId', 'counterId', 'counterNameLength', 'counterName', 'counterDescLength', 'counterDesc', 'counterOffset', 'counterDataSize', 'counterTypeEnum', 'counterDataTypeEnum', 'rawCounterMaxValue', api='gles3')
+@params(api='gles3', prms=['queryId', 'counterId', 'counterNameLength', 'counterName', 'counterDescLength', 'counterDesc', 'counterOffset', 'counterDataSize', 'counterTypeEnum', 'counterDataTypeEnum', 'rawCounterMaxValue'])
 def glGetPerfCounterInfoINTEL(queryId, counterId, counterNameLength, counterName, counterDescLength, counterDesc, counterOffset, counterDataSize, counterTypeEnum, counterDataTypeEnum, rawCounterMaxValue):
 	pass
 
 
-@params('queryHandle', 'flags', 'dataSize', 'data', 'bytesWritten', api='gles3')
+@params(api='gles3', prms=['queryHandle', 'flags', 'dataSize', 'data', 'bytesWritten'])
 def glGetPerfQueryDataINTEL(queryHandle, flags, dataSize, bytesWritten):
 	pass
 
 
-@params('queryName', 'queryId', api='gles3')
+@params(api='gles3', prms=['queryName', 'queryId'])
 def glGetPerfQueryIdByNameINTEL(queryName, queryId):
 	pass
 
 
-@params('queryId', 'queryNameLength', 'queryName', 'dataSize', 'noCounters', 'noInstances', 'capsMask', api='gles3')
+@params(api='gles3', prms=['queryId', 'queryNameLength', 'queryName', 'dataSize', 'noCounters', 'noInstances', 'capsMask'])
 def glGetPerfQueryInfoINTEL(queryId, queryNameLength, queryName, dataSize, noCounters, noInstances, capsMask):
 	pass
 

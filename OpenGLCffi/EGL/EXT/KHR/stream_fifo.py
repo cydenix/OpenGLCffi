@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'stream', 'attribute', 'value', api='egl')
+@params(api='egl', prms=['dpy', 'stream', 'attribute', 'value'])
 def eglQueryStreamTimeKHR(dpy, stream, attribute):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('face', api='gl')
+@params(api='gl', prms=['face'])
 def glActiveStencilFaceEXT(face):
 	pass
 

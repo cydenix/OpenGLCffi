@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('target', 'pname', 'param', api='gl')
+@params(api='gl', prms=['target', 'pname', 'param'])
 def glBufferParameteriAPPLE(target, pname, param):
 	pass
 
 
-@params('target', 'offset', 'size', api='gl')
+@params(api='gl', prms=['target', 'offset', 'size'])
 def glFlushMappedBufferRangeAPPLE(target, offset, size):
 	pass
 

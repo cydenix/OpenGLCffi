@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'window', 'cushion', api='glx')
+@params(api='glx', prms=['dpy', 'window', 'cushion'])
 def glXCushionSGI(dpy, window, cushion):
 	pass
 

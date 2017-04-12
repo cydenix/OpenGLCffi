@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES3 import params
-@params('id', 'mode', api='gles3')
+@params(api='gles3', prms=['id', 'mode'])
 def glBeginConditionalRenderNV(id, mode):
 	pass
 
 
-@params(api = 'gles3')
+@params(api='gles3', prms=[])
 def glEndConditionalRenderNV():
 	pass
 

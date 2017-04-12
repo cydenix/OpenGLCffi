@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glFrameZoomSGIX(factor):
 	pass
 

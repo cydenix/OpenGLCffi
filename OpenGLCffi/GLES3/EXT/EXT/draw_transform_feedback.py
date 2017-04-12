@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES3 import params
-@params('mode', 'id', api='gles3')
+@params(api='gles3', prms=['mode', 'id'])
 def glDrawTransformFeedbackEXT(mode, id):
 	pass
 
 
-@params('mode', 'id', 'instancecount', api='gles3')
+@params(api='gles3', prms=['mode', 'id', 'instancecount'])
 def glDrawTransformFeedbackInstancedEXT(mode, id, instancecount):
 	pass
 

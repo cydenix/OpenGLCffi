@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('origin', 'depth', api='gl')
+@params(api='gl', prms=['origin', 'depth'])
 def glClipControl(origin, depth):
 	pass
 

@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('list', 'pname', 'params', api='gl')
+@params(api='gl', prms=['list', 'pname', 'params'])
 def glGetListParameterfvSGIX(list, pname, params):
 	pass
 
 
-@params('list', 'pname', 'params', api='gl')
+@params(api='gl', prms=['list', 'pname', 'params'])
 def glGetListParameterivSGIX(list, pname, params):
 	pass
 
 
-@params('list', 'pname', 'param', api='gl')
+@params(api='gl', prms=['list', 'pname', 'param'])
 def glListParameterfSGIX(list, pname, param):
 	pass
 
 
-@params('list', 'pname', 'params', api='gl')
+@params(api='gl', prms=['list', 'pname', 'params'])
 def glListParameterfvSGIX(list, pname, params):
 	pass
 
 
-@params('list', 'pname', 'param', api='gl')
+@params(api='gl', prms=['list', 'pname', 'param'])
 def glListParameteriSGIX(list, pname, param):
 	pass
 
 
-@params('list', 'pname', 'params', api='gl')
+@params(api='gl', prms=['list', 'pname', 'params'])
 def glListParameterivSGIX(list, pname, params):
 	pass
 

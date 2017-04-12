@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'surface', 'rects', 'n_rects', api='egl')
+@params(api='egl', prms=['dpy', 'surface', 'rects', 'n_rects'])
 def eglSwapBuffersWithDamageEXT(dpy, surface, rects, n_rects):
 	pass
 

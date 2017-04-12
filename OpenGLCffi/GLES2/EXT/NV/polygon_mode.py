@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('face', 'mode', api='gles2')
+@params(api='gles2', prms=['face', 'mode'])
 def glPolygonModeNV(face, mode):
 	pass
 

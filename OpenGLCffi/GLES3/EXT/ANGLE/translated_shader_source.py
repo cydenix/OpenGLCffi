@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('shader', 'bufsize', 'length', 'source', api='gles3')
+@params(api='gles3', prms=['shader', 'bufsize', 'length', 'source'])
 def glGetTranslatedShaderSourceANGLE(shader, bufsize, length):
 	pass
 

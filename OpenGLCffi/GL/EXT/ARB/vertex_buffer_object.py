@@ -1,55 +1,55 @@
 from OpenGLCffi.GL import params
-@params('target', 'buffer', api='gl')
+@params(api='gl', prms=['target', 'buffer'])
 def glBindBufferARB(target, buffer):
 	pass
 
 
-@params('n', 'buffers', api='gl')
+@params(api='gl', prms=['n', 'buffers'])
 def glDeleteBuffersARB(n, buffers):
 	pass
 
 
-@params('n', 'buffers', api='gl')
+@params(api='gl', prms=['n', 'buffers'])
 def glGenBuffersARB(n, buffers):
 	pass
 
 
-@params('buffer', api='gl')
+@params(api='gl', prms=['buffer'])
 def glIsBufferARB(buffer):
 	pass
 
 
-@params('target', 'size', 'data', 'usage', api='gl')
+@params(api='gl', prms=['target', 'size', 'data', 'usage'])
 def glBufferDataARB(target, size, data, usage):
 	pass
 
 
-@params('target', 'offset', 'size', 'data', api='gl')
+@params(api='gl', prms=['target', 'offset', 'size', 'data'])
 def glBufferSubDataARB(target, offset, size, data):
 	pass
 
 
-@params('target', 'offset', 'size', 'data', api='gl')
+@params(api='gl', prms=['target', 'offset', 'size', 'data'])
 def glGetBufferSubDataARB(target, offset, size, data):
 	pass
 
 
-@params('target', 'access', api='gl')
+@params(api='gl', prms=['target', 'access'])
 def glMapBufferARB(target, access):
 	pass
 
 
-@params('target', api='gl')
+@params(api='gl', prms=['target'])
 def glUnmapBufferARB(target):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetBufferParameterivARB(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetBufferPointervARB(target, pname, params):
 	pass
 

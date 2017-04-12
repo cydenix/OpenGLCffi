@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glSpriteParameterfSGIX(pname, param):
 	pass
 
 
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glSpriteParameterfvSGIX(pname, params):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glSpriteParameteriSGIX(pname, param):
 	pass
 
 
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glSpriteParameterivSGIX(pname, params):
 	pass
 

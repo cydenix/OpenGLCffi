@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES1 import params
-@params('destinationTexture', 'sourceTexture', 'sourceBaseLevel', 'sourceLevelCount', api='gles1')
+@params(api='gles1', prms=['destinationTexture', 'sourceTexture', 'sourceBaseLevel', 'sourceLevelCount'])
 def glCopyTextureLevelsAPPLE(destinationTexture, sourceTexture, sourceBaseLevel, sourceLevelCount):
 	pass
 

@@ -1,10 +1,10 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'stream', api='egl')
+@params(api='egl', prms=['dpy', 'stream'])
 def eglGetStreamFileDescriptorKHR(dpy, stream):
 	pass
 
 
-@params('dpy', 'file_descriptor', api='egl')
+@params(api='egl', prms=['dpy', 'file_descriptor'])
 def eglCreateStreamFromFileDescriptorKHR(dpy, file_descriptor):
 	pass
 

@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('target', 'levels', 'internalformat', 'width', api='gl')
+@params(api='gl', prms=['target', 'levels', 'internalformat', 'width'])
 def glTexStorage1D(target, levels, internalformat, width):
 	pass
 
 
-@params('target', 'levels', 'internalformat', 'width', 'height', api='gl')
+@params(api='gl', prms=['target', 'levels', 'internalformat', 'width', 'height'])
 def glTexStorage2D(target, levels, internalformat, width, height):
 	pass
 
 
-@params('target', 'levels', 'internalformat', 'width', 'height', 'depth', api='gl')
+@params(api='gl', prms=['target', 'levels', 'internalformat', 'width', 'height', 'depth'])
 def glTexStorage3D(target, levels, internalformat, width, height, depth):
 	pass
 

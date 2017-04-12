@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('index', 'divisor', api='gles3')
+@params(api='gles3', prms=['index', 'divisor'])
 def glVertexAttribDivisorNV(index, divisor):
 	pass
 

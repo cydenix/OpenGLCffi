@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'drawable', 'seconds', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'seconds'])
 def glXDelayBeforeSwapNV(dpy, drawable, seconds):
 	pass
 

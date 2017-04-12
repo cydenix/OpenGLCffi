@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('index', 'divisor', api='gl')
+@params(api='gl', prms=['index', 'divisor'])
 def glVertexAttribDivisorARB(index, divisor):
 	pass
 

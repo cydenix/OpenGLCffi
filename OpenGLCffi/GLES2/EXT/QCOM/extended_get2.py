@@ -1,20 +1,20 @@
 from OpenGLCffi.GLES2 import params
-@params('shaders', 'maxShaders', 'numShaders', api='gles2')
+@params(api='gles2', prms=['shaders', 'maxShaders', 'numShaders'])
 def glExtGetShadersQCOM(shaders, maxShaders, numShaders):
 	pass
 
 
-@params('programs', 'maxPrograms', 'numPrograms', api='gles2')
+@params(api='gles2', prms=['programs', 'maxPrograms', 'numPrograms'])
 def glExtGetProgramsQCOM(programs, maxPrograms, numPrograms):
 	pass
 
 
-@params('program', api='gles2')
+@params(api='gles2', prms=['program'])
 def glExtIsProgramBinaryQCOM(program):
 	pass
 
 
-@params('program', 'shadertype', 'source', 'length', api='gles2')
+@params(api='gles2', prms=['program', 'shadertype', 'source', 'length'])
 def glExtGetProgramBinarySourceQCOM(program, shadertype, source, length):
 	pass
 

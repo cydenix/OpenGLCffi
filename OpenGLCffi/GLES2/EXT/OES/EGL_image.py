@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES2 import params
-@params('target', 'image', api='gles2')
+@params(api='gles2', prms=['target', 'image'])
 def glEGLImageTargetTexture2DOES(target, image):
 	pass
 
 
-@params('target', 'image', api='gles2')
+@params(api='gles2', prms=['target', 'image'])
 def glEGLImageTargetRenderbufferStorageOES(target, image):
 	pass
 

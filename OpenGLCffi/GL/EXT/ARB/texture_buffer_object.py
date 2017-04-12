@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'internalformat', 'buffer', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'buffer'])
 def glTexBufferARB(target, internalformat, buffer):
 	pass
 

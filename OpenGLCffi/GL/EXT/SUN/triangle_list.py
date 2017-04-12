@@ -1,35 +1,35 @@
 from OpenGLCffi.GL import params
-@params('code', api='gl')
+@params(api='gl', prms=['code'])
 def glReplacementCodeuiSUN(code):
 	pass
 
 
-@params('code', api='gl')
+@params(api='gl', prms=['code'])
 def glReplacementCodeusSUN(code):
 	pass
 
 
-@params('code', api='gl')
+@params(api='gl', prms=['code'])
 def glReplacementCodeubSUN(code):
 	pass
 
 
-@params('code', api='gl')
+@params(api='gl', prms=['code'])
 def glReplacementCodeuivSUN(code):
 	pass
 
 
-@params('code', api='gl')
+@params(api='gl', prms=['code'])
 def glReplacementCodeusvSUN(code):
 	pass
 
 
-@params('code', api='gl')
+@params(api='gl', prms=['code'])
 def glReplacementCodeubvSUN(code):
 	pass
 
 
-@params('type', 'stride', 'pointer', api='gl')
+@params(api='gl', prms=['type', 'stride', 'pointer'])
 def glReplacementCodePointerSUN(type, stride, pointer):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'size', 'data', 'flags', api='gl')
+@params(api='gl', prms=['target', 'size', 'data', 'flags'])
 def glBufferStorage(target, size, data, flags):
 	pass
 

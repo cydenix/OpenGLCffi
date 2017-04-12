@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('factor', 'units', 'clamp', api='gl')
+@params(api='gl', prms=['factor', 'units', 'clamp'])
 def glPolygonOffsetClampEXT(factor, units, clamp):
 	pass
 

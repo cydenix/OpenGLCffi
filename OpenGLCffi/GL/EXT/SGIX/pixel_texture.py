@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('mode', api='gl')
+@params(api='gl', prms=['mode'])
 def glPixelTexGenSGIX(mode):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('face', 'mode', api='gl')
+@params(api='gl', prms=['face', 'mode'])
 def glIndexMaterialEXT(face, mode):
 	pass
 

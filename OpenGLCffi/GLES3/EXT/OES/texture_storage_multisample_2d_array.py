@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('target', 'samples', 'internalformat', 'width', 'height', 'depth', 'fixedsamplelocations', api='gles3')
+@params(api='gles3', prms=['target', 'samples', 'internalformat', 'width', 'height', 'depth', 'fixedsamplelocations'])
 def glTexStorage3DMultisampleOES(target, samples, internalformat, width, height, depth, fixedsamplelocations):
 	pass
 

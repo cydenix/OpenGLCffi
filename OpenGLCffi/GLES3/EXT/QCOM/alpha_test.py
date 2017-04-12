@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('func', 'ref', api='gles3')
+@params(api='gles3', prms=['func', 'ref'])
 def glAlphaFuncQCOM(func, ref):
 	pass
 

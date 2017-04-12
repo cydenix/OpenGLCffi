@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('attrib_list', api='egl')
+@params(api='egl', prms=['attrib_list'])
 def eglCreateNativeClientBufferANDROID(attrib_list):
 	pass
 

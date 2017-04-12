@@ -1,40 +1,40 @@
 from OpenGLCffi.GLES3 import params
-@params('target', 'pname', 'params', api='gles3')
+@params(api='gles3', prms=['target', 'pname', 'params'])
 def glTexParameterIivOES(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gles3')
+@params(api='gles3', prms=['target', 'pname', 'params'])
 def glTexParameterIuivOES(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gles3')
+@params(api='gles3', prms=['target', 'pname', 'params'])
 def glGetTexParameterIivOES(target, pname):
 	pass
 
 
-@params('target', 'pname', 'params', api='gles3')
+@params(api='gles3', prms=['target', 'pname', 'params'])
 def glGetTexParameterIuivOES(target, pname):
 	pass
 
 
-@params('sampler', 'pname', 'param', api='gles3')
+@params(api='gles3', prms=['sampler', 'pname', 'param'])
 def glSamplerParameterIivOES(sampler, pname, param):
 	pass
 
 
-@params('sampler', 'pname', 'param', api='gles3')
+@params(api='gles3', prms=['sampler', 'pname', 'param'])
 def glSamplerParameterIuivOES(sampler, pname, param):
 	pass
 
 
-@params('sampler', 'pname', 'params', api='gles3')
+@params(api='gles3', prms=['sampler', 'pname', 'params'])
 def glGetSamplerParameterIivOES(sampler, pname):
 	pass
 
 
-@params('sampler', 'pname', 'params', api='gles3')
+@params(api='gles3', prms=['sampler', 'pname', 'params'])
 def glGetSamplerParameterIuivOES(sampler, pname):
 	pass
 

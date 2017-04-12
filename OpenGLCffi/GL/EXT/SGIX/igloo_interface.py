@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glIglooInterfaceSGIX(pname, params):
 	pass
 

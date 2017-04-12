@@ -1,40 +1,40 @@
 from OpenGLCffi.GLES2 import params
-@params('target', 'index', api='gles2')
+@params(api='gles2', prms=['target', 'index'])
 def glEnableiOES(target, index):
 	pass
 
 
-@params('target', 'index', api='gles2')
+@params(api='gles2', prms=['target', 'index'])
 def glDisableiOES(target, index):
 	pass
 
 
-@params('buf', 'mode', api='gles2')
+@params(api='gles2', prms=['buf', 'mode'])
 def glBlendEquationiOES(buf, mode):
 	pass
 
 
-@params('buf', 'modeRGB', 'modeAlpha', api='gles2')
+@params(api='gles2', prms=['buf', 'modeRGB', 'modeAlpha'])
 def glBlendEquationSeparateiOES(buf, modeRGB, modeAlpha):
 	pass
 
 
-@params('buf', 'src', 'dst', api='gles2')
+@params(api='gles2', prms=['buf', 'src', 'dst'])
 def glBlendFunciOES(buf, src, dst):
 	pass
 
 
-@params('buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha', api='gles2')
+@params(api='gles2', prms=['buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha'])
 def glBlendFuncSeparateiOES(buf, srcRGB, dstRGB, srcAlpha, dstAlpha):
 	pass
 
 
-@params('index', 'r', 'g', 'b', 'a', api='gles2')
+@params(api='gles2', prms=['index', 'r', 'g', 'b', 'a'])
 def glColorMaskiOES(index, r, g, b, a):
 	pass
 
 
-@params('target', 'index', api='gles2')
+@params(api='gles2', prms=['target', 'index'])
 def glIsEnablediOES(target, index):
 	pass
 

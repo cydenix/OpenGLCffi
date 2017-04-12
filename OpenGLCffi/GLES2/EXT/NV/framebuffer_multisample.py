@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('target', 'samples', 'internalformat', 'width', 'height', api='gles2')
+@params(api='gles2', prms=['target', 'samples', 'internalformat', 'width', 'height'])
 def glRenderbufferStorageMultisampleNV(target, samples, internalformat, width, height):
 	pass
 

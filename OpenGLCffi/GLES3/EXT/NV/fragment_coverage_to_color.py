@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('color', api='gles3')
+@params(api='gles3', prms=['color'])
 def glFragmentCoverageColorNV(color):
 	pass
 

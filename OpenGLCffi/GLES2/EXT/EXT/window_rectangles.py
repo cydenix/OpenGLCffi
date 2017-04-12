@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('mode', 'count', 'box', api='gles2')
+@params(api='gles2', prms=['mode', 'count', 'box'])
 def glWindowRectanglesEXT(mode, count, box):
 	pass
 

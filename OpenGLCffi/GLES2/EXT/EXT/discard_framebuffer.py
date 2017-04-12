@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('target', 'numAttachments', 'attachments', api='gles2')
+@params(api='gles2', prms=['target', 'numAttachments', 'attachments'])
 def glDiscardFramebufferEXT(target, numAttachments, attachments):
 	pass
 

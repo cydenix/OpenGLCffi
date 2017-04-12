@@ -1,65 +1,65 @@
 from OpenGLCffi.GL import params
-@params('texture', api='gl')
+@params(api='gl', prms=['texture'])
 def glGetTextureHandleNV(texture):
 	pass
 
 
-@params('texture', 'sampler', api='gl')
+@params(api='gl', prms=['texture', 'sampler'])
 def glGetTextureSamplerHandleNV(texture, sampler):
 	pass
 
 
-@params('handle', api='gl')
+@params(api='gl', prms=['handle'])
 def glMakeTextureHandleResidentNV(handle):
 	pass
 
 
-@params('handle', api='gl')
+@params(api='gl', prms=['handle'])
 def glMakeTextureHandleNonResidentNV(handle):
 	pass
 
 
-@params('texture', 'level', 'layered', 'layer', 'format', api='gl')
+@params(api='gl', prms=['texture', 'level', 'layered', 'layer', 'format'])
 def glGetImageHandleNV(texture, level, layered, layer, format):
 	pass
 
 
-@params('handle', 'access', api='gl')
+@params(api='gl', prms=['handle', 'access'])
 def glMakeImageHandleResidentNV(handle, access):
 	pass
 
 
-@params('handle', api='gl')
+@params(api='gl', prms=['handle'])
 def glMakeImageHandleNonResidentNV(handle):
 	pass
 
 
-@params('location', 'value', api='gl')
+@params(api='gl', prms=['location', 'value'])
 def glUniformHandleui64NV(location, value):
 	pass
 
 
-@params('location', 'count', 'value', api='gl')
+@params(api='gl', prms=['location', 'count', 'value'])
 def glUniformHandleui64vNV(location, count, value):
 	pass
 
 
-@params('program', 'location', 'value', api='gl')
+@params(api='gl', prms=['program', 'location', 'value'])
 def glProgramUniformHandleui64NV(program, location, value):
 	pass
 
 
-@params('program', 'location', 'count', 'values', api='gl')
+@params(api='gl', prms=['program', 'location', 'count', 'values'])
 def glProgramUniformHandleui64vNV(program, location, count, values):
 	pass
 
 
-@params('handle', api='gl')
+@params(api='gl', prms=['handle'])
 def glIsTextureHandleResidentNV(handle):
 	pass
 
 
-@params('handle', api='gl')
+@params(api='gl', prms=['handle'])
 def glIsImageHandleResidentNV(handle):
 	pass
 

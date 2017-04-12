@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('unit', 'texture', 'level', 'layered', 'layer', 'access', 'format', api='gl')
+@params(api='gl', prms=['unit', 'texture', 'level', 'layered', 'layer', 'access', 'format'])
 def glBindImageTexture(unit, texture, level, layered, layer, access, format):
 	pass
 
 
-@params('barriers', api='gl')
+@params(api='gl', prms=['barriers'])
 def glMemoryBarrier(barriers):
 	pass
 

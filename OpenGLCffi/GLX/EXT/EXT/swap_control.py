@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'drawable', 'interval', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'interval'])
 def glXSwapIntervalEXT(dpy, drawable, interval):
 	pass
 

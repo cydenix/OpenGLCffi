@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'sync', api='egl')
+@params(api='egl', prms=['dpy', 'sync'])
 def eglDupNativeFenceFDANDROID(dpy, sync):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES1 import params
-@params('mode', api='gles1')
+@params(api='gles1', prms=['mode'])
 def glBlendEquationOES(mode):
 	pass
 

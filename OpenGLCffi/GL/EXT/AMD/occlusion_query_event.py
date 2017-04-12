@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'id', 'pname', 'param', api='gl')
+@params(api='gl', prms=['target', 'id', 'pname', 'param'])
 def glQueryObjectParameteruiAMD(target, id, pname, param):
 	pass
 

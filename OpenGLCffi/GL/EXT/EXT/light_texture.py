@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('mode', api='gl')
+@params(api='gl', prms=['mode'])
 def glApplyTextureEXT(mode):
 	pass
 
 
-@params('pname', api='gl')
+@params(api='gl', prms=['pname'])
 def glTextureLightEXT(pname):
 	pass
 
 
-@params('face', 'mode', api='gl')
+@params(api='gl', prms=['face', 'mode'])
 def glTextureMaterialEXT(face, mode):
 	pass
 

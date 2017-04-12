@@ -1,40 +1,40 @@
 from OpenGLCffi.GL import params
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactorbSUN(factor):
 	pass
 
 
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactorsSUN(factor):
 	pass
 
 
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactoriSUN(factor):
 	pass
 
 
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactorfSUN(factor):
 	pass
 
 
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactordSUN(factor):
 	pass
 
 
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactorubSUN(factor):
 	pass
 
 
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactorusSUN(factor):
 	pass
 
 
-@params('factor', api='gl')
+@params(api='gl', prms=['factor'])
 def glGlobalAlphaFactoruiSUN(factor):
 	pass
 

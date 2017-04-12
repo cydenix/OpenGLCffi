@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('target', 'size', 'data', 'flags', api='gles3')
+@params(api='gles3', prms=['target', 'size', 'data', 'flags'])
 def glBufferStorageEXT(target, size, data, flags):
 	pass
 

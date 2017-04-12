@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glPointParameteriNV(pname, param):
 	pass
 
 
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glPointParameterivNV(pname, params):
 	pass
 

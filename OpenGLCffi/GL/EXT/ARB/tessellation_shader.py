@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('pname', 'value', api='gl')
+@params(api='gl', prms=['pname', 'value'])
 def glPatchParameteri(pname, value):
 	pass
 
 
-@params('pname', 'values', api='gl')
+@params(api='gl', prms=['pname', 'values'])
 def glPatchParameterfv(pname, values):
 	pass
 

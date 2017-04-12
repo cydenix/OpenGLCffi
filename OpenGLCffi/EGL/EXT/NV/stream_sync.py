@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'stream', 'type', 'attrib_list', api='egl')
+@params(api='egl', prms=['dpy', 'stream', 'type', 'attrib_list'])
 def eglCreateStreamSyncNV(dpy, stream, type, attrib_list):
 	pass
 

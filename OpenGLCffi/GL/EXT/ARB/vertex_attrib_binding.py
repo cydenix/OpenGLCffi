@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('bindingindex', 'buffer', 'offset', 'stride', api='gl')
+@params(api='gl', prms=['bindingindex', 'buffer', 'offset', 'stride'])
 def glBindVertexBuffer(bindingindex, buffer, offset, stride):
 	pass
 
 
-@params('attribindex', 'size', 'type', 'normalized', 'relativeoffset', api='gl')
+@params(api='gl', prms=['attribindex', 'size', 'type', 'normalized', 'relativeoffset'])
 def glVertexAttribFormat(attribindex, size, type, normalized, relativeoffset):
 	pass
 
 
-@params('attribindex', 'size', 'type', 'relativeoffset', api='gl')
+@params(api='gl', prms=['attribindex', 'size', 'type', 'relativeoffset'])
 def glVertexAttribIFormat(attribindex, size, type, relativeoffset):
 	pass
 
 
-@params('attribindex', 'size', 'type', 'relativeoffset', api='gl')
+@params(api='gl', prms=['attribindex', 'size', 'type', 'relativeoffset'])
 def glVertexAttribLFormat(attribindex, size, type, relativeoffset):
 	pass
 
 
-@params('attribindex', 'bindingindex', api='gl')
+@params(api='gl', prms=['attribindex', 'bindingindex'])
 def glVertexAttribBinding(attribindex, bindingindex):
 	pass
 
 
-@params('bindingindex', 'divisor', api='gl')
+@params(api='gl', prms=['bindingindex', 'divisor'])
 def glVertexBindingDivisor(bindingindex, divisor):
 	pass
 

@@ -1,20 +1,20 @@
 from OpenGLCffi.GLES2 import params
-@params('num', 'size', 'driverControls', api='gles2')
+@params(api='gles2', prms=['num', 'size', 'driverControls'])
 def glGetDriverControlsQCOM(num, size, driverControls):
 	pass
 
 
-@params('driverControl', 'bufSize', 'length', 'driverControlString', api='gles2')
+@params(api='gles2', prms=['driverControl', 'bufSize', 'length', 'driverControlString'])
 def glGetDriverControlStringQCOM(driverControl, bufSize, length, driverControlString):
 	pass
 
 
-@params('driverControl', api='gles2')
+@params(api='gles2', prms=['driverControl'])
 def glEnableDriverControlQCOM(driverControl):
 	pass
 
 
-@params('driverControl', api='gles2')
+@params(api='gles2', prms=['driverControl'])
 def glDisableDriverControlQCOM(driverControl):
 	pass
 

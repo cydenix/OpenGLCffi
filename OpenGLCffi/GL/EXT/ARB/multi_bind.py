@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('target', 'first', 'count', 'buffers', api='gl')
+@params(api='gl', prms=['target', 'first', 'count', 'buffers'])
 def glBindBuffersBase(target, first, count, buffers):
 	pass
 
 
-@params('target', 'first', 'count', 'buffers', 'offsets', 'sizes', api='gl')
+@params(api='gl', prms=['target', 'first', 'count', 'buffers', 'offsets', 'sizes'])
 def glBindBuffersRange(target, first, count, buffers, offsets, sizes):
 	pass
 
 
-@params('first', 'count', 'textures', api='gl')
+@params(api='gl', prms=['first', 'count', 'textures'])
 def glBindTextures(first, count, textures):
 	pass
 
 
-@params('first', 'count', 'samplers', api='gl')
+@params(api='gl', prms=['first', 'count', 'samplers'])
 def glBindSamplers(first, count, samplers):
 	pass
 
 
-@params('first', 'count', 'textures', api='gl')
+@params(api='gl', prms=['first', 'count', 'textures'])
 def glBindImageTextures(first, count, textures):
 	pass
 
 
-@params('first', 'count', 'buffers', 'offsets', 'strides', api='gl')
+@params(api='gl', prms=['first', 'count', 'buffers', 'offsets', 'strides'])
 def glBindVertexBuffers(first, count, buffers, offsets, strides):
 	pass
 

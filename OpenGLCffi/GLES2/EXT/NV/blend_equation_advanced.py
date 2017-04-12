@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES2 import params
-@params('pname', 'value', api='gles2')
+@params(api='gles2', prms=['pname', 'value'])
 def glBlendParameteriNV(pname, value):
 	pass
 
 
-@params(api = 'gles2')
+@params(api='gles2', prms=[])
 def glBlendBarrierNV():
 	pass
 

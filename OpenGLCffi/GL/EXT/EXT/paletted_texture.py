@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('target', 'internalFormat', 'width', 'format', 'type', 'table', api='gl')
+@params(api='gl', prms=['target', 'internalFormat', 'width', 'format', 'type', 'table'])
 def glColorTableEXT(target, internalFormat, width, format, type, table):
 	pass
 
 
-@params('target', 'format', 'type', 'data', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'data'])
 def glGetColorTableEXT(target, format, type, data):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetColorTableParameterivEXT(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetColorTableParameterfvEXT(target, pname, params):
 	pass
 

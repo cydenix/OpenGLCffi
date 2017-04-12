@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES1 import params
-@params('mode', 'first', 'count', 'primcount', api='gles1')
+@params(api='gles1', prms=['mode', 'first', 'count', 'primcount'])
 def glMultiDrawArraysEXT(mode, first, count, primcount):
 	pass
 
 
-@params('mode', 'count', 'type', 'constindices', 'primcount', api='gles1')
+@params(api='gles1', prms=['mode', 'count', 'type', 'constindices', 'primcount'])
 def glMultiDrawElementsEXT(mode, count, type, constindices, primcount):
 	pass
 

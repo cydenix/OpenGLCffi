@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('samples', 'fixedsamplelocations', api='gl')
+@params(api='gl', prms=['samples', 'fixedsamplelocations'])
 def glRasterSamplesEXT(samples, fixedsamplelocations):
 	pass
 
 
-@params('n', 'v', api='gl')
+@params(api='gl', prms=['n', 'v'])
 def glCoverageModulationTableNV(n, v):
 	pass
 
 
-@params('bufsize', 'v', api='gl')
+@params(api='gl', prms=['bufsize', 'v'])
 def glGetCoverageModulationTableNV(bufsize, v):
 	pass
 
 
-@params('components', api='gl')
+@params(api='gl', prms=['components'])
 def glCoverageModulationNV(components):
 	pass
 

@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glCullParameterdvEXT(pname, params):
 	pass
 
 
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glCullParameterfvEXT(pname, params):
 	pass
 

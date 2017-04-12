@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glPNTrianglesiATI(pname, param):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glPNTrianglesfATI(pname, param):
 	pass
 

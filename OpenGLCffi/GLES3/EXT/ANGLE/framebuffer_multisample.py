@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('target', 'samples', 'internalformat', 'width', 'height', api='gles3')
+@params(api='gles3', prms=['target', 'samples', 'internalformat', 'width', 'height'])
 def glRenderbufferStorageMultisampleANGLE(target, samples, internalformat, width, height):
 	pass
 

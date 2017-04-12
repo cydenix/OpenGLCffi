@@ -1,60 +1,60 @@
 from OpenGLCffi.GL import params
-@params('pname', 'index', 'address', 'length', api='gl')
+@params(api='gl', prms=['pname', 'index', 'address', 'length'])
 def glBufferAddressRangeNV(pname, index, address, length):
 	pass
 
 
-@params('size', 'type', 'stride', api='gl')
+@params(api='gl', prms=['size', 'type', 'stride'])
 def glVertexFormatNV(size, type, stride):
 	pass
 
 
-@params('type', 'stride', api='gl')
+@params(api='gl', prms=['type', 'stride'])
 def glNormalFormatNV(type, stride):
 	pass
 
 
-@params('size', 'type', 'stride', api='gl')
+@params(api='gl', prms=['size', 'type', 'stride'])
 def glColorFormatNV(size, type, stride):
 	pass
 
 
-@params('type', 'stride', api='gl')
+@params(api='gl', prms=['type', 'stride'])
 def glIndexFormatNV(type, stride):
 	pass
 
 
-@params('size', 'type', 'stride', api='gl')
+@params(api='gl', prms=['size', 'type', 'stride'])
 def glTexCoordFormatNV(size, type, stride):
 	pass
 
 
-@params('stride', api='gl')
+@params(api='gl', prms=['stride'])
 def glEdgeFlagFormatNV(stride):
 	pass
 
 
-@params('size', 'type', 'stride', api='gl')
+@params(api='gl', prms=['size', 'type', 'stride'])
 def glSecondaryColorFormatNV(size, type, stride):
 	pass
 
 
-@params('type', 'stride', api='gl')
+@params(api='gl', prms=['type', 'stride'])
 def glFogCoordFormatNV(type, stride):
 	pass
 
 
-@params('index', 'size', 'type', 'normalized', 'stride', api='gl')
+@params(api='gl', prms=['index', 'size', 'type', 'normalized', 'stride'])
 def glVertexAttribFormatNV(index, size, type, normalized, stride):
 	pass
 
 
-@params('index', 'size', 'type', 'stride', api='gl')
+@params(api='gl', prms=['index', 'size', 'type', 'stride'])
 def glVertexAttribIFormatNV(index, size, type, stride):
 	pass
 
 
-@params('value', 'index', 'result', api='gl')
+@params(api='gl', prms=['value', 'index', 'result'])
 def glGetIntegerui64i_vNV(value, index, result):
 	pass
 

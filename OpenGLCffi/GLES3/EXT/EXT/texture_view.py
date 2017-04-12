@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('texture', 'target', 'origtexture', 'internalformat', 'minlevel', 'numlevels', 'minlayer', 'numlayers', api='gles3')
+@params(api='gles3', prms=['texture', 'target', 'origtexture', 'internalformat', 'minlevel', 'numlevels', 'minlayer', 'numlayers'])
 def glTextureViewEXT(texture, target, origtexture, internalformat, minlevel, numlevels, minlayer, numlayers):
 	pass
 

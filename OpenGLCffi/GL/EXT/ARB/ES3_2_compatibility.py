@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('minX', 'minY', 'minZ', 'minW', 'maxX', 'maxY', 'maxZ', 'maxW', api='gl')
+@params(api='gl', prms=['minX', 'minY', 'minZ', 'minW', 'maxX', 'maxY', 'maxZ', 'maxW'])
 def glPrimitiveBoundingBoxARB(minX, minY, minZ, minW, maxX, maxY, maxZ, maxW):
 	pass
 

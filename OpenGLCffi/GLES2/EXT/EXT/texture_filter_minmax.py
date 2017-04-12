@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('samples', 'fixedsamplelocations', api='gles2')
+@params(api='gles2', prms=['samples', 'fixedsamplelocations'])
 def glRasterSamplesEXT(samples, fixedsamplelocations):
 	pass
 

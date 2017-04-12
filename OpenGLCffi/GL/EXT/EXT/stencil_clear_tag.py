@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('stencilTagBits', 'stencilClearTag', api='gl')
+@params(api='gl', prms=['stencilTagBits', 'stencilClearTag'])
 def glStencilClearTagEXT(stencilTagBits, stencilClearTag):
 	pass
 

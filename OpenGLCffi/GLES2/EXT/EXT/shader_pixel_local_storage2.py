@@ -1,15 +1,15 @@
 from OpenGLCffi.GLES2 import params
-@params('target', 'size', api='gles2')
+@params(api='gles2', prms=['target', 'size'])
 def glFramebufferPixelLocalStorageSizeEXT(target, size):
 	pass
 
 
-@params('target', api='gles2')
+@params(api='gles2', prms=['target'])
 def glGetFramebufferPixelLocalStorageSizeEXT(target):
 	pass
 
 
-@params('offset', 'n', 'values', api='gles2')
+@params(api='gles2', prms=['offset', 'n', 'values'])
 def glClearPixelLocalStorageuiEXT(offset, n, values):
 	pass
 

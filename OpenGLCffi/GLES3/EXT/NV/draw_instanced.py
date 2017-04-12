@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES3 import params
-@params('mode', 'first', 'count', 'primcount', api='gles3')
+@params(api='gles3', prms=['mode', 'first', 'count', 'primcount'])
 def glDrawArraysInstancedNV(mode, first, count, primcount):
 	pass
 
 
-@params('mode', 'count', 'type', 'indices', 'primcount', api='gles3')
+@params(api='gles3', prms=['mode', 'count', 'type', 'indices', 'primcount'])
 def glDrawElementsInstancedNV(mode, count, type, indices, primcount):
 	pass
 

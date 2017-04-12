@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('type', 'pointer', api='gl')
+@params(api='gl', prms=['type', 'pointer'])
 def glElementPointerATI(type, pointer):
 	pass
 
 
-@params('mode', 'count', api='gl')
+@params(api='gl', prms=['mode', 'count'])
 def glDrawElementArrayATI(mode, count):
 	pass
 
 
-@params('mode', 'start', 'end', 'count', api='gl')
+@params(api='gl', prms=['mode', 'start', 'end', 'count'])
 def glDrawRangeElementArrayATI(mode, start, end, count):
 	pass
 

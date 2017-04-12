@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('pname', 'index', 'val', api='gl')
+@params(api='gl', prms=['pname', 'index', 'val'])
 def glGetMultisamplefvNV(pname, index, val):
 	pass
 
 
-@params('index', 'mask', api='gl')
+@params(api='gl', prms=['index', 'mask'])
 def glSampleMaskIndexedNV(index, mask):
 	pass
 
 
-@params('target', 'renderbuffer', api='gl')
+@params(api='gl', prms=['target', 'renderbuffer'])
 def glTexRenderbufferNV(target, renderbuffer):
 	pass
 

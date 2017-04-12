@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES1 import params
-@params('type', 'stride', 'pointer', api='gles1')
+@params(api='gles1', prms=['type', 'stride', 'pointer'])
 def glPointSizePointerOES(type, stride, pointer):
 	pass
 

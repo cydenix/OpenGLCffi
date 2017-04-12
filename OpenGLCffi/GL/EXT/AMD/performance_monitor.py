@@ -1,55 +1,55 @@
 from OpenGLCffi.GL import params
-@params('numGroups', 'groupsSize', 'groups', api='gl')
+@params(api='gl', prms=['numGroups', 'groupsSize', 'groups'])
 def glGetPerfMonitorGroupsAMD(numGroups, groupsSize, groups):
 	pass
 
 
-@params('group', 'numCounters', 'maxActiveCounters', 'counterSize', 'counters', api='gl')
+@params(api='gl', prms=['group', 'numCounters', 'maxActiveCounters', 'counterSize', 'counters'])
 def glGetPerfMonitorCountersAMD(group, numCounters, maxActiveCounters, counterSize, counters):
 	pass
 
 
-@params('group', 'bufSize', 'length', 'groupString', api='gl')
+@params(api='gl', prms=['group', 'bufSize', 'length', 'groupString'])
 def glGetPerfMonitorGroupStringAMD(group, bufSize, length, groupString):
 	pass
 
 
-@params('group', 'counter', 'bufSize', 'length', 'counterString', api='gl')
+@params(api='gl', prms=['group', 'counter', 'bufSize', 'length', 'counterString'])
 def glGetPerfMonitorCounterStringAMD(group, counter, bufSize, length, counterString):
 	pass
 
 
-@params('group', 'counter', 'pname', 'data', api='gl')
+@params(api='gl', prms=['group', 'counter', 'pname', 'data'])
 def glGetPerfMonitorCounterInfoAMD(group, counter, pname, data):
 	pass
 
 
-@params('n', 'monitors', api='gl')
+@params(api='gl', prms=['n', 'monitors'])
 def glGenPerfMonitorsAMD(n, monitors):
 	pass
 
 
-@params('n', 'monitors', api='gl')
+@params(api='gl', prms=['n', 'monitors'])
 def glDeletePerfMonitorsAMD(n, monitors):
 	pass
 
 
-@params('monitor', 'enable', 'group', 'numCounters', 'counterList', api='gl')
+@params(api='gl', prms=['monitor', 'enable', 'group', 'numCounters', 'counterList'])
 def glSelectPerfMonitorCountersAMD(monitor, enable, group, numCounters, counterList):
 	pass
 
 
-@params('monitor', api='gl')
+@params(api='gl', prms=['monitor'])
 def glBeginPerfMonitorAMD(monitor):
 	pass
 
 
-@params('monitor', api='gl')
+@params(api='gl', prms=['monitor'])
 def glEndPerfMonitorAMD(monitor):
 	pass
 
 
-@params('monitor', 'pname', 'dataSize', 'data', 'bytesWritten', api='gl')
+@params(api='gl', prms=['monitor', 'pname', 'dataSize', 'data', 'bytesWritten'])
 def glGetPerfMonitorCounterDataAMD(monitor, pname, dataSize, data, bytesWritten):
 	pass
 

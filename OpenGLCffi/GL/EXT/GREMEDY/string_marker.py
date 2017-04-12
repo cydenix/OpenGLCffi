@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('len', 'string', api='gl')
+@params(api='gl', prms=['len', 'string'])
 def glStringMarkerGREMEDY(len, string):
 	pass
 

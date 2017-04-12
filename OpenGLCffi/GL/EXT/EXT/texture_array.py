@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'attachment', 'texture', 'level', 'layer', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'texture', 'level', 'layer'])
 def glFramebufferTextureLayerEXT(target, attachment, texture, level, layer):
 	pass
 

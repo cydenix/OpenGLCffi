@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('length', 'pointer', api='gl')
+@params(api='gl', prms=['length', 'pointer'])
 def glVertexArrayRangeAPPLE(length, pointer):
 	pass
 
 
-@params('length', 'pointer', api='gl')
+@params(api='gl', prms=['length', 'pointer'])
 def glFlushVertexArrayRangeAPPLE(length, pointer):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glVertexArrayParameteriAPPLE(pname, param):
 	pass
 

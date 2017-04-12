@@ -1,35 +1,35 @@
 from OpenGLCffi.GL import params
-@params('target', 'internalformat', 'width', 'format', 'type', 'table', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'width', 'format', 'type', 'table'])
 def glColorTableSGI(target, internalformat, width, format, type, table):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glColorTableParameterfvSGI(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glColorTableParameterivSGI(target, pname, params):
 	pass
 
 
-@params('target', 'internalformat', 'x', 'y', 'width', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'x', 'y', 'width'])
 def glCopyColorTableSGI(target, internalformat, x, y, width):
 	pass
 
 
-@params('target', 'format', 'type', 'table', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'table'])
 def glGetColorTableSGI(target, format, type, table):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetColorTableParameterfvSGI(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetColorTableParameterivSGI(target, pname, params):
 	pass
 

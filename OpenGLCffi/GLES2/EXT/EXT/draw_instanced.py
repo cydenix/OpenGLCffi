@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES2 import params
-@params('mode', 'start', 'count', 'primcount', api='gles2')
+@params(api='gles2', prms=['mode', 'start', 'count', 'primcount'])
 def glDrawArraysInstancedEXT(mode, start, count, primcount):
 	pass
 
 
-@params('mode', 'count', 'type', 'indices', 'primcount', api='gles2')
+@params(api='gles2', prms=['mode', 'count', 'type', 'indices', 'primcount'])
 def glDrawElementsInstancedEXT(mode, count, type, indices, primcount):
 	pass
 

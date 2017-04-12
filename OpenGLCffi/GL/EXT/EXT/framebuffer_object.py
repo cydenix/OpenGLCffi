@@ -1,85 +1,85 @@
 from OpenGLCffi.GL import params
-@params('renderbuffer', api='gl')
+@params(api='gl', prms=['renderbuffer'])
 def glIsRenderbufferEXT(renderbuffer):
 	pass
 
 
-@params('target', 'renderbuffer', api='gl')
+@params(api='gl', prms=['target', 'renderbuffer'])
 def glBindRenderbufferEXT(target, renderbuffer):
 	pass
 
 
-@params('n', 'renderbuffers', api='gl')
+@params(api='gl', prms=['n', 'renderbuffers'])
 def glDeleteRenderbuffersEXT(n, renderbuffers):
 	pass
 
 
-@params('n', 'renderbuffers', api='gl')
+@params(api='gl', prms=['n', 'renderbuffers'])
 def glGenRenderbuffersEXT(n, renderbuffers):
 	pass
 
 
-@params('target', 'internalformat', 'width', 'height', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'width', 'height'])
 def glRenderbufferStorageEXT(target, internalformat, width, height):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetRenderbufferParameterivEXT(target, pname, params):
 	pass
 
 
-@params('framebuffer', api='gl')
+@params(api='gl', prms=['framebuffer'])
 def glIsFramebufferEXT(framebuffer):
 	pass
 
 
-@params('target', 'framebuffer', api='gl')
+@params(api='gl', prms=['target', 'framebuffer'])
 def glBindFramebufferEXT(target, framebuffer):
 	pass
 
 
-@params('n', 'framebuffers', api='gl')
+@params(api='gl', prms=['n', 'framebuffers'])
 def glDeleteFramebuffersEXT(n, framebuffers):
 	pass
 
 
-@params('n', 'framebuffers', api='gl')
+@params(api='gl', prms=['n', 'framebuffers'])
 def glGenFramebuffersEXT(n, framebuffers):
 	pass
 
 
-@params('target', api='gl')
+@params(api='gl', prms=['target'])
 def glCheckFramebufferStatusEXT(target):
 	pass
 
 
-@params('target', 'attachment', 'textarget', 'texture', 'level', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'textarget', 'texture', 'level'])
 def glFramebufferTexture1DEXT(target, attachment, textarget, texture, level):
 	pass
 
 
-@params('target', 'attachment', 'textarget', 'texture', 'level', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'textarget', 'texture', 'level'])
 def glFramebufferTexture2DEXT(target, attachment, textarget, texture, level):
 	pass
 
 
-@params('target', 'attachment', 'textarget', 'texture', 'level', 'zoffset', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'textarget', 'texture', 'level', 'zoffset'])
 def glFramebufferTexture3DEXT(target, attachment, textarget, texture, level, zoffset):
 	pass
 
 
-@params('target', 'attachment', 'renderbuffertarget', 'renderbuffer', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'renderbuffertarget', 'renderbuffer'])
 def glFramebufferRenderbufferEXT(target, attachment, renderbuffertarget, renderbuffer):
 	pass
 
 
-@params('target', 'attachment', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'pname', 'params'])
 def glGetFramebufferAttachmentParameterivEXT(target, attachment, pname, params):
 	pass
 
 
-@params('target', api='gl')
+@params(api='gl', prms=['target'])
 def glGenerateMipmapEXT(target):
 	pass
 

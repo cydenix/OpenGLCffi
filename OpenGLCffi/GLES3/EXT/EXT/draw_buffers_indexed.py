@@ -1,40 +1,40 @@
 from OpenGLCffi.GLES3 import params
-@params('target', 'index', api='gles3')
+@params(api='gles3', prms=['target', 'index'])
 def glEnableiEXT(target, index):
 	pass
 
 
-@params('target', 'index', api='gles3')
+@params(api='gles3', prms=['target', 'index'])
 def glDisableiEXT(target, index):
 	pass
 
 
-@params('buf', 'mode', api='gles3')
+@params(api='gles3', prms=['buf', 'mode'])
 def glBlendEquationiEXT(buf, mode):
 	pass
 
 
-@params('buf', 'modeRGB', 'modeAlpha', api='gles3')
+@params(api='gles3', prms=['buf', 'modeRGB', 'modeAlpha'])
 def glBlendEquationSeparateiEXT(buf, modeRGB, modeAlpha):
 	pass
 
 
-@params('buf', 'src', 'dst', api='gles3')
+@params(api='gles3', prms=['buf', 'src', 'dst'])
 def glBlendFunciEXT(buf, src, dst):
 	pass
 
 
-@params('buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha', api='gles3')
+@params(api='gles3', prms=['buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha'])
 def glBlendFuncSeparateiEXT(buf, srcRGB, dstRGB, srcAlpha, dstAlpha):
 	pass
 
 
-@params('index', 'r', 'g', 'b', 'a', api='gles3')
+@params(api='gles3', prms=['index', 'r', 'g', 'b', 'a'])
 def glColorMaskiEXT(index, r, g, b, a):
 	pass
 
 
-@params('target', 'index', api='gles3')
+@params(api='gles3', prms=['target', 'index'])
 def glIsEnablediEXT(target, index):
 	pass
 

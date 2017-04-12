@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'surface', 'numRects', 'rects', api='egl')
+@params(api='egl', prms=['dpy', 'surface', 'numRects', 'rects'])
 def eglSwapBuffersRegionNOK(dpy, surface, numRects, rects):
 	pass
 

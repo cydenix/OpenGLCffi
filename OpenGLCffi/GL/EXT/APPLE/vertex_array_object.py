@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('array', api='gl')
+@params(api='gl', prms=['array'])
 def glBindVertexArrayAPPLE(array):
 	pass
 
 
-@params('n', 'arrays', api='gl')
+@params(api='gl', prms=['n', 'arrays'])
 def glDeleteVertexArraysAPPLE(n, arrays):
 	pass
 
 
-@params('n', 'arrays', api='gl')
+@params(api='gl', prms=['n', 'arrays'])
 def glGenVertexArraysAPPLE(n, arrays):
 	pass
 
 
-@params('array', api='gl')
+@params(api='gl', prms=['array'])
 def glIsVertexArrayAPPLE(array):
 	pass
 

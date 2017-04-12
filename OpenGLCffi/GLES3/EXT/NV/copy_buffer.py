@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('readTarget', 'writeTarget', 'readOffset', 'writeOffset', 'size', api='gles3')
+@params(api='gles3', prms=['readTarget', 'writeTarget', 'readOffset', 'writeOffset', 'size'])
 def glCopyBufferSubDataNV(readTarget, writeTarget, readOffset, writeOffset, size):
 	pass
 

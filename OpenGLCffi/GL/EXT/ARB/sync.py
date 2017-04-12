@@ -1,35 +1,35 @@
 from OpenGLCffi.GL import params
-@params('condition', 'flags', api='gl')
+@params(api='gl', prms=['condition', 'flags'])
 def glFenceSync(condition, flags):
 	pass
 
 
-@params('sync', api='gl')
+@params(api='gl', prms=['sync'])
 def glIsSync(sync):
 	pass
 
 
-@params('sync', api='gl')
+@params(api='gl', prms=['sync'])
 def glDeleteSync(sync):
 	pass
 
 
-@params('sync', 'flags', 'timeout', api='gl')
+@params(api='gl', prms=['sync', 'flags', 'timeout'])
 def glClientWaitSync(sync, flags, timeout):
 	pass
 
 
-@params('sync', 'flags', 'timeout', api='gl')
+@params(api='gl', prms=['sync', 'flags', 'timeout'])
 def glWaitSync(sync, flags, timeout):
 	pass
 
 
-@params('pname', 'data', api='gl')
+@params(api='gl', prms=['pname', 'data'])
 def glGetInteger64v(pname, data):
 	pass
 
 
-@params('sync', 'pname', 'bufSize', 'length', 'values', api='gl')
+@params(api='gl', prms=['sync', 'pname', 'bufSize', 'length', 'values'])
 def glGetSynciv(sync, pname, bufSize, length, values):
 	pass
 

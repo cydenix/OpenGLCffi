@@ -1,10 +1,10 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'surface', 'attrib_list', api='egl')
+@params(api='egl', prms=['dpy', 'surface', 'attrib_list'])
 def eglLockSurfaceKHR(dpy, surface, attrib_list):
 	pass
 
 
-@params('dpy', 'surface', api='egl')
+@params(api='egl', prms=['dpy', 'surface'])
 def eglUnlockSurfaceKHR(dpy, surface):
 	pass
 

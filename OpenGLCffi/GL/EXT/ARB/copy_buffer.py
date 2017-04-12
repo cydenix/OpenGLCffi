@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('readTarget', 'writeTarget', 'readOffset', 'writeOffset', 'size', api='gl')
+@params(api='gl', prms=['readTarget', 'writeTarget', 'readOffset', 'writeOffset', 'size'])
 def glCopyBufferSubData(readTarget, writeTarget, readOffset, writeOffset, size):
 	pass
 

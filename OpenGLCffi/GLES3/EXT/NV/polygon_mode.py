@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('face', 'mode', api='gles3')
+@params(api='gles3', prms=['face', 'mode'])
 def glPolygonModeNV(face, mode):
 	pass
 

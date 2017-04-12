@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('objectType', 'name', 'option', api='gl')
+@params(api='gl', prms=['objectType', 'name', 'option'])
 def glObjectPurgeableAPPLE(objectType, name, option):
 	pass
 
 
-@params('objectType', 'name', 'option', api='gl')
+@params(api='gl', prms=['objectType', 'name', 'option'])
 def glObjectUnpurgeableAPPLE(objectType, name, option):
 	pass
 
 
-@params('objectType', 'name', 'pname', 'params', api='gl')
+@params(api='gl', prms=['objectType', 'name', 'pname', 'params'])
 def glGetObjectParameterivAPPLE(objectType, name, pname, params):
 	pass
 

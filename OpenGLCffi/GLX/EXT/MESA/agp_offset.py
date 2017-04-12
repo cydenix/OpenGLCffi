@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('pointer', api='glx')
+@params(api='glx', prms=['pointer'])
 def glXGetAGPOffsetMESA(pointer):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'samples', 'internalformat', 'width', 'height', api='gl')
+@params(api='gl', prms=['target', 'samples', 'internalformat', 'width', 'height'])
 def glRenderbufferStorageMultisampleEXT(target, samples, internalformat, width, height):
 	pass
 

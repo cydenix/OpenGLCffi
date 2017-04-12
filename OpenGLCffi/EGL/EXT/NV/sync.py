@@ -1,30 +1,30 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'condition', 'attrib_list', api='egl')
+@params(api='egl', prms=['dpy', 'condition', 'attrib_list'])
 def eglCreateFenceSyncNV(dpy, condition, attrib_list):
 	pass
 
 
-@params('sync', api='egl')
+@params(api='egl', prms=['sync'])
 def eglDestroySyncNV(sync):
 	pass
 
 
-@params('sync', api='egl')
+@params(api='egl', prms=['sync'])
 def eglFenceNV(sync):
 	pass
 
 
-@params('sync', 'flags', 'timeout', api='egl')
+@params(api='egl', prms=['sync', 'flags', 'timeout'])
 def eglClientWaitSyncNV(sync, flags, timeout):
 	pass
 
 
-@params('sync', 'mode', api='egl')
+@params(api='egl', prms=['sync', 'mode'])
 def eglSignalSyncNV(sync, mode):
 	pass
 
 
-@params('sync', 'attribute', 'value', api='egl')
+@params(api='egl', prms=['sync', 'attribute', 'value'])
 def eglGetSyncAttribNV(sync, attribute):
 	pass
 

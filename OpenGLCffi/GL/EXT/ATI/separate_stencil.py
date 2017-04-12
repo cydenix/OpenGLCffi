@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('face', 'sfail', 'dpfail', 'dppass', api='gl')
+@params(api='gl', prms=['face', 'sfail', 'dpfail', 'dppass'])
 def glStencilOpSeparateATI(face, sfail, dpfail, dppass):
 	pass
 
 
-@params('frontfunc', 'backfunc', 'ref', 'mask', api='gl')
+@params(api='gl', prms=['frontfunc', 'backfunc', 'ref', 'mask'])
 def glStencilFuncSeparateATI(frontfunc, backfunc, ref, mask):
 	pass
 

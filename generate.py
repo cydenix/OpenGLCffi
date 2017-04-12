@@ -75,6 +75,8 @@ SIZE_SET = {'egl': {'config_size': ['configs']},
             'gl': {}}
 
 BASE_DIR = os.getcwd()
+
+
 def create_dirs(dirs):
     if not os.path.isdir("OpenGLCffi"):
         with open('init.py', 'r') as init_file:
@@ -93,6 +95,7 @@ def create_dirs(dirs):
                 break
     else:
         os.chdir("OpenGLCffi")
+
 
 def create_extdirs(dirs):
     for d in dirs:
@@ -194,21 +197,19 @@ def gen_api_funcs(api, enumLst, cmdDict, ftrDict):
             gen_cons(enumLst, ftrDict, cons)
         with open(os.path.join(api.upper(), api + '.py'), 'w+') as f:
             f.write("from OpenGLCffi.{} import params\n".format(api.upper()))
-            fcmd = [frqv for fv in p.fdict.values() for frqv in fv[0].req]
-            for ck in p.cdict.keys():
+            fcmd = [frqv for fv in ftrDict.values() for frqv in fv[0].req]
+            for ck in cmdDict.keys():
                 if ck in fcmd:
-                    marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), p.cdict[ck].params)
+                    marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), cmdDict[ck].params)
+                    retType = cmdDict[ck].ptype
 
                     if ck[:3] in ['glX', 'egl', 'glG']:
 
                         farg = filter(lambda y: y not in RET_DICT[api], marg)
                     else:
                         farg = marg
-
-                    if len(marg) == 0:
-                        f.write("@params(api = '{}')\n".format(api))
-                    else:
-                        f.write("@params({})\n".format(repr(map(str, marg)).strip("[]") + ", api='{}'".format(api)))
+                    f.write("@params({})\n".format("api='{}', prms={}".format(api, repr(map(str, marg)))))
+                        #f.write("@params({})\n".format(repr(map(str, marg)).strip("[]") + ", ret='{}', api='{}'".format(retType, api)))
                     f.write("def {}({}):\n".format(ck, ', '.join(farg)))
                     f.write("\tpass\n")
                     f.write("\n\n")
@@ -237,14 +238,14 @@ def gen_api_extfunc(api, enumLst, cmdDict, extDict):
                 f.write("from OpenGLCffi.{} import params\n".format(api.upper()))
                 for ck in i[2]:
                     marg = map(lambda x: x.split()[-1:][0].translate(None, "*"), cmdDict[ck].params)
+                    retType = cmdDict[ck].ptype
                     if ck[:3] in ['glX', 'egl', 'glG']:
                         farg = filter(lambda y: y not in RET_DICT[api], marg)
                     else:
                         farg = marg
-                    if len(marg) == 0:
-                        f.write("@params(api = '{}')\n".format(api))
-                    else:
-                        f.write("@params({})\n".format(repr(map(str, marg)).strip("[]") + ", api='{}'".format(api)))
+
+                    f.write("@params({})\n".format("api='{}', prms={}".format(api, repr(map(str, marg)))))
+                        #f.write("@params({})\n".format(repr(map(str, marg)).strip("[]") + ", ret='{}', api='{}'".format(retType, api)))
                     f.write("def {}({}):\n".format(ck, ", ".join(farg)))
                     f.write("\tpass\n")
                     f.write("\n\n")

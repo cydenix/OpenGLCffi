@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'set', 'get', api='egl')
+@params(api='egl', prms=['dpy', 'set', 'get'])
 def eglSetBlobCacheFuncsANDROID(dpy, set, get):
 	pass
 

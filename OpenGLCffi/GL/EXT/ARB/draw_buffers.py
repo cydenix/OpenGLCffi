@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('n', 'bufs', api='gl')
+@params(api='gl', prms=['n', 'bufs'])
 def glDrawBuffersARB(n, bufs):
 	pass
 

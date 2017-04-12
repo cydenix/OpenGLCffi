@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'stream', 'layer', api='egl')
+@params(api='egl', prms=['dpy', 'stream', 'layer'])
 def eglStreamConsumerOutputEXT(dpy, stream, layer):
 	pass
 

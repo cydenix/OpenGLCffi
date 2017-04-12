@@ -1,10 +1,10 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'drawable', 'barrier', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'barrier'])
 def glXBindSwapBarrierSGIX(dpy, drawable, barrier):
 	pass
 
 
-@params('dpy', 'screen', 'max', api='glx')
+@params(api='glx', prms=['dpy', 'screen', 'max'])
 def glXQueryMaxSwapBarriersSGIX(dpy, screen, max):
 	pass
 

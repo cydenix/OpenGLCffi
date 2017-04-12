@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('target', 'length', 'pointer', api='gl')
+@params(api='gl', prms=['target', 'length', 'pointer'])
 def glPixelDataRangeNV(target, length, pointer):
 	pass
 
 
-@params('target', api='gl')
+@params(api='gl', prms=['target'])
 def glFlushPixelDataRangeNV(target):
 	pass
 

@@ -1,50 +1,50 @@
 from OpenGLCffi.GL import params
-@params('first', 'count', 'v', api='gl')
+@params(api='gl', prms=['first', 'count', 'v'])
 def glViewportArrayv(first, count, v):
 	pass
 
 
-@params('index', 'x', 'y', 'w', 'h', api='gl')
+@params(api='gl', prms=['index', 'x', 'y', 'w', 'h'])
 def glViewportIndexedf(index, x, y, w, h):
 	pass
 
 
-@params('index', 'v', api='gl')
+@params(api='gl', prms=['index', 'v'])
 def glViewportIndexedfv(index, v):
 	pass
 
 
-@params('first', 'count', 'v', api='gl')
+@params(api='gl', prms=['first', 'count', 'v'])
 def glScissorArrayv(first, count, v):
 	pass
 
 
-@params('index', 'left', 'bottom', 'width', 'height', api='gl')
+@params(api='gl', prms=['index', 'left', 'bottom', 'width', 'height'])
 def glScissorIndexed(index, left, bottom, width, height):
 	pass
 
 
-@params('index', 'v', api='gl')
+@params(api='gl', prms=['index', 'v'])
 def glScissorIndexedv(index, v):
 	pass
 
 
-@params('first', 'count', 'v', api='gl')
+@params(api='gl', prms=['first', 'count', 'v'])
 def glDepthRangeArrayv(first, count, v):
 	pass
 
 
-@params('index', 'n', 'f', api='gl')
+@params(api='gl', prms=['index', 'n', 'f'])
 def glDepthRangeIndexed(index, n, f):
 	pass
 
 
-@params('target', 'index', 'data', api='gl')
+@params(api='gl', prms=['target', 'index', 'data'])
 def glGetFloati_v(target, index, data):
 	pass
 
 
-@params('target', 'index', 'data', api='gl')
+@params(api='gl', prms=['target', 'index', 'data'])
 def glGetDoublei_v(target, index, data):
 	pass
 

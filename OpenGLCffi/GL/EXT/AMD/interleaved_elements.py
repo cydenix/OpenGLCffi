@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('index', 'pname', 'param', api='gl')
+@params(api='gl', prms=['index', 'pname', 'param'])
 def glVertexAttribParameteriAMD(index, pname, param):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'internalformat', 'samples', 'pname', 'bufSize', 'params', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'samples', 'pname', 'bufSize', 'params'])
 def glGetInternalformatSampleivNV(target, internalformat, samples, pname, bufSize, params):
 	pass
 

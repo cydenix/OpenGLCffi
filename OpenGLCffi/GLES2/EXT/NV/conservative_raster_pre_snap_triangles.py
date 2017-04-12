@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('pname', 'param', api='gles2')
+@params(api='gles2', prms=['pname', 'param'])
 def glConservativeRasterParameteriNV(pname, param):
 	pass
 

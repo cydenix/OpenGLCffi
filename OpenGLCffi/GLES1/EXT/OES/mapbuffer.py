@@ -1,15 +1,15 @@
 from OpenGLCffi.GLES1 import params
-@params('target', 'access', api='gles1')
+@params(api='gles1', prms=['target', 'access'])
 def glMapBufferOES(target, access):
 	pass
 
 
-@params('target', api='gles1')
+@params(api='gles1', prms=['target'])
 def glUnmapBufferOES(target):
 	pass
 
 
-@params('target', 'pname', 'params', api='gles1')
+@params(api='gles1', prms=['target', 'pname', 'params'])
 def glGetBufferPointervOES(target, pname):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('func', 'ref', api='gl')
+@params(api='gl', prms=['func', 'ref'])
 def glIndexFuncEXT(func, ref):
 	pass
 

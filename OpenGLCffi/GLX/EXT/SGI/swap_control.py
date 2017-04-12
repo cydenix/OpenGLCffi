@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('interval', api='glx')
+@params(api='glx', prms=['interval'])
 def glXSwapIntervalSGI(interval):
 	pass
 

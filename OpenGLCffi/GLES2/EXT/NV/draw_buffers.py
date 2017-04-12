@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('n', 'bufs', api='gles2')
+@params(api='gles2', prms=['n', 'bufs'])
 def glDrawBuffersNV(n, bufs):
 	pass
 

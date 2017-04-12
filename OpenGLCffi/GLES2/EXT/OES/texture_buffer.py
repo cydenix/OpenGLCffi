@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES2 import params
-@params('target', 'internalformat', 'buffer', api='gles2')
+@params(api='gles2', prms=['target', 'internalformat', 'buffer'])
 def glTexBufferOES(target, internalformat, buffer):
 	pass
 
 
-@params('target', 'internalformat', 'buffer', 'offset', 'size', api='gles2')
+@params(api='gles2', prms=['target', 'internalformat', 'buffer', 'offset', 'size'])
 def glTexBufferRangeOES(target, internalformat, buffer, offset, size):
 	pass
 

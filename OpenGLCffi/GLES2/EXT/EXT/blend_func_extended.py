@@ -1,20 +1,20 @@
 from OpenGLCffi.GLES2 import params
-@params('program', 'colorNumber', 'index', 'name', api='gles2')
+@params(api='gles2', prms=['program', 'colorNumber', 'index', 'name'])
 def glBindFragDataLocationIndexedEXT(program, colorNumber, index, name):
 	pass
 
 
-@params('program', 'color', 'name', api='gles2')
+@params(api='gles2', prms=['program', 'color', 'name'])
 def glBindFragDataLocationEXT(program, color, name):
 	pass
 
 
-@params('program', 'programInterface', 'name', api='gles2')
+@params(api='gles2', prms=['program', 'programInterface', 'name'])
 def glGetProgramResourceLocationIndexEXT(program, programInterface, name):
 	pass
 
 
-@params('program', 'name', api='gles2')
+@params(api='gles2', prms=['program', 'name'])
 def glGetFragDataIndexEXT(program, name):
 	pass
 

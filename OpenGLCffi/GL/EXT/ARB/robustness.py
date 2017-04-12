@@ -1,100 +1,100 @@
 from OpenGLCffi.GL import params
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glGetGraphicsResetStatusARB():
 	pass
 
 
-@params('target', 'level', 'format', 'type', 'bufSize', 'img', api='gl')
+@params(api='gl', prms=['target', 'level', 'format', 'type', 'bufSize', 'img'])
 def glGetnTexImageARB(target, level, format, type, bufSize, img):
 	pass
 
 
-@params('x', 'y', 'width', 'height', 'format', 'type', 'bufSize', 'data', api='gl')
+@params(api='gl', prms=['x', 'y', 'width', 'height', 'format', 'type', 'bufSize', 'data'])
 def glReadnPixelsARB(x, y, width, height, format, type, bufSize, data):
 	pass
 
 
-@params('target', 'lod', 'bufSize', 'img', api='gl')
+@params(api='gl', prms=['target', 'lod', 'bufSize', 'img'])
 def glGetnCompressedTexImageARB(target, lod, bufSize, img):
 	pass
 
 
-@params('program', 'location', 'bufSize', 'params', api='gl')
+@params(api='gl', prms=['program', 'location', 'bufSize', 'params'])
 def glGetnUniformfvARB(program, location, bufSize, params):
 	pass
 
 
-@params('program', 'location', 'bufSize', 'params', api='gl')
+@params(api='gl', prms=['program', 'location', 'bufSize', 'params'])
 def glGetnUniformivARB(program, location, bufSize, params):
 	pass
 
 
-@params('program', 'location', 'bufSize', 'params', api='gl')
+@params(api='gl', prms=['program', 'location', 'bufSize', 'params'])
 def glGetnUniformuivARB(program, location, bufSize, params):
 	pass
 
 
-@params('program', 'location', 'bufSize', 'params', api='gl')
+@params(api='gl', prms=['program', 'location', 'bufSize', 'params'])
 def glGetnUniformdvARB(program, location, bufSize, params):
 	pass
 
 
-@params('target', 'query', 'bufSize', 'v', api='gl')
+@params(api='gl', prms=['target', 'query', 'bufSize', 'v'])
 def glGetnMapdvARB(target, query, bufSize, v):
 	pass
 
 
-@params('target', 'query', 'bufSize', 'v', api='gl')
+@params(api='gl', prms=['target', 'query', 'bufSize', 'v'])
 def glGetnMapfvARB(target, query, bufSize, v):
 	pass
 
 
-@params('target', 'query', 'bufSize', 'v', api='gl')
+@params(api='gl', prms=['target', 'query', 'bufSize', 'v'])
 def glGetnMapivARB(target, query, bufSize, v):
 	pass
 
 
-@params('map', 'bufSize', 'values', api='gl')
+@params(api='gl', prms=['map', 'bufSize', 'values'])
 def glGetnPixelMapfvARB(map, bufSize, values):
 	pass
 
 
-@params('map', 'bufSize', 'values', api='gl')
+@params(api='gl', prms=['map', 'bufSize', 'values'])
 def glGetnPixelMapuivARB(map, bufSize, values):
 	pass
 
 
-@params('map', 'bufSize', 'values', api='gl')
+@params(api='gl', prms=['map', 'bufSize', 'values'])
 def glGetnPixelMapusvARB(map, bufSize, values):
 	pass
 
 
-@params('bufSize', 'pattern', api='gl')
+@params(api='gl', prms=['bufSize', 'pattern'])
 def glGetnPolygonStippleARB(bufSize, pattern):
 	pass
 
 
-@params('target', 'format', 'type', 'bufSize', 'table', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'bufSize', 'table'])
 def glGetnColorTableARB(target, format, type, bufSize, table):
 	pass
 
 
-@params('target', 'format', 'type', 'bufSize', 'image', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'bufSize', 'image'])
 def glGetnConvolutionFilterARB(target, format, type, bufSize, image):
 	pass
 
 
-@params('target', 'format', 'type', 'rowBufSize', 'row', 'columnBufSize', 'column', 'span', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'rowBufSize', 'row', 'columnBufSize', 'column', 'span'])
 def glGetnSeparableFilterARB(target, format, type, rowBufSize, row, columnBufSize, column, span):
 	pass
 
 
-@params('target', 'reset', 'format', 'type', 'bufSize', 'values', api='gl')
+@params(api='gl', prms=['target', 'reset', 'format', 'type', 'bufSize', 'values'])
 def glGetnHistogramARB(target, reset, format, type, bufSize, values):
 	pass
 
 
-@params('target', 'reset', 'format', 'type', 'bufSize', 'values', api='gl')
+@params(api='gl', prms=['target', 'reset', 'format', 'type', 'bufSize', 'values'])
 def glGetnMinmaxARB(target, reset, format, type, bufSize, values):
 	pass
 

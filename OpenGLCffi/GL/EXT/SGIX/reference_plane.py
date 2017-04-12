@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('equation', api='gl')
+@params(api='gl', prms=['equation'])
 def glReferencePlaneSGIX(equation):
 	pass
 

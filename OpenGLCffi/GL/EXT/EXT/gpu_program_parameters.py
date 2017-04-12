@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('target', 'index', 'count', 'params', api='gl')
+@params(api='gl', prms=['target', 'index', 'count', 'params'])
 def glProgramEnvParameters4fvEXT(target, index, count, params):
 	pass
 
 
-@params('target', 'index', 'count', 'params', api='gl')
+@params(api='gl', prms=['target', 'index', 'count', 'params'])
 def glProgramLocalParameters4fvEXT(target, index, count, params):
 	pass
 

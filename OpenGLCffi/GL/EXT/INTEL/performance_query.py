@@ -1,50 +1,50 @@
 from OpenGLCffi.GL import params
-@params('queryHandle', api='gl')
+@params(api='gl', prms=['queryHandle'])
 def glBeginPerfQueryINTEL(queryHandle):
 	pass
 
 
-@params('queryId', 'queryHandle', api='gl')
+@params(api='gl', prms=['queryId', 'queryHandle'])
 def glCreatePerfQueryINTEL(queryId, queryHandle):
 	pass
 
 
-@params('queryHandle', api='gl')
+@params(api='gl', prms=['queryHandle'])
 def glDeletePerfQueryINTEL(queryHandle):
 	pass
 
 
-@params('queryHandle', api='gl')
+@params(api='gl', prms=['queryHandle'])
 def glEndPerfQueryINTEL(queryHandle):
 	pass
 
 
-@params('queryId', api='gl')
+@params(api='gl', prms=['queryId'])
 def glGetFirstPerfQueryIdINTEL(queryId):
 	pass
 
 
-@params('queryId', 'nextQueryId', api='gl')
+@params(api='gl', prms=['queryId', 'nextQueryId'])
 def glGetNextPerfQueryIdINTEL(queryId, nextQueryId):
 	pass
 
 
-@params('queryId', 'counterId', 'counterNameLength', 'counterName', 'counterDescLength', 'counterDesc', 'counterOffset', 'counterDataSize', 'counterTypeEnum', 'counterDataTypeEnum', 'rawCounterMaxValue', api='gl')
+@params(api='gl', prms=['queryId', 'counterId', 'counterNameLength', 'counterName', 'counterDescLength', 'counterDesc', 'counterOffset', 'counterDataSize', 'counterTypeEnum', 'counterDataTypeEnum', 'rawCounterMaxValue'])
 def glGetPerfCounterInfoINTEL(queryId, counterId, counterNameLength, counterName, counterDescLength, counterDesc, counterOffset, counterDataSize, counterTypeEnum, counterDataTypeEnum, rawCounterMaxValue):
 	pass
 
 
-@params('queryHandle', 'flags', 'dataSize', 'data', 'bytesWritten', api='gl')
+@params(api='gl', prms=['queryHandle', 'flags', 'dataSize', 'data', 'bytesWritten'])
 def glGetPerfQueryDataINTEL(queryHandle, flags, dataSize, data, bytesWritten):
 	pass
 
 
-@params('queryName', 'queryId', api='gl')
+@params(api='gl', prms=['queryName', 'queryId'])
 def glGetPerfQueryIdByNameINTEL(queryName, queryId):
 	pass
 
 
-@params('queryId', 'queryNameLength', 'queryName', 'dataSize', 'noCounters', 'noInstances', 'capsMask', api='gl')
+@params(api='gl', prms=['queryId', 'queryNameLength', 'queryName', 'dataSize', 'noCounters', 'noInstances', 'capsMask'])
 def glGetPerfQueryInfoINTEL(queryId, queryNameLength, queryName, dataSize, noCounters, noInstances, capsMask):
 	pass
 

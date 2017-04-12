@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glFlushVertexArrayRangeNV():
 	pass
 
 
-@params('length', 'pointer', api='gl')
+@params(api='gl', prms=['length', 'pointer'])
 def glVertexArrayRangeNV(length, pointer):
 	pass
 

@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('source', 'type', 'severity', 'count', 'ids', 'enabled', api='gl')
+@params(api='gl', prms=['source', 'type', 'severity', 'count', 'ids', 'enabled'])
 def glDebugMessageControlARB(source, type, severity, count, ids, enabled):
 	pass
 
 
-@params('source', 'type', 'id', 'severity', 'length', 'buf', api='gl')
+@params(api='gl', prms=['source', 'type', 'id', 'severity', 'length', 'buf'])
 def glDebugMessageInsertARB(source, type, id, severity, length, buf):
 	pass
 
 
-@params('callback', 'userParam', api='gl')
+@params(api='gl', prms=['callback', 'userParam'])
 def glDebugMessageCallbackARB(callback, userParam):
 	pass
 
 
-@params('count', 'bufSize', 'sources', 'types', 'ids', 'severities', 'lengths', 'messageLog', api='gl')
+@params(api='gl', prms=['count', 'bufSize', 'sources', 'types', 'ids', 'severities', 'lengths', 'messageLog'])
 def glGetDebugMessageLogARB(count, bufSize, sources, types, ids, severities, lengths, messageLog):
 	pass
 

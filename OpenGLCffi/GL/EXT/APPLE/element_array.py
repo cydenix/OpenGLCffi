@@ -1,25 +1,25 @@
 from OpenGLCffi.GL import params
-@params('type', 'pointer', api='gl')
+@params(api='gl', prms=['type', 'pointer'])
 def glElementPointerAPPLE(type, pointer):
 	pass
 
 
-@params('mode', 'first', 'count', api='gl')
+@params(api='gl', prms=['mode', 'first', 'count'])
 def glDrawElementArrayAPPLE(mode, first, count):
 	pass
 
 
-@params('mode', 'start', 'end', 'first', 'count', api='gl')
+@params(api='gl', prms=['mode', 'start', 'end', 'first', 'count'])
 def glDrawRangeElementArrayAPPLE(mode, start, end, first, count):
 	pass
 
 
-@params('mode', 'first', 'count', 'primcount', api='gl')
+@params(api='gl', prms=['mode', 'first', 'count', 'primcount'])
 def glMultiDrawElementArrayAPPLE(mode, first, count, primcount):
 	pass
 
 
-@params('mode', 'start', 'end', 'first', 'count', 'primcount', api='gl')
+@params(api='gl', prms=['mode', 'start', 'end', 'first', 'count', 'primcount'])
 def glMultiDrawRangeElementArrayAPPLE(mode, start, end, first, count, primcount):
 	pass
 

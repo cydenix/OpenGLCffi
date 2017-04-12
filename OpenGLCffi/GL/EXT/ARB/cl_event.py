@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('context', 'event', 'flags', api='gl')
+@params(api='gl', prms=['context', 'event', 'flags'])
 def glCreateSyncFromCLeventARB(context, event, flags):
 	pass
 

@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('n', 'points', api='gl')
+@params(api='gl', prms=['n', 'points'])
 def glFogFuncSGIS(n, points):
 	pass
 
 
-@params('points', api='gl')
+@params(api='gl', prms=['points'])
 def glGetFogFuncSGIS(points):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'sync', 'flags', api='egl')
+@params(api='egl', prms=['dpy', 'sync', 'flags'])
 def eglWaitSyncKHR(dpy, sync, flags):
 	pass
 

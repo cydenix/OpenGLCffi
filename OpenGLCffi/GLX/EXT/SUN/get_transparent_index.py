@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'overlay', 'underlay', 'pTransparentIndex', api='glx')
+@params(api='glx', prms=['dpy', 'overlay', 'underlay', 'pTransparentIndex'])
 def glXGetTransparentIndexSUN(dpy, overlay, underlay, pTransparentIndex):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'clamp', api='gl')
+@params(api='gl', prms=['target', 'clamp'])
 def glClampColorARB(target, clamp):
 	pass
 

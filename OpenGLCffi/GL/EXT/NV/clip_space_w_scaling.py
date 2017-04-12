@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('index', 'xcoeff', 'ycoeff', api='gl')
+@params(api='gl', prms=['index', 'xcoeff', 'ycoeff'])
 def glViewportPositionWScaleNV(index, xcoeff, ycoeff):
 	pass
 

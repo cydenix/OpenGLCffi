@@ -1,535 +1,535 @@
 from OpenGLCffi.GL import params
-@params('func', 'ref', api='gl')
+@params(api='gl', prms=['func', 'ref'])
 def glAlphaFuncxOES(func, ref):
 	pass
 
 
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glClearColorxOES(red, green, blue, alpha):
 	pass
 
 
-@params('depth', api='gl')
+@params(api='gl', prms=['depth'])
 def glClearDepthxOES(depth):
 	pass
 
 
-@params('plane', 'equation', api='gl')
+@params(api='gl', prms=['plane', 'equation'])
 def glClipPlanexOES(plane, equation):
 	pass
 
 
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glColor4xOES(red, green, blue, alpha):
 	pass
 
 
-@params('n', 'f', api='gl')
+@params(api='gl', prms=['n', 'f'])
 def glDepthRangexOES(n, f):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glFogxOES(pname, param):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glFogxvOES(pname, param):
 	pass
 
 
-@params('l', 'r', 'b', 't', 'n', 'f', api='gl')
+@params(api='gl', prms=['l', 'r', 'b', 't', 'n', 'f'])
 def glFrustumxOES(l, r, b, t, n, f):
 	pass
 
 
-@params('plane', 'equation', api='gl')
+@params(api='gl', prms=['plane', 'equation'])
 def glGetClipPlanexOES(plane, equation):
 	pass
 
 
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glGetFixedvOES(pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetTexEnvxvOES(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetTexParameterxvOES(target, pname, params):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glLightModelxOES(pname, param):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glLightModelxvOES(pname, param):
 	pass
 
 
-@params('light', 'pname', 'param', api='gl')
+@params(api='gl', prms=['light', 'pname', 'param'])
 def glLightxOES(light, pname, param):
 	pass
 
 
-@params('light', 'pname', 'params', api='gl')
+@params(api='gl', prms=['light', 'pname', 'params'])
 def glLightxvOES(light, pname, params):
 	pass
 
 
-@params('width', api='gl')
+@params(api='gl', prms=['width'])
 def glLineWidthxOES(width):
 	pass
 
 
-@params('m', api='gl')
+@params(api='gl', prms=['m'])
 def glLoadMatrixxOES(m):
 	pass
 
 
-@params('face', 'pname', 'param', api='gl')
+@params(api='gl', prms=['face', 'pname', 'param'])
 def glMaterialxOES(face, pname, param):
 	pass
 
 
-@params('face', 'pname', 'param', api='gl')
+@params(api='gl', prms=['face', 'pname', 'param'])
 def glMaterialxvOES(face, pname, param):
 	pass
 
 
-@params('m', api='gl')
+@params(api='gl', prms=['m'])
 def glMultMatrixxOES(m):
 	pass
 
 
-@params('texture', 's', 't', 'r', 'q', api='gl')
+@params(api='gl', prms=['texture', 's', 't', 'r', 'q'])
 def glMultiTexCoord4xOES(texture, s, t, r, q):
 	pass
 
 
-@params('nx', 'ny', 'nz', api='gl')
+@params(api='gl', prms=['nx', 'ny', 'nz'])
 def glNormal3xOES(nx, ny, nz):
 	pass
 
 
-@params('l', 'r', 'b', 't', 'n', 'f', api='gl')
+@params(api='gl', prms=['l', 'r', 'b', 't', 'n', 'f'])
 def glOrthoxOES(l, r, b, t, n, f):
 	pass
 
 
-@params('pname', 'params', api='gl')
+@params(api='gl', prms=['pname', 'params'])
 def glPointParameterxvOES(pname, params):
 	pass
 
 
-@params('size', api='gl')
+@params(api='gl', prms=['size'])
 def glPointSizexOES(size):
 	pass
 
 
-@params('factor', 'units', api='gl')
+@params(api='gl', prms=['factor', 'units'])
 def glPolygonOffsetxOES(factor, units):
 	pass
 
 
-@params('angle', 'x', 'y', 'z', api='gl')
+@params(api='gl', prms=['angle', 'x', 'y', 'z'])
 def glRotatexOES(angle, x, y, z):
 	pass
 
 
-@params('x', 'y', 'z', api='gl')
+@params(api='gl', prms=['x', 'y', 'z'])
 def glScalexOES(x, y, z):
 	pass
 
 
-@params('target', 'pname', 'param', api='gl')
+@params(api='gl', prms=['target', 'pname', 'param'])
 def glTexEnvxOES(target, pname, param):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glTexEnvxvOES(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'param', api='gl')
+@params(api='gl', prms=['target', 'pname', 'param'])
 def glTexParameterxOES(target, pname, param):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glTexParameterxvOES(target, pname, params):
 	pass
 
 
-@params('x', 'y', 'z', api='gl')
+@params(api='gl', prms=['x', 'y', 'z'])
 def glTranslatexOES(x, y, z):
 	pass
 
 
-@params('light', 'pname', 'params', api='gl')
+@params(api='gl', prms=['light', 'pname', 'params'])
 def glGetLightxvOES(light, pname, params):
 	pass
 
 
-@params('face', 'pname', 'params', api='gl')
+@params(api='gl', prms=['face', 'pname', 'params'])
 def glGetMaterialxvOES(face, pname, params):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glPointParameterxOES(pname, param):
 	pass
 
 
-@params('value', 'invert', api='gl')
+@params(api='gl', prms=['value', 'invert'])
 def glSampleCoveragexOES(value, invert):
 	pass
 
 
-@params('op', 'value', api='gl')
+@params(api='gl', prms=['op', 'value'])
 def glAccumxOES(op, value):
 	pass
 
 
-@params('width', 'height', 'xorig', 'yorig', 'xmove', 'ymove', 'bitmap', api='gl')
+@params(api='gl', prms=['width', 'height', 'xorig', 'yorig', 'xmove', 'ymove', 'bitmap'])
 def glBitmapxOES(width, height, xorig, yorig, xmove, ymove, bitmap):
 	pass
 
 
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glBlendColorxOES(red, green, blue, alpha):
 	pass
 
 
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glClearAccumxOES(red, green, blue, alpha):
 	pass
 
 
-@params('red', 'green', 'blue', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue'])
 def glColor3xOES(red, green, blue):
 	pass
 
 
-@params('components', api='gl')
+@params(api='gl', prms=['components'])
 def glColor3xvOES(components):
 	pass
 
 
-@params('components', api='gl')
+@params(api='gl', prms=['components'])
 def glColor4xvOES(components):
 	pass
 
 
-@params('target', 'pname', 'param', api='gl')
+@params(api='gl', prms=['target', 'pname', 'param'])
 def glConvolutionParameterxOES(target, pname, param):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glConvolutionParameterxvOES(target, pname, params):
 	pass
 
 
-@params('u', api='gl')
+@params(api='gl', prms=['u'])
 def glEvalCoord1xOES(u):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glEvalCoord1xvOES(coords):
 	pass
 
 
-@params('u', 'v', api='gl')
+@params(api='gl', prms=['u', 'v'])
 def glEvalCoord2xOES(u, v):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glEvalCoord2xvOES(coords):
 	pass
 
 
-@params('n', 'type', 'buffer', api='gl')
+@params(api='gl', prms=['n', 'type', 'buffer'])
 def glFeedbackBufferxOES(n, type, buffer):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetConvolutionParameterxvOES(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetHistogramParameterxvOES(target, pname, params):
 	pass
 
 
-@params('light', 'pname', 'params', api='gl')
+@params(api='gl', prms=['light', 'pname', 'params'])
 def glGetLightxOES(light, pname, params):
 	pass
 
 
-@params('target', 'query', 'v', api='gl')
+@params(api='gl', prms=['target', 'query', 'v'])
 def glGetMapxvOES(target, query, v):
 	pass
 
 
-@params('face', 'pname', 'param', api='gl')
+@params(api='gl', prms=['face', 'pname', 'param'])
 def glGetMaterialxOES(face, pname, param):
 	pass
 
 
-@params('map', 'size', 'values', api='gl')
+@params(api='gl', prms=['map', 'size', 'values'])
 def glGetPixelMapxv(map, size, values):
 	pass
 
 
-@params('coord', 'pname', 'params', api='gl')
+@params(api='gl', prms=['coord', 'pname', 'params'])
 def glGetTexGenxvOES(coord, pname, params):
 	pass
 
 
-@params('target', 'level', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'level', 'pname', 'params'])
 def glGetTexLevelParameterxvOES(target, level, pname, params):
 	pass
 
 
-@params('component', api='gl')
+@params(api='gl', prms=['component'])
 def glIndexxOES(component):
 	pass
 
 
-@params('component', api='gl')
+@params(api='gl', prms=['component'])
 def glIndexxvOES(component):
 	pass
 
 
-@params('m', api='gl')
+@params(api='gl', prms=['m'])
 def glLoadTransposeMatrixxOES(m):
 	pass
 
 
-@params('target', 'u1', 'u2', 'stride', 'order', 'points', api='gl')
+@params(api='gl', prms=['target', 'u1', 'u2', 'stride', 'order', 'points'])
 def glMap1xOES(target, u1, u2, stride, order, points):
 	pass
 
 
-@params('target', 'u1', 'u2', 'ustride', 'uorder', 'v1', 'v2', 'vstride', 'vorder', 'points', api='gl')
+@params(api='gl', prms=['target', 'u1', 'u2', 'ustride', 'uorder', 'v1', 'v2', 'vstride', 'vorder', 'points'])
 def glMap2xOES(target, u1, u2, ustride, uorder, v1, v2, vstride, vorder, points):
 	pass
 
 
-@params('n', 'u1', 'u2', api='gl')
+@params(api='gl', prms=['n', 'u1', 'u2'])
 def glMapGrid1xOES(n, u1, u2):
 	pass
 
 
-@params('n', 'u1', 'u2', 'v1', 'v2', api='gl')
+@params(api='gl', prms=['n', 'u1', 'u2', 'v1', 'v2'])
 def glMapGrid2xOES(n, u1, u2, v1, v2):
 	pass
 
 
-@params('m', api='gl')
+@params(api='gl', prms=['m'])
 def glMultTransposeMatrixxOES(m):
 	pass
 
 
-@params('texture', 's', api='gl')
+@params(api='gl', prms=['texture', 's'])
 def glMultiTexCoord1xOES(texture, s):
 	pass
 
 
-@params('texture', 'coords', api='gl')
+@params(api='gl', prms=['texture', 'coords'])
 def glMultiTexCoord1xvOES(texture, coords):
 	pass
 
 
-@params('texture', 's', 't', api='gl')
+@params(api='gl', prms=['texture', 's', 't'])
 def glMultiTexCoord2xOES(texture, s, t):
 	pass
 
 
-@params('texture', 'coords', api='gl')
+@params(api='gl', prms=['texture', 'coords'])
 def glMultiTexCoord2xvOES(texture, coords):
 	pass
 
 
-@params('texture', 's', 't', 'r', api='gl')
+@params(api='gl', prms=['texture', 's', 't', 'r'])
 def glMultiTexCoord3xOES(texture, s, t, r):
 	pass
 
 
-@params('texture', 'coords', api='gl')
+@params(api='gl', prms=['texture', 'coords'])
 def glMultiTexCoord3xvOES(texture, coords):
 	pass
 
 
-@params('texture', 'coords', api='gl')
+@params(api='gl', prms=['texture', 'coords'])
 def glMultiTexCoord4xvOES(texture, coords):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glNormal3xvOES(coords):
 	pass
 
 
-@params('token', api='gl')
+@params(api='gl', prms=['token'])
 def glPassThroughxOES(token):
 	pass
 
 
-@params('map', 'size', 'values', api='gl')
+@params(api='gl', prms=['map', 'size', 'values'])
 def glPixelMapx(map, size, values):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glPixelStorex(pname, param):
 	pass
 
 
-@params('pname', 'param', api='gl')
+@params(api='gl', prms=['pname', 'param'])
 def glPixelTransferxOES(pname, param):
 	pass
 
 
-@params('xfactor', 'yfactor', api='gl')
+@params(api='gl', prms=['xfactor', 'yfactor'])
 def glPixelZoomxOES(xfactor, yfactor):
 	pass
 
 
-@params('n', 'textures', 'priorities', api='gl')
+@params(api='gl', prms=['n', 'textures', 'priorities'])
 def glPrioritizeTexturesxOES(n, textures, priorities):
 	pass
 
 
-@params('x', 'y', api='gl')
+@params(api='gl', prms=['x', 'y'])
 def glRasterPos2xOES(x, y):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glRasterPos2xvOES(coords):
 	pass
 
 
-@params('x', 'y', 'z', api='gl')
+@params(api='gl', prms=['x', 'y', 'z'])
 def glRasterPos3xOES(x, y, z):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glRasterPos3xvOES(coords):
 	pass
 
 
-@params('x', 'y', 'z', 'w', api='gl')
+@params(api='gl', prms=['x', 'y', 'z', 'w'])
 def glRasterPos4xOES(x, y, z, w):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glRasterPos4xvOES(coords):
 	pass
 
 
-@params('x1', 'y1', 'x2', 'y2', api='gl')
+@params(api='gl', prms=['x1', 'y1', 'x2', 'y2'])
 def glRectxOES(x1, y1, x2, y2):
 	pass
 
 
-@params('v1', 'v2', api='gl')
+@params(api='gl', prms=['v1', 'v2'])
 def glRectxvOES(v1, v2):
 	pass
 
 
-@params('s', api='gl')
+@params(api='gl', prms=['s'])
 def glTexCoord1xOES(s):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glTexCoord1xvOES(coords):
 	pass
 
 
-@params('s', 't', api='gl')
+@params(api='gl', prms=['s', 't'])
 def glTexCoord2xOES(s, t):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glTexCoord2xvOES(coords):
 	pass
 
 
-@params('s', 't', 'r', api='gl')
+@params(api='gl', prms=['s', 't', 'r'])
 def glTexCoord3xOES(s, t, r):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glTexCoord3xvOES(coords):
 	pass
 
 
-@params('s', 't', 'r', 'q', api='gl')
+@params(api='gl', prms=['s', 't', 'r', 'q'])
 def glTexCoord4xOES(s, t, r, q):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glTexCoord4xvOES(coords):
 	pass
 
 
-@params('coord', 'pname', 'param', api='gl')
+@params(api='gl', prms=['coord', 'pname', 'param'])
 def glTexGenxOES(coord, pname, param):
 	pass
 
 
-@params('coord', 'pname', 'params', api='gl')
+@params(api='gl', prms=['coord', 'pname', 'params'])
 def glTexGenxvOES(coord, pname, params):
 	pass
 
 
-@params('x', api='gl')
+@params(api='gl', prms=['x'])
 def glVertex2xOES(x):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glVertex2xvOES(coords):
 	pass
 
 
-@params('x', 'y', api='gl')
+@params(api='gl', prms=['x', 'y'])
 def glVertex3xOES(x, y):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glVertex3xvOES(coords):
 	pass
 
 
-@params('x', 'y', 'z', api='gl')
+@params(api='gl', prms=['x', 'y', 'z'])
 def glVertex4xOES(x, y, z):
 	pass
 
 
-@params('coords', api='gl')
+@params(api='gl', prms=['coords'])
 def glVertex4xvOES(coords):
 	pass
 

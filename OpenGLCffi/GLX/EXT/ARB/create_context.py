@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'config', 'share_context', 'direct', 'attrib_list', api='glx')
+@params(api='glx', prms=['dpy', 'config', 'share_context', 'direct', 'attrib_list'])
 def glXCreateContextAttribsARB(dpy, config, share_context, direct, attrib_list):
 	pass
 

@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('target', 'bindingIndex', 'wordIndex', 'count', 'params', api='gl')
+@params(api='gl', prms=['target', 'bindingIndex', 'wordIndex', 'count', 'params'])
 def glProgramBufferParametersfvNV(target, bindingIndex, wordIndex, count, params):
 	pass
 
 
-@params('target', 'bindingIndex', 'wordIndex', 'count', 'params', api='gl')
+@params(api='gl', prms=['target', 'bindingIndex', 'wordIndex', 'count', 'params'])
 def glProgramBufferParametersIivNV(target, bindingIndex, wordIndex, count, params):
 	pass
 
 
-@params('target', 'bindingIndex', 'wordIndex', 'count', 'params', api='gl')
+@params(api='gl', prms=['target', 'bindingIndex', 'wordIndex', 'count', 'params'])
 def glProgramBufferParametersIuivNV(target, bindingIndex, wordIndex, count, params):
 	pass
 

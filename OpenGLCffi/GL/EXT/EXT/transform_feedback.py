@@ -1,35 +1,35 @@
 from OpenGLCffi.GL import params
-@params('primitiveMode', api='gl')
+@params(api='gl', prms=['primitiveMode'])
 def glBeginTransformFeedbackEXT(primitiveMode):
 	pass
 
 
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glEndTransformFeedbackEXT():
 	pass
 
 
-@params('target', 'index', 'buffer', 'offset', 'size', api='gl')
+@params(api='gl', prms=['target', 'index', 'buffer', 'offset', 'size'])
 def glBindBufferRangeEXT(target, index, buffer, offset, size):
 	pass
 
 
-@params('target', 'index', 'buffer', 'offset', api='gl')
+@params(api='gl', prms=['target', 'index', 'buffer', 'offset'])
 def glBindBufferOffsetEXT(target, index, buffer, offset):
 	pass
 
 
-@params('target', 'index', 'buffer', api='gl')
+@params(api='gl', prms=['target', 'index', 'buffer'])
 def glBindBufferBaseEXT(target, index, buffer):
 	pass
 
 
-@params('program', 'count', 'constvaryings', 'bufferMode', api='gl')
+@params(api='gl', prms=['program', 'count', 'constvaryings', 'bufferMode'])
 def glTransformFeedbackVaryingsEXT(program, count, constvaryings, bufferMode):
 	pass
 
 
-@params('program', 'index', 'bufSize', 'length', 'size', 'type', 'name', api='gl')
+@params(api='gl', prms=['program', 'index', 'bufSize', 'length', 'size', 'type', 'name'])
 def glGetTransformFeedbackVaryingEXT(program, index, bufSize, length, size, type, name):
 	pass
 

@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('mode', 'count', 'box', api='gl')
+@params(api='gl', prms=['mode', 'count', 'box'])
 def glWindowRectanglesEXT(mode, count, box):
 	pass
 

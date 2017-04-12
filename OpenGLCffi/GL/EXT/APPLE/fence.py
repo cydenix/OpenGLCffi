@@ -1,40 +1,40 @@
 from OpenGLCffi.GL import params
-@params('n', 'fences', api='gl')
+@params(api='gl', prms=['n', 'fences'])
 def glGenFencesAPPLE(n, fences):
 	pass
 
 
-@params('n', 'fences', api='gl')
+@params(api='gl', prms=['n', 'fences'])
 def glDeleteFencesAPPLE(n, fences):
 	pass
 
 
-@params('fence', api='gl')
+@params(api='gl', prms=['fence'])
 def glSetFenceAPPLE(fence):
 	pass
 
 
-@params('fence', api='gl')
+@params(api='gl', prms=['fence'])
 def glIsFenceAPPLE(fence):
 	pass
 
 
-@params('fence', api='gl')
+@params(api='gl', prms=['fence'])
 def glTestFenceAPPLE(fence):
 	pass
 
 
-@params('fence', api='gl')
+@params(api='gl', prms=['fence'])
 def glFinishFenceAPPLE(fence):
 	pass
 
 
-@params('object', 'name', api='gl')
+@params(api='gl', prms=['object', 'name'])
 def glTestObjectAPPLE(object, name):
 	pass
 
 
-@params('object', 'name', api='gl')
+@params(api='gl', prms=['object', 'name'])
 def glFinishObjectAPPLE(object, name):
 	pass
 

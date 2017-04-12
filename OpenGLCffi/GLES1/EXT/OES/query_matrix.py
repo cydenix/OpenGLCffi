@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES1 import params
-@params('mantissa', 'exponent', api='gles1')
+@params(api='gles1', prms=['mantissa', 'exponent'])
 def glQueryMatrixxOES(mantissa, exponent):
 	pass
 

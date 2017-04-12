@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('mode', api='gles3')
+@params(api='gles3', prms=['mode'])
 def glReadBufferNV(mode):
 	pass
 

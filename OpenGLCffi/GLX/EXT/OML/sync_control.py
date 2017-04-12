@@ -1,25 +1,25 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'drawable', 'ust', 'msc', 'sbc', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'ust', 'msc', 'sbc'])
 def glXGetSyncValuesOML(dpy, drawable, ust, msc, sbc):
 	pass
 
 
-@params('dpy', 'drawable', 'numerator', 'denominator', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'numerator', 'denominator'])
 def glXGetMscRateOML(dpy, drawable, numerator, denominator):
 	pass
 
 
-@params('dpy', 'drawable', 'target_msc', 'divisor', 'remainder', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'target_msc', 'divisor', 'remainder'])
 def glXSwapBuffersMscOML(dpy, drawable, target_msc, divisor, remainder):
 	pass
 
 
-@params('dpy', 'drawable', 'target_msc', 'divisor', 'remainder', 'ust', 'msc', 'sbc', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'target_msc', 'divisor', 'remainder', 'ust', 'msc', 'sbc'])
 def glXWaitForMscOML(dpy, drawable, target_msc, divisor, remainder, ust, msc, sbc):
 	pass
 
 
-@params('dpy', 'drawable', 'target_sbc', 'ust', 'msc', 'sbc', api='glx')
+@params(api='glx', prms=['dpy', 'drawable', 'target_sbc', 'ust', 'msc', 'sbc'])
 def glXWaitForSbcOML(dpy, drawable, target_sbc, ust, msc, sbc):
 	pass
 

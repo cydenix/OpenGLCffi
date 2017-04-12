@@ -1,170 +1,170 @@
 from OpenGLCffi.GL import params
-@params('red', 'green', 'blue', 'alpha', api='gl')
+@params(api='gl', prms=['red', 'green', 'blue', 'alpha'])
 def glBlendColor(red, green, blue, alpha):
 	pass
 
 
-@params('mode', api='gl')
+@params(api='gl', prms=['mode'])
 def glBlendEquation(mode):
 	pass
 
 
-@params('target', 'internalformat', 'width', 'format', 'type', 'table', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'width', 'format', 'type', 'table'])
 def glColorTable(target, internalformat, width, format, type, table):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glColorTableParameterfv(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glColorTableParameteriv(target, pname, params):
 	pass
 
 
-@params('target', 'internalformat', 'x', 'y', 'width', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'x', 'y', 'width'])
 def glCopyColorTable(target, internalformat, x, y, width):
 	pass
 
 
-@params('target', 'format', 'type', 'table', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'table'])
 def glGetColorTable(target, format, type, table):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetColorTableParameterfv(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetColorTableParameteriv(target, pname, params):
 	pass
 
 
-@params('target', 'start', 'count', 'format', 'type', 'data', api='gl')
+@params(api='gl', prms=['target', 'start', 'count', 'format', 'type', 'data'])
 def glColorSubTable(target, start, count, format, type, data):
 	pass
 
 
-@params('target', 'start', 'x', 'y', 'width', api='gl')
+@params(api='gl', prms=['target', 'start', 'x', 'y', 'width'])
 def glCopyColorSubTable(target, start, x, y, width):
 	pass
 
 
-@params('target', 'internalformat', 'width', 'format', 'type', 'image', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'width', 'format', 'type', 'image'])
 def glConvolutionFilter1D(target, internalformat, width, format, type, image):
 	pass
 
 
-@params('target', 'internalformat', 'width', 'height', 'format', 'type', 'image', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'width', 'height', 'format', 'type', 'image'])
 def glConvolutionFilter2D(target, internalformat, width, height, format, type, image):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glConvolutionParameterf(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glConvolutionParameterfv(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glConvolutionParameteri(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glConvolutionParameteriv(target, pname, params):
 	pass
 
 
-@params('target', 'internalformat', 'x', 'y', 'width', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'x', 'y', 'width'])
 def glCopyConvolutionFilter1D(target, internalformat, x, y, width):
 	pass
 
 
-@params('target', 'internalformat', 'x', 'y', 'width', 'height', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'x', 'y', 'width', 'height'])
 def glCopyConvolutionFilter2D(target, internalformat, x, y, width, height):
 	pass
 
 
-@params('target', 'format', 'type', 'image', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'image'])
 def glGetConvolutionFilter(target, format, type, image):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetConvolutionParameterfv(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetConvolutionParameteriv(target, pname, params):
 	pass
 
 
-@params('target', 'format', 'type', 'row', 'column', 'span', api='gl')
+@params(api='gl', prms=['target', 'format', 'type', 'row', 'column', 'span'])
 def glGetSeparableFilter(target, format, type, row, column, span):
 	pass
 
 
-@params('target', 'internalformat', 'width', 'height', 'format', 'type', 'row', 'column', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'width', 'height', 'format', 'type', 'row', 'column'])
 def glSeparableFilter2D(target, internalformat, width, height, format, type, row, column):
 	pass
 
 
-@params('target', 'reset', 'format', 'type', 'values', api='gl')
+@params(api='gl', prms=['target', 'reset', 'format', 'type', 'values'])
 def glGetHistogram(target, reset, format, type, values):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetHistogramParameterfv(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetHistogramParameteriv(target, pname, params):
 	pass
 
 
-@params('target', 'reset', 'format', 'type', 'values', api='gl')
+@params(api='gl', prms=['target', 'reset', 'format', 'type', 'values'])
 def glGetMinmax(target, reset, format, type, values):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetMinmaxParameterfv(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetMinmaxParameteriv(target, pname, params):
 	pass
 
 
-@params('target', 'width', 'internalformat', 'sink', api='gl')
+@params(api='gl', prms=['target', 'width', 'internalformat', 'sink'])
 def glHistogram(target, width, internalformat, sink):
 	pass
 
 
-@params('target', 'internalformat', 'sink', api='gl')
+@params(api='gl', prms=['target', 'internalformat', 'sink'])
 def glMinmax(target, internalformat, sink):
 	pass
 
 
-@params('target', api='gl')
+@params(api='gl', prms=['target'])
 def glResetHistogram(target):
 	pass
 
 
-@params('target', api='gl')
+@params(api='gl', prms=['target'])
 def glResetMinmax(target):
 	pass
 

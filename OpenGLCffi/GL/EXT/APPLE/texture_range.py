@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('target', 'length', 'pointer', api='gl')
+@params(api='gl', prms=['target', 'length', 'pointer'])
 def glTextureRangeAPPLE(target, length, pointer):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetTexParameterPointervAPPLE(target, pname, params):
 	pass
 

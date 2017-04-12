@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('program', 'bufferIndex', 'pname', 'params', api='gl')
+@params(api='gl', prms=['program', 'bufferIndex', 'pname', 'params'])
 def glGetActiveAtomicCounterBufferiv(program, bufferIndex, pname, params):
 	pass
 

@@ -1,50 +1,50 @@
 from OpenGLCffi.GL import params
-@params('index', 'x', api='gl')
+@params(api='gl', prms=['index', 'x'])
 def glVertexAttribL1dEXT(index, x):
 	pass
 
 
-@params('index', 'x', 'y', api='gl')
+@params(api='gl', prms=['index', 'x', 'y'])
 def glVertexAttribL2dEXT(index, x, y):
 	pass
 
 
-@params('index', 'x', 'y', 'z', api='gl')
+@params(api='gl', prms=['index', 'x', 'y', 'z'])
 def glVertexAttribL3dEXT(index, x, y, z):
 	pass
 
 
-@params('index', 'x', 'y', 'z', 'w', api='gl')
+@params(api='gl', prms=['index', 'x', 'y', 'z', 'w'])
 def glVertexAttribL4dEXT(index, x, y, z, w):
 	pass
 
 
-@params('index', 'v', api='gl')
+@params(api='gl', prms=['index', 'v'])
 def glVertexAttribL1dvEXT(index, v):
 	pass
 
 
-@params('index', 'v', api='gl')
+@params(api='gl', prms=['index', 'v'])
 def glVertexAttribL2dvEXT(index, v):
 	pass
 
 
-@params('index', 'v', api='gl')
+@params(api='gl', prms=['index', 'v'])
 def glVertexAttribL3dvEXT(index, v):
 	pass
 
 
-@params('index', 'v', api='gl')
+@params(api='gl', prms=['index', 'v'])
 def glVertexAttribL4dvEXT(index, v):
 	pass
 
 
-@params('index', 'size', 'type', 'stride', 'pointer', api='gl')
+@params(api='gl', prms=['index', 'size', 'type', 'stride', 'pointer'])
 def glVertexAttribLPointerEXT(index, size, type, stride, pointer):
 	pass
 
 
-@params('index', 'pname', 'params', api='gl')
+@params(api='gl', prms=['index', 'pname', 'params'])
 def glGetVertexAttribLdvEXT(index, pname, params):
 	pass
 

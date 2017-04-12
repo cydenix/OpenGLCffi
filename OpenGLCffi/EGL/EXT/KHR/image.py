@@ -1,10 +1,10 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'ctx', 'target', 'buffer', 'attrib_list', api='egl')
+@params(api='egl', prms=['dpy', 'ctx', 'target', 'buffer', 'attrib_list'])
 def eglCreateImageKHR(dpy, ctx, target, buffer, attrib_list):
 	pass
 
 
-@params('dpy', 'image', api='egl')
+@params(api='egl', prms=['dpy', 'image'])
 def eglDestroyImageKHR(dpy, image):
 	pass
 

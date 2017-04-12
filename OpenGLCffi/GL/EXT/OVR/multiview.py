@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('target', 'attachment', 'texture', 'level', 'baseViewIndex', 'numViews', api='gl')
+@params(api='gl', prms=['target', 'attachment', 'texture', 'level', 'baseViewIndex', 'numViews'])
 def glFramebufferTextureMultiviewOVR(target, attachment, texture, level, baseViewIndex, numViews):
 	pass
 

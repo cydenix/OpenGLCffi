@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('target', 'pname', 'param', api='gl')
+@params(api='gl', prms=['target', 'pname', 'param'])
 def glPixelTransformParameteriEXT(target, pname, param):
 	pass
 
 
-@params('target', 'pname', 'param', api='gl')
+@params(api='gl', prms=['target', 'pname', 'param'])
 def glPixelTransformParameterfEXT(target, pname, param):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glPixelTransformParameterivEXT(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glPixelTransformParameterfvEXT(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetPixelTransformParameterivEXT(target, pname, params):
 	pass
 
 
-@params('target', 'pname', 'params', api='gl')
+@params(api='gl', prms=['target', 'pname', 'params'])
 def glGetPixelTransformParameterfvEXT(target, pname, params):
 	pass
 

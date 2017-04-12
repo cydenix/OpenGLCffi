@@ -1,10 +1,10 @@
 from OpenGLCffi.GL import params
-@params('target', 'count', 'params', api='gl')
+@params(api='gl', prms=['target', 'count', 'params'])
 def glProgramSubroutineParametersuivNV(target, count, params):
 	pass
 
 
-@params('target', 'index', 'param', api='gl')
+@params(api='gl', prms=['target', 'index', 'param'])
 def glGetProgramSubroutineParameteruivNV(target, index, param):
 	pass
 

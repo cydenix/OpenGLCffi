@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('mode', api='glx')
+@params(api='glx', prms=['mode'])
 def glXSet3DfxModeMESA(mode):
 	pass
 

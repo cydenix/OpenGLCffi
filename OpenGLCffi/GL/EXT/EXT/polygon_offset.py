@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('factor', 'bias', api='gl')
+@params(api='gl', prms=['factor', 'bias'])
 def glPolygonOffsetEXT(factor, bias):
 	pass
 

@@ -1,10 +1,10 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'image', 'fourcc', 'num_planes', 'modifiers', api='egl')
+@params(api='egl', prms=['dpy', 'image', 'fourcc', 'num_planes', 'modifiers'])
 def eglExportDMABUFImageQueryMESA(dpy, image, fourcc, num_planes, modifiers):
 	pass
 
 
-@params('dpy', 'image', 'fds', 'strides', 'offsets', api='egl')
+@params(api='egl', prms=['dpy', 'image', 'fds', 'strides', 'offsets'])
 def eglExportDMABUFImageMESA(dpy, image, fds, strides, offsets):
 	pass
 

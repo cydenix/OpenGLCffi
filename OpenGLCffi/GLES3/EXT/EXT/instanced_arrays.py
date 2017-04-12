@@ -1,15 +1,15 @@
 from OpenGLCffi.GLES3 import params
-@params('mode', 'start', 'count', 'primcount', api='gles3')
+@params(api='gles3', prms=['mode', 'start', 'count', 'primcount'])
 def glDrawArraysInstancedEXT(mode, start, count, primcount):
 	pass
 
 
-@params('mode', 'count', 'type', 'indices', 'primcount', api='gles3')
+@params(api='gles3', prms=['mode', 'count', 'type', 'indices', 'primcount'])
 def glDrawElementsInstancedEXT(mode, count, type, indices, primcount):
 	pass
 
 
-@params('index', 'divisor', api='gles3')
+@params(api='gles3', prms=['index', 'divisor'])
 def glVertexAttribDivisorEXT(index, divisor):
 	pass
 

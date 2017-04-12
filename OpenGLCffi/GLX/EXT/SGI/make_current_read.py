@@ -1,10 +1,10 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'draw', 'read', 'ctx', api='glx')
+@params(api='glx', prms=['dpy', 'draw', 'read', 'ctx'])
 def glXMakeCurrentReadSGI(dpy, draw, read, ctx):
 	pass
 
 
-@params(api = 'glx')
+@params(api='glx', prms=[])
 def glXGetCurrentReadDrawableSGI():
 	pass
 

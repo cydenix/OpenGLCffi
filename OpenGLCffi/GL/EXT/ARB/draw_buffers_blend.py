@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('buf', 'mode', api='gl')
+@params(api='gl', prms=['buf', 'mode'])
 def glBlendEquationiARB(buf, mode):
 	pass
 
 
-@params('buf', 'modeRGB', 'modeAlpha', api='gl')
+@params(api='gl', prms=['buf', 'modeRGB', 'modeAlpha'])
 def glBlendEquationSeparateiARB(buf, modeRGB, modeAlpha):
 	pass
 
 
-@params('buf', 'src', 'dst', api='gl')
+@params(api='gl', prms=['buf', 'src', 'dst'])
 def glBlendFunciARB(buf, src, dst):
 	pass
 
 
-@params('buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha', api='gl')
+@params(api='gl', prms=['buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha'])
 def glBlendFuncSeparateiARB(buf, srcRGB, dstRGB, srcAlpha, dstAlpha):
 	pass
 

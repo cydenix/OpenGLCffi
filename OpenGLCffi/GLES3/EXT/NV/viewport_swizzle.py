@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES3 import params
-@params('index', 'swizzlex', 'swizzley', 'swizzlez', 'swizzlew', api='gles3')
+@params(api='gles3', prms=['index', 'swizzlex', 'swizzley', 'swizzlez', 'swizzlew'])
 def glViewportSwizzleNV(index, swizzlex, swizzley, swizzlez, swizzlew):
 	pass
 

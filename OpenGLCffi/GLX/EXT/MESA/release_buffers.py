@@ -1,5 +1,5 @@
 from OpenGLCffi.GLX import params
-@params('dpy', 'drawable', api='glx')
+@params(api='glx', prms=['dpy', 'drawable'])
 def glXReleaseBuffersMESA(dpy, drawable):
 	pass
 

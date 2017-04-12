@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('video_slot', 'minPresentTime', 'beginPresentTimeId', 'presentDurationId', 'type', 'target0', 'fill0', 'key0', 'target1', 'fill1', 'key1', api='gl')
+@params(api='gl', prms=['video_slot', 'minPresentTime', 'beginPresentTimeId', 'presentDurationId', 'type', 'target0', 'fill0', 'key0', 'target1', 'fill1', 'key1'])
 def glPresentFrameKeyedNV(video_slot, minPresentTime, beginPresentTimeId, presentDurationId, type, target0, fill0, key0, target1, fill1, key1):
 	pass
 
 
-@params('video_slot', 'minPresentTime', 'beginPresentTimeId', 'presentDurationId', 'type', 'target0', 'fill0', 'target1', 'fill1', 'target2', 'fill2', 'target3', 'fill3', api='gl')
+@params(api='gl', prms=['video_slot', 'minPresentTime', 'beginPresentTimeId', 'presentDurationId', 'type', 'target0', 'fill0', 'target1', 'fill1', 'target2', 'fill2', 'target3', 'fill3'])
 def glPresentFrameDualFillNV(video_slot, minPresentTime, beginPresentTimeId, presentDurationId, type, target0, fill0, target1, fill1, target2, fill2, target3, fill3):
 	pass
 
 
-@params('video_slot', 'pname', 'params', api='gl')
+@params(api='gl', prms=['video_slot', 'pname', 'params'])
 def glGetVideoivNV(video_slot, pname, params):
 	pass
 
 
-@params('video_slot', 'pname', 'params', api='gl')
+@params(api='gl', prms=['video_slot', 'pname', 'params'])
 def glGetVideouivNV(video_slot, pname, params):
 	pass
 
 
-@params('video_slot', 'pname', 'params', api='gl')
+@params(api='gl', prms=['video_slot', 'pname', 'params'])
 def glGetVideoi64vNV(video_slot, pname, params):
 	pass
 
 
-@params('video_slot', 'pname', 'params', api='gl')
+@params(api='gl', prms=['video_slot', 'pname', 'params'])
 def glGetVideoui64vNV(video_slot, pname, params):
 	pass
 

@@ -1,15 +1,15 @@
 from OpenGLCffi.GLES2 import params
-@params('mode', 'first', 'count', 'primcount', api='gles2')
+@params(api='gles2', prms=['mode', 'first', 'count', 'primcount'])
 def glDrawArraysInstancedANGLE(mode, first, count, primcount):
 	pass
 
 
-@params('mode', 'count', 'type', 'indices', 'primcount', api='gles2')
+@params(api='gles2', prms=['mode', 'count', 'type', 'indices', 'primcount'])
 def glDrawElementsInstancedANGLE(mode, count, type, indices, primcount):
 	pass
 
 
-@params('index', 'divisor', api='gles2')
+@params(api='gles2', prms=['index', 'divisor'])
 def glVertexAttribDivisorANGLE(index, divisor):
 	pass
 

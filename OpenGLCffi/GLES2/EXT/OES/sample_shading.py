@@ -1,5 +1,5 @@
 from OpenGLCffi.GLES2 import params
-@params('value', api='gles2')
+@params(api='gles2', prms=['value'])
 def glMinSampleShadingOES(value):
 	pass
 

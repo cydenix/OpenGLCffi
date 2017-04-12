@@ -1,30 +1,30 @@
 from OpenGLCffi.GL import params
-@params('texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth', api='gl')
+@params(api='gl', prms=['texture', 'level', 'xoffset', 'yoffset', 'zoffset', 'width', 'height', 'depth'])
 def glInvalidateTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth):
 	pass
 
 
-@params('texture', 'level', api='gl')
+@params(api='gl', prms=['texture', 'level'])
 def glInvalidateTexImage(texture, level):
 	pass
 
 
-@params('buffer', 'offset', 'length', api='gl')
+@params(api='gl', prms=['buffer', 'offset', 'length'])
 def glInvalidateBufferSubData(buffer, offset, length):
 	pass
 
 
-@params('buffer', api='gl')
+@params(api='gl', prms=['buffer'])
 def glInvalidateBufferData(buffer):
 	pass
 
 
-@params('target', 'numAttachments', 'attachments', api='gl')
+@params(api='gl', prms=['target', 'numAttachments', 'attachments'])
 def glInvalidateFramebuffer(target, numAttachments, attachments):
 	pass
 
 
-@params('target', 'numAttachments', 'attachments', 'x', 'y', 'width', 'height', api='gl')
+@params(api='gl', prms=['target', 'numAttachments', 'attachments', 'x', 'y', 'width', 'height'])
 def glInvalidateSubFramebuffer(target, numAttachments, attachments, x, y, width, height):
 	pass
 

@@ -1,25 +1,25 @@
 from OpenGLCffi.GLX import params
-@params(api = 'glx')
+@params(api='glx', prms=[])
 def glXGetCurrentDisplayEXT():
 	pass
 
 
-@params('dpy', 'context', 'attribute', 'value', api='glx')
+@params(api='glx', prms=['dpy', 'context', 'attribute', 'value'])
 def glXQueryContextInfoEXT(dpy, context, attribute):
 	pass
 
 
-@params('context', api='glx')
+@params(api='glx', prms=['context'])
 def glXGetContextIDEXT(context):
 	pass
 
 
-@params('dpy', 'contextID', api='glx')
+@params(api='glx', prms=['dpy', 'contextID'])
 def glXImportContextEXT(dpy, contextID):
 	pass
 
 
-@params('dpy', 'context', api='glx')
+@params(api='glx', prms=['dpy', 'context'])
 def glXFreeContextEXT(dpy, context):
 	pass
 

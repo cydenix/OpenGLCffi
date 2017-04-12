@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('count', api='gl')
+@params(api='gl', prms=['count'])
 def glMaxShaderCompilerThreadsARB(count):
 	pass
 

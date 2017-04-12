@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('face', 'value', api='gl')
+@params(api='gl', prms=['face', 'value'])
 def glStencilOpValueAMD(face, value):
 	pass
 

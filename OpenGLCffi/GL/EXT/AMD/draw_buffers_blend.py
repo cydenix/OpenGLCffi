@@ -1,20 +1,20 @@
 from OpenGLCffi.GL import params
-@params('buf', 'src', 'dst', api='gl')
+@params(api='gl', prms=['buf', 'src', 'dst'])
 def glBlendFuncIndexedAMD(buf, src, dst):
 	pass
 
 
-@params('buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha', api='gl')
+@params(api='gl', prms=['buf', 'srcRGB', 'dstRGB', 'srcAlpha', 'dstAlpha'])
 def glBlendFuncSeparateIndexedAMD(buf, srcRGB, dstRGB, srcAlpha, dstAlpha):
 	pass
 
 
-@params('buf', 'mode', api='gl')
+@params(api='gl', prms=['buf', 'mode'])
 def glBlendEquationIndexedAMD(buf, mode):
 	pass
 
 
-@params('buf', 'modeRGB', 'modeAlpha', api='gl')
+@params(api='gl', prms=['buf', 'modeRGB', 'modeAlpha'])
 def glBlendEquationSeparateIndexedAMD(buf, modeRGB, modeAlpha):
 	pass
 

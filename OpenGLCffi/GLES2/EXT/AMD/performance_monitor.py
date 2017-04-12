@@ -1,55 +1,55 @@
 from OpenGLCffi.GLES2 import params
-@params('numGroups', 'groupsSize', 'groups', api='gles2')
+@params(api='gles2', prms=['numGroups', 'groupsSize', 'groups'])
 def glGetPerfMonitorGroupsAMD(numGroups, groupsSize, groups):
 	pass
 
 
-@params('group', 'numCounters', 'maxActiveCounters', 'counterSize', 'counters', api='gles2')
+@params(api='gles2', prms=['group', 'numCounters', 'maxActiveCounters', 'counterSize', 'counters'])
 def glGetPerfMonitorCountersAMD(group, numCounters, maxActiveCounters, counterSize, counters):
 	pass
 
 
-@params('group', 'bufSize', 'length', 'groupString', api='gles2')
+@params(api='gles2', prms=['group', 'bufSize', 'length', 'groupString'])
 def glGetPerfMonitorGroupStringAMD(group, bufSize, length, groupString):
 	pass
 
 
-@params('group', 'counter', 'bufSize', 'length', 'counterString', api='gles2')
+@params(api='gles2', prms=['group', 'counter', 'bufSize', 'length', 'counterString'])
 def glGetPerfMonitorCounterStringAMD(group, counter, bufSize, length, counterString):
 	pass
 
 
-@params('group', 'counter', 'pname', 'data', api='gles2')
+@params(api='gles2', prms=['group', 'counter', 'pname', 'data'])
 def glGetPerfMonitorCounterInfoAMD(group, counter, pname):
 	pass
 
 
-@params('n', 'monitors', api='gles2')
+@params(api='gles2', prms=['n', 'monitors'])
 def glGenPerfMonitorsAMD(n, monitors):
 	pass
 
 
-@params('n', 'monitors', api='gles2')
+@params(api='gles2', prms=['n', 'monitors'])
 def glDeletePerfMonitorsAMD(n, monitors):
 	pass
 
 
-@params('monitor', 'enable', 'group', 'numCounters', 'counterList', api='gles2')
+@params(api='gles2', prms=['monitor', 'enable', 'group', 'numCounters', 'counterList'])
 def glSelectPerfMonitorCountersAMD(monitor, enable, group, numCounters, counterList):
 	pass
 
 
-@params('monitor', api='gles2')
+@params(api='gles2', prms=['monitor'])
 def glBeginPerfMonitorAMD(monitor):
 	pass
 
 
-@params('monitor', api='gles2')
+@params(api='gles2', prms=['monitor'])
 def glEndPerfMonitorAMD(monitor):
 	pass
 
 
-@params('monitor', 'pname', 'dataSize', 'data', 'bytesWritten', api='gles2')
+@params(api='gles2', prms=['monitor', 'pname', 'dataSize', 'data', 'bytesWritten'])
 def glGetPerfMonitorCounterDataAMD(monitor, pname, dataSize, bytesWritten):
 	pass
 

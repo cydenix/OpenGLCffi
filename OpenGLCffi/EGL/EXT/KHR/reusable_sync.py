@@ -1,25 +1,25 @@
 from OpenGLCffi.EGL import params
-@params('dpy', 'type', 'attrib_list', api='egl')
+@params(api='egl', prms=['dpy', 'type', 'attrib_list'])
 def eglCreateSyncKHR(dpy, type, attrib_list):
 	pass
 
 
-@params('dpy', 'sync', api='egl')
+@params(api='egl', prms=['dpy', 'sync'])
 def eglDestroySyncKHR(dpy, sync):
 	pass
 
 
-@params('dpy', 'sync', 'flags', 'timeout', api='egl')
+@params(api='egl', prms=['dpy', 'sync', 'flags', 'timeout'])
 def eglClientWaitSyncKHR(dpy, sync, flags, timeout):
 	pass
 
 
-@params('dpy', 'sync', 'mode', api='egl')
+@params(api='egl', prms=['dpy', 'sync', 'mode'])
 def eglSignalSyncKHR(dpy, sync, mode):
 	pass
 
 
-@params('dpy', 'sync', 'attribute', 'value', api='egl')
+@params(api='egl', prms=['dpy', 'sync', 'attribute', 'value'])
 def eglGetSyncAttribKHR(dpy, sync, attribute):
 	pass
 

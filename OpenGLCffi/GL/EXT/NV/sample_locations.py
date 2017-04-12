@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('target', 'start', 'count', 'v', api='gl')
+@params(api='gl', prms=['target', 'start', 'count', 'v'])
 def glFramebufferSampleLocationsfvNV(target, start, count, v):
 	pass
 
 
-@params('framebuffer', 'start', 'count', 'v', api='gl')
+@params(api='gl', prms=['framebuffer', 'start', 'count', 'v'])
 def glNamedFramebufferSampleLocationsfvNV(framebuffer, start, count, v):
 	pass
 
 
-@params(api = 'gl')
+@params(api='gl', prms=[])
 def glResolveDepthValuesNV():
 	pass
 

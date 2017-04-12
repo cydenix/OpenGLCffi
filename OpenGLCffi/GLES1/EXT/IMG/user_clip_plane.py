@@ -1,10 +1,10 @@
 from OpenGLCffi.GLES1 import params
-@params('p', 'eqn', api='gles1')
+@params(api='gles1', prms=['p', 'eqn'])
 def glClipPlanefIMG(p, eqn):
 	pass
 
 
-@params('p', 'eqn', api='gles1')
+@params(api='gles1', prms=['p', 'eqn'])
 def glClipPlanexIMG(p, eqn):
 	pass
 

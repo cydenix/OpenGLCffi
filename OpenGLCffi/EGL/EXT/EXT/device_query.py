@@ -1,15 +1,15 @@
 from OpenGLCffi.EGL import params
-@params('device', 'attribute', 'value', api='egl')
+@params(api='egl', prms=['device', 'attribute', 'value'])
 def eglQueryDeviceAttribEXT(device, attribute):
 	pass
 
 
-@params('device', 'name', api='egl')
+@params(api='egl', prms=['device', 'name'])
 def eglQueryDeviceStringEXT(device, name):
 	pass
 
 
-@params('dpy', 'attribute', 'value', api='egl')
+@params(api='egl', prms=['dpy', 'attribute', 'value'])
 def eglQueryDisplayAttribEXT(dpy, attribute):
 	pass
 

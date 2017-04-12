@@ -1,15 +1,15 @@
 from OpenGLCffi.GL import params
-@params('index', 'size', 'type', 'normalized', 'stride', 'buffer', 'offset', api='gl')
+@params(api='gl', prms=['index', 'size', 'type', 'normalized', 'stride', 'buffer', 'offset'])
 def glVertexAttribArrayObjectATI(index, size, type, normalized, stride, buffer, offset):
 	pass
 
 
-@params('index', 'pname', 'params', api='gl')
+@params(api='gl', prms=['index', 'pname', 'params'])
 def glGetVertexAttribArrayObjectfvATI(index, pname, params):
 	pass
 
 
-@params('index', 'pname', 'params', api='gl')
+@params(api='gl', prms=['index', 'pname', 'params'])
 def glGetVertexAttribArrayObjectivATI(index, pname, params):
 	pass
 

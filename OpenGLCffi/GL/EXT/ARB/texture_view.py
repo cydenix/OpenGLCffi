@@ -1,5 +1,5 @@
 from OpenGLCffi.GL import params
-@params('texture', 'target', 'origtexture', 'internalformat', 'minlevel', 'numlevels', 'minlayer', 'numlayers', api='gl')
+@params(api='gl', prms=['texture', 'target', 'origtexture', 'internalformat', 'minlevel', 'numlevels', 'minlayer', 'numlayers'])
 def glTextureView(texture, target, origtexture, internalformat, minlevel, numlevels, minlayer, numlayers):
 	pass
 
