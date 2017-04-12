@@ -47,7 +47,7 @@ def params(*largs, **lkwargs):
                         ret_dict[pr] = prms[i]
             ret = f(*prms)
             if isinstance(ret, libs[api][1].CData):
-                if ffi.typeof(ret).kind == 'pointer':
+                if libs[api][1].typeof(ret).kind == 'pointer':
                     return ret
                 else:
                     return ret, ret_dict
