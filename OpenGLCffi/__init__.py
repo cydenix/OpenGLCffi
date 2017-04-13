@@ -17,11 +17,11 @@ def load_lib(api=None):
 
 def _new(api, func, args, prm_inx, prm_name):
     p = libs[api][1].typeof(func).args[prm_inx].cname.split()
-    for k, v in libs[api][3].items():
-        if prm_name in v:
-            return libs[api][1].new(' '.join(p[:-1]) + '[{}]'.format(args[k]))
-        else:
-            return libs[api][1].new(' '.join(p))
+    if len(libs[api][3]) != 0 and prm_name in sum(libs[api][3].values(), []):
+        x = {i: k for k, v in libs[api][3].items() for i in v}[prm_name]
+        return libs[api][1].new(' '.join(p[:-1]) + '[{}]'.format(args[x]))
+    else:
+        return libs[api][1].new(' '.join(p))
 
 
 def _cast(api, func, prm_inx, prm):
@@ -48,7 +48,10 @@ def params(*largs, **lkwargs):
             ret = f(*prms)
             if isinstance(ret, libs[api][1].CData):
                 if libs[api][1].typeof(ret).kind == 'pointer':
-                    return ret
+                    if len(ret_dict) > 0:
+                        return ret, ret_dict
+                    else:
+                        return ret
                 else:
                     return ret, ret_dict
             elif len(ret_dict) > 0:
