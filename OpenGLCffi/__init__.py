@@ -1,10 +1,9 @@
 from functools import wraps
 from FFI import *
 from ctypes.util import find_library
+from weakref import WeakKeyDictionary
 
-
-LIB_PATH = '/usr/lib/'
-libs = {}
+_wkdict_ = WeakKeyDictionary()
 
 
 def load_lib(api=None):
@@ -19,14 +18,20 @@ def _new(api, func, args, prm_inx, prm_name):
     p = libs[api][1].typeof(func).args[prm_inx].cname.split()
     if len(libs[api][3]) != 0 and prm_name in sum(libs[api][3].values(), []):
         x = {i: k for k, v in libs[api][3].items() for i in v}[prm_name]
-        return libs[api][1].new(' '.join(p[:-1]) + '[{}]'.format(args[x]))
+        n_pr = libs[api][1].new(' '.join(p[:-1]) + '[{}]'.format(args[x]))
+        _wkdict_[n_pr] = prm_name
+        return n_pr
     else:
-        return libs[api][1].new(' '.join(p))
+        n_pr = libs[api][1].new(' '.join(p))
+        _wkdict_[n_pr] = prm_name
+        return n_pr
 
 
 def _cast(api, func, prm_inx, prm):
     p = libs[api][1].typeof(func).args[prm_inx].cname.split()
-    return libs[api][1].cast(' '.join(p), prm)
+    ptr = libs[api][1].cast(' '.join(p), prm)
+    _wkdict_[ptr] = prm
+    return ptr
 
 
 def params(*largs, **lkwargs):

@@ -131,12 +131,12 @@ def setupGL(cn, dsp, w, v):
                  GLX_DOUBLEBUFFER, True,
                  GLX_NONE]
 
-    conf = glx.glXChooseFBConfig(dsp, 0, vi_attrib)
+    conf, n = glx.glXChooseFBConfig(dsp, 0, vi_attrib)
     
-    for i in xrange(conf['nelements'][0]):
+    for i in xrange(n['nelements'][0]):
         v_id = glx.glXGetFBConfigAttrib(dsp, conf[i], GLX_VISUAL_ID)
         if v_id['value'][0] == v:
-            dconf = conf['fn_ret'][i]
+            dconf = conf[i]
 
     ctx = glx.glXCreateNewContext(dsp, dconf, GLX_RGBA_TYPE, ffi.NULL, True)
 
