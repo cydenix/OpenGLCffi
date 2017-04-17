@@ -3,6 +3,7 @@ from FFI import *
 from ctypes.util import find_library
 from weakref import WeakKeyDictionary
 
+libs = {}
 _wkdict_ = WeakKeyDictionary()
 
 
